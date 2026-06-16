@@ -25,7 +25,7 @@ Key capabilities:
 
 ## II. Block Diagram
 
-![image](images/psram_overview.png)
+![image](image/psram_overview.png)
 
 The controller comprises five major blocks:
 
@@ -33,7 +33,7 @@ The controller comprises five major blocks:
 
 The AXI Controller accepts AXI4 read and write transactions, expands burst addresses, and buffers requests and responses. It uses **asynchronous FIFOs** so that the AXI bus clock (`ACLK`) and the internal QSPI clock (`SCLK`) remain fully decoupled.
 
-![image](images/psram_axi.png)
+![image](image/psram_axi.png)
 
 | Sub-module | Role |
 |---|---|
@@ -51,7 +51,7 @@ The CSR block (`m_vlsi_qspi_csr`) exposes an APB slave interface for software co
 
 The QSPI FSM (`m_vlsi_qspi_fsm`) is the transaction engine. It consumes requests from the AXI controller via the async-FIFO boundary, uses CSR configuration for command values, width, and dummy-cycle counts, and executes the command–address–dummy–data phases on the QSPI pads. The FSM supports both SPI (1‑bit) and QSPI (4‑bit) modes, selected through the CSR `independent_mode` field.
 
-![image](images/psram_fsm.png)
+![image](image/psram_fsm.png)
 
 ### 4. Bus Logic (AXI‑side)
 
