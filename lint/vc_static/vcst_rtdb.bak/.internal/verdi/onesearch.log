@@ -1,0 +1,34 @@
+
+
+
+=========[ Log Begin ]=============
+
+DB_PATH : vcst_rtdb/.internal/svi/
+MAX RESULTS : None
+KEY_LIST : []
+Open database : vcst_rtdb/.internal/svi/report.db
+	Success!
+Time start at : 1780212974.908647
+Time end at : 1780212974.908667
+	Elapsed : 2.002716064453125e-05
+Close database : 
+	Success!
+
+=========[ Log End   ]=============
+
+
+
+=========[ Log Begin ]=============
+
+DB_PATH : vcst_rtdb/.internal/svi/
+MAX RESULTS : None
+KEY_LIST : []
+Open database : vcst_rtdb/.internal/svi/report.db
+	Success!
+Time start at : 1780212978.266431
+Time end at : 1780212978.2664495
+	Elapsed : 1.8358230590820312e-05
+Close database : 
+	Success!
+
+=========[ Log End   ]=============

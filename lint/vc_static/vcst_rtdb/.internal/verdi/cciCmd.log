@@ -1,0 +1,9 @@
+17:14:51 : gui:vlsi:35783
+17:14:51 : MasterSourceFile run_lint.tcl
+17:15:04 : ___vcNSchemaDBErrorInfo
+17:15:11 : set_app_var default_waiver_file vcst_rtdb/reports/waiver.tcl
+17:15:12 : ___vcUpdateAll
+17:15:12 : ___vcSaveDb
+17:15:17 : ___vcDumpDefMsgColor
+17:15:19 : get_blackbox -designs -verdi
+17:15:19 : get_glassbox -verdi

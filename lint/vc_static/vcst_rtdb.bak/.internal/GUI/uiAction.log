@@ -1,0 +1,54 @@
+action aaMonetActionReplayMode -trigger
+
+action aaMonetViewDone:0 -reset
+action aaMonetView:0 -bRestoreFilter {1} -dock {0} -h {760} -showFltCfg {0} -tag {all} -title {___SNPS_NONE} -w {1604} -x {0} -y {22} -trigger
+waitfor aaMonetViewDone:0
+
+action aaMonetCheckLocator:0 -reset
+action aaMonetCheckLocator:0 -trigger
+waitfor aaMonetCheckLocator:0
+
+action aaHierViewSrc:0 -reset
+action aaHierViewSrc:0 -trigger
+waitfor aaHierViewSrc:0
+
+action aaMonetAvClickedDone:0 -reset
+action aaMonetAvClicked:0 -fromGui {1} -itemPath {VC Static:Verification:Lint:Open:warning:Language_Check-Stage} -rightClick {0} -row {0} -trigger
+waitfor aaMonetAvClickedDone:0
+
+action aaMonetDvClickedDone:0 -reset
+action aaMonetDvClicked:0 -col {3} -row {0} -trigger
+waitfor aaMonetDvClickedDone:0
+
+action aaMonetAvClickedDone:0 -reset
+action aaMonetAvClicked:0 -fromGui {1} -itemPath {VC Static:Verification:Lint:Open:warning:Language_Check-Stage:W240} -rightClick {0} -row {0} -trigger
+waitfor aaMonetAvClickedDone:0
+
+action aaMonetAvClickedDone:0 -reset
+action aaMonetAvClicked:0 -fromGui {1} -itemPath {VC Static:Verification:Lint:Open:warning:Structural_Check-Stage} -rightClick {0} -row {1} -trigger
+waitfor aaMonetAvClickedDone:0
+
+action aaMonetDvClickedDone:0 -reset
+action aaMonetDvClicked:0 -col {2} -row {0} -trigger
+waitfor aaMonetDvClickedDone:0
+
+action aaMonetAvClickedDone:0 -reset
+action aaMonetAvClicked:0 -fromGui {1} -itemPath {VC Static:Verification:Lint:Open:warning:Structural_Check-Stage:NoFeedThrus-ML} -rightClick {0} -row {0} -trigger
+waitfor aaMonetAvClickedDone:0
+
+action aaMonetAvClickedDone:0 -reset
+action aaMonetAvClicked:0 -fromGui {1} -itemPath {VC Static:Verification:Lint:Open:warning:Language_Check-Stage:W240} -rightClick {0} -row {0} -trigger
+waitfor aaMonetAvClickedDone:0
+
+action aaMonetAvClickedDone:0 -reset
+action aaMonetAvClicked:0 -fromGui {1} -itemPath {VC Static:Verification:Lint:Open:warning:Language_Check-Stage} -rightClick {0} -row {0} -trigger
+waitfor aaMonetAvClickedDone:0
+
+action aaMonetAvClickedDone:0 -reset
+action aaMonetAvClicked:0 -fromGui {1} -itemPath {VC Static:Verification:Lint:Open:warning:Language_Check-Stage:W240} -rightClick {0} -row {0} -trigger
+waitfor aaMonetAvClickedDone:0
+
+action aaMonetAvClickedDone:0 -reset
+action aaMonetAvClicked:0 -fromGui {1} -itemPath {VC Static:Verification:Lint:Open:warning:Structural_Check-Stage} -rightClick {0} -row {1} -trigger
+waitfor aaMonetAvClickedDone:0
+

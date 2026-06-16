@@ -1,0 +1,124 @@
+
+                                   VC Static 
+
+                 Version X-2025.06 for linux64 - May 29, 2025 
+
+                    Copyright (c) 2010 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+restore_session -level default
+
+MasterSourceFile run_lint.tcl
+#------------------------------------------------------------------------------
+# Synopsys Lint Run Script
+#------------------------------------------------------------------------------
+# Project inputs
+set FILELIST   $::env(QSPI_RTL)/filelist.f
+set DEFINES    ""
+set TOP_DESIGN m_vlsi_qspi_top
+# Lint setup
+set enable_lint true
+[Info] In case any tcl command throwing error , last 10 suppressed messages for the command will be shown on console.
+configure_lint_setup
+configure_lint_tag_parameter \
+  -tag W123 \
+  -parameter HANDLE_LARGE_BUS \
+  -value yes \
+  -goal lint_rtl_enhanced
+# Parse and elaborate
+analyze \
+  -format sverilog \
+  -vcs "-f $FILELIST" \
+  -define "$DEFINES -timescale=1ns/10ps +lint=TFIPC-L"
+elaborate $TOP_DESIGN
+[Warning] COM_OPT009: 'search_path' has not been set.
+[Warning] COM_OPT010: 'link_library' has not been set.
+Doing common elaboration 
+Final timescale is '1ps/1ps'
+Info: Invoking Simon...
+Info: Simon VCS Start
+
+****************************************************************************
+WARNING: Simon running with following NOT-RECOMMENDED mode(s)
+  * highLevelForm=0           : Need to enable highLevelForm=1
+  * alwaysSplitStructArrays=0 : Need to enable alwaysSplitStructArrays=1
+****************************************************************************
+
+=======================================================
+VCS CPU Time(s)     :0.16
+SIMON CPU Time(s)   :0.31
+SIMON Total Time(s) :0.08
+Peak Memory(MB)     :373
+=======================================================
+Info: Simon VCS Finished
+Info: Simon call complete 
+Info: Exiting after Simon Analysis 
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+# Gate Counts 
+Number of Flat Instances = 7243
+Number of Operator = 7243
+Number of Libcells = 0
+Number of Black-Box Instances = 0
+Number of FlipFlop BitWise = 2128
+Number of Latch Bitwise = 0
+Number of Nand BitWise = 5
+Number of Comb logic = 1790
+
+# Run checks
+check_lint
+[Info] Running goal lint_rtl_enhanced
+Inferring all potential clocks
+Inferring all potential resets
+[Info] WordScc Detection stage... Success
+# Add waivers
+source waiver.tcl
+# Open GUI
+start_gui
+
+set_app_var default_waiver_file vcst_rtdb/reports/waiver.tcl
+<_mx_/>
+Interrupted, cancelling tasks...
+Session exit code is 3 (Abnormal termination - termination trapped by software)
+
+
+Capturing stack trace for signal [ SIGSEGV (Segmentation fault) ] for pid : 1245309 ..
+
+
+--- pstack for process 1245309 is dumped to 
+
+#/tools/Synopsys/vc_static/X-2025.06/linux64/vcst/bin/svi() [0xebf3034]
+#/lib/x86_64-linux-gnu/libc.so.6 : ()+0x38ddf
+#/lib/x86_64-linux-gnu/libc.so.6 : __cxa_finalize()+0x68
+#/tools/Synopsys/vc_static/X-2025.06/linux64/vcst/bin/../lib/libnffr.so : ()+0x630f96
+#/lib64/ld-linux-x86-64.so.2 : ()+0x10372
+#/lib/x86_64-linux-gnu/libc.so.6 : ()+0x3b596
+#/lib/x86_64-linux-gnu/libc.so.6 : exit()+0x19
+#/tools/Synopsys/vc_static/X-2025.06/linux64/vcst/bin/svi : Monet::ClientMgr::cleanUp()()+0x10a
+#/tools/Synopsys/vc_static/X-2025.06/linux64/vcst/bin/svi : Monet::ClientMgr::pSignalHandler(int)()+0x14a
+#/lib/x86_64-linux-gnu/libc.so.6 : ()+0x38ddf
+#/lib/x86_64-linux-gnu/libpthread.so.0 : pthread_cond_wait()+0x1e0
+#/tools/Synopsys/vc_static/X-2025.06/linux64/vcst/bin/svi : snps_boost_1_85_0::asio::detail::scheduler::do_run_one(snps_boost_1_85_0::asio::detail::conditionally_enabled_mutex::scoped_lock&, snps_boost_1_85_0::asio::detail::scheduler_thread_info&, snps_boost_1_85_0::system::error_code const&)()+0x438
+#/tools/Synopsys/vc_static/X-2025.06/linux64/vcst/bin/svi : snps_boost_1_85_0::asio::detail::scheduler::run(snps_boost_1_85_0::system::error_code&)()+0x24f
+#/tools/Synopsys/vc_static/X-2025.06/linux64/vcst/bin/svi : Monet::ClientMgr::pStartPoolThread(snps_boost_1_85_0::shared_ptr<snps_boost_1_85_0::asio::io_context>)()+0x9f
+#/tools/Synopsys/vc_static/X-2025.06/linux64/vcst/bin/svi : snps_boost_1_85_0::detail::thread_data<snps_boost_1_85_0::_bi::bind_t<snps_boost_1_85_0::_bi::unspecified, snps_boost_1_85_0::_mfi::mf<void (Monet::ClientMgr::*)(snps_boost_1_85_0::shared_ptr<snps_boost_1_85_0::asio::io_context>), void, Monet::ClientMgr, snps_boost_1_85_0::shared_ptr<snps_boost_1_85_0::asio::io_context> >, snps_boost_1_85_0::_bi::list<snps_boost_1_85_0::_bi::value<Monet::ClientMgr*>, snps_boost_1_85_0::_bi::value<snps_boost_1_85_0::shared_ptr<snps_boost_1_85_0::asio::io_context> > > > >::run()()+0x5b
+#/tools/Synopsys/vc_static/X-2025.06/linux64/vcst/bin/svi() [0xeef4c5f]
+#/tools/Synopsys/vc_static/X-2025.06/linux64/vcst/bin/svi() [0xf7b4856]
+#/lib/x86_64-linux-gnu/libpthread.so.0 : ()+0x7ea6
+#/lib/x86_64-linux-gnu/libc.so.6 : clone()+0x3e=======================================================
+Total Time(S)  :283752
+CPU Time(S)    :197.09
+Peak Memory(MB):2071
+Current RSS(MB):1335
+=======================================================

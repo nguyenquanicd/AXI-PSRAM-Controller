@@ -1,0 +1,50 @@
+Module Name,Module Type,Port Name,Direction,Width,Index,Comment Source,Comment 
+m_vlsi_qspi_top,Top_Level,i_aclk,INPUT,1,-,module port,--------------------------------...
+m_vlsi_qspi_top,Top_Level,i_aresetn,INPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,i_pclk,INPUT,1,-,module port,--------------------------------...
+m_vlsi_qspi_top,Top_Level,i_presetn,INPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,i_qspi_clk,INPUT,1,-,module port,--------------------------------...
+m_vlsi_qspi_top,Top_Level,i_qspi_rstn,INPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,i_paddr,INPUT,16,[15:0],module port,--------------------------------...
+m_vlsi_qspi_top,Top_Level,i_protect_en,INPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,i_slverr_en,INPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,i_pprot,INPUT,3,[2:0],-,-
+m_vlsi_qspi_top,Top_Level,i_pwdata,INPUT,32,[31:0],-,-
+m_vlsi_qspi_top,Top_Level,i_pwrite,INPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,i_penable,INPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,i_psel,INPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,i_pstrb,INPUT,4,[3:0],-,-
+m_vlsi_qspi_top,Top_Level,o_pslverr,OUTPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,o_pready,OUTPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,o_prdata,OUTPUT,32,[31:0],-,-
+m_vlsi_qspi_top,Top_Level,i_awaddr,INPUT,32,[31:0],module port,--------------------------------...
+m_vlsi_qspi_top,Top_Level,i_awvalid,INPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,o_awready,OUTPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,i_awburst,INPUT,2,[1:0],-,-
+m_vlsi_qspi_top,Top_Level,i_awlen,INPUT,8,[7:0],-,-
+m_vlsi_qspi_top,Top_Level,i_awid,INPUT,4,[3:0],-,-
+m_vlsi_qspi_top,Top_Level,i_wdata,INPUT,32,[31:0],-,-
+m_vlsi_qspi_top,Top_Level,i_wvalid,INPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,o_wready,OUTPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,i_wlast,INPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,o_bid,OUTPUT,4,[3:0],-,-
+m_vlsi_qspi_top,Top_Level,o_bresp,OUTPUT,2,[1:0],-,-
+m_vlsi_qspi_top,Top_Level,o_bvalid,OUTPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,i_bready,INPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,i_araddr,INPUT,32,[31:0],-,-
+m_vlsi_qspi_top,Top_Level,i_arvalid,INPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,o_arready,OUTPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,i_arburst,INPUT,2,[1:0],-,-
+m_vlsi_qspi_top,Top_Level,i_arlen,INPUT,8,[7:0],-,-
+m_vlsi_qspi_top,Top_Level,i_arid,INPUT,4,[3:0],-,-
+m_vlsi_qspi_top,Top_Level,o_rid,OUTPUT,4,[3:0],-,-
+m_vlsi_qspi_top,Top_Level,o_rdata,OUTPUT,32,[31:0],-,-
+m_vlsi_qspi_top,Top_Level,o_rresp,OUTPUT,2,[1:0],-,-
+m_vlsi_qspi_top,Top_Level,o_rvalid,OUTPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,o_rlast,OUTPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,i_rready,INPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,o_qspi_cs_n,OUTPUT,1,-,module port,--------------------------------...
+m_vlsi_qspi_top,Top_Level,o_qspi_sclk,OUTPUT,1,-,-,-
+m_vlsi_qspi_top,Top_Level,o_qspi_so,OUTPUT,4,[3:0],-,-
+m_vlsi_qspi_top,Top_Level,o_qspi_oe,OUTPUT,4,[3:0],-,-
+m_vlsi_qspi_top,Top_Level,i_qspi_si,INPUT,4,[3:0],-,-

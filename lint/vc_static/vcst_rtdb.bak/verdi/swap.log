@@ -1,0 +1,39 @@
+version: (200506)
+
+available memory: 64M bytes
+used memory: 81920 bytes [need 80K bytes if disable swap]
+
+used block: 3 [memory(3) file(0)]
+                 [ 8K(2) 64K(1) { total 80K bytes } ]
+overhead: (9514) bytes for (3) blocks [Average: (3171) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 1(times) 50K(bytes) [8K bytes compressed data from file]
+access => 20832(times) 166M(bytes)
+          [hit ratio: 99.9952%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/verdi)
+used swap file number: (1)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (3)
+closeHead: (1)
+closeTail: (2)
+openCnt: (2)
+fid(2): fd(32) fileName(/home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/verdi/_swap_0001#1563039918#1247748)
+	size(0) lastModTime(0) curModTime(1780212977)
+	mode(w+b)	hot(0) cool(1) pos(0)
+fid(1): fd(1073741824) fileName(/home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/design/m_vlsi_qspi_top.exe.daidir/kdb.elab++/work.lib++/m_vlsi_qspi_top.sv.tdc)
+	size(13536) lastModTime(1780212964) curModTime(1780212964)
+	mode(rb)	hot(2) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+==================================================
+mySelf(0x48a807f0) pre(0x47a26da0) next((nil))
+version(200506)
+date(May 29 2025 23:11:14)

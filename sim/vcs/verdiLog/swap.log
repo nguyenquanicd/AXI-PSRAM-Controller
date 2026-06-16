@@ -1,0 +1,233 @@
+version: (200506)
+
+available memory: 64M bytes
+used memory: 81920 bytes [need 80K bytes if disable swap]
+
+used block: 3 [memory(3) file(0)]
+                 [ 8K(2) 64K(1) { total 80K bytes } ]
+overhead: (9514) bytes for (3) blocks [Average: (3171) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 1(times) 37K(bytes) [5K bytes compressed data from file]
+access => 28772(times) 229M(bytes)
+          [hit ratio: 99.9965%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/ltthinh/PSRAM_CTRL/sim/vcs/verdiLog)
+used swap file number: (1)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (3)
+closeHead: (1)
+closeTail: (2)
+openCnt: (1)
+fid(2): fd(34) fileName(/home/ltthinh/PSRAM_CTRL/sim/vcs/verdiLog/_swap_0001#1563039918#1732243)
+	size(0) lastModTime(0) curModTime(1780497089)
+	mode(w+b)	hot(0) cool(1) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(rb)	hot(2) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Wed Jun  3 22:31:26 2026
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 245760 bytes [need 160K bytes if disable swap]
+
+used block: 16 [memory(16) file(0)]
+                 [ 8K(14) 64K(2) { total 240K bytes } ]
+overhead: (9514) bytes for (16) blocks [Average: (594) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 2(times) 74K(bytes) [11K bytes compressed data from file]
+access => 500924(times) 3922M(bytes)
+          [hit ratio: 99.9996%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/ltthinh/PSRAM_CTRL/sim/vcs/verdiLog)
+used swap file number: (3)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (5)
+closeHead: (3)
+closeTail: (4)
+openCnt: (1)
+fid(4): fd(49) fileName(/home/ltthinh/PSRAM_CTRL/sim/vcs/verdiLog/_swap_0001#1563039918#1732243)
+	size(0) lastModTime(0) curModTime(1780500687)
+	mode(w+b)	hot(0) cool(3) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(rb)	hot(4) cool(0) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Thu Jun  4 00:49:40 2026
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 327680 bytes [need 160K bytes if disable swap]
+
+used block: 19 [memory(19) file(0)]
+                 [ 8K(16) 64K(3) { total 320K bytes } ]
+overhead: (9514) bytes for (19) blocks [Average: (500) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 3(times) 100K(bytes) [15K bytes compressed data from file]
+access => 537736(times) 4214M(bytes)
+          [hit ratio: 99.9994%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/ltthinh/PSRAM_CTRL/sim/vcs/verdiLog)
+used swap file number: (5)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (7)
+closeHead: (5)
+closeTail: (6)
+openCnt: (1)
+fid(6): fd(48) fileName(/home/ltthinh/PSRAM_CTRL/sim/vcs/verdiLog/_swap_0001#1563039918#1732243)
+	size(0) lastModTime(0) curModTime(1780508980)
+	mode(w+b)	hot(0) cool(5) pos(0)
+fid(5): fd(0) fileName(NULL)
+	mode(rb)	hot(6) cool(0) pos(0)
+fid(4): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Thu Jun  4 01:20:41 2026
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 655360 bytes [need 320K bytes if disable swap]
+
+used block: 38 [memory(38) file(0)]
+                 [ 8K(32) 64K(6) { total 640K bytes } ]
+overhead: (9523) bytes for (38) blocks [Average: (250) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 6(times) 206K(bytes) [28K bytes compressed data from file]
+access => 978487(times) 7691M(bytes)
+          [hit ratio: 99.9994%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/ltthinh/PSRAM_CTRL/sim/vcs/verdiLog)
+used swap file number: (9)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (10)
+closeHead: (7)
+closeTail: (9)
+openCnt: (1)
+fid(9): fd(0) fileName(NULL)
+	mode(rb)	hot(7) cool(0) pos(0)
+fid(8): fd(47) fileName(/home/ltthinh/PSRAM_CTRL/sim/vcs/verdiLog/_swap_0001#1563039918#1732243)
+	size(0) lastModTime(0) curModTime(1780510841)
+	mode(w+b)	hot(9) cool(7) pos(0)
+fid(7): fd(0) fileName(NULL)
+	mode(rb)	hot(8) cool(9) pos(0)
+fid(6): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(5): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(4): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Thu Jun  4 01:45:36 2026
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 999424 bytes [need 336K bytes if disable swap]
+
+used block: 59 [memory(59) file(0)]
+                 [ 8K(50) 64K(9) { total 976K bytes } ]
+overhead: (9523) bytes for (59) blocks [Average: (161) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 9(times) 343K(bytes) [44K bytes compressed data from file]
+access => 1826759(times) 14358M(bytes)
+          [hit ratio: 99.9995%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/ltthinh/PSRAM_CTRL/sim/vcs/verdiLog)
+used swap file number: (13)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (14)
+closeHead: (10)
+closeTail: (13)
+openCnt: (3)
+fid(13): fd(1073741825) fileName(/home/ltthinh/PSRAM_CTRL/sim/vcs/simv.daidir/kdb.elab++/work.lib++/m_vlsi_qspi_csr.sv.tdc)
+	size(17334) lastModTime(1780512154) curModTime(1780512154)
+	mode(rb)	hot(0) cool(11) pos(0)
+fid(12): fd(0) fileName(/home/ltthinh/PSRAM_CTRL/sim/vcs/simv.daidir/kdb.elab++/work.lib++/m_vlsi_qspi_top.sv.tdc)
+	size(13470) lastModTime(1780512154) curModTime(1780512154)
+	mode(rb)	hot(0) cool(0) pos(0)
+fid(11): fd(46) fileName(/home/ltthinh/PSRAM_CTRL/sim/vcs/verdiLog/_swap_0001#1563039918#1732243)
+	size(0) lastModTime(0) curModTime(1780512337)
+	mode(w+b)	hot(13) cool(10) pos(0)
+fid(10): fd(1073741824) fileName(/home/ltthinh/PSRAM_CTRL/sim/vcs/simv.daidir/kdb.elab++/work.lib++/m_vlsi_qspi_fsm.sv.tdc)
+	size(17027) lastModTime(1780512154) curModTime(1780512154)
+	mode(rb)	hot(11) cool(0) pos(0)
+fid(9): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(8): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(7): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(6): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(5): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(4): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+==================================================
+mySelf(0x50983fb0) pre(0x4bc79040) next((nil))
+version(200506)
+date(May 31 2025 20:21:53)

@@ -1,0 +1,10 @@
+<Data Filename="/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_synch.sv" Cont="40" Gate="" Block="" latch_blk=""> </Data>
+<Data Filename="/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_arbiter.sv" Cont="56 55" Gate="" Block="" latch_blk=""> </Data>
+<Data Filename="/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_bus_logic.sv" Cont="79 78 77 58 64 59 71 61 62 72 68 69 75 65 66 73 74" Gate="" Block="" latch_blk=""> </Data>
+<Data Filename="/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axfsm.sv" Cont="109 57 95 102 108 59 60 98 107 58 94 99 96 97 100 106" Gate="" Block="62-66" latch_blk=""> </Data>
+<Data Filename="/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_sclk_logic.sv" Cont="100 99 97 96 88 92 91 87 90 86 67 69 68 78 72 95 93 83 74 75 76 71 84 80 82" Gate="" Block="" latch_blk=""> </Data>
+<Data Filename="/home/ltthinh/PSRAM_CTRL/m_vlsi_qspi_top.sv" Cont="147" Gate="" Block="" latch_blk=""> </Data>
+<Data Filename="/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv" Cont="548 517 460 123 259 268 270 547 260 236 267 262 272 264 263 266 258 271" Gate="" Block="339-372 283-334" latch_blk=""> </Data>
+<Data Filename="/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_async_fifo.sv" Cont="92 90 72 93 69 68 42" Gate="" Block="" latch_blk=""> </Data>
+<Data Filename="/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi4_sram.sv" Cont="128 127 125 124 123 121 122 120 126 119" Gate="" Block="" latch_blk=""> </Data>
+<Data Filename="/home/ltthinh/PSRAM_CTRL/rtl/CSR/RTL/m_vlsi_qspi_csr.sv" Cont="549 507 505 470 435 446 425 415 515 404 497 384 495 427 373 363 355 353 153 176 181 152 174 177 151 396 365 312 148 216 266 180 322 178 394 146 267 147 182 247 343 462 183 286 287 485 454 300 304 179 314 324 332" Gate="" Block="530-540 520-525 475-476 440-444 481-483 378-382 459-460 409-413 337-341" latch_blk=""> </Data>

@@ -1,0 +1,17 @@
+Date Created        :	May 30, 2026 21:18:13
+VCStatic Version    :	X-2025.06
+Project Name        :	run_lint.tcl
+Goal Name           :	lint_rtl_enhanced
+Scenario Name       :	default_scenario
+Top                 :	m_vlsi_qspi_top
+Run Time            :	0:0:4(4 secs)
+
+
+Message Summary
+Severity          Non-Waived          Waived
+FATAL                       0              0
+ERROR                       8              0
+WARNING                    25              0
+INFO                        1              0
+
+

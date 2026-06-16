@@ -1,0 +1,80 @@
+Command: /home/ltthinh/PSRAM_CTRL/sim/vcs/./simv +vmm_test=basic_qspi_psram_test -l sim.log
+Chronologic VCS simulator copyright 1991-2025
+Contains Synopsys proprietary information.
+Compiler version X-2025.06_Full64; Runtime version X-2025.06_Full64;  Jun  7 17:13 2026
+*Verdi* Loading libsscore_vcs202506.so
+FSDB Dumper for VCS, Release Verdi_X-2025.06, Linux x86_64/64bit, 05/31/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'test_top.fsdb'
+*Verdi* : Begin traversing the scope (test_top), layer (0).
+*Verdi* : End of traversing.
+============================================================
+ QSPI PSRAM Controller Testbench
+ ACLK period  = 10.0 ns
+ PCLK period  = 20.0 ns
+ QSPI period  = 10.0 ns
+============================================================
+------------------------------------------------------------
+ TEST: basic_qspi_psram_test
+------------------------------------------------------------
+[TEST] Configuring CSR registers...
+[TEST] CSR configuration complete. Controller enabled.
+[TEST] Sending independent command to enter QSPI mode...
+[TEST] QSPI mode switch complete.
+[TEST] Single-beat write test...
+[AXI_BFM] WRITE BURST: addr=0x00000100 burst=1 len=0 id=0
+[AXI_BFM] WRITE BURST complete: id=0 OK
+[TEST] Single-beat read test...
+[AXI_BFM] READ BURST: addr=0x00000100 burst=1 len=0 id=1
+[AXI_BFM]   READ: waiting for AR ready...
+[AXI_BFM]   READ: AR accepted, waiting for R data...
+[AXI_BFM]   READ: waiting for R valid (beat 0)...
+[AXI_BFM] READ BURST complete: id=1 mismatches=0
+[TEST] Read data: 0x00000000 (expected: 0xDEAD_BEEF)
+[TEST] ERROR: Single-beat read mismatch!
+[TEST] Burst write test (4 beats, INCR)...
+[AXI_BFM] WRITE BURST: addr=0x00000200 burst=1 len=3 id=2
+[AXI_BFM] WRITE BURST complete: id=2 OK
+[TEST] Burst read test (4 beats, INCR) with verification...
+[AXI_BFM] READ BURST: addr=0x00000200 burst=1 len=3 id=3
+[AXI_BFM]   READ: waiting for AR ready...
+[AXI_BFM]   READ: AR accepted, waiting for R data...
+[AXI_BFM]   READ: waiting for R valid (beat 0)...
+[AXI_BFM] MISMATCH beat[0] addr=0x00000200 exp=0xa5000000 got=0x00000000
+[AXI_BFM]   READ: waiting for R valid (beat 1)...
+[AXI_BFM] MISMATCH beat[1] addr=0x00000204 exp=0xa5000001 got=0x00000050
+[AXI_BFM]   READ: waiting for R valid (beat 2)...
+[AXI_BFM] MISMATCH beat[2] addr=0x00000208 exp=0xa5000002 got=0x50505050
+[AXI_BFM]   READ: waiting for R valid (beat 3)...
+[AXI_BFM] MISMATCH beat[3] addr=0x0000020c exp=0xa5000003 got=0x00000000
+[AXI_BFM] READ BURST complete: id=3 mismatches=4
+[TEST] ERROR: Burst read had 4 mismatches!
+[TEST] FIXED burst write/read test...
+[AXI_BFM] WRITE BURST: addr=0x00000300 burst=0 len=3 id=4
+[AXI_BFM] WRITE BURST complete: id=4 OK
+[AXI_BFM] READ BURST: addr=0x00000300 burst=0 len=3 id=5
+[AXI_BFM]   READ: waiting for AR ready...
+[AXI_BFM]   READ: AR accepted, waiting for R data...
+[AXI_BFM]   READ: waiting for R valid (beat 0)...
+[AXI_BFM] MISMATCH beat[0] addr=0x00000300 exp=0xcafe0000 got=0x00000000
+[AXI_BFM]   READ: waiting for R valid (beat 1)...
+[AXI_BFM] MISMATCH beat[1] addr=0x00000300 exp=0xcafe0000 got=0x00000050
+[AXI_BFM]   READ: waiting for R valid (beat 2)...
+[AXI_BFM] MISMATCH beat[2] addr=0x00000300 exp=0xcafe0000 got=0x50505050
+[AXI_BFM]   READ: waiting for R valid (beat 3)...
+[AXI_BFM] MISMATCH beat[3] addr=0x00000300 exp=0xcafe0000 got=0x00000000
+[AXI_BFM] READ BURST complete: id=5 mismatches=4
+[TEST] ERROR: FIXED burst had 4 mismatches!
+------------------------------------------------------------
+ TEST basic_qspi_psram_test: FAILED (9 errors)
+------------------------------------------------------------
+============================================================
+ ALL TESTS PASSED
+============================================================
+$finish called from file "./env/top.sv", line 289.
+$finish at simulation time             10255000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 10255000 ps
+CPU Time:      0.230 seconds;       Data structure size:   0.1Mb
+Sun Jun  7 17:13:03 2026

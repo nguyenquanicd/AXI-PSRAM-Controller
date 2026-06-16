@@ -1,0 +1,49 @@
+<ReportTypes namespace="CommonViolations">
+<Class type="DESIGN">
+
+ <Report severity="warning" tier="DESIGN_READ" type="WRN_27" mvrcType="WRN_27" display="WRN_27" enabled="true" repository="DESIGN" aliasName="" builtIn="0" weight="">
+    <Description>
+      Bit-select should not be out-of-range.
+    </Description>
+    <DynamicHelp args="true">
+      :MESSAGE_CONTENT:
+    </DynamicHelp>
+    <ObjectList>
+      <Object type="FILE_NAME" />
+      <Object type="LINE_NUMBER" />
+      <Object type="MESSAGE_CONTENT" />
+      <Object type="MODULE" />
+    </ObjectList>
+ </Report>
+
+ <Report severity="warning" tier="DESIGN_READ" type="WRN_1021" mvrcType="WRN_1021" display="WRN_1021" enabled="true" repository="DESIGN" aliasName="" builtIn="0" weight="">
+    <Description>
+      Array index is out-of-bounds. Index value is out of permissible range
+    </Description>
+    <DynamicHelp args="true">
+      :MESSAGE_CONTENT:
+    </DynamicHelp>
+    <ObjectList>
+      <Object type="FILE_NAME" />
+      <Object type="LINE_NUMBER" />
+      <Object type="MESSAGE_CONTENT" />
+      <Object type="MODULE" />
+    </ObjectList>
+ </Report>
+
+ <Report severity="warning" tier="DESIGN_READ" type="WRN_1033" mvrcType="WRN_1033" display="WRN_1033" enabled="true" repository="DESIGN" aliasName="" builtIn="0" weight="">
+    <Description>
+      A selected bit is out-of-range in the hierarchical identifier.
+    </Description>
+    <DynamicHelp args="true">
+      :MESSAGE_CONTENT:
+    </DynamicHelp>
+    <ObjectList>
+      <Object type="FILE_NAME" />
+      <Object type="LINE_NUMBER" />
+      <Object type="MESSAGE_CONTENT" />
+      <Object type="MODULE" />
+    </ObjectList>
+ </Report>
+</Class>
+</ReportTypes>

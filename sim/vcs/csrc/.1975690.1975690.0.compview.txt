@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1780512998.645221765, "rt":0.24, "ut":0.03, "st":0.20}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1780512998.156738942}
+{"VCS_COMP_START_TIME": 1780512998.156738942}
+{"VCS_COMP_END_TIME": 1780512998.926142765}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -timescale=1ns/1ps -kdb -debug_access+all +define+WAVES_FSDB +incdir+. +incdir+./env +incdir+./tests -l comp.log -f filelist.f -top test_top"}
+{"kdb": {"elabcom_name":"<Kdbresolver>", "log_dir":"simv.daidir/kdbresolverLog"}}

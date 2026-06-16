@@ -1,0 +1,11 @@
+DEFAULT.m_vlsi_qspi_top#/home/ltthinh/PSRAM_CTRL/m_vlsi_qspi_top.sv
+DEFAULT.m_vlsi_qspi_csr#/home/ltthinh/PSRAM_CTRL/rtl/CSR/RTL/m_vlsi_qspi_csr.sv
+DEFAULT.m_vlsi_axi4_sram#/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi4_sram.sv
+DEFAULT.m_vlsi_axfsm#/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axfsm.sv
+DEFAULT.m_vlsi_axi_bus_logic#/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_bus_logic.sv
+DEFAULT.m_vlsi_async_fifo#/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_async_fifo.sv
+DEFAULT.m_vlsi_arbiter#/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_arbiter.sv
+DEFAULT.m_vlsi_axi_sclk_logic#/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_sclk_logic.sv
+DEFAULT.m_vlsi_qspi_fsm#/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv
+(null).m_vlsi_synch#/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_synch.sv
+(null).m_vlsi_multi_synch#/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_multi_synch.sv

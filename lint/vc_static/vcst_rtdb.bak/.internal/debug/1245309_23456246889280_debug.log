@@ -1,0 +1,113 @@
+(2026-05-31 14:35:57),0.00137611,0,start,1196.71,7,RegisterApps : 
+(2026-05-31 14:35:58),0.0200659,0,start,1618.79,429,LicenseMgr Init : 
+(2026-05-31 14:35:59),0.0293638,0,end,1625.07,430,LicenseMgr Init : 
+(2026-05-31 14:35:59),0.0294138,0,end,1625.07,431,RegisterApps : 
+(2026-05-31 14:36:00),0.0496717,0,start,1694.77,488,SQL_DB_Save_Main
+(2026-05-31 14:36:00),0.050598,0,end,1694.77,488,SQL_DB_Save_Main
+(2026-05-31 14:36:00),0.0524798,0,start,1694.77,488,connectToRefDB : /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/svi/report.db
+(2026-05-31 14:36:00),0.0524812,0,start,1694.77,488,SQL_DB_Save_Main
+(2026-05-31 14:36:00),0.0535522,0,end,1694.77,488,SQL_DB_Save_Main
+(2026-05-31 14:36:01),0.0629321,0,end,1698.39,493,connectToRefDB : /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/svi/report.db
+(2026-05-31 14:36:04),0.115138,0,start,1995.78,507,Analyze 
+(2026-05-31 14:36:04),0.119553,0,end,1995.78,507,Analyze 
+(2026-05-31 14:36:04),0.119553,0,start,1995.78,507,Load VCS Message: 
+(2026-05-31 14:36:04),0.119557,0,end,1995.78,507,Load VCS Message: 
+(2026-05-31 14:36:05),0.137234,0,start,1995.78,515,SgRunner Process 
+(2026-05-31 14:36:05),0.137247,0,start,1995.78,515,Elaborate : 
+(2026-05-31 14:36:08),0.182835,0,end,1995.78,515,Elaborate : 
+(2026-05-31 14:36:08),0.182837,0,start,1995.78,515,Load VCS Message: 
+(2026-05-31 14:36:08),0.18284,0,end,1995.78,515,Load VCS Message: 
+(2026-05-31 14:36:08),0.182841,0,start,1995.78,515,LoadCircuitModel : 
+(2026-05-31 14:36:08),0.182937,0,start,1995.78,516,VsiLib_Restore : 
+(2026-05-31 14:36:08),0.182938,0,end,1995.78,516,VsiLib_Restore : 
+(2026-05-31 14:36:08),0.182939,0,end,1995.78,516,LoadCircuitModel : 
+(2026-05-31 14:36:08),0.182941,0,start,1995.78,516,BuildNetlist : 
+(2026-05-31 14:36:08),0.182943,0,start,1995.78,516,NLDM Build : 
+(2026-05-31 14:36:08),0.183242,0,start,1995.78,537,XMR_Resolution : Total:0 : 
+(2026-05-31 14:36:08),0.183243,0,end,1995.78,537,XMR_Resolution : Success:0 : 
+(2026-05-31 14:36:08),0.183252,0,end,1995.78,537,NLDM Build : 
+(2026-05-31 14:36:08),0.183254,1,start,1995.78,537,Cell properties : 
+(2026-05-31 14:36:08),0.183256,1,end,1995.78,537,Cell properties : 
+(2026-05-31 14:36:08),0.183257,0,end,1995.78,537,BuildNetlist : 
+(2026-05-31 14:36:08),0.183264,0,start,1995.78,537,populate SSF data: 
+(2026-05-31 14:36:08),0.183265,0,end,1995.78,537,populate SSF data: 
+(2026-05-31 14:36:08),0.183266,0,start,1995.78,537,DumpGateCountStats : 
+(2026-05-31 14:36:08),0.183276,0,end,1995.78,537,DumpGateCountStats : 
+(2026-05-31 14:36:08),0.183276,0,start,1995.78,537,DataModelStats : 
+(2026-05-31 14:36:08),0.183282,0,end,1995.78,537,DataModelStats : 
+(2026-05-31 14:36:08),0.183283,0,start,1995.78,537,Collect DB cells : 
+(2026-05-31 14:36:08),0.183283,0,end,1995.78,537,Collect DB cells : 
+(2026-05-31 14:36:08),0.183284,0,start,1995.78,537,RunReductionEngine : 
+(2026-05-31 14:36:08),0.183302,1,start,1995.78,546,BlockEnginePropagation : 
+(2026-05-31 14:36:08),0.183343,1,end,1995.78,546,BlockEnginePropagation : 
+(2026-05-31 14:36:08),0.183348,0,end,1995.78,547,RunReductionEngine : 
+(2026-05-31 14:36:08),0.183349,1,start,1995.78,547,ModuleDesignPropagation : 
+(2026-05-31 14:36:08),0.18335,1,end,1995.78,547,ModuleDesignPropagation : 
+(2026-05-31 14:36:08),0.183373,0,start,1998.09,548,Mdm2Nschema : 
+(2026-05-31 14:36:09),0.18978,0,start,2007.18,554,Infer Setup : 
+(2026-05-31 14:36:09),0.189781,1,start,2007.18,554,_nameToNet Map clear : 
+(2026-05-31 14:36:09),0.189782,1,end,2007.18,554,_nameToNet Map clear : 
+(2026-05-31 14:36:09),0.189783,1,start,2007.18,554,ConstantPropagation : 
+(2026-05-31 14:36:09),0.189784,1,start,2007.18,554,UserConstantPropagation : 
+(2026-05-31 14:36:09),0.189785,1,end,2007.18,554,UserConstantPropagation : Number of SCA: 0 
+(2026-05-31 14:36:09),0.189785,1,start,2007.18,554,DynamicUserCasePropagation : 
+(2026-05-31 14:36:09),0.189786,1,end,2007.18,554,DynamicUserCasePropagation : 
+(2026-05-31 14:36:09),0.189786,1,start,2007.18,554,DesignConstantPropagation : 
+(2026-05-31 14:36:09),0.189835,1,end,2007.18,554,DesignConstantPropagation : 
+(2026-05-31 14:36:09),0.189836,1,start,2007.18,554,HybridSeqPropagation : 
+(2026-05-31 14:36:09),0.18984,1,end,2007.18,554,HybridSeqPropagation : 
+(2026-05-31 14:36:09),0.189841,1,start,2007.18,554,ReverseConstPropagationOnBiDir: 
+(2026-05-31 14:36:09),0.189842,1,end,2007.18,554,ReverseConstPropagationOnBiDir: 
+(2026-05-31 14:36:09),0.189843,1,end,2007.18,554,ConstantPropagation : 
+(2026-05-31 14:36:09),0.189844,0,start,2007.18,554,populateInfoToView : 
+(2026-05-31 14:36:09),0.189847,0,end,2007.18,554,populateInfoToView : 
+(2026-05-31 14:36:09),0.189848,1,start,2007.18,554,QuasiStaticPropagation : 
+(2026-05-31 14:36:09),0.189849,1,start,2007.18,554,UserNetBitQuasi : 
+(2026-05-31 14:36:09),0.189849,1,end,2007.18,554,UserNetBitQuasi : UserNetBit Quasi count: 0 
+(2026-05-31 14:36:09),0.18985,1,start,2007.18,554,UserPinBitQuasi : 
+(2026-05-31 14:36:09),0.189851,1,end,2007.18,554,UserPinBitQuasi : UserPinBit Quasi count: 0 
+(2026-05-31 14:36:09),0.189851,1,start,2007.18,554,UserOpPinBitQuasi : 
+(2026-05-31 14:36:09),0.189852,1,end,2007.18,554,UserOpPinBitQuasi : UserOpPinBit Quasi count: 0 
+(2026-05-31 14:36:09),0.189853,1,start,2007.18,554,QueueQuasiNetBits : 
+(2026-05-31 14:36:09),0.189855,1,end,2007.18,554,QueueQuasiNetBits : 
+(2026-05-31 14:36:09),0.189856,1,end,2007.18,554,QuasiStaticPropagation : 
+(2026-05-31 14:36:09),0.189906,0,end,2007.18,554,Infer Setup : 
+(2026-05-31 14:36:09),0.189926,0,start,2007.18,554,Infer Setup : 
+(2026-05-31 14:36:09),0.1906,0,end,2007.18,554,Infer Setup : 
+(2026-05-31 14:36:09),0.190609,0,start,2007.18,554,evaluateGenClocksForBlockedPaths: 
+(2026-05-31 14:36:09),0.19061,0,end,2007.18,554,evaluateGenClocksForBlockedPaths: 
+(2026-05-31 14:36:09),0.191557,0,start,2071.05,554,Nschema Composite_SignalNames : 
+(2026-05-31 14:36:09),0.19157,0,end,2071.05,554,Nschema Composite_SignalNames : 
+(2026-05-31 14:36:12),0.243996,0,end,2071.05,557,SgRunner Process 
+(2026-05-31 14:36:12),0.243999,0,start,2071.05,557,PopulateSgMessage
+(2026-05-31 14:36:12),0.244001,0,end,2071.05,557,PopulateSgMessage
+(2026-05-31 14:36:12),0.244002,0,start,2071.05,557,populateSgBuiltInDatabase 
+(2026-05-31 14:36:12),0.244353,0,end,2071.05,559,populateSgBuiltInDatabase 
+(2026-05-31 14:36:12),0.253434,0,start,2071.05,557,SQL Mem : CurrMem: 30 mb, PeakMem: 32 mb 
+(2026-05-31 14:36:12),0.253434,0,end,2071.05,557,SQL Mem : CurrMem: 30 mb, PeakMem: 32 mb 
+(2026-05-31 14:36:14),0.274563,0,start,2071.05,575,PragmaWaiverGen: 
+(2026-05-31 14:36:14),0.274634,0,start,2071.05,576,PragmaWaiverUsingViol : 
+(2026-05-31 14:36:14),0.274642,0,end,2071.05,576,PragmaWaiverUsingViol : 
+(2026-05-31 14:36:14),0.274656,0,end,2071.05,576,PragmaWaiverGen: 
+(2026-05-31 14:36:14),0.274656,0,start,2071.05,576,PragmaWaiverApply: 
+(2026-05-31 14:36:14),0.275623,0,start,2071.05,576,generatePragmaWaiverCommands: 
+(2026-05-31 14:36:14),0.275625,0,end,2071.05,576,generatePragmaWaiverCommands: 
+(2026-05-31 14:36:14),0.275625,0,end,2071.05,576,PragmaWaiverApply: 
+(2026-05-31 14:36:14),0.275629,0,start,2071.05,575,SQL Index (add_index) :CurrMem: 30 mb, PeakMem: 32 mb 
+(2026-05-31 14:36:14),0.275632,0,end,2071.05,575,SQL Index (add_index) :CurrMem: 30 mb, PeakMem: 32 mb 
+(2026-05-31 14:36:14),0.277001,0,start,2071.05,574,PragmaWaiverGen: 
+(2026-05-31 14:36:14),0.277002,0,start,2071.05,574,PragmaWaiverUsingViol : 
+(2026-05-31 14:36:14),0.277003,0,end,2071.05,574,PragmaWaiverUsingViol : 
+(2026-05-31 14:36:14),0.277004,0,end,2071.05,574,PragmaWaiverGen: 
+(2026-05-31 14:36:14),0.277005,0,start,2071.05,574,PragmaWaiverApply: 
+(2026-05-31 14:36:14),0.277006,0,end,2071.05,574,PragmaWaiverApply: 
+(2026-05-31 14:36:14),0.27701,0,start,2071.05,574,SQL Index (add_index) :CurrMem: 30 mb, PeakMem: 32 mb 
+(2026-05-31 14:36:14),0.277014,0,end,2071.05,574,SQL Index (add_index) :CurrMem: 30 mb, PeakMem: 32 mb 
+(2026-05-31 14:36:14),0.277708,0,start,2071.05,576,PragmaWaiverGen: 
+(2026-05-31 14:36:14),0.277709,0,start,2071.05,576,PragmaWaiverUsingViol : 
+(2026-05-31 14:36:14),0.277711,0,end,2071.05,576,PragmaWaiverUsingViol : 
+(2026-05-31 14:36:14),0.277713,0,end,2071.05,576,PragmaWaiverGen: 
+(2026-05-31 14:36:14),0.277714,0,start,2071.05,576,PragmaWaiverApply: 
+(2026-05-31 14:36:14),0.277714,0,end,2071.05,576,PragmaWaiverApply: 
+(2026-05-31 14:36:14),0.279231,0,start,2071.05,574,SQL_DB_Save_Main
+(2026-05-31 14:36:14),0.280358,0,end,2071.05,574,SQL_DB_Save_Main

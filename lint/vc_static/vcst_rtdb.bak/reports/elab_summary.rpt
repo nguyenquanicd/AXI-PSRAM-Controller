@@ -1,0 +1,168 @@
+###############################################################
+ # This report contains names of design units along with parameter
+ # values and self instances.
+ # Some parameters may have more than one possible values for that
+ # design unit, values will be unique for instances. It is indicated as
+ # "Multiple Values".
+ # In some cases instance count shown may be less than actual instance
+ # count in the design due to optimizations. It is indicated as
+ # "Optimized".
+###############################################################
+
+
+Design Unit Name: 'm_vlsi_qspi_top', (/home/ltthinh/PSRAM_CTRL/m_vlsi_qspi_top.sv:18)
+    Parameters (Total 5)
+        PARA_AXI_DATA_WD = 32  (default: 32)
+        PARA_AXI_ADDR_WD = 32  (default: 32)
+        PARA_AXI_ID_WD = 4  (default: 4)
+        PARA_AXI_LEN_WD = 8  (default: 8)
+        PARA_AXI_FIFO_DEPTH = 8  (default: 8)
+    Instances (Total: 0)
+=============================================
+
+
+Design Unit Name: 'm_vlsi_qspi_csr', (/home/ltthinh/PSRAM_CTRL/rtl/CSR/RTL/m_vlsi_qspi_csr.sv:10)
+    Parameters (Total 8)
+        PARA_CTRL_OFFSET = 16'h0  (default: 16'h0)
+        PARA_WD_OFFSET = 16'h4  (default: 16'h4)
+        PARA_READ_OFFSET = 16'h8  (default: 16'h8)
+        PARA_WRITE_OFFSET = 16'hC  (default: 16'hC)
+        PARA_WR_DUMMY_OFFSET = 16'h10  (default: 16'h10)
+        PARA_RD_DUMMY_OFFSET = 16'h14  (default: 16'h14)
+        PARA_MODE_STATUS_OFFSET = 16'h18  (default: 16'h18)
+        PARA_INDEPENDENT_OFFSET = 16'h1C  (default: 16'h1C)
+    Instances (Total 1)
+        m_vlsi_qspi_top/u_csr
+=============================================
+
+
+Design Unit Name: 'm_vlsi_axi4_sram', (/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi4_sram.sv:13)
+    Parameters (Total 5)
+        PARA_DATA_WD = 32  (default: 32)
+        PARA_ADDR_WD = 32  (default: 32)
+        PARA_ID_WD = 4  (default: 4)
+        PARA_LEN_WD = 8  (default: 8)
+        PARA_FIFO_DEPTH = 8  (default: 8)
+    Instances (Total 1)
+        m_vlsi_qspi_top/u_axi_ctrl
+=============================================
+
+
+Design Unit Name: 'm_vlsi_axfsm', (/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axfsm.sv:11)
+    Parameters (Total 7)
+        PARA_ADDR_WD = 32  (default: 32)
+        PARA_ID_WD = 4  (default: 4)
+        PARA_DATA_WD = 32  (default: 32)
+        PARA_LEN_WD = 8  (default: 8)
+        S_IDLE = 1'b0  (default: 1'b0)
+        S_ADDR = 1'b1  (default: 1'b1)
+        PARA_BEAT_BYTES = 4  (default: 4)
+    Instances (Total 2)
+        m_vlsi_qspi_top/u_axi_ctrl/u_axfsm_wr
+        m_vlsi_qspi_top/u_axi_ctrl/u_axfsm_rd
+=============================================
+
+
+Design Unit Name: 'm_vlsi_axi_bus_logic', (/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_bus_logic.sv:12)
+    Parameters (Total 3)
+        PARA_DATA_WD = 32  (default: 32)
+        PARA_ADDR_WD = 32  (default: 32)
+        PARA_ID_WD = 4  (default: 4)
+    Instances (Total 1)
+        m_vlsi_qspi_top/u_axi_ctrl/u_axi_bus_logic
+=============================================
+
+
+Design Unit Name: 'm_vlsi_async_fifo', (/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_async_fifo.sv:10)
+    Parameters (Total 3)
+        PARA_DATA_WD = 37  (default: 32)
+        PARA_DEPTH = 8  (default: 1024)
+        PARA_CNT_WD = 3
+    Instances (Total 2)
+        m_vlsi_qspi_top/u_axi_ctrl/u_awfifo
+        m_vlsi_qspi_top/u_axi_ctrl/u_arfifo
+=============================================
+
+
+Design Unit Name: 'm_vlsi_async_fifo', (/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_async_fifo.sv:10)
+    Parameters (Total 3)
+        PARA_DATA_WD = 33  (default: 32)
+        PARA_DEPTH = 8  (default: 1024)
+        PARA_CNT_WD = 3
+    Instances (Total 1)
+        m_vlsi_qspi_top/u_axi_ctrl/u_wfifo
+=============================================
+
+
+Design Unit Name: 'm_vlsi_async_fifo', (/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_async_fifo.sv:10)
+    Parameters (Total 3)
+        PARA_DATA_WD = 39  (default: 32)
+        PARA_DEPTH = 8  (default: 1024)
+        PARA_CNT_WD = 3
+    Instances (Total 1)
+        m_vlsi_qspi_top/u_axi_ctrl/u_rfifo
+=============================================
+
+
+Design Unit Name: 'm_vlsi_async_fifo', (/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_async_fifo.sv:10)
+    Parameters (Total 3)
+        PARA_DATA_WD = 6  (default: 32)
+        PARA_DEPTH = 8  (default: 1024)
+        PARA_CNT_WD = 3
+    Instances (Total 1)
+        m_vlsi_qspi_top/u_axi_ctrl/u_bfifo
+=============================================
+
+
+Design Unit Name: 'm_vlsi_arbiter', (/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_arbiter.sv:10)
+    Parameters (Total 0)
+    Instances (Total 1)(Optimized)
+        m_vlsi_qspi_top/u_axi_ctrl/u_arbiter
+=============================================
+
+
+Design Unit Name: 'm_vlsi_axi_sclk_logic', (/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_sclk_logic.sv:13)
+    Parameters (Total 3)
+        PARA_DATA_WD = 32  (default: 32)
+        PARA_ADDR_WD = 32  (default: 32)
+        PARA_ID_WD = 4  (default: 4)
+    Instances (Total 1)
+        m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic
+=============================================
+
+
+Design Unit Name: 'm_vlsi_qspi_fsm', (/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv:10)
+    Parameters (Total 3)
+        PARA_ADDR_WD = 32  (default: 24)
+        PARA_DATA_WD = 32  (default: 32)
+        PARA_CNT_WD = 6  (default: 6)
+    Instances (Total 1)
+        m_vlsi_qspi_top/u_qspi_fsm
+=============================================
+
+
+Design Unit Name: 'm_vlsi_synch', (/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_synch.sv:10)
+    Parameters (Total 1)
+        PARA_LEVELS = 2  (default: 2)
+    Instances (Total 84)
+        m_vlsi_qspi_top/u_csr/u_read_ack_reg2bus
+        m_vlsi_qspi_top/u_csr/u_write_ack_reg2bus
+        m_vlsi_qspi_top/u_csr/u_rd_ack_reg2bus
+        m_vlsi_qspi_top/u_csr/u_wr_ack_reg2bus
+        m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/u_rval_sync/sync_multi[0]/u_wval_sync
+=============================================
+
+
+Design Unit Name: 'm_vlsi_multi_synch', (/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_multi_synch.sv:2)
+    Parameters (Total 2)
+        PARA_WD = 8  (default: 1)
+        PARA_LEVELS = 2  (default: 2)
+    Instances (Total 10)
+        m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/u_rval_sync
+        m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/u_wval_sync
+        m_vlsi_qspi_top/u_axi_ctrl/u_wfifo/u_rval_sync
+        m_vlsi_qspi_top/u_axi_ctrl/u_wfifo/u_wval_sync
+        m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_rval_sync
+=============================================
+
+

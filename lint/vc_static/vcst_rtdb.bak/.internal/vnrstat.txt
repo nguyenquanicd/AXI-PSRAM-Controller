@@ -1,0 +1,173 @@
+M is representing peak till the message
+Malloc-M represents malloc memory at the message
+Available-M represents available memory in the system
+STATS:: before RegisterApps : M=1196.71mb, Malloc-M=7mb, Available-M=27284mb, T=0s CPU=0s W=(2026-05-31 14:35:57)
+STATS:: |   before LicenseMgr Init : M=1618.79mb, Malloc-M=429mb, Available-M=26857mb, T=0s CPU=0s W=(2026-05-31 14:35:58)
+STATS:: |   after  LicenseMgr Init : M=1625.07mb, Malloc-M=430mb, Available-M=26846mb, T=1s CPU=0.54s W=(2026-05-31 14:35:59)
+STATS:: after  RegisterApps : M=1625.07mb, Malloc-M=431mb, Available-M=26846mb, T=2s CPU=1.54s W=(2026-05-31 14:35:59)
+STATS:: before SQL_DB_Save_MainM=1694.77mb, Malloc-M=488mb, Available-M=26770mb, T=0s CPU=0s W=(2026-05-31 14:36:00)
+STATS:: after  SQL_DB_Save_MainM=1694.77mb, Malloc-M=488mb, Available-M=26771mb, T=0s CPU=0.02s W=(2026-05-31 14:36:00)
+STATS:: before connectToRefDB : /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/svi/report.dbM=1694.77mb, Malloc-M=488mb, Available-M=26759mb, T=0s CPU=0s W=(2026-05-31 14:36:00)
+STATS:: |   before SQL_DB_Save_MainM=1694.77mb, Malloc-M=488mb, Available-M=26759mb, T=0s CPU=0s W=(2026-05-31 14:36:00)
+STATS:: |   after  SQL_DB_Save_MainM=1694.77mb, Malloc-M=488mb, Available-M=26769mb, T=0s CPU=0s W=(2026-05-31 14:36:00)
+STATS:: after  connectToRefDB : /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/svi/report.dbM=1698.39mb, Malloc-M=493mb, Available-M=26762mb, T=1s CPU=0.55s W=(2026-05-31 14:36:01)
+STATS:: before Analyze M=1995.78mb, Malloc-M=507mb, Available-M=26580mb, T=0s CPU=0s W=(2026-05-31 14:36:04)
+STATS:: after  Analyze M=1995.78mb, Malloc-M=507mb, Available-M=26571mb, T=0s CPU=0.16s W=(2026-05-31 14:36:04)
+STATS:: before Load VCS Message: M=1995.78mb, Malloc-M=507mb, Available-M=26571mb, T=0s CPU=0s W=(2026-05-31 14:36:04)
+STATS:: after  Load VCS Message: M=1995.78mb, Malloc-M=507mb, Available-M=26571mb, T=0s CPU=0s W=(2026-05-31 14:36:04)
+STATS:: before VSI_Load_DB+ M=1995.78mb, Malloc-M=530mb, Available-M=26577mb, T=0s CPU=0s W=(2026-05-31 14:36:04)
+STATS:: after  VSI_Load_DB+ M=1995.78mb, Malloc-M=530mb, Available-M=26577mb, T=0s CPU=0s W=(2026-05-31 14:36:04)
+STATS:: before SgRunner Process M=1995.78mb, Malloc-M=515mb, Available-M=26575mb, T=0s CPU=0s W=(2026-05-31 14:36:05)
+STATS:: |   before Elaborate : M=1995.78mb, Malloc-M=515mb, Available-M=26575mb, T=0s CPU=0s W=(2026-05-31 14:36:05)
+STATS:: |   after  Elaborate : M=1995.78mb, Malloc-M=515mb, Available-M=26309mb, T=3s CPU=1.97s W=(2026-05-31 14:36:08)
+STATS:: |   before Load VCS Message: M=1995.78mb, Malloc-M=515mb, Available-M=26309mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   after  Load VCS Message: M=1995.78mb, Malloc-M=515mb, Available-M=26309mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   before LoadCircuitModel : M=1995.78mb, Malloc-M=515mb, Available-M=26309mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   |   before VsiLib_Restore : M=1995.78mb, Malloc-M=516mb, Available-M=26308mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   |   after  VsiLib_Restore : M=1995.78mb, Malloc-M=516mb, Available-M=26308mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   after  LoadCircuitModel : M=1995.78mb, Malloc-M=516mb, Available-M=26308mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   before BuildNetlist : M=1995.78mb, Malloc-M=516mb, Available-M=26308mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   |   before NLDM Build : M=1995.78mb, Malloc-M=516mb, Available-M=26308mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   |   |   before XMR_Resolution : Total:0 : M=1995.78mb, Malloc-M=537mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   |   |   after  XMR_Resolution : Success:0 : M=1995.78mb, Malloc-M=537mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   |   after  NLDM Build : M=1995.78mb, Malloc-M=537mb, Available-M=26310mb, T=0s CPU=0.02s W=(2026-05-31 14:36:08)
+STATS:: |   |   before Cell properties : M=1995.78mb, Malloc-M=537mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   |   after  Cell properties : M=1995.78mb, Malloc-M=537mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   after  BuildNetlist : M=1995.78mb, Malloc-M=537mb, Available-M=26310mb, T=0s CPU=0.02s W=(2026-05-31 14:36:08)
+STATS:: |   before populate SSF data: M=1995.78mb, Malloc-M=537mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   after  populate SSF data: M=1995.78mb, Malloc-M=537mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   before DumpGateCountStats : M=1995.78mb, Malloc-M=537mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   after  DumpGateCountStats : M=1995.78mb, Malloc-M=537mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   before DataModelStats : M=1995.78mb, Malloc-M=537mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   after  DataModelStats : M=1995.78mb, Malloc-M=537mb, Available-M=26310mb, T=0s CPU=0.01s W=(2026-05-31 14:36:08)
+STATS:: |   before Collect DB cells : M=1995.78mb, Malloc-M=537mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   after  Collect DB cells : M=1995.78mb, Malloc-M=537mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   before RunReductionEngine : M=1995.78mb, Malloc-M=537mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   |   before BlockEnginePropagation : M=1995.78mb, Malloc-M=546mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   |   after  BlockEnginePropagation : M=1995.78mb, Malloc-M=546mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   after  RunReductionEngine : M=1995.78mb, Malloc-M=547mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   before ModuleDesignPropagation : M=1995.78mb, Malloc-M=547mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   after  ModuleDesignPropagation : M=1995.78mb, Malloc-M=547mb, Available-M=26310mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   before Mdm2Nschema : M=1998.09mb, Malloc-M=548mb, Available-M=26305mb, T=0s CPU=0s W=(2026-05-31 14:36:08)
+STATS:: |   after  Mdm2Nschema : M=1998.09mb, Malloc-M=553mb, Available-M=26305mb, T=0s CPU=0.03s W=(2026-05-31 14:36:08)
+STATS:: |   before Infer Setup : M=2007.18mb, Malloc-M=554mb, Available-M=26275mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   before _nameToNet Map clear : M=2007.18mb, Malloc-M=554mb, Available-M=26275mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   after  _nameToNet Map clear : M=2007.18mb, Malloc-M=554mb, Available-M=26275mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   before ConstantPropagation : M=2007.18mb, Malloc-M=554mb, Available-M=26275mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   before UserConstantPropagation : M=2007.18mb, Malloc-M=554mb, Available-M=26275mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   after  UserConstantPropagation : Number of SCA: 0 M=2007.18mb, Malloc-M=554mb, Available-M=26275mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   before DynamicUserCasePropagation : M=2007.18mb, Malloc-M=554mb, Available-M=26275mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   after  DynamicUserCasePropagation : M=2007.18mb, Malloc-M=554mb, Available-M=26275mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   before DesignConstantPropagation : M=2007.18mb, Malloc-M=554mb, Available-M=26275mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   after  DesignConstantPropagation : M=2007.18mb, Malloc-M=554mb, Available-M=26275mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   before HybridSeqPropagation : M=2007.18mb, Malloc-M=554mb, Available-M=26275mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   after  HybridSeqPropagation : M=2007.18mb, Malloc-M=554mb, Available-M=26275mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   before ReverseConstPropagationOnBiDir: M=2007.18mb, Malloc-M=554mb, Available-M=26278mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   after  ReverseConstPropagationOnBiDir: M=2007.18mb, Malloc-M=554mb, Available-M=26282mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   after  ConstantPropagation : M=2007.18mb, Malloc-M=554mb, Available-M=26283mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   before populateInfoToView : M=2007.18mb, Malloc-M=554mb, Available-M=26285mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   after  populateInfoToView : M=2007.18mb, Malloc-M=554mb, Available-M=26288mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   before QuasiStaticPropagation : M=2007.18mb, Malloc-M=554mb, Available-M=26289mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   before UserNetBitQuasi : M=2007.18mb, Malloc-M=554mb, Available-M=26289mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   after  UserNetBitQuasi : UserNetBit Quasi count: 0 M=2007.18mb, Malloc-M=554mb, Available-M=26289mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   before UserPinBitQuasi : M=2007.18mb, Malloc-M=554mb, Available-M=26289mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   after  UserPinBitQuasi : UserPinBit Quasi count: 0 M=2007.18mb, Malloc-M=554mb, Available-M=26289mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   before UserOpPinBitQuasi : M=2007.18mb, Malloc-M=554mb, Available-M=26289mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   after  UserOpPinBitQuasi : UserOpPinBit Quasi count: 0 M=2007.18mb, Malloc-M=554mb, Available-M=26289mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   before QueueQuasiNetBits : M=2007.18mb, Malloc-M=554mb, Available-M=26289mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   |   after  QueueQuasiNetBits : M=2007.18mb, Malloc-M=554mb, Available-M=26289mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   |   after  QuasiStaticPropagation : M=2007.18mb, Malloc-M=554mb, Available-M=26289mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   after  Infer Setup : M=2007.18mb, Malloc-M=554mb, Available-M=26289mb, T=0s CPU=0.01s W=(2026-05-31 14:36:09)
+STATS:: PERF: Clock Auto Inference : :  StartM=2007.18mb, EndM=2007.18mb, T=0s
+STATS:: |   before Infer Setup : M=2007.18mb, Malloc-M=554mb, Available-M=26289mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   after  Infer Setup : M=2007.18mb, Malloc-M=554mb, Available-M=26285mb, T=0s CPU=0.04s W=(2026-05-31 14:36:09)
+STATS:: PERF: Reset Auto Inference : :  StartM=2007.18mb, EndM=2007.18mb, T=0s
+STATS:: |   before evaluateGenClocksForBlockedPaths: M=2007.18mb, Malloc-M=554mb, Available-M=26285mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   after  evaluateGenClocksForBlockedPaths: M=2007.18mb, Malloc-M=554mb, Available-M=26285mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: BuildClockTree :  StartM=2007.18mb, EndM=2007.18mb, T=0s
+STATS:: BuildResetTree :  StartM=2007.18mb, EndM=2007.18mb, T=0s
+STATS:: indexNldm :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: |   before Nschema Composite_SignalNames : M=2071.05mb, Malloc-M=554mb, Available-M=26274mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   after  Nschema Composite_SignalNames : M=2071.05mb, Malloc-M=554mb, Available-M=26274mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: STARC05-2.4.1.5 :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: MultiDrivers :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: |   before Word Scc Fanout : M=2071.05mb, Malloc-M=555mb, Available-M=26268mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   after  Word Scc Fanout : M=2071.05mb, Malloc-M=555mb, Available-M=26268mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   before Word Scc Fanin : M=2071.05mb, Malloc-M=555mb, Available-M=26268mb, T=0s CPU=0s W=(2026-05-31 14:36:09)
+STATS:: |   after  Word Scc Fanin : M=2071.05mb, Malloc-M=555mb, Available-M=26268mb, T=0s CPU=0.01s W=(2026-05-31 14:36:09)
+STATS:: WordLoopDetection :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: BufClock :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: InferLatch :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: UndrivenInTerm-ML :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: checkPinConnectedToSupply :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: W391 :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: W392 :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: NoFeedThrus-ML :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: STARC05-3.3.1.4b :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: sim_race07 :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: W401 :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: W402b :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: STARC05-1.3.1.3 :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: STARC05-1.4.3.4 :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: SG_ErcChecks :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: SG_TristateChecks :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: STARC05-1.4.3.2 :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: STARC05-2.5.1.2 :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: UndrivenOutPort-ML :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: UndrivenNet-ML :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: SOC_SgNetListUndrivenUnloadInstPin :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: SameControlNDataNet-ML :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: CombLoop :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: LINT_POST_SYNTH_CHECKS :  StartM=2007.18mb, EndM=2071.05mb, T=1s
+STATS:: after  SgRunner Process M=2071.05mb, Malloc-M=557mb, Available-M=26558mb, T=7s CPU=8.13s W=(2026-05-31 14:36:12)
+STATS:: BUILTIN_CHECKS AND LINT_PRE_SYNTH_CHECKS :  StartM=1995.78mb, EndM=2071.05mb, T=7s
+STATS:: before PopulateSgMessageM=2071.05mb, Malloc-M=557mb, Available-M=26558mb, T=0s CPU=0s W=(2026-05-31 14:36:12)
+STATS:: after  PopulateSgMessageM=2071.05mb, Malloc-M=557mb, Available-M=26558mb, T=0s CPU=0s W=(2026-05-31 14:36:12)
+STATS:: before populateSgBuiltInDatabase M=2071.05mb, Malloc-M=557mb, Available-M=26558mb, T=0s CPU=0s W=(2026-05-31 14:36:12)
+STATS:: after  populateSgBuiltInDatabase M=2071.05mb, Malloc-M=559mb, Available-M=26559mb, T=0s CPU=0.02s W=(2026-05-31 14:36:12)
+STATS:: loadBuiltinViolationsInDB :  StartM=2071.05mb, EndM=2071.05mb, T=0s
+STATS:: LINT_PRE_SYNTH_CHECKS Start
+STATS:: |  SG.PERL.Init : Malloc-M=78mb, T=1s
+STATS:: |  SG.COPYRULES : Malloc-M=18mb, T=0s
+STATS:: |  SG.ELAB : Malloc-M=66mb, T=0s
+STATS:: |  W123 : Malloc-M=0mb, T=0s
+STATS:: |  W287a : Malloc-M=0mb, T=0s
+STATS:: |  SG.VIRLOAD : Malloc-M=1mb, T=0s
+STATS:: |  W164a : Malloc-M=0mb, T=0s
+STATS:: |  ImproperRangeIndex-ML : Malloc-M=0mb, T=0s
+STATS:: |  SetBeforeRead-ML : Malloc-M=0mb, T=0s
+STATS:: |  ReportRuleNotRun : Malloc-M=0mb, T=0s
+STATS:: |  W116 : Malloc-M=0mb, T=0s
+STATS:: |  W215 : Malloc-M=0mb, T=0s
+STATS:: |  STARC05-2.1.1.2 : Malloc-M=0mb, T=0s
+STATS:: |  STARC05-2.10.2.3 : Malloc-M=0mb, T=0s
+STATS:: |  SG.MESSAGETAG : Malloc-M=0mb, T=0s
+STATS:: LINT_PRE_SYNTH_CHECKS End
+STATS:: before SQL Mem : CurrMem: 30 mb, PeakMem: 32 mb M=2071.05mb, Malloc-M=557mb, Available-M=26559mb, T=0s CPU=0s W=(2026-05-31 14:36:12)
+STATS:: after  SQL Mem : CurrMem: 30 mb, PeakMem: 32 mb M=2071.05mb, Malloc-M=557mb, Available-M=26559mb, T=0s CPU=0s W=(2026-05-31 14:36:12)
+STATS:: before PragmaWaiverGen: M=2071.05mb, Malloc-M=575mb, Available-M=26392mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: |   before PragmaWaiverUsingViol : M=2071.05mb, Malloc-M=576mb, Available-M=26392mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: |   after  PragmaWaiverUsingViol : M=2071.05mb, Malloc-M=576mb, Available-M=26392mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: after  PragmaWaiverGen: M=2071.05mb, Malloc-M=576mb, Available-M=26392mb, T=0s CPU=0.01s W=(2026-05-31 14:36:14)
+STATS:: before PragmaWaiverApply: M=2071.05mb, Malloc-M=576mb, Available-M=26392mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: |   before generatePragmaWaiverCommands: M=2071.05mb, Malloc-M=576mb, Available-M=26390mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: |   after  generatePragmaWaiverCommands: M=2071.05mb, Malloc-M=576mb, Available-M=26390mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: after  PragmaWaiverApply: M=2071.05mb, Malloc-M=576mb, Available-M=26390mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: before SQL Index (add_index) :CurrMem: 30 mb, PeakMem: 32 mb M=2071.05mb, Malloc-M=575mb, Available-M=26390mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: after  SQL Index (add_index) :CurrMem: 30 mb, PeakMem: 32 mb M=2071.05mb, Malloc-M=575mb, Available-M=26390mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: before PragmaWaiverGen: M=2071.05mb, Malloc-M=574mb, Available-M=26385mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: |   before PragmaWaiverUsingViol : M=2071.05mb, Malloc-M=574mb, Available-M=26385mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: |   after  PragmaWaiverUsingViol : M=2071.05mb, Malloc-M=574mb, Available-M=26385mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: after  PragmaWaiverGen: M=2071.05mb, Malloc-M=574mb, Available-M=26385mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: before PragmaWaiverApply: M=2071.05mb, Malloc-M=574mb, Available-M=26385mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: after  PragmaWaiverApply: M=2071.05mb, Malloc-M=574mb, Available-M=26385mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: before SQL Index (add_index) :CurrMem: 30 mb, PeakMem: 32 mb M=2071.05mb, Malloc-M=574mb, Available-M=26385mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: after  SQL Index (add_index) :CurrMem: 30 mb, PeakMem: 32 mb M=2071.05mb, Malloc-M=574mb, Available-M=26385mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: before PragmaWaiverGen: M=2071.05mb, Malloc-M=576mb, Available-M=26382mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: |   before PragmaWaiverUsingViol : M=2071.05mb, Malloc-M=576mb, Available-M=26382mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: |   after  PragmaWaiverUsingViol : M=2071.05mb, Malloc-M=576mb, Available-M=26382mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: after  PragmaWaiverGen: M=2071.05mb, Malloc-M=576mb, Available-M=26382mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: before PragmaWaiverApply: M=2071.05mb, Malloc-M=576mb, Available-M=26382mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: after  PragmaWaiverApply: M=2071.05mb, Malloc-M=576mb, Available-M=26382mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: before SQL_DB_Save_MainM=2071.05mb, Malloc-M=574mb, Available-M=26376mb, T=0s CPU=0s W=(2026-05-31 14:36:14)
+STATS:: after  SQL_DB_Save_MainM=2071.05mb, Malloc-M=574mb, Available-M=26373mb, T=0s CPU=0.01s W=(2026-05-31 14:36:14)

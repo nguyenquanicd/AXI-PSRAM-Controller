@@ -1,0 +1,64 @@
+@novas rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_X-2025.06
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[OneSearch]
+isExisted = TRUE
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = FALSE
+powerDumped = 0
+[fusa]
+fdb_server = 
+fdb_proj = 
+fdb_campaign = 
+fdb_tool = 
+[hb]
+viewport = 304 233 1100 800 0 0 277 1098
+activeNode = "m_vlsi_qspi_top"
+activeScope = "m_vlsi_qspi_top"
+activeFile = "/home/ltthinh/PSRAM_CTRL/m_vlsi_qspi_top.sv"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 17
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = False
+safetyAwareAnnot = True
+amsAnnot = True
+DnDtraceCrossHierOnly = True
+leadingZero = False
+signalPane = False
+userAnnot = False
+userAnnotField = 0
+SourceVerticalScrollLines = 5
+Scope1 = "m_vlsi_qspi_top"
+multipleSelection = 1 17 2 0 0
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-simflow" "-smart_load_kdb" "-dbdir" "/home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/design/m_vlsi_qspi_top.exe.daidir" 
+invokeDir = /home/ltthinh/PSRAM_CTRL/lint/vc_static
+[hb.sourceTab.1]
+scope = m_vlsi_qspi_top
+File = /home/ltthinh/PSRAM_CTRL/m_vlsi_qspi_top.sv
+Line = 18

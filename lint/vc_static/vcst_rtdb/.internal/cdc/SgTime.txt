@@ -1,0 +1,15 @@
+Cell properties :    Time Taken: 0.00s
+BlockEnginePropagation :    Time Taken: 0.00s
+ModuleDesignPropagation :    Time Taken: 0.00s
+_nameToNet Map clear :    Time Taken: 0.00s
+UserConstantPropagation :    Time Taken: 0.00s
+DynamicUserCasePropagation :    Time Taken: 0.00s
+DesignConstantPropagation :    Time Taken: 0.01s
+HybridSeqPropagation :    Time Taken: 0.00s
+ReverseConstPropagationOnBiDir:    Time Taken: 0.00s
+ConstantPropagation :    Time Taken: 0.01s
+UserNetBitQuasi :    Time Taken: 0.00s
+UserPinBitQuasi :    Time Taken: 0.00s
+UserOpPinBitQuasi :    Time Taken: 0.00s
+QueueQuasiNetBits :    Time Taken: 0.00s
+QuasiStaticPropagation :    Time Taken: 0.00s

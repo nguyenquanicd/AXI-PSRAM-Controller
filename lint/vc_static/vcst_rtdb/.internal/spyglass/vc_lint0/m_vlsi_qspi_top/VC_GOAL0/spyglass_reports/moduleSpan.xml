@@ -1,0 +1,48 @@
+<ModuleSpanInformation>
+	<Module name = "m_vlsi_arbiter">
+		<Span file="/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_arbiter.sv" lineStart="10" lineEnd="58" src="0">
+		</Span>
+	</Module>
+	<Module name = "m_vlsi_async_fifo">
+		<Span file="/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_async_fifo.sv" lineStart="10" lineEnd="116" src="0">
+		</Span>
+	</Module>
+	<Module name = "m_vlsi_axfsm">
+		<Span file="/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axfsm.sv" lineStart="11" lineEnd="111" src="0">
+		</Span>
+	</Module>
+	<Module name = "m_vlsi_axi4_sram">
+		<Span file="/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi4_sram.sv" lineStart="13" lineEnd="342" src="0">
+		</Span>
+	</Module>
+	<Module name = "m_vlsi_axi_bus_logic">
+		<Span file="/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_bus_logic.sv" lineStart="12" lineEnd="81" src="0">
+		</Span>
+	</Module>
+	<Module name = "m_vlsi_axi_sclk_logic">
+		<Span file="/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_sclk_logic.sv" lineStart="13" lineEnd="127" src="0">
+		</Span>
+	</Module>
+	<Module name = "m_vlsi_multi_synch">
+		<Span file="/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_multi_synch.sv" lineStart="2" lineEnd="25" src="0">
+		</Span>
+	</Module>
+	<Module name = "m_vlsi_qspi_csr">
+		<Span file="/home/ltthinh/PSRAM_CTRL/rtl/CSR/RTL/m_vlsi_qspi_csr.sv" lineStart="10" lineEnd="551" src="0">
+		</Span>
+	</Module>
+	<Module name = "m_vlsi_qspi_fsm">
+		<Span file="/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv" lineStart="10" lineEnd="617" src="0">
+		</Span>
+	</Module>
+	<Module name = "m_vlsi_qspi_top">
+		<Span file="/home/ltthinh/PSRAM_CTRL/m_vlsi_qspi_top.sv" lineStart="18" lineEnd="378" src="0">
+		</Span>
+	</Module>
+	<Module name = "m_vlsi_synch">
+		<Span file="/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_synch.sv" lineStart="10" lineEnd="42" src="0">
+		</Span>
+	</Module>
+</ModuleSpanInformation>
+<PragmaSpanInformation>
+</PragmaSpanInformation>

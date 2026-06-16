@@ -1,0 +1,42 @@
+##Data Import Section
+
+set_option lib dware /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dware/lib
+set_option lib gtech /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/gtech/lib
+set_option lib dw01 /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw01/lib
+set_option lib dw02 /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw02/lib
+set_option lib dw03 /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw03/lib
+set_option lib dw04 /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw04/lib
+set_option lib dw05 /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw05/lib
+set_option lib dw06 /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw06/lib
+
+##Common Options Section
+
+set_option projectwdir /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass
+set_option top m_vlsi_qspi_top
+set_option disable_html_report { html datasheet dashboard }
+set_option language_mode mixed
+set_option noreport yes
+set_option prefer_tech_lib yes
+set_option ignore_pgpin true
+set_option allow_module_override yes
+set_option perflog yes
+set_option use_vcs_compile yes
+set_option run_pre_synth_rules_only yes
+set_option active_methodology /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass
+set_option enable_save_restore no
+set_option check_celldefine yes
+set_option allow_celldefine_as_top yes
+set_option vcs_enhanced_locations yes
+set_option existing_vir_dump_path /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/design/
+set_option enable_detailed_hierarchy yes
+set_option enable_generate_label_naming yes
+set_option lang_check_report_input_path yes
+set_option ignore_internal_waivers yes
+set_option allow_non_lrm yes
+set_option enableSV yes
+
+
+##Goal Setup Section
+
+current_methodology $SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff
+

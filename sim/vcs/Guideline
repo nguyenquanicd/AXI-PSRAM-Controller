@@ -1,0 +1,21 @@
+   # 1. Setup môi trường
+   cd /home/ltthinh/PSRAM_CTRL
+   source source_me.sh
+
+   # 2. Vào thư mục sim
+   cd sim/vcs
+
+   # 3. Chạy với Icarus Verilog (miễn phí)
+   make SIM=iverilog build run
+
+   # Hoặc nếu có VCS:
+   make SIM=vcs build run
+
+   # Xem waveform (Icarus)
+   make SIM=iverilog waves        # Mở GTKWave
+
+   # Xem waveform (VCS)
+   make SIM=vcs waves             # Mở Verdi
+
+   # Dọn dẹp
+   make clean

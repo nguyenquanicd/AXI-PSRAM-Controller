@@ -1,0 +1,8 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1780827084.927988238, "rt":0.29, "ut":0.04, "st":0.24}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1780827084.407508653}
+{"VCS_COMP_START_TIME": 1780827084.407508653}
+{"VCS_COMP_END_TIME": 1780827085.297624425}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -timescale=1ns/1ps -kdb -debug_access+all +define+WAVES_FSDB +incdir+. +incdir+./env +incdir+./tests -l comp.log -f filelist.f -top test_top"}
+{"kdb": {"elabcom_name":"<Kdbresolver>", "log_dir":"simv.daidir/kdbresolverLog"}}
+{"vcs1": {"peak_mem": 391408}}

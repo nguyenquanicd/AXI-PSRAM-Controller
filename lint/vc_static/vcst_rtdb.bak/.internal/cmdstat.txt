@@ -1,0 +1,256 @@
+
+
+### analyze	Num_calls 1	Total_time 0.390147	Total_CpuTime 0.28	Total malloc-M 2
+1	File:run_lint.tcl::20	Time:0.390147	CpuTime:0.28	 Malloc-MB:2
+
+### check_lint	Num_calls 1	Total_time 4.16075	Total_CpuTime 6.58	Total malloc-M 3
+1	File:run_lint.tcl::27	Time:4.16075	CpuTime:6.58	 Malloc-MB:3
+
+### check_lint_noblock	Num_calls 1	Total_time 0.962017	Total_CpuTime 0.98	Total malloc-M 6
+1	File:run_lint.tcl::24	Time:0.962017	CpuTime:0.98	 Malloc-MB:6
+
+### compress_hdl	Num_calls 1	Total_time 0.733253	Total_CpuTime 0.73	Total malloc-M 3
+1	File:run_lint.tcl::11	Time:0.733253	CpuTime:0.73	 Malloc-MB:3
+
+### compress_violations	Num_calls 1	Total_time 0.733133	Total_CpuTime 0.73	Total malloc-M 3
+1	File:run_lint.tcl::11	Time:0.733133	CpuTime:0.73	 Malloc-MB:3
+
+### configure_console_messages	Num_calls 1	Total_time 0.993543	Total_CpuTime 0.99	Total malloc-M 1
+1	File:run_lint.tcl::11	Time:0.993543	CpuTime:0.99	 Malloc-MB:1
+
+### configure_infer_setup_start_pts	Num_calls 1	Total_time 0.00014	Total_CpuTime 0	Total malloc-M 0
+
+### configure_lint_methodology	Num_calls 1	Total_time 0.000127	Total_CpuTime 0	Total malloc-M 0
+
+### configure_lint_setup	Num_calls 1	Total_time 2.00996	Total_CpuTime 1.65	Total malloc-M 9
+1	File:run_lint.tcl::12	Time:2.00996	CpuTime:1.65	 Malloc-MB:9
+
+### configure_lint_tag_parameter	Num_calls 31	Total_time 0.137829	Total_CpuTime 0.08	Total malloc-M 2
+1	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::14	Time:0.00692	CpuTime:0.00	 Malloc-MB:0
+2	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::13	Time:0.006634	CpuTime:0.00	 Malloc-MB:2
+3	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::15	Time:0.005618	CpuTime:0.01	 Malloc-MB:0
+4	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::30	Time:0.005117	CpuTime:0.01	 Malloc-MB:0
+5	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::28	Time:0.00488	CpuTime:0.00	 Malloc-MB:0
+6	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::126	Time:0.004859	CpuTime:0.00	 Malloc-MB:0
+7	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::78	Time:0.004807	CpuTime:0.01	 Malloc-MB:0
+8	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::158	Time:0.004754	CpuTime:0.00	 Malloc-MB:0
+9	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::80	Time:0.004663	CpuTime:0.00	 Malloc-MB:0
+10	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::174	Time:0.004643	CpuTime:0.00	 Malloc-MB:0
+11	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::181	Time:0.004614	CpuTime:0.01	 Malloc-MB:0
+12	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::76	Time:0.004571	CpuTime:0.00	 Malloc-MB:0
+13	File:run_lint.tcl::13	Time:0.004444	CpuTime:0.00	 Malloc-MB:0
+14	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::131	Time:0.004434	CpuTime:0.00	 Malloc-MB:0
+15	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::115	Time:0.004427	CpuTime:0.00	 Malloc-MB:0
+16	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::133	Time:0.004416	CpuTime:0.01	 Malloc-MB:0
+17	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::173	Time:0.004236	CpuTime:0.01	 Malloc-MB:0
+18	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::31	Time:0.004148	CpuTime:0.00	 Malloc-MB:0
+19	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::123	Time:0.004111	CpuTime:0.00	 Malloc-MB:0
+20	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::175	Time:0.004091	CpuTime:0.01	 Malloc-MB:0
+21	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::182	Time:0.004078	CpuTime:0.00	 Malloc-MB:0
+22	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::172	Time:0.003985	CpuTime:0.00	 Malloc-MB:0
+23	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::87	Time:0.003883	CpuTime:0.00	 Malloc-MB:0
+24	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::135	Time:0.003861	CpuTime:0.00	 Malloc-MB:0
+25	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::75	Time:0.003834	CpuTime:0.00	 Malloc-MB:0
+26	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::176	Time:0.00377	CpuTime:0.00	 Malloc-MB:0
+27	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::180	Time:0.003754	CpuTime:0.00	 Malloc-MB:0
+28	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::134	Time:0.003678	CpuTime:0.00	 Malloc-MB:0
+29	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::177	Time:0.003661	CpuTime:0.01	 Malloc-MB:0
+30	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::178	Time:0.003493	CpuTime:0.00	 Malloc-MB:0
+31	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::179	Time:0.003445	CpuTime:0.00	 Malloc-MB:0
+
+### configure_reset_propagation	Num_calls 2	Total_time 0.000505	Total_CpuTime 0	Total malloc-M 0
+
+### configure_sgbuiltin_load	Num_calls 2	Total_time 0.819965	Total_CpuTime 0.67	Total malloc-M 6
+1	File:run_lint.tcl::11	Time:0.819918	CpuTime:0.67	 Malloc-MB:6
+
+### configure_tag	Num_calls 153	Total_time 1.27986	Total_CpuTime 1.31	Total malloc-M 18
+1	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/merge_commands.tcl::0	Time:0.032564	CpuTime:0.04	 Malloc-MB:6
+2	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::3	Time:0.026129	CpuTime:0.03	 Malloc-MB:5
+3	File:run_lint.tcl::11	Time:0.019566	CpuTime:0.02	 Malloc-MB:4
+4	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::92	Time:0.010913	CpuTime:0.01	 Malloc-MB:0
+5	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::34	Time:0.010801	CpuTime:0.02	 Malloc-MB:-1
+6	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::72	Time:0.009541	CpuTime:0.01	 Malloc-MB:0
+7	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::4	Time:0.009042	CpuTime:0.01	 Malloc-MB:0
+8	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::94	Time:0.009033	CpuTime:0.01	 Malloc-MB:0
+9	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::5	Time:0.009021	CpuTime:0.01	 Malloc-MB:0
+10	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::163	Time:0.008875	CpuTime:0.00	 Malloc-MB:0
+11	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::18	Time:0.008822	CpuTime:0.01	 Malloc-MB:0
+12	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::12	Time:0.008817	CpuTime:0.01	 Malloc-MB:0
+13	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::22	Time:0.008808	CpuTime:0.01	 Malloc-MB:0
+14	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::21	Time:0.008796	CpuTime:0.01	 Malloc-MB:0
+15	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::56	Time:0.008785	CpuTime:0.01	 Malloc-MB:0
+16	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::32	Time:0.008753	CpuTime:0.01	 Malloc-MB:0
+17	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::128	Time:0.008739	CpuTime:0.01	 Malloc-MB:0
+18	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::16	Time:0.008677	CpuTime:0.01	 Malloc-MB:0
+19	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::165	Time:0.008655	CpuTime:0.01	 Malloc-MB:0
+20	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::77	Time:0.008635	CpuTime:0.01	 Malloc-MB:0
+21	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::62	Time:0.008627	CpuTime:0.01	 Malloc-MB:0
+22	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::93	Time:0.008597	CpuTime:0.01	 Malloc-MB:0
+23	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::127	Time:0.008581	CpuTime:0.01	 Malloc-MB:0
+24	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::55	Time:0.008549	CpuTime:0.01	 Malloc-MB:0
+25	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::96	Time:0.008548	CpuTime:0.01	 Malloc-MB:0
+26	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::53	Time:0.008518	CpuTime:0.01	 Malloc-MB:0
+27	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::166	Time:0.008513	CpuTime:0.01	 Malloc-MB:0
+28	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::17	Time:0.008473	CpuTime:0.01	 Malloc-MB:0
+29	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::39	Time:0.008448	CpuTime:0.01	 Malloc-MB:0
+30	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::159	Time:0.008423	CpuTime:0.01	 Malloc-MB:0
+31	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::29	Time:0.008421	CpuTime:0.01	 Malloc-MB:0
+32	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::8	Time:0.008413	CpuTime:0.00	 Malloc-MB:0
+33	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::136	Time:0.008412	CpuTime:0.01	 Malloc-MB:0
+34	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::54	Time:0.008359	CpuTime:0.01	 Malloc-MB:0
+35	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::35	Time:0.008357	CpuTime:0.00	 Malloc-MB:0
+36	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::122	Time:0.008354	CpuTime:0.01	 Malloc-MB:0
+37	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::60	Time:0.008348	CpuTime:0.01	 Malloc-MB:0
+38	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::169	Time:0.008343	CpuTime:0.00	 Malloc-MB:0
+39	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::27	Time:0.008327	CpuTime:0.01	 Malloc-MB:0
+40	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::33	Time:0.008311	CpuTime:0.00	 Malloc-MB:0
+41	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::73	Time:0.008308	CpuTime:0.01	 Malloc-MB:0
+42	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::161	Time:0.008301	CpuTime:0.01	 Malloc-MB:0
+43	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::83	Time:0.008267	CpuTime:0.00	 Malloc-MB:0
+44	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::95	Time:0.008266	CpuTime:0.01	 Malloc-MB:0
+45	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::82	Time:0.008256	CpuTime:0.00	 Malloc-MB:0
+46	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::170	Time:0.00825	CpuTime:0.01	 Malloc-MB:0
+47	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::11	Time:0.008188	CpuTime:0.01	 Malloc-MB:0
+48	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::36	Time:0.00815	CpuTime:0.01	 Malloc-MB:0
+49	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::98	Time:0.008139	CpuTime:0.01	 Malloc-MB:0
+50	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::81	Time:0.008136	CpuTime:0.01	 Malloc-MB:0
+51	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::162	Time:0.008133	CpuTime:0.01	 Malloc-MB:0
+52	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::106	Time:0.008125	CpuTime:0.00	 Malloc-MB:0
+53	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::58	Time:0.008118	CpuTime:0.01	 Malloc-MB:0
+54	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::38	Time:0.008111	CpuTime:0.01	 Malloc-MB:0
+55	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::6	Time:0.008108	CpuTime:0.01	 Malloc-MB:0
+56	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::23	Time:0.008104	CpuTime:0.01	 Malloc-MB:0
+57	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::10	Time:0.008097	CpuTime:0.01	 Malloc-MB:0
+58	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::20	Time:0.008091	CpuTime:0.01	 Malloc-MB:0
+59	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::130	Time:0.008081	CpuTime:0.01	 Malloc-MB:0
+60	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::157	Time:0.008075	CpuTime:0.01	 Malloc-MB:0
+61	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::164	Time:0.008074	CpuTime:0.01	 Malloc-MB:0
+62	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::117	Time:0.008073	CpuTime:0.01	 Malloc-MB:0
+63	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::84	Time:0.008066	CpuTime:0.01	 Malloc-MB:0
+64	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::25	Time:0.008062	CpuTime:0.01	 Malloc-MB:0
+65	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::43	Time:0.008056	CpuTime:0.01	 Malloc-MB:0
+66	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::140	Time:0.008054	CpuTime:0.01	 Malloc-MB:0
+67	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::113	Time:0.008052	CpuTime:0.01	 Malloc-MB:0
+68	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::132	Time:0.008041	CpuTime:0.01	 Malloc-MB:0
+69	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::110	Time:0.008038	CpuTime:0.00	 Malloc-MB:0
+70	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::160	Time:0.008033	CpuTime:0.01	 Malloc-MB:0
+71	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::121	Time:0.008031	CpuTime:0.01	 Malloc-MB:0
+72	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::64	Time:0.008016	CpuTime:0.01	 Malloc-MB:0
+73	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::48	Time:0.008013	CpuTime:0.01	 Malloc-MB:0
+74	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::109	Time:0.008007	CpuTime:0.01	 Malloc-MB:0
+75	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::9	Time:0.007996	CpuTime:0.01	 Malloc-MB:0
+76	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::144	Time:0.007988	CpuTime:0.01	 Malloc-MB:0
+77	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::44	Time:0.007985	CpuTime:0.01	 Malloc-MB:0
+78	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::59	Time:0.00797	CpuTime:0.01	 Malloc-MB:0
+79	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::167	Time:0.00796	CpuTime:0.01	 Malloc-MB:0
+80	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::111	Time:0.007959	CpuTime:0.01	 Malloc-MB:0
+81	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::145	Time:0.007952	CpuTime:0.01	 Malloc-MB:0
+82	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::68	Time:0.007938	CpuTime:0.01	 Malloc-MB:0
+83	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::40	Time:0.007936	CpuTime:0.01	 Malloc-MB:0
+84	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::104	Time:0.007926	CpuTime:0.01	 Malloc-MB:0
+85	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::102	Time:0.00792	CpuTime:0.01	 Malloc-MB:0
+86	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::147	Time:0.007917	CpuTime:0.01	 Malloc-MB:0
+87	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::155	Time:0.007915	CpuTime:0.01	 Malloc-MB:0
+88	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::120	Time:0.007913	CpuTime:0.01	 Malloc-MB:0
+89	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::107	Time:0.007912	CpuTime:0.01	 Malloc-MB:0
+90	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::91	Time:0.007893	CpuTime:0.00	 Malloc-MB:0
+91	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::19	Time:0.007873	CpuTime:0.00	 Malloc-MB:0
+92	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::168	Time:0.007861	CpuTime:0.01	 Malloc-MB:0
+93	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::156	Time:0.007844	CpuTime:0.01	 Malloc-MB:0
+94	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::153	Time:0.007839	CpuTime:0.01	 Malloc-MB:0
+95	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::89	Time:0.007838	CpuTime:0.01	 Malloc-MB:0
+96	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::137	Time:0.007827	CpuTime:0.01	 Malloc-MB:0
+97	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::7	Time:0.007822	CpuTime:0.01	 Malloc-MB:0
+98	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::143	Time:0.00782	CpuTime:0.01	 Malloc-MB:0
+99	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::146	Time:0.007806	CpuTime:0.00	 Malloc-MB:0
+100	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::99	Time:0.007805	CpuTime:0.01	 Malloc-MB:0
+101	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/GuideWare/block/initial_rtl/lint/lint_rtl_enhanced.tcl::171	Time:0.007758	CpuTime:0.01	 Malloc-MB:0
+
+### create_proc_command	Num_calls 249	Total_time 0.029387	Total_CpuTime 0.02	Total malloc-M 1
+
+### elaborate	Num_calls 1	Total_time 3.81264	Total_CpuTime 3.05	Total malloc-M 44
+1	File:run_lint.tcl::24	Time:3.81264	CpuTime:3.05	 Malloc-MB:44
+
+### fv_update_command_consistency_flow	Num_calls 1	Total_time 0.000851	Total_CpuTime 0	Total malloc-M 0
+
+### get_message_db_ptr	Num_calls 1	Total_time 4.6e-05	Total_CpuTime 0	Total malloc-M 0
+
+### get_report_db_ptr	Num_calls 1	Total_time 4.4e-05	Total_CpuTime 0	Total malloc-M 0
+
+### infer_setup	Num_calls 2	Total_time 0.048725	Total_CpuTime 0.05	Total malloc-M 0
+1	File:run_lint.tcl::27	Time:0.040738	CpuTime:0.04	 Malloc-MB:0
+2	File:run_lint.tcl::27	Time:0.007987	CpuTime:0.01	 Malloc-MB:0
+
+### rename_tag	Num_calls 1	Total_time 0.014992	Total_CpuTime 0.02	Total malloc-M -2
+1	File:run_lint.tcl::11	Time:0.014992	CpuTime:0.02	 Malloc-MB:-2
+
+### restore_session	Num_calls 1	Total_time 0.000123	Total_CpuTime 0	Total malloc-M 0
+
+### save_db	Num_calls 1	Total_time 0.056066	Total_CpuTime 0.02	Total malloc-M 0
+1	File:run_lint.tcl::11	Time:0.056066	CpuTime:0.02	 Malloc-MB:0
+
+### start_gui	Num_calls 1	Total_time 0.000189	Total_CpuTime 0	Total malloc-M 0
+
+ ****************************Shell commands Recording************************
+MasterSourceFile run_lint.tcl
+
+
+ ****************************ThreadTask Recording************************
+Thread: CommonMgr Time: 0(s) Mem: 0(KB) MaxSize: 0
+Thread: ReportDb Time: 0.375057(s) Mem: -14704(KB) MaxSize: 310
+
+
+ ****************************ProcessTask Recording************************
+
+ Task : VCS Analyzer Task
+ args: sh,-c,$VCS_HOME/bin/vlogan  -kdb=common_elab /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/design/undef_vcs.v -Xvd_opts=-silent,+disable_message+C00373,-ssy,-ssv,-ssz -file /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/design/analyzeCmd1 -kdb=incopt  -Xufe=parallel:incrdump  -full64  -libfile_opt 
+ file: run_lint.tcl line: 20
+ Start Time: 2026-05-31 14:36:04, CpuTime: 5.62
+ End Time: 2026-05-31 14:36:04, CpuTime: 5.78
+
+ Task : BUILTIN_CHECKS AND LINT_PRE_SYNTH_CHECKS
+ args: sh,-c,/tools/Synopsys/vc_static/X-2025.06/SG_COMPAT/SPYGLASS_HOME/bin/spyglass -project /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/vc_lint0.prj -goal VC_GOAL0 -batch > /dev/null
+ file: run_lint.tcl line: 24
+ Start Time: 2026-05-31 14:36:05, CpuTime: 6.85
+ End Time: 2026-05-31 14:36:12, CpuTime: 15.46
+
+ Task : VCS Elaborater Task
+ args: sh,-c,$VCS_HOME/bin/vcs -file /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/design/elaborateCmd -Xvcstatic_extns=0x4  -Xvcstatic_extns=0x100  +warn=noSM_CCE  -suppress=SM_BB_LIST  -suppress=SM_UM_LIST  -units  -error=IRRIPS  -kdb=common_elab  -Xufe=parallel:incrdump  -kdb=incopt  +warn=noKDB-ELAB-E  -Xverdi_elab_opts=-saveLevel  -verdi_opts "-logdir /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/verdi/elabcomLog " -Xvd_opts=,-ssy,-ssv,-ssz,-silent,+disable_message+C00373, -full64 
+ file: run_lint.tcl line: 24
+ Start Time: 2026-05-31 14:36:05, CpuTime: 6.85
+ End Time: 2026-05-31 14:36:08, CpuTime: 8.85
+
+
+ **************************** Command Stats (without vnrstat) ************************
+### VnrEntry 2026-05-31 14:35:59
+	compress_hdl	Num_calls 1	Total_time 0.733253	Total_CpuTime 0.73	Total malloc-M 3
+	compress_violations	Num_calls 1	Total_time 0.733133	Total_CpuTime 0.73	Total malloc-M 3
+	configure_reset_propagation	Num_calls 1	Total_time 0.000164	Total_CpuTime 0	Total malloc-M 0
+	configure_sgbuiltin_load	Num_calls 1	Total_time 4.7e-05	Total_CpuTime 0	Total malloc-M 0
+	configure_tag	Num_calls 2	Total_time 0.034452	Total_CpuTime 0.04	Total malloc-M 6
+	create_proc_command	Num_calls 249	Total_time 0.029387	Total_CpuTime 0.02	Total malloc-M 1
+	fv_update_command_consistency_flow	Num_calls 1	Total_time 0.000851	Total_CpuTime 0	Total malloc-M 0
+	get_message_db_ptr	Num_calls 1	Total_time 4.6e-05	Total_CpuTime 0	Total malloc-M 0
+	get_report_db_ptr	Num_calls 1	Total_time 4.4e-05	Total_CpuTime 0	Total malloc-M 0
+	restore_session	Num_calls 1	Total_time 0.000123	Total_CpuTime 0	Total malloc-M 0
+### VnrEntry 2026-05-31 14:36:00
+	save_db	Num_calls 1	Total_time 0.056066	Total_CpuTime 0.02	Total malloc-M 0
+### VnrEntry 2026-05-31 14:36:01
+	configure_console_messages	Num_calls 1	Total_time 0.993543	Total_CpuTime 0.99	Total malloc-M 1
+	configure_lint_methodology	Num_calls 1	Total_time 0.000127	Total_CpuTime 0	Total malloc-M 0
+	configure_lint_setup	Num_calls 1	Total_time 2.00996	Total_CpuTime 1.65	Total malloc-M 9
+	configure_lint_tag_parameter	Num_calls 31	Total_time 0.137829	Total_CpuTime 0.08	Total malloc-M 2
+	configure_sgbuiltin_load	Num_calls 1	Total_time 0.819918	Total_CpuTime 0.67	Total malloc-M 6
+	configure_tag	Num_calls 151	Total_time 1.24541	Total_CpuTime 1.27	Total malloc-M 11
+	rename_tag	Num_calls 1	Total_time 0.014992	Total_CpuTime 0.02	Total malloc-M -2
+### VnrEntry 2026-05-31 14:36:04
+	analyze	Num_calls 1	Total_time 0.390147	Total_CpuTime 0.28	Total malloc-M 2
+### VnrEntry 2026-05-31 14:36:08
+	elaborate	Num_calls 1	Total_time 3.81264	Total_CpuTime 3.05	Total malloc-M 44
+### VnrEntry 2026-05-31 14:36:09
+	configure_infer_setup_start_pts	Num_calls 1	Total_time 0.00014	Total_CpuTime 0	Total malloc-M 0
+	configure_reset_propagation	Num_calls 1	Total_time 0.000341	Total_CpuTime 0	Total malloc-M 0
+	infer_setup	Num_calls 2	Total_time 0.048725	Total_CpuTime 0.05	Total malloc-M 0
+### VnrEntry 2026-05-31 14:36:12
+	check_lint	Num_calls 1	Total_time 4.16075	Total_CpuTime 6.58	Total malloc-M 3
+	start_gui	Num_calls 1	Total_time 0.000189	Total_CpuTime 0	Total malloc-M 0

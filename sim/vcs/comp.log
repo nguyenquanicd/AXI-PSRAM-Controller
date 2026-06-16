@@ -1,0 +1,62 @@
+Command: vcs -full64 -sverilog -timescale=1ns/1ps -kdb -debug_access+all +define+WAVES_FSDB \
++incdir+. +incdir+./env +incdir+./tests -l comp.log -f filelist.f -top test_top
+                         Chronologic VCS (TM)
+         Version X-2025.06_Full64 -- Sun Jun  7 17:13:01 2026
+
+                    Copyright (c) 1991 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_synch.sv'
+Parsing design file '/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_multi_synch.sv'
+Parsing design file '/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_async_fifo.sv'
+Parsing design file '/home/ltthinh/PSRAM_CTRL/rtl/CSR/RTL/m_vlsi_qspi_csr.sv'
+Parsing design file '/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axfsm.sv'
+Parsing design file '/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_arbiter.sv'
+Parsing design file '/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_bus_logic.sv'
+Parsing design file '/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_sclk_logic.sv'
+Parsing design file '/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi4_sram.sv'
+Parsing design file '/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv'
+Parsing design file '/home/ltthinh/PSRAM_CTRL/m_vlsi_qspi_top.sv'
+Parsing design file './env/m_vlsi_psram_sp.sv'
+Parsing design file './env/axi_master_bfm.sv'
+Parsing design file './env/apb_master_bfm.sv'
+Parsing design file './env/qspi_dut_wrapper.sv'
+Parsing design file './env/top.sv'
+Parsing included file './tests/ts.basic_qspi_psram_test.sv'.
+Back to file './env/top.sv'.
+Top Level Modules:
+       test_top
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+7 modules and 0 UDP read.
+recompiling module test_top
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+make[1]: Entering directory '/home/ltthinh/PSRAM_CTRL/sim/vcs/csrc'
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv   -no-pie    -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/tools/Synopsys/vcs/X-2025.06/linux64/lib -L/tools/Synopsys/vcs/X-2025.06/linux64/lib \
+-Wl,-rpath-link=./ -Wl,--no-as-needed    _3383704_archive_1.so _prev_archive_1.so \
+_cuarc0.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs      -lvcsnew -lsimprofile \
+-luclinative /tools/Synopsys/vcs/X-2025.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli    -Wl,-no-whole-archive       _vcs_pli_stub_.o   /tools/Synopsys/vcs/X-2025.06/linux64/lib/vcs_save_restore_new.o \
+/tools/Synopsys/verdi/X-2025.06/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread \
+-ldl 
+../simv up to date
+make[1]: Leaving directory '/home/ltthinh/PSRAM_CTRL/sim/vcs/csrc'
+CPU time: 1.031 seconds to compile + .317 seconds to elab + .309 seconds to link
+Verdi KDB elaboration done and the database successfully generated

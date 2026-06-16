@@ -1,0 +1,44 @@
+#---------------------------------------------------------------------------------------------
+#  Waiver Migration Summary: 
+#---------------------------------------------------------------------------------------------
+Waiver report specified : NO
+Total number of Waive Commands from waiver files(s) with -msg field :     0
+Number of successful migration                                      :     0
+Number of unsuccessful migration                                    :     0
+Waive commands from spyglass policy                :     0
+Waive commands not to be translated                :     0
+Waive commands with missing arg type name          :     0
+Waive commands either not waiving any violation or missing static or not resolved from waiver report :     0
+
+#---------------------------------------------------------------------------------------------
+#  List of waive command which have been migrated successfully:
+#---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+
+#---------------------------------------------------------------------------------------------
+#  List of waive command which have not been migrated successfully:
+#---------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+
+
+#---------------------------------------------------------------------------------------------
+#  Waiver Migration Result Summary of non-msg waiver: 
+#---------------------------------------------------------------------------------------------
+Total number of Waive Commands from waiver files(s) without -msg field :     0
+Number of successful migration                                      :     0
+Number of unsuccessful migration                                    :     0
+
+#---------------------------------------------------------------------------------------------
+#  List of non-msg waive command which have been migrated successfully:
+#---------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+
+#---------------------------------------------------------------------------------------------
+#  List of non-msg waive command which have not been migrated successfully:
+#---------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+
+

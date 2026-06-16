@@ -1,0 +1,218 @@
+##This file is genrated to have command line decompiled Info even in Console
+##(To generate SIGN_OFF report having command line decompiled)
+Run Setup Info
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Option          Value             Origin  File                           LineNo
+===============================================================================
+--goal_info     VC_GOAL0@         CmdLine -                              -
+--ignore_internal_waivers <ON>              CmdLine -                              -
+--perflog       <ON>              CmdLine -                              -
+--strict_sgdc_check <ON>              Config  $SPYGLASS_HOME/.spyglass.setup 40
+--vcs_enhanced_locations <ON>              CmdLine -                              -
+-64bit          <ON>              CmdLine -                              -
+-allow_celldefine_as_top <ON>              CmdLine -                              -
+-allow_module_override <ON>              CmdLine -                              -
+-allow_non_lrm  <ON>              CmdLine -                              -
+-batch          <ON>              CmdLine -                              -
+-check_celldefine <ON>              CmdLine -                              -
+-disable_html_report html              CmdLine -                              -
+                datasheet         CmdLine -                              -
+                dashboard         CmdLine -                              -
+-enableSV       <ON>              CmdLine -                              -
+-enable_detailed_hierarchy <ON>              CmdLine -                              -
+-enable_generate_label_naming <ON>              CmdLine -                              -
+-existing_vir_dump_path /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/design/ CmdLine -                              -
+-ignore_pgpin   true              CmdLine -                              -
+-inferblackbox  <ON>              Config  $SPYGLASS_HOME/.spyglass.setup 30
+-lang_check_report_input_path <ON>              CmdLine -                              -
+-lib            dware=>/tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dware/lib CmdLine -                              -
+                gtech=>/tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/gtech/lib CmdLine -                              -
+                dw01=>/tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw01/lib CmdLine -                              -
+                dw02=>/tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw02/lib CmdLine -                              -
+                dw03=>/tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw03/lib CmdLine -                              -
+                dw04=>/tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw04/lib CmdLine -                              -
+                dw05=>/tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw05/lib CmdLine -                              -
+                dw06=>/tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw06/lib CmdLine -                              -
+                WORK=>/home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/vc_lint0/m_vlsi_qspi_top/WORK CmdLine -                              -
+                SYNOPSYS=>$SPYGLASS_HOME/vhdl_libs/Linux4/SYNOPSYS Config  $SPYGLASS_HOME/.spyglass.setup 25
+-nl             <ON>              CmdLine -                              -
+-noreport       <ON>              CmdLine -                              -
+-policy         lint              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 115
+                morelint          CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 115
+                openmore          CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 115
+                simulation        CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 115
+                starc2005         CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 115
+-prefer_tech_lib <ON>              CmdLine -                              -
+-projectwdir    /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/vc_lint0 CmdLine -                              -
+-rules          STARC05-2.8.1.3   CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 2
+                STARC05-2.10.1.4b CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 3
+                STARC05-2.10.1.4a CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 4
+                STARC05-2.3.4.1   CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 5
+                STARC05-2.3.1.2c  CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 6
+                STARC05-2.1.3.1   CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 7
+                STARC05-2.1.1.2   CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 8
+                STARC05-2.1.6.5   CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 9
+                STARC05-2.11.3.1  CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 10
+                STARC05-2.10.3.2a CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 11
+                STARC05-2.10.2.3  CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 12
+                STARC05-2.9.1.2b  CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 13
+                STARC05-2.9.1.2a  CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 14
+                STARC05-2.8.5.1   CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 15
+                STARC05-2.8.1.5   CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 16
+                STARC05-2.3.1.6   CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 17
+                STARC05-2.3.1.5b  CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 18
+                STARC05-2.2.3.3   CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 19
+                STARC05-2.1.5.3   CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 20
+                STARC05-2.1.4.5   CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 21
+                sim_race02        CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 22
+                ReserveName       CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 23
+                SigAssignZ-ML     CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 24
+                ReserveNameSystemVerilog-ML CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 25
+                SetBeforeRead-ML  CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 26
+                NoXInCase-ML      CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 27
+                NoGenLabel-ML     CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 28
+                AutomaticFuncTask-ML CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 29
+                DuplicateCaseLabel-ML CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 30
+                ParamWidthMismatch-ML CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 31
+                InstPortConnType-ML CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 32
+                NoAssignX-ML      CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 33
+                DisallowCaseX-ML  CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 34
+                ImproperRangeIndex-ML CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 35
+                ReportPortInfo-ML CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 36
+                UnrecSynthDir-ML  CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 37
+                W505              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 38
+                W494              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 39
+                W467              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 40
+                W444              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 41
+                W443              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 42
+                W424              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 43
+                W421              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 44
+                W398              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 45
+                W293              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 46
+                W287c             CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 47
+                W287a             CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 48
+                W241              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 49
+                W240              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 50
+                W210              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 51
+                W167              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 52
+                W164a             CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 53
+                W146              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 54
+                W71               CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 55
+                W110a             CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 56
+                mixedsenselist    CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 57
+                W416              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 58
+                W464              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 59
+                W292              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 60
+                W156              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 61
+                W123              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 62
+                W122              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 63
+                W116              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 64
+                W422              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 65
+                W576              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 66
+                W575              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 67
+                W527              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 68
+                W502              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 69
+                W499              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 70
+                W486              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 71
+                W481b             CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 72
+                W481a             CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 73
+                W480              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 74
+                W479              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 75
+                W426              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 76
+                W423              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 77
+                W362              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 78
+                W352              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 79
+                W343              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 80
+                W342              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 81
+                W337              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 82
+                W317              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 83
+                W314              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 84
+                W289              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 85
+                W263              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 86
+                W245              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 87
+                W238              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 88
+                W218              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 89
+                W216              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 90
+                W215              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 91
+                W188              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 92
+                W127              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 93
+                W66               CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 94
+                W19               CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 95
+                W496b             CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 96
+                W496a             CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 97
+                W553              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 98
+                W552              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 99
+                W163              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 100
+                W110              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 101
+                W239              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 102
+                infiniteloop      CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 103
+                bothedges         CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 104
+                badimplicitSM4    CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 105
+                badimplicitSM2    CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 106
+                badimplicitSM1    CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 107
+                W561              CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 108
+                W442f             CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 109
+                W442c             CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 110
+                W442b             CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 111
+                W442a             CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 112
+                W339a             CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 113
+-run_pre_synth_rules_only <ON>              CmdLine -                              -
+-sortmethod     du                Config  $SPYGLASS_HOME/.spyglass.setup 27
+-suppress_verilog_rules W505,W467,W443,W443,W424,W293,W210,W210,W422,W481b,W481a,W479,W426,W343,W342,W289,W245,W218,W216,W215,W188,W188,W66,W239,bothedges,badimplicitSM4,badimplicitSM2,badimplicitSM1,W442f,W442c,W442b,W442a CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 114
+-template       VC_GOAL0          CmdLine -                              -
+-templatedir    /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass CmdLine -                              -
+-top            m_vlsi_qspi_top   CmdLine -                              -
+-use_vcs_compile <ON>              CmdLine -                              -
+-wdir           /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/vc_lint0/m_vlsi_qspi_top/VC_GOAL0 CmdLine -                              -
+
+
+Rules Parameter
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Parameter       Origin  File                           LineNo
+===============================================================================
+-check_dup_label CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 116
+VALUE -- yes
+(KNOWN_PARAM)
+-check_param_association CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 117
+VALUE -- yes
+(KNOWN_PARAM)
+-check_sequential CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 118
+VALUE -- yes
+(KNOWN_PARAM)
+-checkfullbus   CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 122
+VALUE -- W240,W241
+(KNOWN_PARAM)
+-chkTopModule   CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 119
+VALUE -- yes
+(KNOWN_PARAM)
+-genlabeltype   CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 120
+VALUE -- yes
+(KNOWN_PARAM)
+-handle_large_bus CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 123
+VALUE -- W123
+(KNOWN_PARAM)
+-ignoreModuleInstance CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 121
+VALUE -- yes
+(KNOWN_PARAM)
+-nocheckoverflow CmdFile /home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/VC_GOAL0.spq 124
+VALUE -- ImproperRangeIndex-ML,STARC05-2.1.3.1,STARC05-2.10.3.2a,W110,W116,W263,W362
+(KNOWN_PARAM)
+
+
+Policy Info
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+NameOfPolicy    VersionNumber   Path (from where policy loaded)
+===============================================================================
+spyglass        SpyGlass_vX-2025.06 $SPYGLASS_HOME/policies/spyglass
+lint            SpyGlass_vX-2025.06 $SPYGLASS_HOME/policies/lint
+morelint        SpyGlass_vX-2025.06 $SPYGLASS_HOME/policies/morelint
+openmore        SpyGlass_vX-2025.06 $SPYGLASS_HOME/policies/openmore
+simulation      SpyGlass_vX-2025.06 $SPYGLASS_HOME/policies/simulation
+starc2005       SpyGlass_vX-2025.06 $SPYGLASS_HOME/policies/starc2005
+starc           SpyGlass_vX-2025.06 $SPYGLASS_HOME/policies/starc
+starc2002       SpyGlass_vX-2025.06 $SPYGLASS_HOME/policies/starc2002
+
+

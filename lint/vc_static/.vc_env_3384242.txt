@@ -1,0 +1,103 @@
+SHELL=/bin/bash
+VCS_ARCH_OVERRIDE=linux
+VCS_TARGET_ARCH=amd64
+VCS_HOME=/tools/Synopsys/vcs/X-2025.06
+_LMFILES__modshare=/tools/modulefiles/synopsys/verdi/X-2025.06:1:/tools/modulefiles/synopsys/vc_static/X-2025.06:1:/tools/modulefiles/synopsys/vcs/X-2025.06:1
+VERDI_HOME=/tools/Synopsys/verdi/X-2025.06
+SYS_HIDE_VERSION_WARNING=1
+EDITOR=vim
+ENV=/usr/share/modules/init/profile.sh
+QSPI_FILELIST=/home/ltthinh/PSRAM_CTRL/rtl/filelist.f
+PWD=/home/ltthinh/PSRAM_CTRL/lint/vc_static
+LOGNAME=ltthinh
+ALT_VERDI_HOME=/tools/Synopsys/verdi/X-2025.06
+MODULESHOME=/usr/share/modules
+MANPATH=/usr/share/man:/usr/share/man:/usr/share/man:
+TZ=Asia/Ho_Chi_Minh
+MOTD_SHOWN=pam
+HOME=/home/ltthinh
+LANG=en_US.UTF-8
+LD_LIBRARY_PATH_modshare=/tools/Synopsys/verdi/X-2025.06/share/PLI/IUS/linux64:1:/tools/Synopsys/verdi/X-2025.06/share/PLI/VCS/LINUX64:1:/usr/lib:1
+UVM_HOME=/tools/Synopsys/vcs/X-2025.06/etc/uvm-1.2
+SSH_CONNECTION=171.249.112.78 63652 172.16.0.10 22
+PATH_modshare=/usr/bin:1:/tools/Synopsys/verdi/X-2025.06/bin:1:/usr/local/bin:1:/tools/Synopsys/vcs/X-2025.06/bin:1:/bin:1:/tools/Synopsys/vc_static/X-2025.06/vcfca/bin:1:/home/ltthinh/bin:1:/usr/games:1:/tools/Synopsys/vcs/X-2025.06/vcfca/bin:1:.:1:/usr/local/games:1:/tools/Synopsys/vc_static/X-2025.06/bin:1
+LOADEDMODULES_modshare=synopsys/vc_static/X-2025.06:1:synopsys/vcs/X-2025.06:1:synopsys/verdi/X-2025.06:1
+SNPSLMD_LICENSE_FILE=27000@172.16.0.2
+TERM=xterm
+USER=ltthinh
+SYNOPSYS_MEM_ENABLE_SBRK=1
+VISUAL=vim
+LOADEDMODULES=synopsys/vcs/X-2025.06:synopsys/verdi/X-2025.06:synopsys/vc_static/X-2025.06
+SHLVL=3
+BASH_ENV=/usr/share/modules/init/bash
+LD_LIBRARY_PATH=/tools/Synopsys/verdi/X-2025.06/share/PLI/IUS/linux64:/tools/Synopsys/verdi/X-2025.06/share/PLI/VCS/LINUX64:/usr/lib
+SYNOPSYS_HOME=/tools/Synopsys
+SSH_CLIENT=171.249.112.78 63652 22
+VC_STATIC_HOME=/tools/Synopsys/vc_static/X-2025.06
+LC_ALL=en_US.UTF-8
+PATH=/tools/Synopsys/vc_static/X-2025.06/vcfca/bin:/tools/Synopsys/vc_static/X-2025.06/bin:/tools/Synopsys/verdi/X-2025.06/bin:/tools/Synopsys/vcs/X-2025.06/vcfca/bin:/tools/Synopsys/vcs/X-2025.06/bin:.:/home/ltthinh/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+QSPI_HOME=/home/ltthinh/PSRAM_CTRL
+MODULEPATH=/tools/modulefiles
+_LMFILES_=/tools/modulefiles/synopsys/vcs/X-2025.06:/tools/modulefiles/synopsys/verdi/X-2025.06:/tools/modulefiles/synopsys/vc_static/X-2025.06
+QSPI_RTL=/home/ltthinh/PSRAM_CTRL/rtl
+SSH_TTY=/dev/pts/22
+OLDPWD=/home/ltthinh/PSRAM_CTRL/lint
+MODULES_CMD=/usr/lib/x86_64-linux-gnu/modulecmd.tcl
+BASH_FUNC_ml%%=() {  module ml "$@"
+}
+BASH_FUNC_module%%=() {  _module_raw "$@" 2>&1
+}
+BASH_FUNC__module_raw%%=() {  unset _mlshdbg;
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ case "$-" in 
+ *v*x*)
+ set +vx;
+ _mlshdbg='vx'
+ ;;
+ *v*)
+ set +v;
+ _mlshdbg='v'
+ ;;
+ *x*)
+ set +x;
+ _mlshdbg='x'
+ ;;
+ *)
+ _mlshdbg=''
+ ;;
+ esac;
+ fi;
+ unset _mlre _mlIFS;
+ if [ -n "${IFS+x}" ]; then
+ _mlIFS=$IFS;
+ fi;
+ IFS=' ';
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ do
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ fi;
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ fi;
+ done;
+ if [ -n "${_mlre:-}" ]; then
+ eval `eval ${_mlre} /usr/bin/tclsh8.6 /usr/lib/x86_64-linux-gnu/modulecmd.tcl bash '"$@"'`;
+ else
+ eval `/usr/bin/tclsh8.6 /usr/lib/x86_64-linux-gnu/modulecmd.tcl bash "$@"`;
+ fi;
+ _mlstatus=$?;
+ if [ -n "${_mlIFS+x}" ]; then
+ IFS=$_mlIFS;
+ else
+ unset IFS;
+ fi;
+ unset _mlre _mlv _mlrv _mlIFS;
+ if [ -n "${_mlshdbg:-}" ]; then
+ set -$_mlshdbg;
+ fi;
+ unset _mlshdbg;
+ return $_mlstatus
+}
+_=/usr/bin/env

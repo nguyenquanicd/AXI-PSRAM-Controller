@@ -1,0 +1,67 @@
+##perflog_version  : 1.0
+##spyglass_version : SpyGlass_vX-2025.06 (May 29 2025)
+#
+##system   : Linux vlsi 6.1.0-48-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.172-1 (2026-05-15) x86_64
+##cwd    : /home/ltthinh/PSRAM_CTRL/lint/vc_static
+##args   : -mSpyGlass::Compatibility::v2_7_3 \
+             -top 'm_vlsi_qspi_top' \
+             -rules='STARC05-2.8.1.3,STARC05-2.10.1.4b,STARC05-2.10.1.4a,STARC05-2.3.4.1,STARC05-2.3.1.2c,STARC05-2.1.3.1,STARC05-2.1.1.2,STARC05-2.1.6.5,STARC05-2.11.3.1,STARC05-2.10.3.2a,STARC05-2.10.2.3,STARC05-2.9.1.2b,STARC05-2.9.1.2a,STARC05-2.8.5.1,STARC05-2.8.1.5,STARC05-2.3.1.6,STARC05-2.3.1.5b,STARC05-2.2.3.3,STARC05-2.1.5.3,STARC05-2.1.4.5,sim_race02,ReserveName,SigAssignZ-ML,ReserveNameSystemVerilog-ML,SetBeforeRead-ML,NoXInCase-ML,NoGenLabel-ML,AutomaticFuncTask-ML,DuplicateCaseLabel-ML,ParamWidthMismatch-ML,InstPortConnType-ML,NoAssignX-ML,DisallowCaseX-ML,ImproperRangeIndex-ML,ReportPortInfo-ML,UnrecSynthDir-ML,W505,W494,W467,W444,W443,W424,W421,W398,W293,W287c,W287a,W241,W240,W210,W167,W164a,W146,W71,W110a,mixedsenselist,W416,W464,W292,W156,W123,W122,W116,W422,W576,W575,W527,W502,W499,W486,W481b,W481a,W480,W479,W426,W423,W362,W352,W343,W342,W337,W317,W314,W289,W263,W245,W238,W218,W216,W215,W188,W127,W66,W19,W496b,W496a,W553,W552,W163,W110,W239,infiniteloop,bothedges,badimplicitSM4,badimplicitSM2,badimplicitSM1,W561,W442f,W442c,W442b,W442a,W339a' \
+             -wdir '/home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/vc_lint0/.tmp_sg_current_goal' \
+             -mixed \
+             -policy='lint,morelint,openmore,simulation,starc2005' \
+             -templatedir '/home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass' \
+             --template_info 'VC_GOAL0' \
+             -suppress_verilog_rules 'W505,W467,W443,W443,W424,W293,W210,W210,W422,W481b,W481a,W479,W426,W343,W342,W289,W245,W218,W216,W215,W188,W188,W66,W239,bothedges,badimplicitSM4,badimplicitSM2,badimplicitSM1,W442f,W442c,W442b,W442a' \
+             -check_dup_label=yes \
+             -check_param_association=yes \
+             -check_sequential=yes \
+             -chkTopModule=yes \
+             -genlabeltype=yes \
+             -ignoreModuleInstance=yes \
+             -checkfullbus=W240,W241 \
+             -handle_large_bus=W123 \
+             -nocheckoverflow='ImproperRangeIndex-ML,STARC05-2.1.3.1,STARC05-2.10.3.2a,W110,W116,W263,W362' \
+             -64bit 
+#
+## Table-I : Incremental memory and time data for individual events
+## Short explanation of different columns follows:
+## -----------------------------------------------
+## Policy              --> name of the policy
+## Event               --> mostly it's a rule, but in some of the cases it may refer
+##                         to a particular event. e.g., SGOM population
+## Lang                --> language corresponding to <Event>
+##                   [VV=mixed VE=verilog VH=vhdl]
+## StartPeak           --> peak memory(in KB) at the start of the <Event>
+## StartHeap           --> cumulative heap memory(in KB) at the start of the <Event>
+## StartMem            --> cumulative memory(in KB) at the start of the <Event>
+## StartRSS            --> cumulative RSS/RAM memory(in KB) at the start of the <Event>
+## StartSwap           --> cumulative Swap memory(in KB) at the start of the <Event>
+## StartPeakRSS        --> Peak RSS/RAM memory(in KB) at the start of the <Event>
+## IncrMem             --> memory(in KB) consumed by <Event>
+## IncrHeap            --> increase in peak memory(in KB) during <Event>
+## EndHeap             --> cumulative heap memory(in KB) at the end of the <Event>
+## EndPeak             --> peak memory(in KB) at the end of the <Event>
+## EndRSS              --> cumulative RSS/RAM memory(in KB) at the end of the <Event>
+## EndSwap             --> cumulative Swap memory(in KB) at the end of the <Event>
+## EndPeakRSS          --> Peak RSS/RAM memory(in KB) at the end of the <Event>
+## EndPeakRSS+EndSwap  --> Peak RSS/RAM + Swap memory(in KB) at the end of the <Event>
+## IncrCpuTime    --> cpu time(in seconds) taken by <Event>
+## IncrClkTime    --> the elapsed time (in seconds) taken by <Event>
+## Type           --> if <Event> is a rule, then it denotes 'rule-type',
+##                   else it is 'NONE'
+## Msg            --> mostly it'll be name of the design unit, sometimes it
+##                   may denote number of design units present in the design
+##
+## Description: All the rows of Table-I begin with a 'i ' so that scripts
+##       can filter the incremental table data and distinguish
+##       them from the data of Table-II.
+##
+## Please note that some entries of Table-I can come after Table-II entries
+## You can distinguish it with the rows begin with a 'i ' 
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#Policy     Event               Lang  StartPeak StartHeap StartMem StartRSS StartSwap StartPeakRSS  IncrMem  IncrHeap EndHeap EndPeak EndRSS EndSwap EndPeakRSS EndPeakRSS+EndSwap  IncrCpuTime  IncrClkTime Type:Msg #
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+i SpyGlass    SG.COPYRULES             VV  912068  912068  208740  427696       0         427696    18768.0   20144  932212  932212  447496       0    447496          447496          0.32         0.33 NONE:
+i SpyGlass    SG.PERL.Init             VV  795776  795776  137316  324680       0         324680    90192.0  136436  932212  932212  447760       0    447760          447760          2.20         2.23 ID:2
+i SpyGlass    SG.PERL.Exit             VV  932212  932212  228020  447760       0         447760   -60568.0  -23476  908736  932212  431780       0    447760          447760          0.03         0.04 ID:2
+i SpyGlass    SG.AUTO_MIG.Exit         VV  932212  908736  167036  431780       0         447760     -136.0       0  908736  932212  431780       0    447760          447760          0.00         0.00 ID:2

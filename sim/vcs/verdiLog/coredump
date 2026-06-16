@@ -1,0 +1,129 @@
+Thread 19 (Thread 0x7fc318f73700 (LWP 2254240) "Novas"):
+#0  0x00007fc364fec7b2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/x86_64-linux-gnu/libpthread.so.0
+#1  0x0000000000000002 in ?? ()
+#2  0x0000000000000001 in ?? ()
+#3  0x0000000000000004 in ?? ()
+#4  0x00007fc318f54d00 in ?? ()
+#5  0x0000000100000000 in ?? ()
+#6  0x000000004a285d18 in ?? ()
+#7  0x00007fc364fec540 in ?? () from /lib/x86_64-linux-gnu/libpthread.so.0
+#8  0x00007fc318f54d00 in ?? ()
+#9  0x0097989800000000 in ?? ()
+#10 0x0000000000000000 in ?? ()
+Thread 18 (Thread 0x7fc319574700 (LWP 2254239) "Novas"):
+#0  0x00007fc364fec7b2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/x86_64-linux-gnu/libpthread.so.0
+#1  0x0000000000000003 in ?? ()
+#2  0x0000000000000001 in ?? ()
+#3  0x0000000000000004 in ?? ()
+#4  0x00007fc319555d00 in ?? ()
+#5  0x0000000100000000 in ?? ()
+#6  0x0000000052f977f0 in ?? ()
+#7  0x00007fc364fec540 in ?? () from /lib/x86_64-linux-gnu/libpthread.so.0
+#8  0x00007fc319555d00 in ?? ()
+#9  0x0097989800000000 in ?? ()
+#10 0x0000000000000000 in ?? ()
+Thread 17 (Thread 0x7fc347f56700 (LWP 2254238) "Novas"):
+#0  0x00007fc364fec7b2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/x86_64-linux-gnu/libpthread.so.0
+#1  0x000000000000000a in ?? ()
+#2  0x0000000000000000 in ?? ()
+Thread 16 (Thread 0x7fc347955700 (LWP 2254237) "Novas"):
+#0  0x00007fc364fec7b2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/x86_64-linux-gnu/libpthread.so.0
+#1  0x000000000000000e in ?? ()
+#2  0x0000000000000000 in ?? ()
+Thread 15 (Thread 0x7fc347354700 (LWP 2254236) "Novas"):
+#0  0x00007fc364fec7b2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/x86_64-linux-gnu/libpthread.so.0
+#1  0x000000000000000c in ?? ()
+#2  0x0000000000000000 in ?? ()
+Thread 14 (Thread 0x7fc346d53700 (LWP 2254235) "Novas"):
+#0  0x00007fc364fec7b2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/x86_64-linux-gnu/libpthread.so.0
+#1  0x000000000000000b in ?? ()
+#2  0x0000000000000000 in ?? ()
+Thread 13 (Thread 0x7fc346752700 (LWP 2254234) "Novas"):
+#0  0x00007fc364fec7b2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/x86_64-linux-gnu/libpthread.so.0
+#1  0x000000000000000d in ?? ()
+#2  0x0000000000000000 in ?? ()
+Thread 12 (Thread 0x7fc32e8af700 (LWP 1957348) "QFileInfoGather"):
+#0  0x00007fc364fec7b2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/x86_64-linux-gnu/libpthread.so.0
+#1  0x00000000000000e6 in ?? ()
+#2  0x0000000000000000 in ?? ()
+Thread 11 (Thread 0x7fc32f0b0700 (LWP 1957347) "QFileInfoGather"):
+#0  0x00007fc364fec7b2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/x86_64-linux-gnu/libpthread.so.0
+#1  0x00000000000000e7 in ?? ()
+#2  0x0000000000000001 in ?? ()
+#3  0x0000000000000004 in ?? ()
+#4  0x00007fc32f091cf0 in ?? ()
+#5  0x000000012f091d60 in ?? ()
+#6  0x00007fc32f091de0 in ?? ()
+#7  0x00007fc364fec540 in ?? () from /lib/x86_64-linux-gnu/libpthread.so.0
+#8  0x00007fc32f091cf0 in ?? ()
+#9  0x00007fc32f091de0 in ?? ()
+#10 0x0000000000000000 in ?? ()
+Thread 10 (Thread 0x7fc349175700 (LWP 1738000) "QFileInfoGather"):
+#0  0x00007fc364fec7b2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/x86_64-linux-gnu/libpthread.so.0
+#1  0x0000000000000256 in ?? ()
+#2  0x0000000000000000 in ?? ()
+Thread 9 (Thread 0x7fc348873700 (LWP 1737999) "QFileInfoGather"):
+#0  0x00007fc364fec7b2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/x86_64-linux-gnu/libpthread.so.0
+#1  0x0000000000000256 in ?? ()
+#2  0x0000000000000000 in ?? ()
+Thread 8 (Thread 0x7fc349d75700 (LWP 1737832) "QFileInfoGather"):
+#0  0x00007fc364fec7b2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/x86_64-linux-gnu/libpthread.so.0
+#1  0x000000000000025e in ?? ()
+#2  0x0000000000000000 in ?? ()
+Thread 7 (Thread 0x7fc34a576700 (LWP 1737831) "QFileInfoGather"):
+#0  0x00007fc364fec7b2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/x86_64-linux-gnu/libpthread.so.0
+#1  0x0000000000000256 in ?? ()
+#2  0x0000000000000000 in ?? ()
+Thread 6 (Thread 0x7fc34ad77700 (LWP 1737830) "QFileInfoGather"):
+#0  0x00007fc364fec7b2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/x86_64-linux-gnu/libpthread.so.0
+#1  0x0000000000000257 in ?? ()
+#2  0x0000000000000001 in ?? ()
+#3  0x0000000000000004 in ?? ()
+#4  0x00007fc34ad58cf0 in ?? ()
+#5  0x000000014ad58d60 in ?? ()
+#6  0x00007fc34ad58de0 in ?? ()
+#7  0x00007fc364fec540 in ?? () from /lib/x86_64-linux-gnu/libpthread.so.0
+#8  0x00007fc34ad58cf0 in ?? ()
+#9  0x00007fc34ad58de0 in ?? ()
+#10 0x0000000000000000 in ?? ()
+Thread 5 (Thread 0x7fc34b578700 (LWP 1737829) "QFileInfoGather"):
+#0  0x00007fc364fec7b2 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/x86_64-linux-gnu/libpthread.so.0
+#1  0x0000000000000257 in ?? ()
+#2  0x0000000000000001 in ?? ()
+#3  0x0000000000000004 in ?? ()
+#4  0x00007fc34b559cf0 in ?? ()
+#5  0x000000014b559d60 in ?? ()
+#6  0x00007fc34b559de0 in ?? ()
+#7  0x00007fc364fec540 in ?? () from /lib/x86_64-linux-gnu/libpthread.so.0
+#8  0x00007fc34b559cf0 in ?? ()
+#9  0x00007fc34b559de0 in ?? ()
+#10 0x0000000000000000 in ?? ()
+Thread 4 (Thread 0x7fc34c3ff700 (LWP 1733096) "Novas"):
+#0  0x00007fc35691ded3 in select () from /lib/x86_64-linux-gnu/libc.so.6
+#1  0x00007fc34c3e0e18 in ?? ()
+#2  0x0000001717fc1a40 in ?? ()
+#3  0x00007fc34c3e0cc0 in ?? ()
+#4  0x00007fc34c3e0d40 in ?? ()
+#5  0x00007fc34c3e0dc0 in ?? ()
+#6  0x0000000000000000 in ?? ()
+Thread 3 (Thread 0x7fc34d9fe700 (LWP 1732583) "QXcbEventQueue"):
+#0  0x00007fc35691ba1f in poll () from /lib/x86_64-linux-gnu/libc.so.6
+#1  0x0000000000000000 in ?? ()
+Thread 2 (Thread 0x7fc34e3ff700 (LWP 1732581) "Novas"):
+#0  0x00007fc3568ee251 in clock_nanosleep () from /lib/x86_64-linux-gnu/libc.so.6
+#1  0x0000000000000000 in ?? ()
+Thread 1 (Thread 0x7fc355ec7700 (LWP 1732243) "Novas"):
+#0  0x00007fc3568f37f7 in wait4 () from /lib/x86_64-linux-gnu/libc.so.6
+#1  0x00007fc3569c1157 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+#2  0x00007ffc98c6401c in ?? ()
+#3  0x0000000000226cfd in ?? ()
+#4  0x0000000000000000 in ?? ()
+---------------
+branchName=Verdi_X-2025.06 cnlDate=-- Sat May 31 20:36:50 PDT 2025 cnlEnv=Linux.0/64bit
+uname(Linux vlsi 6.1.0-48-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.172-1 (2026-05-15) x86_64)
+---------------
+Process Size: 2073178112 bytes
+verdi detected abnormal termination.
+Log information written to
+/home/ltthinh/PSRAM_CTRL/sim/vcs/verdiLog/sysinfo_Jun05_2101.tar.
+Please send this file to customer support.

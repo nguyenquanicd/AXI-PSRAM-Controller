@@ -1,0 +1,138 @@
+<violations>
+<violation rulename="VCSRunSummary" policy="SpyGlass" lang="Mixed" message_label="DEFAULT" severity="Info" type="normal" msgHelp="Please refer file &apos;&#37;s&apos; for summary of VCS messages">
+  <arg type="file" name="file" sgField="file" format="string">/home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/vc_lint0/m_vlsi_qspi_top/VC_GOAL0/spyglass_reports/vcs_run_summary.rpt</arg>
+  <arg type="line" name="line" sgField="line" format="integer">0</arg>
+  <arg type="MODULE" name="MODULE" sgField="MODULE" format="string">empty</arg>
+  <arg pos="1" type="SG_STRING" format="string" name="" sgField="Message">/home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/vc_lint0/m_vlsi_qspi_top/VC_GOAL0/spyglass_reports/vcs_run_summary.rpt</arg>
+</violation>
+<violation rulename="ElabSummary" policy="SpyGlass" lang="Mixed" message_label="DEFAULT" severity="Info" type="normal" msgHelp="Please refer file &apos;&#37;s&apos; for elab summary report">
+  <arg type="file" name="file" sgField="file" format="string">/home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/vc_lint0/m_vlsi_qspi_top/VC_GOAL0/spyglass_reports/SpyGlass/elab_summary.rpt</arg>
+  <arg type="line" name="line" sgField="line" format="integer">0</arg>
+  <arg type="MODULE" name="MODULE" sgField="MODULE" format="string">empty</arg>
+  <arg pos="1" type="SG_STRING" format="string" name="" sgField="Message">/home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/vc_lint0/m_vlsi_qspi_top/VC_GOAL0/spyglass_reports/SpyGlass/elab_summary.rpt</arg>
+</violation>
+<violation rulename="DetectTopDesignUnits" policy="SpyGlass" lang="Mixed" message_label="DEFAULT" severity="Info" type="normal" msgHelp="&#37;1 &#37;2 is a top level design unit">
+  <arg type="file" name="file" sgField="file" format="string">/home/ltthinh/PSRAM_CTRL/m_vlsi_qspi_top.sv</arg>
+  <arg type="line" name="line" sgField="line" format="integer">18</arg>
+  <arg type="MODULE" name="MODULE" sgField="MODULE" format="string">m_vlsi_qspi_top</arg>
+  <arg pos="1" type="SG_STRING" format="string" name="" sgField="Message">Module</arg>
+  <arg pos="2" type="SG_STRING" format="string" name="" sgField="Message">m_vlsi_qspi_top</arg>
+</violation>
+<violation rulename="W486" policy="lint" lang="Verilog" message_label="W486_ve" severity="Warning" vclint_wdf_tag="13" type="normal" msgHelp="Rhs width &apos;&#37;2&apos; with shift (Expr: &apos;&#37;5&apos;) is more than lhs width &apos;&#37;1&apos; (Expr: &apos;&#37;4&apos;), this may cause overflow [Hierarchy: &apos;&#37;3&apos;]">
+  <arg type="file" name="file" sgField="file" format="string">/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv</arg>
+  <arg type="line" name="line" sgField="line" format="integer">540</arg>
+  <arg type="MODULE" name="MODULE" sgField="MODULE" format="string">m_vlsi_qspi_fsm</arg>
+  <arg pos="1" type="SG_STRING" format="integer" name="HDL_LHS_SIZE" sgField="HDL_LHS_SIZE">32</arg>
+  <arg pos="2" type="SG_STRING" format="integer" name="HDL_RHS_SIZE" sgField="HDL_RHS_SIZE">36</arg>
+  <arg pos="3" type="SG_STRING" format="string" name="HIERARCHY" sgField="HIERARCHY">:m_vlsi_qspi_top:u_qspi_fsm@m_vlsi_qspi_fsm</arg>
+  <arg pos="4" type="SG_STRING" format="string" name="HDL_LHS_EXPR" sgField="HDL_LHS_EXPR">reg_data_out</arg>
+  <arg pos="5" type="SG_STRING" format="string" name="HDL_RHS_EXPR" sgField="HDL_RHS_EXPR">(reg_data_out &lt;&lt; 4)</arg>
+</violation>
+<violation rulename="W486" policy="lint" lang="Verilog" message_label="W486_ve" severity="Warning" type="normal" msgHelp="Rhs width &apos;&#37;2&apos; with shift (Expr: &apos;&#37;5&apos;) is more than lhs width &apos;&#37;1&apos; (Expr: &apos;&#37;4&apos;), this may cause overflow [Hierarchy: &apos;&#37;3&apos;]">
+  <arg type="file" name="file" sgField="file" format="string">/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv</arg>
+  <arg type="line" name="line" sgField="line" format="integer">542</arg>
+  <arg type="MODULE" name="MODULE" sgField="MODULE" format="string">m_vlsi_qspi_fsm</arg>
+  <arg pos="1" type="SG_STRING" format="integer" name="HDL_LHS_SIZE" sgField="HDL_LHS_SIZE">32</arg>
+  <arg pos="2" type="SG_STRING" format="integer" name="HDL_RHS_SIZE" sgField="HDL_RHS_SIZE">33</arg>
+  <arg pos="3" type="SG_STRING" format="string" name="HIERARCHY" sgField="HIERARCHY">:m_vlsi_qspi_top:u_qspi_fsm@m_vlsi_qspi_fsm</arg>
+  <arg pos="4" type="SG_STRING" format="string" name="HDL_LHS_EXPR" sgField="HDL_LHS_EXPR">reg_data_out</arg>
+  <arg pos="5" type="SG_STRING" format="string" name="HDL_RHS_EXPR" sgField="HDL_RHS_EXPR">(reg_data_out &lt;&lt; 1)</arg>
+</violation>
+<violation rulename="W486" policy="lint" lang="Verilog" message_label="W486_ve" severity="Warning" type="normal" msgHelp="Rhs width &apos;&#37;2&apos; with shift (Expr: &apos;&#37;5&apos;) is more than lhs width &apos;&#37;1&apos; (Expr: &apos;&#37;4&apos;), this may cause overflow [Hierarchy: &apos;&#37;3&apos;]">
+  <arg type="file" name="file" sgField="file" format="string">/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv</arg>
+  <arg type="line" name="line" sgField="line" format="integer">547</arg>
+  <arg type="MODULE" name="MODULE" sgField="MODULE" format="string">m_vlsi_qspi_fsm</arg>
+  <arg pos="1" type="SG_STRING" format="integer" name="HDL_LHS_SIZE" sgField="HDL_LHS_SIZE">32</arg>
+  <arg pos="2" type="SG_STRING" format="integer" name="HDL_RHS_SIZE" sgField="HDL_RHS_SIZE">36</arg>
+  <arg pos="3" type="SG_STRING" format="string" name="HIERARCHY" sgField="HIERARCHY">:m_vlsi_qspi_top:u_qspi_fsm@m_vlsi_qspi_fsm</arg>
+  <arg pos="4" type="SG_STRING" format="string" name="HDL_LHS_EXPR" sgField="HDL_LHS_EXPR">reg_data_out</arg>
+  <arg pos="5" type="SG_STRING" format="string" name="HDL_RHS_EXPR" sgField="HDL_RHS_EXPR">(reg_data_out &lt;&lt; 4)</arg>
+</violation>
+<violation rulename="W486" policy="lint" lang="Verilog" message_label="W486_ve" severity="Warning" type="normal" msgHelp="Rhs width &apos;&#37;2&apos; with shift (Expr: &apos;&#37;5&apos;) is more than lhs width &apos;&#37;1&apos; (Expr: &apos;&#37;4&apos;), this may cause overflow [Hierarchy: &apos;&#37;3&apos;]">
+  <arg type="file" name="file" sgField="file" format="string">/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv</arg>
+  <arg type="line" name="line" sgField="line" format="integer">549</arg>
+  <arg type="MODULE" name="MODULE" sgField="MODULE" format="string">m_vlsi_qspi_fsm</arg>
+  <arg pos="1" type="SG_STRING" format="integer" name="HDL_LHS_SIZE" sgField="HDL_LHS_SIZE">32</arg>
+  <arg pos="2" type="SG_STRING" format="integer" name="HDL_RHS_SIZE" sgField="HDL_RHS_SIZE">33</arg>
+  <arg pos="3" type="SG_STRING" format="string" name="HIERARCHY" sgField="HIERARCHY">:m_vlsi_qspi_top:u_qspi_fsm@m_vlsi_qspi_fsm</arg>
+  <arg pos="4" type="SG_STRING" format="string" name="HDL_LHS_EXPR" sgField="HDL_LHS_EXPR">reg_data_out</arg>
+  <arg pos="5" type="SG_STRING" format="string" name="HDL_RHS_EXPR" sgField="HDL_RHS_EXPR">(reg_data_out &lt;&lt; 1)</arg>
+</violation>
+<violation rulename="W486" policy="lint" lang="Verilog" message_label="W486_ve" severity="Warning" type="normal" msgHelp="Rhs width &apos;&#37;2&apos; with shift (Expr: &apos;&#37;5&apos;) is more than lhs width &apos;&#37;1&apos; (Expr: &apos;&#37;4&apos;), this may cause overflow [Hierarchy: &apos;&#37;3&apos;]">
+  <arg type="file" name="file" sgField="file" format="string">/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv</arg>
+  <arg type="line" name="line" sgField="line" format="integer">556</arg>
+  <arg type="MODULE" name="MODULE" sgField="MODULE" format="string">m_vlsi_qspi_fsm</arg>
+  <arg pos="1" type="SG_STRING" format="integer" name="HDL_LHS_SIZE" sgField="HDL_LHS_SIZE">32</arg>
+  <arg pos="2" type="SG_STRING" format="integer" name="HDL_RHS_SIZE" sgField="HDL_RHS_SIZE">36</arg>
+  <arg pos="3" type="SG_STRING" format="string" name="HIERARCHY" sgField="HIERARCHY">:m_vlsi_qspi_top:u_qspi_fsm@m_vlsi_qspi_fsm</arg>
+  <arg pos="4" type="SG_STRING" format="string" name="HDL_LHS_EXPR" sgField="HDL_LHS_EXPR">reg_data_out</arg>
+  <arg pos="5" type="SG_STRING" format="string" name="HDL_RHS_EXPR" sgField="HDL_RHS_EXPR">(reg_data_out &lt;&lt; 4)</arg>
+</violation>
+<violation rulename="W486" policy="lint" lang="Verilog" message_label="W486_ve" severity="Warning" type="normal" msgHelp="Rhs width &apos;&#37;2&apos; with shift (Expr: &apos;&#37;5&apos;) is more than lhs width &apos;&#37;1&apos; (Expr: &apos;&#37;4&apos;), this may cause overflow [Hierarchy: &apos;&#37;3&apos;]">
+  <arg type="file" name="file" sgField="file" format="string">/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv</arg>
+  <arg type="line" name="line" sgField="line" format="integer">558</arg>
+  <arg type="MODULE" name="MODULE" sgField="MODULE" format="string">m_vlsi_qspi_fsm</arg>
+  <arg pos="1" type="SG_STRING" format="integer" name="HDL_LHS_SIZE" sgField="HDL_LHS_SIZE">32</arg>
+  <arg pos="2" type="SG_STRING" format="integer" name="HDL_RHS_SIZE" sgField="HDL_RHS_SIZE">33</arg>
+  <arg pos="3" type="SG_STRING" format="string" name="HIERARCHY" sgField="HIERARCHY">:m_vlsi_qspi_top:u_qspi_fsm@m_vlsi_qspi_fsm</arg>
+  <arg pos="4" type="SG_STRING" format="string" name="HDL_LHS_EXPR" sgField="HDL_LHS_EXPR">reg_data_out</arg>
+  <arg pos="5" type="SG_STRING" format="string" name="HDL_RHS_EXPR" sgField="HDL_RHS_EXPR">(reg_data_out &lt;&lt; 1)</arg>
+</violation>
+<violation rulename="W486" policy="lint" lang="Verilog" message_label="W486_ve" severity="Warning" type="normal" msgHelp="Rhs width &apos;&#37;2&apos; with shift (Expr: &apos;&#37;5&apos;) is more than lhs width &apos;&#37;1&apos; (Expr: &apos;&#37;4&apos;), this may cause overflow [Hierarchy: &apos;&#37;3&apos;]">
+  <arg type="file" name="file" sgField="file" format="string">/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv</arg>
+  <arg type="line" name="line" sgField="line" format="integer">566</arg>
+  <arg type="MODULE" name="MODULE" sgField="MODULE" format="string">m_vlsi_qspi_fsm</arg>
+  <arg pos="1" type="SG_STRING" format="integer" name="HDL_LHS_SIZE" sgField="HDL_LHS_SIZE">32</arg>
+  <arg pos="2" type="SG_STRING" format="integer" name="HDL_RHS_SIZE" sgField="HDL_RHS_SIZE">36</arg>
+  <arg pos="3" type="SG_STRING" format="string" name="HIERARCHY" sgField="HIERARCHY">:m_vlsi_qspi_top:u_qspi_fsm@m_vlsi_qspi_fsm</arg>
+  <arg pos="4" type="SG_STRING" format="string" name="HDL_LHS_EXPR" sgField="HDL_LHS_EXPR">reg_data_out</arg>
+  <arg pos="5" type="SG_STRING" format="string" name="HDL_RHS_EXPR" sgField="HDL_RHS_EXPR">(reg_data_out &lt;&lt; 4)</arg>
+</violation>
+<violation rulename="W486" policy="lint" lang="Verilog" message_label="W486_ve" severity="Warning" type="normal" msgHelp="Rhs width &apos;&#37;2&apos; with shift (Expr: &apos;&#37;5&apos;) is more than lhs width &apos;&#37;1&apos; (Expr: &apos;&#37;4&apos;), this may cause overflow [Hierarchy: &apos;&#37;3&apos;]">
+  <arg type="file" name="file" sgField="file" format="string">/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv</arg>
+  <arg type="line" name="line" sgField="line" format="integer">568</arg>
+  <arg type="MODULE" name="MODULE" sgField="MODULE" format="string">m_vlsi_qspi_fsm</arg>
+  <arg pos="1" type="SG_STRING" format="integer" name="HDL_LHS_SIZE" sgField="HDL_LHS_SIZE">32</arg>
+  <arg pos="2" type="SG_STRING" format="integer" name="HDL_RHS_SIZE" sgField="HDL_RHS_SIZE">33</arg>
+  <arg pos="3" type="SG_STRING" format="string" name="HIERARCHY" sgField="HIERARCHY">:m_vlsi_qspi_top:u_qspi_fsm@m_vlsi_qspi_fsm</arg>
+  <arg pos="4" type="SG_STRING" format="string" name="HDL_LHS_EXPR" sgField="HDL_LHS_EXPR">reg_data_out</arg>
+  <arg pos="5" type="SG_STRING" format="string" name="HDL_RHS_EXPR" sgField="HDL_RHS_EXPR">(reg_data_out &lt;&lt; 1)</arg>
+</violation>
+<violation rulename="W486" policy="lint" lang="Verilog" message_label="W486_ve" severity="Warning" type="normal" msgHelp="Rhs width &apos;&#37;2&apos; with shift (Expr: &apos;&#37;5&apos;) is more than lhs width &apos;&#37;1&apos; (Expr: &apos;&#37;4&apos;), this may cause overflow [Hierarchy: &apos;&#37;3&apos;]">
+  <arg type="file" name="file" sgField="file" format="string">/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv</arg>
+  <arg type="line" name="line" sgField="line" format="integer">573</arg>
+  <arg type="MODULE" name="MODULE" sgField="MODULE" format="string">m_vlsi_qspi_fsm</arg>
+  <arg pos="1" type="SG_STRING" format="integer" name="HDL_LHS_SIZE" sgField="HDL_LHS_SIZE">32</arg>
+  <arg pos="2" type="SG_STRING" format="integer" name="HDL_RHS_SIZE" sgField="HDL_RHS_SIZE">36</arg>
+  <arg pos="3" type="SG_STRING" format="string" name="HIERARCHY" sgField="HIERARCHY">:m_vlsi_qspi_top:u_qspi_fsm@m_vlsi_qspi_fsm</arg>
+  <arg pos="4" type="SG_STRING" format="string" name="HDL_LHS_EXPR" sgField="HDL_LHS_EXPR">reg_data_out</arg>
+  <arg pos="5" type="SG_STRING" format="string" name="HDL_RHS_EXPR" sgField="HDL_RHS_EXPR">(reg_data_out &lt;&lt; 4)</arg>
+</violation>
+<violation rulename="W486" policy="lint" lang="Verilog" message_label="W486_ve" severity="Warning" type="normal" msgHelp="Rhs width &apos;&#37;2&apos; with shift (Expr: &apos;&#37;5&apos;) is more than lhs width &apos;&#37;1&apos; (Expr: &apos;&#37;4&apos;), this may cause overflow [Hierarchy: &apos;&#37;3&apos;]">
+  <arg type="file" name="file" sgField="file" format="string">/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv</arg>
+  <arg type="line" name="line" sgField="line" format="integer">575</arg>
+  <arg type="MODULE" name="MODULE" sgField="MODULE" format="string">m_vlsi_qspi_fsm</arg>
+  <arg pos="1" type="SG_STRING" format="integer" name="HDL_LHS_SIZE" sgField="HDL_LHS_SIZE">32</arg>
+  <arg pos="2" type="SG_STRING" format="integer" name="HDL_RHS_SIZE" sgField="HDL_RHS_SIZE">33</arg>
+  <arg pos="3" type="SG_STRING" format="string" name="HIERARCHY" sgField="HIERARCHY">:m_vlsi_qspi_top:u_qspi_fsm@m_vlsi_qspi_fsm</arg>
+  <arg pos="4" type="SG_STRING" format="string" name="HDL_LHS_EXPR" sgField="HDL_LHS_EXPR">reg_data_out</arg>
+  <arg pos="5" type="SG_STRING" format="string" name="HDL_RHS_EXPR" sgField="HDL_RHS_EXPR">(reg_data_out &lt;&lt; 1)</arg>
+</violation>
+<violation rulename="W164a" policy="lint" lang="Verilog" message_label="Assign_Width_Mismatch" severity="Warning" type="normal" msgHelp="LHS&#37;6: &apos;&#37;4&apos; width &#37;1 is less than RHS: &apos;&#37;5&apos; width &#37;2 in&#37;7 assignment [Hierarchy: &apos;&#37;3&apos;]">
+  <arg type="file" name="file" sgField="file" format="string">/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv</arg>
+  <arg type="line" name="line" sgField="line" format="integer">589</arg>
+  <arg type="MODULE" name="MODULE" sgField="MODULE" format="string">m_vlsi_qspi_fsm</arg>
+  <arg pos="1" type="SG_STRING" format="integer" name="HDL_LHS_SIZE" sgField="HDL_LHS_SIZE">32</arg>
+  <arg pos="2" type="SG_STRING" format="integer" name="HDL_RHS_SIZE" sgField="HDL_RHS_SIZE">36</arg>
+  <arg pos="3" type="SG_STRING" format="string" name="HIERARCHY" sgField="HIERARCHY">:m_vlsi_qspi_top:u_qspi_fsm@m_vlsi_qspi_fsm</arg>
+  <arg pos="4" type="SG_STRING" format="string" name="HDL_LHS_EXPR" sgField="HDL_LHS_EXPR">reg_rdata</arg>
+  <arg pos="5" type="SG_STRING" format="string" name="HDL_RHS_EXPR" sgField="HDL_RHS_EXPR">{reg_rdata ,i_qspi_si}</arg>
+  <arg pos="6" type="SG_STRING" format="string" name="NODE_NAME" sgField="NODE_NAME"></arg>
+  <arg pos="7" type="SG_STRING" format="string" name="NODE_TYPE" sgField="NODE_TYPE"></arg>
+</violation>
+<violation rulename="ReportPortInfo-ML" policy="morelint" lang="Mixed" message_label="DEFAULT" severity="Info" type="normal" msgHelp="Port Information for top design unit has been generated. For details see report ReportPortInfo.rpt">
+  <arg type="file" name="file" sgField="file" format="string">/home/ltthinh/PSRAM_CTRL/lint/vc_static/vcst_rtdb/.internal/spyglass/vc_lint0/m_vlsi_qspi_top/VC_GOAL0/spyglass_reports/morelint/ReportPortInfo</arg>
+  <arg type="line" name="line" sgField="line" format="integer">1</arg>
+  <arg type="MODULE" name="MODULE" sgField="MODULE" format="string">empty</arg>
+</violation>
+</violations>

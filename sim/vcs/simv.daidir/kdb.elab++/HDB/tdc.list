@@ -1,0 +1,17 @@
+./env/apb_master_bfm.sv
+./env/axi_master_bfm.sv
+./env/m_vlsi_psram_sp.sv
+./env/qspi_dut_wrapper.sv
+./env/top.sv
+./tests/ts.basic_qspi_psram_test.sv
+/home/ltthinh/PSRAM_CTRL/m_vlsi_qspi_top.sv
+/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_arbiter.sv
+/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axfsm.sv
+/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi4_sram.sv
+/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_bus_logic.sv
+/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_sclk_logic.sv
+/home/ltthinh/PSRAM_CTRL/rtl/CSR/RTL/m_vlsi_qspi_csr.sv
+/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_async_fifo.sv
+/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_multi_synch.sv
+/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv
+/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_synch.sv

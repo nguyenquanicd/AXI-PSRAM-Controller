@@ -1,0 +1,159 @@
+4        
+0 ts.basic_qspi_psram_test.sv
+0 /tools/Synopsys/vcs/X-2025.06/etc/systemverilog/ts.basic_qspi_psram_test.sv
+0 ./ts.basic_qspi_psram_test.sv
+0 ./env/ts.basic_qspi_psram_test.sv
+64
++define+WAVES_FSDB
++incdir+.
++incdir+.
++incdir+./env
++incdir+./env
++incdir+./tests
++incdir+./tests
++itf+/tools/Synopsys/vcs/X-2025.06/linux64/lib/vcsdp_lite.tab
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/tools/Synopsys/vcs/X-2025.06/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /tools/Synopsys/vcs/X-2025.06/linux64/lib/libvirsim.so /tools/Synopsys/vcs/X-2025.06/linux64/lib/liberrorinf.so /tools/Synopsys/vcs/X-2025.06/linux64/lib/libsnpsmalloc.so /tools/Synopsys/vcs/X-2025.06/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/tools/Synopsys/vcs/X-2025.06/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/tools/Synopsys/verdi/X-2025.06/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/tools/Synopsys/vcs/X-2025.06/include
+-Mxllcflags=
+-P
+-Xfile_begin_f=/home/ltthinh/PSRAM_CTRL/rtl/filelist.f
+-Xfile_begin_f=filelist.f
+-Xfile_end
+-Xfile_end
+-Xhdlxmropt
+-Xufe=2steps
+-debug_access+all
+-fsdb
+-full64
+-gen_obj
+-kdb
+-l
+-picarchive
+-sverilog
+-timescale=1ns/1ps
+-top
+/tools/Synopsys/vcs/X-2025.06/linux64/bin/vcs1fe
+comp.log
+test_top
+/tools/Synopsys/verdi/X-2025.06/share/PLI/VCS/LINUX64/verdi.tab
+/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_synch.sv
+/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_multi_synch.sv
+/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_async_fifo.sv
+/home/ltthinh/PSRAM_CTRL/rtl/CSR/RTL/m_vlsi_qspi_csr.sv
+/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axfsm.sv
+/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_arbiter.sv
+/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_bus_logic.sv
+/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_sclk_logic.sv
+/home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi4_sram.sv
+/home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv
+/home/ltthinh/PSRAM_CTRL/m_vlsi_qspi_top.sv
+./env/m_vlsi_psram_sp.sv
+./env/axi_master_bfm.sv
+./env/apb_master_bfm.sv
+./env/qspi_dut_wrapper.sv
+./env/top.sv
+56
+_LMFILES__modshare=/tools/modulefiles/synopsys/verdi/X-2025.06:1:/tools/modulefiles/synopsys/vcs/X-2025.06:1
+_LMFILES_=/tools/modulefiles/synopsys/vcs/X-2025.06:/tools/modulefiles/synopsys/verdi/X-2025.06
+VMR_MODE_FLAG=64
+VERDI_HOME=/tools/Synopsys/verdi/X-2025.06
+VC_STATIC_HOME=/tools/Synopsys/vcs/X-2025.06/vcfca
+VCS_TARGET_ARCH=amd64
+VCS_PYTHON3=/tools/Synopsys/vcs/X-2025.06/linux64/bin/Python3/bin/python3
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=comp.log
+VCS_INTERNAL_CONVERTEDLIBS=
+VCS_HOME=/tools/Synopsys/vcs/X-2025.06
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+UVM_HOME=/tools/Synopsys/vcs/X-2025.06/etc/uvm-1.2
+UNAME=/bin/uname
+TOOL_HOME=/tools/Synopsys/vcs/X-2025.06/linux64
+SYNOPSYS_HOME=/tools/Synopsys
+SSH_TTY=/dev/pts/22
+SSH_CONNECTION=171.249.112.78 63652 172.16.0.10 22
+SSH_CLIENT=171.249.112.78 63652 22
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SNPS_VCS_VHDL_WRAPPER_KDB=1
+SNPS_VCS_PYTHON3=/tools/Synopsys/vcs/X-2025.06/linux64/bin/Python3/bin/python3
+SNPS_VCS_CLANG_PATH=/tools/Synopsys/vcs/X-2025.06/linux64/clang
+SNPS_INTERNAL_VCS_LINUX_OS=ubuntu
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QSPI_RTL=/home/ltthinh/PSRAM_CTRL/rtl
+QSPI_HOME=/home/ltthinh/PSRAM_CTRL
+QSPI_FILELIST=/home/ltthinh/PSRAM_CTRL/rtl/filelist.f
+PATH_modshare=/bin:1:/tools/Synopsys/verdi/X-2025.06/bin:1:/tools/Synopsys/vcs/X-2025.06/vcfca/bin:1:/usr/bin:1:/usr/games:1:.:1:/home/ltthinh/bin:1:/tools/Synopsys/vcs/X-2025.06/bin:1:/usr/local/bin:1:/usr/local/games:1
+OVA_UUM=0
+MOTD_SHOWN=pam
+MODULES_CMD=/usr/lib/x86_64-linux-gnu/modulecmd.tcl
+MODULESHOME=/usr/share/modules
+MODULEPATH=/tools/modulefiles
+MFLAGS=
+MAKE_TERMOUT=/dev/pts/22
+MAKE_TERMERR=/dev/pts/22
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES_modshare=synopsys/vcs/X-2025.06:1:synopsys/verdi/X-2025.06:1
+LOADEDMODULES=synopsys/vcs/X-2025.06:synopsys/verdi/X-2025.06
+LD_LIBRARY_PATH_modshare=/tools/Synopsys/verdi/X-2025.06/share/PLI/IUS/linux64:1:/tools/Synopsys/verdi/X-2025.06/share/PLI/VCS/LINUX64:1:/usr/lib:1
+LC_ALL=en_US.UTF-8
+ENV=/usr/share/modules/init/profile.sh
+BASH_FUNC_module%%=() {  _module_raw "$@" 2>&1_}
+BASH_FUNC_ml%%=() {  module ml "$@"_}
+BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then_ case "$-" in _ *v*x*)_ set +vx;_ _mlshdbg='vx'_ ;;_ *v*)_ set +v;_ _mlshdbg='v'_ ;;_ *x*)_ set +x;_ _mlshdbg='x'_ ;;_ *)_ _mlshdbg=''_ ;;_ esac;_ fi;_ unset _mlre _mlIFS;_ if [ -n "${IFS+x}" ]; then_ _mlIFS=$IFS;_ fi;_ IFS=' ';_ for _mlv in ${MODULES_RUN_QUARANTINE:-};_ do_ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then_ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then_ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";_ fi;_ _mlrv="MODULES_RUNENV_${_mlv}";_ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";_ fi;_ done;_ if [ -n "${_mlre:-}" ]; then_ eval `eval ${_mlre} /usr/bin/tclsh8.6 /usr/lib/x86_64-linux-gnu/modulecmd.tcl bash '"$@"'`;_ else_ eval `/usr/bin/tclsh8.6 /usr/lib/x86_64-linux-gnu/modulecmd.tcl bash "$@"`;_ fi;_ _mlstatus=$?;_ if [ -n "${_mlIFS+x}" ]; then_ IFS=$_mlIFS;_ else_ unset IFS;_ fi;_ unset _mlre _mlv _mlrv _mlIFS;_ if [ -n "${_mlshdbg:-}" ]; then_ set -$_mlshdbg;_ fi;_ unset _mlshdbg;_ return $_mlstatus_}
+BASH_ENV=/usr/share/modules/init/bash
+ALT_VERDI_HOME=/tools/Synopsys/verdi/X-2025.06
+0
+0
+22
+1780513225 ./tests/ts.basic_qspi_psram_test.sv
+1748765798 /tools/Synopsys/vcs/X-2025.06/linux64/packages/snps_msv_nettype_pkg/AN.DB
+1780240567 ./env/top.sv
+1780240516 ./env/qspi_dut_wrapper.sv
+1780240483 ./env/apb_master_bfm.sv
+1780414916 ./env/axi_master_bfm.sv
+1780592384 ./env/m_vlsi_psram_sp.sv
+1780827147 /home/ltthinh/PSRAM_CTRL/m_vlsi_qspi_top.sv
+1780827177 /home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_qspi_fsm.sv
+1780212946 /home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi4_sram.sv
+1780414422 /home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_sclk_logic.sv
+1780211674 /home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axi_bus_logic.sv
+1780127877 /home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_arbiter.sv
+1780141396 /home/ltthinh/PSRAM_CTRL/rtl/AXI_CONTROLLER/m_vlsi_axfsm.sv
+1780826954 /home/ltthinh/PSRAM_CTRL/rtl/CSR/RTL/m_vlsi_qspi_csr.sv
+1780149634 /home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_async_fifo.sv
+1780142564 /home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_multi_synch.sv
+1780148712 /home/ltthinh/PSRAM_CTRL/rtl/m_vlsi_synch.sv
+1780148731 /home/ltthinh/PSRAM_CTRL/rtl/filelist.f
+1780413468 filelist.f
+1748749539 /tools/Synopsys/verdi/X-2025.06/share/PLI/VCS/LINUX64/verdi.tab
+1748747165 /tools/Synopsys/vcs/X-2025.06/linux64/lib/vcsdp_lite.tab
+4
+1760970295 /tools/Synopsys/vcs/X-2025.06/linux64/lib/libvirsim.so
+1760970285 /tools/Synopsys/vcs/X-2025.06/linux64/lib/liberrorinf.so
+1760970287 /tools/Synopsys/vcs/X-2025.06/linux64/lib/libsnpsmalloc.so
+1760970291 /tools/Synopsys/vcs/X-2025.06/linux64/lib/libvfs.so
+1780827183 simv.daidir
+-1 partitionlib
