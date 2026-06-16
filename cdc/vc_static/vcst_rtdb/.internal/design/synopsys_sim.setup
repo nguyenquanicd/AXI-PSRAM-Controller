@@ -1,0 +1,23 @@
+-- DesignWare map file
+dware: /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dware/lib
+gtech: /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/gtech/lib
+dw01: /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw01/lib
+dw02: /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw02/lib
+dw03: /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw03/lib
+dw04: /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw04/lib
+dw05: /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw05/lib
+dw06: /tools/Synopsys/vc_static/X-2025.06/packages/DW/linux64/packages/dw/dw06/lib
+
+
+-- default WORK mapping
+WORK > DEFAULT
+TIMEBASE = PS
+
+XLRM_TIME=TRUE
+
+DISAMBIG_CONCAT=TRUE
+
+OVERWRITE_PREDECLARATION_IN_LIB=TRUE
+
+DEFAULT : /home/ltthinh/PSRAM_THANG/cdc/vc_static/vcst_rtdb/.internal/design/worklib
+

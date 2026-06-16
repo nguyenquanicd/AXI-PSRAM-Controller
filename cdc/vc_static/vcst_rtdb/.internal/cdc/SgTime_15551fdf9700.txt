@@ -1,0 +1,63 @@
+SetupJob_ClockGlitch Execution:   started at: 22:22:37
+CDC :: SETUP_CLOCK_GLITCH:    Time Taken: 0.00s
+SetupJob_ClockGlitch Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_ClockUndeclared Execution:   started at: 22:22:37
+CDC :: SETUP_CLOCK_UNDECL:    Time Taken: 0.00s
+SetupJob_ClockUndeclared Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_ResetAssertion Execution:   started at: 22:22:37
+DynamicUserCasePropagation :    Time Taken: 0.00s
+HybridSeqPropagation :    Time Taken: 0.01s
+ReverseConstPropagationOnBiDir:    Time Taken: 0.00s
+ConstantPropagation :    Time Taken: 0.02s
+Reset:: Populating Reset Assert Simulation Data    Time Taken: 0.02s
+CDC :: SETUP_RESET_ASSERT_MISSING:    Time Taken: 0.02s
+SetupJob_ResetAssertion Execution:   completed at: 22:22:37, Time Taken: 0.02s
+SetupJob_ClkGrpPhyExclusiveInvalid Execution:   started at: 22:22:37
+SetupJob_ClkGrpPhyExclusiveInvalid Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_ClockGatingSafeUnsafe Execution:   started at: 22:22:37
+SetupJob_ClockGatingSafeUnsafe Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_SetupClockModuleGlitch Execution:   started at: 22:22:37
+SetupJob_SetupClockModuleGlitch Execution:   completed at: 22:22:37, Time Taken: 0.00s
+Job (2) running for Crossing Generation ( Traversal) :: #Domain: 3 #ClockName: i_qspi_clk #Sequentials 124 Execution:   started at: 22:22:38
+Job (2) running for Crossing Generation ( Traversal) :: #Domain: 3 #ClockName: i_qspi_clk #Sequentials 124 Execution:   completed at: 22:22:38, Time Taken: 0.04s
+RaceRstClkThreadJob_1_12 Execution:   started at: 22:22:39
+RaceRstClkThreadJob_1_12 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+RaceRstClkThreadJob_4_12 Execution:   started at: 22:22:39
+RaceRstClkThreadJob_4_12 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+RaceRstClkThreadJob_7_12 Execution:   started at: 22:22:39
+RaceRstClkThreadJob_7_12 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+RaceRstClkThreadJob_9_12 Execution:   started at: 22:22:39
+RaceRstClkThreadJob_9_12 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+RaceRstClkThreadJob_13_12 Execution:   started at: 22:22:40
+RaceRstClkThreadJob_13_12 Execution:   completed at: 22:22:40, Time Taken: 0.00s
+IntegrityJob_ClkReconv Execution:   started at: 22:22:40
+CDC :: INTEGRITY_CLOCK_RECONVERGE:    Time Taken: 0.00s
+IntegrityJob_ClkReconv Execution:   completed at: 22:22:40, Time Taken: 0.00s
+IntegrityJob_MuxReconvGlitch Execution:   started at: 22:22:40
+CDC :: INTEGRITY_MUXRECONV_CLOCK_GLITCH:    Time Taken: 0.00s
+IntegrityJob_MuxReconvGlitch Execution:   completed at: 22:22:40, Time Taken: 0.00s
+IntegrityJob_AsyncRstComboMux Execution:   started at: 22:22:40
+CDC :: INTEGRITY_ASYNCRST_COMBO_MUX collectStartPoints:  149  Time Taken: 0.00s
+CDC :: INTEGRITY_ASYNCRST_COMBO_MUX findComboMuxRstPath:    Time Taken: 0.00s
+CDC :: INTEGRITY_ASYNCRST_COMBO_MUX performAsyncRstComboMuxCheck:    Time Taken: 0.00s
+IntegrityJob_AsyncRstComboMux Execution:   completed at: 22:22:40, Time Taken: 0.01s
+IntegrityJob_UnexpectedCellsClkPath Execution:   started at: 22:22:40
+CDC :: INTEGRITY_UNEXPECTED_CELLS_CLKPATH: INTEGRITY_BUFINVEQUAL_CELLS_CLKPATH    Time Taken: 0.00s
+IntegrityJob_UnexpectedCellsClkPath Execution:   completed at: 22:22:40, Time Taken: 0.00s
+IntegrityJob_AsyncSyncResetUsage Execution:   started at: 22:22:40
+CDC :: INTEGRITY_RESET_ASYNC_AND_SYNC_USAGE:    Time Taken: 0.00s
+IntegrityJob_AsyncSyncResetUsage Execution:   completed at: 22:22:40, Time Taken: 0.00s
+IntegrityJob_ClkEdgeUnexpected Execution:   started at: 22:22:40
+IntegrityJob_ClkEdgeUnexpected Execution:   completed at: 22:22:40, Time Taken: 0.00s
+DATA_SYNC_NFF_1_130 Execution:   started at: 22:22:40
+DATA_SYNC_NFF_1_130 Execution:   completed at: 22:22:40, Time Taken: 0.01s
+NA Execution:   started at: 22:22:41
+NA Execution:   completed at: 22:22:41, Time Taken: 0.00s
+Conv Job 1_42 Execution:   started at: 22:22:41
+Conv Job 1_42 Execution:   completed at: 22:22:41, Time Taken: 0.28s
+Conv Job 2_2 Execution:   started at: 22:22:41
+Conv Job 2_2 Execution:   completed at: 22:22:41, Time Taken: 0.00s
+Job (2) running for Glitch dest domain:: 1 Execution:   started at: 22:22:41
+Job (2) running for Glitch dest domain:: 1 Execution:   completed at: 22:22:41, Time Taken: 0.01s
+Job (4) running for Glitch dest domain:: 3 Execution:   started at: 22:22:41
+Job (4) running for Glitch dest domain:: 3 Execution:   completed at: 22:22:41, Time Taken: 0.00s

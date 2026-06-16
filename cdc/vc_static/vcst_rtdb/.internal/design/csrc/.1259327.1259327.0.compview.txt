@@ -1,0 +1,6 @@
+{"comelab":{"timestamp_begin":1781450554.380459052, "rt":1.73, "ut":1.28, "st":0.97}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1781450553.493402788}
+{"VCS_COMP_START_TIME": 1781450553.493402788}
+{"VCS_COMP_END_TIME": 1781450556.202671952}
+{"VCS_USER_OPTIONS": "-file /home/ltthinh/PSRAM_THANG/cdc/vc_static/vcst_rtdb/.internal/design/elaborateCmd -Xvcstatic_extns=0x4 -Xvcstatic_extns=0x100 +warn=noSM_CCE -suppress=SM_BB_LIST -suppress=SM_UM_LIST -units -error=IRRIPS -kdb=common_elab -Xufe=parallel:incrdump -kdb=incopt +warn=noKDB-ELAB-E -Xverdi_elab_opts=-saveLevel -verdi_opts -logdir /home/ltthinh/PSRAM_THANG/cdc/vc_static/vcst_rtdb/verdi/elabcomLog  -Xvd_opts=,-ssy,-ssv,-ssz,-silent,+disable_message+C00373, -full64"}
+{"kdb": {"elabcom_name":"<Elabcom>", "log_dir":"/home/ltthinh/PSRAM_THANG/cdc/vc_static/vcst_rtdb/.internal/design/m_vlsi_qspi_top.exe.daidir/elabcomLog"}}

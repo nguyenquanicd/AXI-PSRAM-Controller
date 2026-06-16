@@ -1,0 +1,405 @@
+(2026-06-14 21:38:08),0.00121597,0,start,1196.71,7,RegisterApps : 
+(2026-06-14 21:38:09),0.0199292,0,start,1618.79,429,LicenseMgr Init : 
+(2026-06-14 21:38:10),0.0299292,0,end,1625.07,430,LicenseMgr Init : 
+(2026-06-14 21:38:10),0.0299811,0,end,1625.07,431,RegisterApps : 
+(2026-06-14 21:38:13),0.0799444,0,start,2075.03,502,Analyze 
+(2026-06-14 21:38:13),0.0848611,0,end,2075.03,502,Analyze 
+(2026-06-14 21:38:13),0.0848622,0,start,2075.03,502,Load VCS Message: 
+(2026-06-14 21:38:13),0.0848658,0,end,2075.03,502,Load VCS Message: 
+(2026-06-14 21:38:13),0.0861776,0,start,2075.03,505,Elaborate : 
+(2026-06-14 21:38:16),0.133455,0,end,2075.03,506,Elaborate : 
+(2026-06-14 21:38:16),0.133457,0,start,2075.03,506,Load VCS Message: 
+(2026-06-14 21:38:16),0.133461,0,end,2075.03,506,Load VCS Message: 
+(2026-06-14 21:38:16),0.133462,0,start,2075.03,506,LoadCircuitModel : 
+(2026-06-14 21:38:16),0.133566,0,start,2075.03,506,VsiLib_Restore : 
+(2026-06-14 21:38:16),0.133567,0,end,2075.03,506,VsiLib_Restore : 
+(2026-06-14 21:38:16),0.133568,0,end,2075.03,506,LoadCircuitModel : 
+(2026-06-14 21:38:16),0.133569,0,start,2075.03,506,BuildNetlist : 
+(2026-06-14 21:38:16),0.13357,0,start,2075.03,506,NLDM Build : 
+(2026-06-14 21:38:16),0.133739,0,start,2075.03,528,XMR_Resolution : Total:0 : 
+(2026-06-14 21:38:16),0.13374,0,end,2075.03,528,XMR_Resolution : Success:0 : 
+(2026-06-14 21:38:16),0.133751,0,end,2075.03,528,NLDM Build : 
+(2026-06-14 21:38:16),0.133753,1,start,2075.03,528,Cell properties : 
+(2026-06-14 21:38:16),0.133755,1,end,2075.03,528,Cell properties : 
+(2026-06-14 21:38:16),0.133756,0,end,2075.03,528,BuildNetlist : 
+(2026-06-14 21:38:16),0.133757,0,start,2075.03,528,Process Seq Latch Arrays : 
+(2026-06-14 21:38:16),0.133758,0,end,2075.03,528,Process Seq Latch Arrays : Total Op: 0Processed Op : 0 
+(2026-06-14 21:38:16),0.133764,0,start,2075.03,528,populate SSF data: 
+(2026-06-14 21:38:16),0.133765,0,end,2075.03,528,populate SSF data: 
+(2026-06-14 21:38:16),0.133765,0,start,2075.03,528,DumpGateCountStats : 
+(2026-06-14 21:38:16),0.133776,0,end,2075.03,528,DumpGateCountStats : 
+(2026-06-14 21:38:16),0.133776,0,start,2075.03,528,DataModelStats : 
+(2026-06-14 21:38:16),0.133781,0,end,2075.03,528,DataModelStats : 
+(2026-06-14 21:38:16),0.133782,0,start,2075.03,528,Collect DB cells : 
+(2026-06-14 21:38:16),0.133783,0,end,2075.03,528,Collect DB cells : 
+(2026-06-14 21:38:16),0.133784,0,start,2075.03,528,RunReductionEngine : 
+(2026-06-14 21:38:16),0.133799,1,start,2075.03,537,BlockEnginePropagation : 
+(2026-06-14 21:38:16),0.133846,1,end,2075.03,537,BlockEnginePropagation : 
+(2026-06-14 21:38:16),0.133848,0,end,2075.03,537,RunReductionEngine : 
+(2026-06-14 21:38:16),0.133849,1,start,2075.03,537,ModuleDesignPropagation : 
+(2026-06-14 21:38:16),0.13385,1,end,2075.03,537,ModuleDesignPropagation : 
+(2026-06-14 21:38:16),0.133878,0,start,2077.34,538,Mdm2Nschema : 
+(2026-06-14 21:38:16),0.135051,0,start,2097.36,546,Nschema Composite_SignalNames : 
+(2026-06-14 21:38:16),0.13506,0,end,2097.36,546,Nschema Composite_SignalNames : 
+(2026-06-14 21:38:17),0.145875,0,start,2097.36,547,TCLCacheClear : 
+(2026-06-14 21:38:17),0.145877,0,end,2097.36,547,TCLCacheClear : 
+(2026-06-14 21:38:17),0.145885,1,start,2097.36,547,_nameToNet Map clear : 
+(2026-06-14 21:38:17),0.145887,1,end,2097.36,547,_nameToNet Map clear : 
+(2026-06-14 21:38:17),0.145888,1,start,2097.36,547,ConstantPropagation : 
+(2026-06-14 21:38:17),0.145888,1,start,2097.36,547,UserConstantPropagation : 
+(2026-06-14 21:38:17),0.145889,1,end,2097.36,547,UserConstantPropagation : Number of SCA: 0 
+(2026-06-14 21:38:17),0.14589,1,start,2097.36,547,DynamicUserCasePropagation : 
+(2026-06-14 21:38:17),0.145891,1,end,2097.36,547,DynamicUserCasePropagation : 
+(2026-06-14 21:38:17),0.145891,1,start,2097.36,547,DesignConstantPropagation : 
+(2026-06-14 21:38:17),0.145934,1,end,2097.36,547,DesignConstantPropagation : 
+(2026-06-14 21:38:17),0.145935,1,start,2097.36,547,HybridSeqPropagation : 
+(2026-06-14 21:38:17),0.14594,1,end,2097.36,547,HybridSeqPropagation : 
+(2026-06-14 21:38:17),0.145941,1,start,2097.36,547,ReverseConstPropagationOnBiDir: 
+(2026-06-14 21:38:17),0.145942,1,end,2097.36,547,ReverseConstPropagationOnBiDir: 
+(2026-06-14 21:38:17),0.145943,1,end,2097.36,547,ConstantPropagation : 
+(2026-06-14 21:38:17),0.145944,0,start,2097.36,547,populateInfoToView : 
+(2026-06-14 21:38:17),0.145946,0,end,2097.36,547,populateInfoToView : 
+(2026-06-14 21:38:17),0.145947,1,start,2097.36,547,QuasiStaticPropagation : 
+(2026-06-14 21:38:17),0.145949,1,start,2097.36,547,UserNetBitQuasi : 
+(2026-06-14 21:38:17),0.14595,1,end,2097.36,547,UserNetBitQuasi : UserNetBit Quasi count: 0 
+(2026-06-14 21:38:17),0.145951,1,start,2097.36,547,UserPinBitQuasi : 
+(2026-06-14 21:38:17),0.145951,1,end,2097.36,547,UserPinBitQuasi : UserPinBit Quasi count: 0 
+(2026-06-14 21:38:17),0.145952,1,start,2097.36,547,UserOpPinBitQuasi : 
+(2026-06-14 21:38:17),0.145953,1,end,2097.36,547,UserOpPinBitQuasi : UserOpPinBit Quasi count: 0 
+(2026-06-14 21:38:17),0.145954,1,start,2097.36,547,QueueQuasiNetBits : 
+(2026-06-14 21:38:17),0.145955,1,end,2097.36,547,QueueQuasiNetBits : 
+(2026-06-14 21:38:17),0.145955,1,end,2097.36,547,QuasiStaticPropagation : 
+(2026-06-14 21:38:17),0.145956,0,start,2097.36,547,evaluateGenClocksForBlockedPaths: 
+(2026-06-14 21:38:17),0.145957,0,end,2097.36,547,evaluateGenClocksForBlockedPaths: 
+(2026-06-14 21:38:17),0.145959,1,start,2097.36,547,CDC Checks: 
+(2026-06-14 21:38:17),0.145961,0,start,2097.36,547,Raise Accumulated Limit : 
+(2026-06-14 21:38:17),0.145961,0,end,2097.36,547,Raise Accumulated Limit : 
+(2026-06-14 21:38:17),0.145964,1,start,2097.36,547,CDC :: Initialize cdc attributes : 
+(2026-06-14 21:38:17),0.145966,1,end,2097.36,547,CDC :: Initialize cdc attributes : 
+(2026-06-14 21:38:17),0.145967,1,start,2097.36,547,CDC :: Auto inferring Quasi-static Signals 
+(2026-06-14 21:38:17),0.145969,1,end,2097.36,547,CDC :: Auto inferring Quasi-static Signals 
+(2026-06-14 21:38:17),0.14597,1,start,2097.36,547,CDC :: Clock setup: 
+(2026-06-14 21:38:17),0.146008,1,start,2097.36,547,CDC :: SETUP_CLOCK_OVERLAP: 
+(2026-06-14 21:38:17),0.146009,1,end,2097.36,547,CDC :: SETUP_CLOCK_OVERLAP: 
+(2026-06-14 21:38:17),0.146011,1,end,2097.36,547,CDC :: Clock setup: 
+(2026-06-14 21:38:17),0.146012,1,start,2097.36,547,CDC :: CGC detection: 
+(2026-06-14 21:38:17),0.146012,1,end,2097.36,547,CDC :: CGC detection: 
+(2026-06-14 21:38:17),0.146013,1,start,2097.36,547,CDC :: Reset setup: 
+(2026-06-14 21:38:17),0.146014,1,start,2097.36,547,Rst: Build Reset Sense DB 
+(2026-06-14 21:38:17),0.146016,1,end,2097.36,547,Rst: Build Reset Sense DB 
+(2026-06-14 21:38:17),0.146017,1,start,2097.36,547,Rst: Build Async ResetTree: 
+(2026-06-14 21:38:17),0.146114,1,end,2097.36,547,Rst: Build Async ResetTree: 
+(2026-06-14 21:38:17),0.146115,1,start,2097.36,547,Rst: Build Sync ResetTree: 
+(2026-06-14 21:38:17),0.146116,1,end,2097.36,547,Rst: Build Sync ResetTree: 
+(2026-06-14 21:38:17),0.146143,1,end,2097.36,548,CDC :: Reset setup: 
+(2026-06-14 21:38:17),0.146156,1,start,2097.36,548,CDC :: Populate default domain: 
+(2026-06-14 21:38:17),0.146157,1,end,2097.36,548,CDC :: Populate default domain: 
+(2026-06-14 21:38:17),0.146158,1,start,2097.36,548,CDC :: SETUP_DOMAIN_INFER: 
+(2026-06-14 21:38:17),0.146163,1,end,2097.36,548,CDC :: SETUP_DOMAIN_INFER: 
+(2026-06-14 21:38:17),0.146164,1,start,2097.36,548,CDC :: Blackbox Modelling: 
+(2026-06-14 21:38:17),0.146166,1,end,2097.36,548,CDC :: Blackbox Modelling: 
+(2026-06-14 21:38:17),0.146166,1,start,2097.36,548,CDC :: CDC Ignore Path Constraints Processing
+(2026-06-14 21:38:17),0.146167,1,end,2097.36,548,CDC :: CDC Ignore Path Constraints Processing
+(2026-06-14 21:38:17),0.146168,1,start,2097.36,548,CDC :: CDC Clockglitch Ignore Path Constraints Processing
+(2026-06-14 21:38:17),0.146169,1,end,2097.36,548,CDC :: CDC Clockglitch Ignore Path Constraints Processing
+(2026-06-14 21:38:17),0.14617,1,start,2097.36,548,CDC :: CDC Asyncrst Ignore Path Constraints Processing
+(2026-06-14 21:38:17),0.146171,1,end,2097.36,548,CDC :: CDC Asyncrst Ignore Path Constraints Processing
+(2026-06-14 21:38:17),0.146194,1,start,2097.36,548,CDC :: Setup Check (Setup_port01, Setup_library01): 
+(2026-06-14 21:38:17),0.146195,1,start,2097.36,548,CDC :: SETUP_LIBCELL: 
+(2026-06-14 21:38:17),0.146197,1,end,2097.36,548,CDC :: SETUP_LIBCELL: 
+(2026-06-14 21:38:17),0.1462,1,start,2097.36,548,CDC :: SETUP_PORT: 
+(2026-06-14 21:38:17),0.146246,1,start,2101.36,548,CDC :: SETUP_INPUT_MULTICLK_LOAD: 
+(2026-06-14 21:38:17),0.146249,1,end,2101.36,548,CDC :: SETUP_INPUT_MULTICLK_LOAD: 
+(2026-06-14 21:38:17),0.14625,1,end,2101.36,548,CDC :: SETUP_PORT: 
+(2026-06-14 21:38:17),0.146251,1,end,2101.36,548,CDC :: Setup Check (Setup_port01, Setup_library01): 
+(2026-06-14 21:38:17),0.146252,1,start,2101.36,548,CDC :: Setup Check (Rest): 
+(2026-06-14 21:38:17),0.146254,1,start,2101.36,548,CDC :: Setup Checks analysis: 
+(2026-06-14 21:38:17),0.146284,1,start,2101.36,548,CDC :: Setting stack size 200000000 for 4 multi-threaded checks. 
+(2026-06-14 21:38:17),0.146285,0,start,2101.36,548,StackSizeChange 104857600 ==> 200000000 
+(2026-06-14 21:38:17),0.146299,0,end,2464.32,545,StackSizeChange 104857600 ==> 200000000 
+(2026-06-14 21:38:17),0.1463,1,end,2464.32,545,CDC :: Setting stack size 200000000 for 4 multi-threaded checks.  Thread count reduced to 4. 
+(2026-06-14 21:38:18),0.161539,1,end,2464.32,547,CDC :: Setup Checks analysis: 
+(2026-06-14 21:38:18),0.161582,1,start,2464.32,547,CDC :: SETUP_MULTIPLE_CONSTRAINTS: 
+(2026-06-14 21:38:18),0.161638,1,end,2464.32,547,CDC :: SETUP_MULTIPLE_CONSTRAINTS: 
+(2026-06-14 21:38:18),0.161639,1,end,2464.32,547,CDC :: Setup Check (Rest): 
+(2026-06-14 21:38:18),0.161662,0,start,2464.32,547,CDC :: Check Safety Register: 
+(2026-06-14 21:38:18),0.161663,0,end,2464.32,547,CDC :: Check Safety Register: 
+(2026-06-14 21:38:18),0.161669,1,start,2464.32,547,CDC :: ClockRelationMatrix Db Population
+(2026-06-14 21:38:18),0.161747,1,end,2464.32,547,CDC :: ClockRelationMatrix Db Population
+(2026-06-14 21:38:18),0.16175,1,start,2464.32,547,CDC :: CDC Analyze Quasi Clocks 
+(2026-06-14 21:38:18),0.161751,1,end,2464.32,547,CDC :: CDC Analyze Quasi Clocks 
+(2026-06-14 21:38:18),0.161764,1,start,2464.32,547,CDC :: Creating crossings: 
+(2026-06-14 21:38:18),0.161766,1,start,2464.32,547,CDC :: CDC User Path Ignore Path Constraints Processing
+(2026-06-14 21:38:18),0.161768,1,end,2464.32,547,CDC :: CDC User Path Ignore Path Constraints Processing
+(2026-06-14 21:38:18),0.161801,1,start,2464.32,547,CDC :: Thread Job flow: 
+(2026-06-14 21:38:19),0.182119,1,end,2464.32,552,CDC :: Thread Job flow: 
+(2026-06-14 21:38:19),0.182159,1,end,2464.32,552,CDC :: Creating crossings: 
+(2026-06-14 21:38:19),0.1822,1,start,2464.32,552,CDC :: Integrity, RESET :: Crossing analysis: 
+(2026-06-14 21:38:21),0.206095,1,start,2464.32,553,Add crossings to crossing manager job  Execution:
+(2026-06-14 21:38:21),0.206096,1,start,2464.32,553,RESET :: Creating crossings Post Grid Job: 
+(2026-06-14 21:38:21),0.206102,1,end,2464.32,553,RESET :: Creating crossings Post Grid Job: 
+(2026-06-14 21:38:21),0.206104,1,end,2464.32,553,Add crossings to crossing manager job  Execution:
+(2026-06-14 21:38:21),0.206137,1,end,2464.32,553,CDC :: Integrity, RESET :: Crossing analysis: 
+(2026-06-14 21:38:21),0.206145,1,start,2464.32,553,CDC_RESET ::  Detecting Nff Phase-1: 
+(2026-06-14 21:38:21),0.20622,1,start,2464.32,553,CDC :: Detecting Nff Phase-1: , RESET :: Detecting Nff Phase-1:  analysis: 
+(2026-06-14 21:38:21),0.20995,1,start,2464.32,554,RESET_SYNC_NFF_POST_GRID_JOB Execution:
+(2026-06-14 21:38:21),0.209955,1,end,2464.32,554,RESET_SYNC_NFF_POST_GRID_JOB Execution:
+(2026-06-14 21:38:21),0.209956,1,start,2464.32,554,DATA_SYNC_NFF_POST_GRID_JOB Execution:
+(2026-06-14 21:38:21),0.209974,1,start,2464.32,554,#FFBanks Detected : 
+(2026-06-14 21:38:21),0.209976,1,end,2464.32,554,#FFBanks Detected : 
+(2026-06-14 21:38:21),0.209977,1,end,2464.32,554,DATA_SYNC_NFF_POST_GRID_JOB Execution:
+(2026-06-14 21:38:21),0.210007,1,end,2464.32,554,CDC :: Detecting Nff Phase-1: , RESET :: Detecting Nff Phase-1:  analysis: 
+(2026-06-14 21:38:21),0.21002,1,end,2464.32,553,CDC_RESET ::  Detecting Nff Phase-1: 
+(2026-06-14 21:38:21),0.210021,1,start,2464.32,553,CDC :: Detecting UDS: 
+(2026-06-14 21:38:21),0.210022,1,end,2464.32,553,CDC :: Detecting UDS: 
+(2026-06-14 21:38:21),0.210023,1,start,2464.32,553,RESET :: Detecting UDS: 
+(2026-06-14 21:38:21),0.210024,1,end,2464.32,553,RESET :: Detecting UDS: 
+(2026-06-14 21:38:21),0.210025,1,start,2464.32,553,CDC :: Parsing Data Sync Constraint: 
+(2026-06-14 21:38:21),0.210026,1,end,2464.32,553,CDC :: Parsing Data Sync Constraint: 
+(2026-06-14 21:38:21),0.210026,1,start,2464.32,553,CDC :: Analyzing Data Sync Constraint: 
+(2026-06-14 21:38:21),0.210027,1,end,2464.32,553,CDC :: Analyzing Data Sync Constraint: 
+(2026-06-14 21:38:21),0.210028,1,start,2464.32,553,RESET :: Parsing Data Sync Constraint: 
+(2026-06-14 21:38:21),0.210028,1,end,2464.32,553,RESET :: Parsing Data Sync Constraint: 
+(2026-06-14 21:38:21),0.210029,1,start,2464.32,553,RESET :: Analyzing Data Sync Constraint: 
+(2026-06-14 21:38:21),0.21003,1,end,2464.32,553,RESET :: Analyzing Data Sync Constraint: 
+(2026-06-14 21:38:21),0.210031,1,start,2464.32,553,CDC :: SeqFrontier Job Creation: 
+(2026-06-14 21:38:21),0.210033,1,end,2464.32,553,CDC :: SeqFrontier Job Creation: 
+(2026-06-14 21:38:21),0.210034,1,start,2464.32,553,RESET :: SeqFrontier Job Creation: 
+(2026-06-14 21:38:21),0.210035,1,end,2464.32,553,RESET :: SeqFrontier Job Creation: 
+(2026-06-14 21:38:21),0.210035,1,start,2464.32,553,CDC RST SeqFrontier Run: 
+(2026-06-14 21:38:21),0.211904,1,end,2464.32,553,CDC RST SeqFrontier Run: 
+(2026-06-14 21:38:21),0.211906,1,start,2464.32,553,CDC :: Parsing Multiflop Constraint: 
+(2026-06-14 21:38:21),0.211908,1,end,2464.32,553,CDC :: Parsing Multiflop Constraint: 
+(2026-06-14 21:38:21),0.211912,1,start,2464.32,553,CDC :: Uniquifying Lib-Cells: #SFCCells: 107 #RCCCells: 0 #RPCCells: 0 
+(2026-06-14 21:38:21),0.211917,1,start,2464.32,553,ConstantPropagation : 
+(2026-06-14 21:38:21),0.211919,1,start,2464.32,553,UserConstantPropagation : 
+(2026-06-14 21:38:21),0.21192,1,end,2464.32,553,UserConstantPropagation : Number of SCA: 0 
+(2026-06-14 21:38:21),0.211922,1,start,2464.32,553,UniquifiedInstPropagation : 
+(2026-06-14 21:38:21),0.211923,1,end,2464.32,553,UniquifiedInstPropagation : 
+(2026-06-14 21:38:21),0.211925,1,end,2464.32,553,ConstantPropagation : 
+(2026-06-14 21:38:21),0.211926,0,start,2464.32,553,populateInfoToView : 
+(2026-06-14 21:38:21),0.21193,0,end,2464.32,553,populateInfoToView : 
+(2026-06-14 21:38:21),0.211932,1,end,2464.32,553,CDC :: Uniquifying Lib-Cells: #SFCCells: 107 #RCCCells: 0 #RPCCells: 0 
+(2026-06-14 21:38:21),0.211953,1,start,2464.32,553,Populating flattened/traversed ignore_among_signals 
+(2026-06-14 21:38:21),0.211954,1,end,2464.32,553,Populating flattened/traversed ignore_among_signals 
+(2026-06-14 21:38:21),0.211978,1,start,2464.32,553,CDC :: Datasync, CDC :: Convergence, RESET :: Datasync analysis: 
+(2026-06-14 21:38:21),0.220272,1,start,2464.32,564,NoConv, RstNff Reporting Job Execution:
+(2026-06-14 21:38:21),0.220679,1,end,2500.35,572,NoConv, RstNff Reporting Job Execution:
+(2026-06-14 21:38:21),0.220699,1,end,2500.35,572,CDC :: Datasync, CDC :: Convergence, RESET :: Datasync analysis: 
+(2026-06-14 21:38:21),0.2207,1,start,2500.35,572,CDC :: Populating sync report: 
+(2026-06-14 21:38:21),0.220701,1,end,2500.35,572,CDC :: Populating sync report: 
+(2026-06-14 21:38:21),0.22072,1,start,2500.35,572,CDC :: Qualifier Validation: 
+(2026-06-14 21:38:21),0.220722,1,start,2500.35,572,Soc Validation analysis: 
+(2026-06-14 21:38:21),0.220749,1,end,2500.35,572,Soc Validation analysis: 
+(2026-06-14 21:38:21),0.220772,1,end,2500.35,572,CDC :: Qualifier Validation: 
+(2026-06-14 21:38:21),0.220773,1,start,2500.35,572,CDC :: Constraint Validation: 
+(2026-06-14 21:38:21),0.220773,1,start,2500.35,572,Soc Validation analysis: 
+(2026-06-14 21:38:21),0.220774,1,end,2500.35,572,Soc Validation analysis: 
+(2026-06-14 21:38:21),0.220775,1,end,2500.35,572,CDC :: Constraint Validation: 
+(2026-06-14 21:38:21),0.220794,1,start,2500.35,572,CDC::Glitch PreRunStats #PathTypesSize: 2
+(2026-06-14 21:38:21),0.220797,1,end,2500.35,572,CDC::Glitch PreRunStats #GFCInstScopeSize: 0 #GFCHierScopeSize: 0 #UserCdcISSize: 0 #PropCdcISSize: 0 #JobSize: 6
+(2026-06-14 21:38:21),0.220798,1,start,2500.35,572,RESET :: Deassertion analysis: 
+(2026-06-14 21:38:21),0.2208,1,end,2500.35,572,RESET :: Deassertion analysis: 
+(2026-06-14 21:38:21),0.220801,1,start,2500.35,572,CDC :: Glitch analysis: 
+(2026-06-14 21:38:22),0.224551,1,start,2500.35,575,GLITCH_POST_GRID_JOB Execution:
+(2026-06-14 21:38:22),0.224555,1,end,2500.35,575,GLITCH_POST_GRID_JOB Execution:
+(2026-06-14 21:38:22),0.224557,1,end,2500.35,575,CDC :: Glitch analysis: 
+(2026-06-14 21:38:22),0.224595,1,start,2500.35,575,RESET :: Populating sync report: 
+(2026-06-14 21:38:22),0.224597,1,end,2500.35,575,RESET :: Populating sync report: 
+(2026-06-14 21:38:22),0.224599,1,start,2500.35,575,RESET :: SeqFrontier cleanup: 
+(2026-06-14 21:38:22),0.2246,1,end,2500.35,575,RESET :: SeqFrontier cleanup: 
+(2026-06-14 21:38:22),0.224603,1,start,2500.35,575,CDC :: SeqFrontier cleanup: 
+(2026-06-14 21:38:22),0.224604,1,end,2500.35,575,CDC :: SeqFrontier cleanup: 
+(2026-06-14 21:38:22),0.224607,1,end,2500.35,575,CDC Checks: 
+(2026-06-14 21:38:22),0.227155,0,start,2500.35,575,SQL Mem : CurrMem: 30 mb, PeakMem: 30 mb 
+(2026-06-14 21:38:22),0.227156,0,end,2500.35,575,SQL Mem : CurrMem: 31 mb, PeakMem: 31 mb 
+(2026-06-14 21:38:22),0.227414,0,start,2500.35,575,SQL Index (add_index) :CurrMem: 31 mb, PeakMem: 31 mb 
+(2026-06-14 21:38:22),0.227419,0,end,2500.35,575,SQL Index (add_index) :CurrMem: 31 mb, PeakMem: 31 mb 
+(2026-06-14 21:38:22),0.228277,0,start,2500.35,576,report_cdc: 
+(2026-06-14 21:38:22),0.228802,0,start,2500.35,589,PragmaWaiverGen: 
+(2026-06-14 21:38:22),0.228872,0,start,2500.35,589,PragmaWaiverUsingViol : 
+(2026-06-14 21:38:22),0.228873,0,end,2500.35,589,PragmaWaiverUsingViol : 
+(2026-06-14 21:38:22),0.228894,0,end,2500.35,589,PragmaWaiverGen: 
+(2026-06-14 21:38:22),0.228895,0,start,2500.35,589,PragmaWaiverApply: 
+(2026-06-14 21:38:22),0.229774,0,start,2500.35,589,generatePragmaWaiverCommands: 
+(2026-06-14 21:38:22),0.229775,0,end,2500.35,589,generatePragmaWaiverCommands: 
+(2026-06-14 21:38:22),0.229777,0,end,2500.35,589,PragmaWaiverApply: 
+(2026-06-14 21:38:22),0.230938,0,start,2500.35,592,buildSummary
+(2026-06-14 21:38:22),0.230942,0,end,2500.35,592,buildSummary
+(2026-06-14 21:38:22),0.230942,0,start,2500.35,592,buildViolations
+(2026-06-14 21:38:22),0.231035,0,start,2500.35,595,setXsltContext: isBatch:0,isThread:0,ST:0,MainThread:1,J:0
+(2026-06-14 21:38:22),0.231038,0,end,2500.35,595,setXsltContext: isBatch:1,isThread:1,ST:0,MainThread:1,CreatedThread:3,PoolThread:4
+(2026-06-14 21:38:22),0.233767,0,end,2500.35,593,buildViolations
+(2026-06-14 21:38:22),0.233779,0,end,2500.35,589,report_cdc: 
+(2026-06-14 21:38:22),0.233793,0,start,2500.35,589,report_cdc: 
+(2026-06-14 21:38:22),0.234449,0,start,2500.35,590,PragmaWaiverGen: 
+(2026-06-14 21:38:22),0.234451,0,start,2500.35,590,PragmaWaiverUsingViol : 
+(2026-06-14 21:38:22),0.234452,0,end,2500.35,590,PragmaWaiverUsingViol : 
+(2026-06-14 21:38:22),0.234454,0,end,2500.35,590,PragmaWaiverGen: 
+(2026-06-14 21:38:22),0.234455,0,start,2500.35,590,PragmaWaiverApply: 
+(2026-06-14 21:38:22),0.234456,0,end,2500.35,590,PragmaWaiverApply: 
+(2026-06-14 21:38:22),0.23498,0,start,2500.35,593,buildSummary
+(2026-06-14 21:38:22),0.234985,0,end,2500.35,593,buildSummary
+(2026-06-14 21:38:22),0.234986,0,start,2500.35,593,buildViolations
+(2026-06-14 21:38:22),0.235076,0,start,2500.35,595,setXsltContext: isBatch:0,isThread:0,ST:0,MainThread:1,J:0
+(2026-06-14 21:38:22),0.23508,0,end,2500.35,595,setXsltContext: isBatch:1,isThread:1,ST:0,MainThread:1,CreatedThread:3,PoolThread:4
+(2026-06-14 21:38:23),0.239477,0,end,2500.35,594,buildViolations
+(2026-06-14 21:38:23),0.239494,0,end,2500.35,590,report_cdc: 
+(2026-06-14 21:38:23),0.239508,0,start,2500.35,590,report_cdc: 
+(2026-06-14 21:38:23),0.240146,0,start,2500.35,590,PragmaWaiverGen: 
+(2026-06-14 21:38:23),0.240147,0,start,2500.35,590,PragmaWaiverUsingViol : 
+(2026-06-14 21:38:23),0.240147,0,end,2500.35,590,PragmaWaiverUsingViol : 
+(2026-06-14 21:38:23),0.240151,0,end,2500.35,590,PragmaWaiverGen: 
+(2026-06-14 21:38:23),0.240152,0,start,2500.35,590,PragmaWaiverApply: 
+(2026-06-14 21:38:23),0.240154,0,end,2500.35,590,PragmaWaiverApply: 
+(2026-06-14 21:38:23),0.240604,0,start,2500.35,593,buildSummary
+(2026-06-14 21:38:23),0.24061,0,end,2500.35,593,buildSummary
+(2026-06-14 21:38:23),0.240611,0,start,2500.35,593,buildViolations
+(2026-06-14 21:38:23),0.240702,0,start,2500.35,596,setXsltContext: isBatch:0,isThread:0,ST:0,MainThread:1,J:0
+(2026-06-14 21:38:23),0.240706,0,end,2500.35,596,setXsltContext: isBatch:1,isThread:1,ST:0,MainThread:1,CreatedThread:3,PoolThread:4
+(2026-06-14 21:38:23),0.243609,0,end,2500.35,596,buildViolations
+(2026-06-14 21:38:23),0.243622,0,end,2500.35,592,report_cdc: 
+(2026-06-14 21:38:24),0.266572,0,start,2500.35,594,PragmaWaiverGen: 
+(2026-06-14 21:38:24),0.266573,0,start,2500.35,594,PragmaWaiverUsingViol : 
+(2026-06-14 21:38:24),0.266574,0,end,2500.35,594,PragmaWaiverUsingViol : 
+(2026-06-14 21:38:24),0.266576,0,end,2500.35,594,PragmaWaiverGen: 
+(2026-06-14 21:38:24),0.266577,0,start,2500.35,594,PragmaWaiverApply: 
+(2026-06-14 21:38:24),0.266578,0,end,2500.35,594,PragmaWaiverApply: 
+(2026-06-14 21:38:24),0.266585,0,start,2500.35,594,SQL Index (add_index) :CurrMem: 31 mb, PeakMem: 31 mb 
+(2026-06-14 21:38:24),0.266614,0,end,2500.35,594,SQL Index (add_index) :CurrMem: 31 mb, PeakMem: 31 mb 
+(2026-06-14 21:38:24),0.268684,0,start,2500.35,596,PragmaWaiverGen: 
+(2026-06-14 21:38:24),0.268686,0,start,2500.35,596,PragmaWaiverUsingViol : 
+(2026-06-14 21:38:24),0.268687,0,end,2500.35,596,PragmaWaiverUsingViol : 
+(2026-06-14 21:38:24),0.268689,0,end,2500.35,596,PragmaWaiverGen: 
+(2026-06-14 21:38:24),0.268689,0,start,2500.35,596,PragmaWaiverApply: 
+(2026-06-14 21:38:24),0.26869,0,end,2500.35,596,PragmaWaiverApply: 
+(2026-06-14 21:38:24),0.270086,0,start,2500.35,596,ApplyPendingWaiver
+(2026-06-14 21:38:24),0.270092,0,end,2500.35,596,ApplyPendingWaiver
+(2026-06-14 21:38:24),0.270131,0,start,2500.35,594,SQL_DB_Save_Main
+(2026-06-14 21:38:24),0.27166,0,end,2500.35,594,SQL_DB_Save_Main
+(2026-06-14 21:49:13),11.0842,0,start,2500.35,599,PragmaWaiverGen: 
+(2026-06-14 21:49:13),11.0842,0,start,2500.35,599,PragmaWaiverUsingViol : 
+(2026-06-14 21:49:13),11.0842,0,end,2500.35,599,PragmaWaiverUsingViol : 
+(2026-06-14 21:49:13),11.0842,0,end,2500.35,599,PragmaWaiverGen: 
+(2026-06-14 21:49:13),11.0842,0,start,2500.35,599,PragmaWaiverApply: 
+(2026-06-14 21:49:13),11.0842,0,end,2500.35,599,PragmaWaiverApply: 
+(2026-06-14 21:57:05),18.9486,0,start,2500.35,599,PragmaWaiverGen: 
+(2026-06-14 21:57:05),18.9486,0,start,2500.35,599,PragmaWaiverUsingViol : 
+(2026-06-14 21:57:05),18.9486,0,end,2500.35,599,PragmaWaiverUsingViol : 
+(2026-06-14 21:57:05),18.9486,0,end,2500.35,599,PragmaWaiverGen: 
+(2026-06-14 21:57:05),18.9486,0,start,2500.35,599,PragmaWaiverApply: 
+(2026-06-14 21:57:05),18.9486,0,end,2500.35,599,PragmaWaiverApply: 
+(2026-06-14 21:59:50),21.6924,0,start,2500.35,600,PragmaWaiverGen: 
+(2026-06-14 21:59:50),21.6924,0,start,2500.35,600,PragmaWaiverUsingViol : 
+(2026-06-14 21:59:50),21.6924,0,end,2500.35,600,PragmaWaiverUsingViol : 
+(2026-06-14 21:59:50),21.6924,0,end,2500.35,600,PragmaWaiverGen: 
+(2026-06-14 21:59:50),21.6924,0,start,2500.35,600,PragmaWaiverApply: 
+(2026-06-14 21:59:50),21.6924,0,end,2500.35,600,PragmaWaiverApply: 
+(2026-06-14 22:01:27),23.3195,0,start,2500.35,600,PragmaWaiverGen: 
+(2026-06-14 22:01:27),23.3195,0,start,2500.35,600,PragmaWaiverUsingViol : 
+(2026-06-14 22:01:27),23.3195,0,end,2500.35,600,PragmaWaiverUsingViol : 
+(2026-06-14 22:01:27),23.3195,0,end,2500.35,600,PragmaWaiverGen: 
+(2026-06-14 22:01:27),23.3195,0,start,2500.35,600,PragmaWaiverApply: 
+(2026-06-14 22:01:27),23.3195,0,end,2500.35,600,PragmaWaiverApply: 
+(2026-06-14 22:02:38),24.5012,0,start,2500.35,600,PragmaWaiverGen: 
+(2026-06-14 22:02:38),24.5012,0,start,2500.35,600,PragmaWaiverUsingViol : 
+(2026-06-14 22:02:38),24.5012,0,end,2500.35,600,PragmaWaiverUsingViol : 
+(2026-06-14 22:02:38),24.5012,0,end,2500.35,600,PragmaWaiverGen: 
+(2026-06-14 22:02:38),24.5012,0,start,2500.35,600,PragmaWaiverApply: 
+(2026-06-14 22:02:38),24.5012,0,end,2500.35,600,PragmaWaiverApply: 
+(2026-06-14 22:06:34),28.429,0,start,2500.35,602,PragmaWaiverGen: 
+(2026-06-14 22:06:34),28.429,0,start,2500.35,602,PragmaWaiverUsingViol : 
+(2026-06-14 22:06:34),28.429,0,end,2500.35,602,PragmaWaiverUsingViol : 
+(2026-06-14 22:06:34),28.429,0,end,2500.35,602,PragmaWaiverGen: 
+(2026-06-14 22:06:34),28.429,0,start,2500.35,602,PragmaWaiverApply: 
+(2026-06-14 22:06:34),28.429,0,end,2500.35,602,PragmaWaiverApply: 
+(2026-06-14 22:07:32),29.4013,0,start,2500.35,603,PragmaWaiverGen: 
+(2026-06-14 22:07:32),29.4014,0,start,2500.35,603,PragmaWaiverUsingViol : 
+(2026-06-14 22:07:32),29.4014,0,end,2500.35,603,PragmaWaiverUsingViol : 
+(2026-06-14 22:07:32),29.4014,0,end,2500.35,603,PragmaWaiverGen: 
+(2026-06-14 22:07:32),29.4014,0,start,2500.35,603,PragmaWaiverApply: 
+(2026-06-14 22:07:32),29.4014,0,end,2500.35,603,PragmaWaiverApply: 
+(2026-06-14 22:08:31),30.3748,0,start,2500.35,603,PragmaWaiverGen: 
+(2026-06-14 22:08:31),30.3748,0,start,2500.35,603,PragmaWaiverUsingViol : 
+(2026-06-14 22:08:31),30.3748,0,end,2500.35,603,PragmaWaiverUsingViol : 
+(2026-06-14 22:08:31),30.3748,0,end,2500.35,603,PragmaWaiverGen: 
+(2026-06-14 22:08:31),30.3748,0,start,2500.35,603,PragmaWaiverApply: 
+(2026-06-14 22:08:31),30.3748,0,end,2500.35,603,PragmaWaiverApply: 
+(2026-06-14 22:09:31),31.3773,0,start,2500.35,604,PragmaWaiverGen: 
+(2026-06-14 22:09:31),31.3773,0,start,2500.35,604,PragmaWaiverUsingViol : 
+(2026-06-14 22:09:31),31.3773,0,end,2500.35,604,PragmaWaiverUsingViol : 
+(2026-06-14 22:09:31),31.3773,0,end,2500.35,604,PragmaWaiverGen: 
+(2026-06-14 22:09:31),31.3773,0,start,2500.35,604,PragmaWaiverApply: 
+(2026-06-14 22:09:31),31.3773,0,end,2500.35,604,PragmaWaiverApply: 
+(2026-06-14 22:10:50),32.7043,0,start,2500.35,607,PragmaWaiverGen: 
+(2026-06-14 22:10:50),32.7043,0,start,2500.35,607,PragmaWaiverUsingViol : 
+(2026-06-14 22:10:50),32.7043,0,end,2500.35,607,PragmaWaiverUsingViol : 
+(2026-06-14 22:10:50),32.7043,0,end,2500.35,607,PragmaWaiverGen: 
+(2026-06-14 22:10:50),32.7043,0,start,2500.35,607,PragmaWaiverApply: 
+(2026-06-14 22:10:50),32.7043,0,end,2500.35,607,PragmaWaiverApply: 
+(2026-06-14 22:11:08),33.0032,0,start,2500.35,607,PragmaWaiverGen: 
+(2026-06-14 22:11:08),33.0032,0,start,2500.35,607,PragmaWaiverUsingViol : 
+(2026-06-14 22:11:08),33.0032,0,end,2500.35,607,PragmaWaiverUsingViol : 
+(2026-06-14 22:11:08),33.0032,0,end,2500.35,607,PragmaWaiverGen: 
+(2026-06-14 22:11:08),33.0032,0,start,2500.35,607,PragmaWaiverApply: 
+(2026-06-14 22:11:08),33.0032,0,end,2500.35,607,PragmaWaiverApply: 
+(2026-06-14 22:11:27),33.3099,0,start,2500.35,607,PragmaWaiverGen: 
+(2026-06-14 22:11:27),33.31,0,start,2500.35,607,PragmaWaiverUsingViol : 
+(2026-06-14 22:11:27),33.31,0,end,2500.35,607,PragmaWaiverUsingViol : 
+(2026-06-14 22:11:27),33.31,0,end,2500.35,607,PragmaWaiverGen: 
+(2026-06-14 22:11:27),33.31,0,start,2500.35,607,PragmaWaiverApply: 
+(2026-06-14 22:11:27),33.31,0,end,2500.35,607,PragmaWaiverApply: 
+(2026-06-14 22:12:09),34.0213,0,start,2500.35,607,PragmaWaiverGen: 
+(2026-06-14 22:12:09),34.0213,0,start,2500.35,607,PragmaWaiverUsingViol : 
+(2026-06-14 22:12:09),34.0213,0,end,2500.35,607,PragmaWaiverUsingViol : 
+(2026-06-14 22:12:09),34.0213,0,end,2500.35,607,PragmaWaiverGen: 
+(2026-06-14 22:12:09),34.0213,0,start,2500.35,607,PragmaWaiverApply: 
+(2026-06-14 22:12:09),34.0213,0,end,2500.35,607,PragmaWaiverApply: 
+(2026-06-14 22:12:45),34.609,0,start,2500.35,611,PragmaWaiverGen: 
+(2026-06-14 22:12:45),34.609,0,start,2500.35,611,PragmaWaiverUsingViol : 
+(2026-06-14 22:12:45),34.609,0,end,2500.35,611,PragmaWaiverUsingViol : 
+(2026-06-14 22:12:45),34.609,0,end,2500.35,611,PragmaWaiverGen: 
+(2026-06-14 22:12:45),34.609,0,start,2500.35,611,PragmaWaiverApply: 
+(2026-06-14 22:12:45),34.609,0,end,2500.35,611,PragmaWaiverApply: 
+(2026-06-14 22:15:44),37.5968,0,start,2500.35,611,PragmaWaiverGen: 
+(2026-06-14 22:15:44),37.5968,0,start,2500.35,611,PragmaWaiverUsingViol : 
+(2026-06-14 22:15:44),37.5968,0,end,2500.35,611,PragmaWaiverUsingViol : 
+(2026-06-14 22:15:44),37.5968,0,end,2500.35,611,PragmaWaiverGen: 
+(2026-06-14 22:15:44),37.5968,0,start,2500.35,611,PragmaWaiverApply: 
+(2026-06-14 22:15:44),37.5969,0,end,2500.35,611,PragmaWaiverApply: 
+(2026-06-14 22:16:23),38.2526,0,start,2500.35,611,PragmaWaiverGen: 
+(2026-06-14 22:16:23),38.2526,0,start,2500.35,611,PragmaWaiverUsingViol : 
+(2026-06-14 22:16:23),38.2526,0,end,2500.35,611,PragmaWaiverUsingViol : 
+(2026-06-14 22:16:23),38.2526,0,end,2500.35,611,PragmaWaiverGen: 
+(2026-06-14 22:16:23),38.2526,0,start,2500.35,611,PragmaWaiverApply: 
+(2026-06-14 22:16:23),38.2526,0,end,2500.35,611,PragmaWaiverApply: 
+(2026-06-14 22:16:48),38.6627,0,start,2500.35,611,PragmaWaiverGen: 
+(2026-06-14 22:16:48),38.6627,0,start,2500.35,611,PragmaWaiverUsingViol : 
+(2026-06-14 22:16:48),38.6627,0,end,2500.35,611,PragmaWaiverUsingViol : 
+(2026-06-14 22:16:48),38.6627,0,end,2500.35,611,PragmaWaiverGen: 
+(2026-06-14 22:16:48),38.6627,0,start,2500.35,611,PragmaWaiverApply: 
+(2026-06-14 22:16:48),38.6627,0,end,2500.35,611,PragmaWaiverApply: 
+(2026-06-14 22:17:12),39.0573,0,start,2500.35,611,PragmaWaiverGen: 
+(2026-06-14 22:17:12),39.0573,0,start,2500.35,611,PragmaWaiverUsingViol : 
+(2026-06-14 22:17:12),39.0573,0,end,2500.35,611,PragmaWaiverUsingViol : 
+(2026-06-14 22:17:12),39.0573,0,end,2500.35,611,PragmaWaiverGen: 
+(2026-06-14 22:17:12),39.0573,0,start,2500.35,611,PragmaWaiverApply: 
+(2026-06-14 22:17:12),39.0573,0,end,2500.35,611,PragmaWaiverApply: 
+(2026-06-14 22:18:15),40.1153,0,start,2500.35,613,PragmaWaiverGen: 
+(2026-06-14 22:18:15),40.1153,0,start,2500.35,613,PragmaWaiverUsingViol : 
+(2026-06-14 22:18:15),40.1153,0,end,2500.35,613,PragmaWaiverUsingViol : 
+(2026-06-14 22:18:15),40.1153,0,end,2500.35,613,PragmaWaiverGen: 
+(2026-06-14 22:18:15),40.1153,0,start,2500.35,613,PragmaWaiverApply: 
+(2026-06-14 22:18:15),40.1153,0,end,2500.35,613,PragmaWaiverApply: 
+(2026-06-14 22:18:42),40.5665,0,start,2500.35,613,PragmaWaiverGen: 
+(2026-06-14 22:18:42),40.5665,0,start,2500.35,613,PragmaWaiverUsingViol : 
+(2026-06-14 22:18:42),40.5665,0,end,2500.35,613,PragmaWaiverUsingViol : 
+(2026-06-14 22:18:42),40.5665,0,end,2500.35,613,PragmaWaiverGen: 
+(2026-06-14 22:18:42),40.5665,0,start,2500.35,613,PragmaWaiverApply: 
+(2026-06-14 22:18:42),40.5665,0,end,2500.35,613,PragmaWaiverApply: 
+(2026-06-14 22:18:53),40.7439,0,start,2500.35,613,PragmaWaiverGen: 
+(2026-06-14 22:18:53),40.7439,0,start,2500.35,613,PragmaWaiverUsingViol : 
+(2026-06-14 22:18:53),40.7439,0,end,2500.35,613,PragmaWaiverUsingViol : 
+(2026-06-14 22:18:53),40.7439,0,end,2500.35,613,PragmaWaiverGen: 
+(2026-06-14 22:18:53),40.7439,0,start,2500.35,613,PragmaWaiverApply: 
+(2026-06-14 22:18:53),40.7439,0,end,2500.35,613,PragmaWaiverApply: 

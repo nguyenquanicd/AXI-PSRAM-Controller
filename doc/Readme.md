@@ -165,7 +165,7 @@ The CSR field `ctrl.xip_en` is reserved for future explicit XIP control.
 
 ---
 
-## VIII. References
+## VII. References
 
 | Component | Repository |
 |---|---|
@@ -175,7 +175,7 @@ The CSR field `ctrl.xip_en` is reserved for future explicit XIP control.
 
 ---
 
-## IX. Contact
+## VIII. Contact
 
 This IP is developed and maintained by **VLSI Technology**.  
 Designers: **Ethan**, **Link**  

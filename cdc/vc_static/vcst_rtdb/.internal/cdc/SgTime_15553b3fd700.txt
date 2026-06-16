@@ -1,0 +1,43 @@
+SetupJob_CheckSetupPotentialSoftReset Execution:   started at: 22:22:37
+SetupJob_CheckSetupPotentialSoftReset Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_DumpClkPathCaseAnalysis Execution:   started at: 22:22:37
+SetupJob_DumpClkPathCaseAnalysis Execution:   completed at: 22:22:37, Time Taken: 0.00s
+Job (0) running for Crossing Generation ( Container population) ::  Execution:   started at: 22:22:38
+Job (0) running for Crossing Generation ( Container population) ::  Execution:   completed at: 22:22:39, Time Taken: 1.00s
+ResetCrossingJob 5_957 Execution:   started at: 22:22:39
+ResetCrossingJob 5_957 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+ResetCrossingJob 7_957 Execution:   started at: 22:22:39
+ResetCrossingJob 7_957 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+RaceRstClkThreadJob_5_12 Execution:   started at: 22:22:39
+RaceRstClkThreadJob_5_12 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+ResetCrossingJob 1_939 Execution:   started at: 22:22:39
+ResetCrossingJob 1_939 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+ResetCrossingJob 2_939 Execution:   started at: 22:22:39
+ResetCrossingJob 2_939 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+ResetCrossingJob 4_90 Execution:   started at: 22:22:39
+ResetCrossingJob 4_90 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+RaceRstClkThreadJob_12_12 Execution:   started at: 22:22:39
+RaceRstClkThreadJob_12_12 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+RaceRstClkThreadJob_15_12 Execution:   started at: 22:22:40
+RaceRstClkThreadJob_15_12 Execution:   completed at: 22:22:40, Time Taken: 0.00s
+IntegrityJob_ClkgateGlitch Execution:   started at: 22:22:40
+CDC :: INTEGRITY_CLKGATE_GLITCH:    Time Taken: 0.00s
+IntegrityJob_ClkgateGlitch Execution:   completed at: 22:22:40, Time Taken: 0.00s
+IntegrityJob_UnexpectedCellsRstPath Execution:   started at: 22:22:40
+CDC :: INTEGRITY_UNEXPECTED_CELLS_RSTPATH:    Time Taken: 0.00s
+IntegrityJob_UnexpectedCellsRstPath Execution:   completed at: 22:22:40, Time Taken: 0.00s
+IntegrityJob_SyncResetHighLowUsage Execution:   started at: 22:22:40
+CDC :: INTEGRITY_SYNCRESET_HIGH_AND_LOW_USAGE:    Time Taken: 0.00s
+IntegrityJob_SyncResetHighLowUsage Execution:   completed at: 22:22:40, Time Taken: 0.00s
+DATA_SYNC_NFF_4_81 Execution:   started at: 22:22:40
+DATA_SYNC_NFF_4_81 Execution:   completed at: 22:22:40, Time Taken: 0.01s
+NA Execution:   started at: 22:22:41
+NA Execution:   completed at: 22:22:41, Time Taken: 0.00s
+Sync Job 1_397 Execution:   started at: 22:22:41
+Sync Job 1_397 Execution:   completed at: 22:22:41, Time Taken: 0.19s
+Sync Job 0_34 Execution:   started at: 22:22:41
+Sync Job 0_34 Execution:   completed at: 22:22:41, Time Taken: 0.00s
+Job (1) running for Glitch dest domain:: 3 Execution:   started at: 22:22:41
+Job (1) running for Glitch dest domain:: 3 Execution:   completed at: 22:22:41, Time Taken: 0.02s
+Job (5) running for Glitch dest domain:: 1 Execution:   started at: 22:22:41
+Job (5) running for Glitch dest domain:: 1 Execution:   completed at: 22:22:41, Time Taken: 0.00s

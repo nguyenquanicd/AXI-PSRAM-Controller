@@ -1,0 +1,17 @@
+<Command name="schProperty" delimiter="/" verdiWin="4fc2c5b0">
+<propertyTable type="cdc">
+<object name="m_vlsi_qspi_top/u_axi_ctrl">
+<Property name="Type" value="instance" />
+<Property name="Name" value="u_axi_ctrl" verdiName="m_vlsi_qspi_top/u_axi_ctrl" />
+<Root_Node name="Library">
+<Property name="Cell Name" value="m_vlsi_axi4_sram" />
+<Property name="Cell Type" value="Hierarchical" />
+<Property name="Cell File" value="" />
+</Root_Node>
+<Root_Node name="CDC">
+<Property name="User Defined Synchronizer" value="False" />
+</Root_Node>
+</object>
+</propertyTable>
+</Command>
+

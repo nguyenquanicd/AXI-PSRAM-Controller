@@ -1,0 +1,135 @@
+<msgDoc>
+  <msgTag>CDC_UNSYNC_DATA</msgTag>
+  <msgType>error</msgType>
+  <msgLine>Partially matched data synchronization scheme found for CDC path from <b>SrcObject</b> to <b>DestObject</b>, crossing from <b>SrcClockInfoList</b> to <b>DestClockInfoList</b></msgLine>
+  <msgDesc>
+    <p>VC SpyGlass CDC reports this tag when a partially matched data synchronization scheme for CDC path from given source object to destination object is found in the design.</p>
+
+
+</msgDesc>
+  <msgImg>
+    <imgSrc>html/cdc-images/SYNCCDC_DATAPATH_PARTIAL.gif</imgSrc>
+  </msgImg>
+  <fields>
+    <field>ReasonInfoList: Reason info list</field>
+    <field>SrcObject: Q-pin/port of source signal</field>
+    <field>DestObject: Q-pin/port of destination signal</field>
+    <field>SrcClockInfoList: List of source clocks with corresponding domains</field>
+    <field>DestClockInfoList: List of destination clocks with corresponding domains</field>
+    <field>ConstraintInfoList: Constraint info list</field>
+    <field>SourceDriverSignals: List of source drivers</field>
+    <field>SrcObjectBitsUsed: Bits of source object participating in this violation </field>
+    <field>SrcObjectType: Source object type</field>
+    <field>SrcFileLine: File name and line number of source object.  Possible sub-fields include:</field>
+      <subfields>
+        <subfield>FileName: File Name</subfield>
+        <subfield>LineNumber: Line number</subfield>
+      </subfields>
+    <field>SrcConstrInfo: Constraint info through which source is specified</field>
+    <field>DestObjectBitsUsed: Bits of destination object participating in this violation </field>
+    <field>DestObjectType: Destination object type</field>
+    <field>DstFileLine: File name and line number of destination object.  Possible sub-fields include:</field>
+      <subfields>
+        <subfield>FileName: File Name</subfield>
+        <subfield>LineNumber: Line number</subfield>
+      </subfields>
+    <field>ViolationSAMType: Type of violation</field>
+    <field>ViaPointList: List of all the ViaPoints for a violation</field>
+    <field>SamSource: SAM boundary port at source side</field>
+    <field>SamDestination: SAM boundary port at destination side</field>
+    <field>IpBusSrc: IP bus port at source side</field>
+    <field>IpBusDst: IP bus port at destination side</field>
+    <field>DestConstrInfo: Constraint info through which destination is specified</field>
+    <field>CompositeSrcClockInfo: Composite source clock details.  Possible sub-fields include:</field>
+      <subfields>
+        <subfield>ClockObject: Clock object</subfield>
+        <subfield>ClockDomainId: Clock domain ID</subfield>
+      </subfields>
+    <field>AsyncClockPairInfoList: List of pair of all asynchronous source and destination clocks </field>
+    <field>CompositeDestClockInfo: Composite destination clock details.  Possible sub-fields include:</field>
+      <subfields>
+        <subfield>ClockObject: Clock object</subfield>
+        <subfield>ClockDomainId: Clock domain ID</subfield>
+      </subfields>
+    <field>CtrlPathList: List of control paths</field>
+    <field>SrcCtrlPathList: List of source control paths</field>
+    <field>EnableExprList: List of enable expressions</field>
+    <field>ContainerInstance: Containing instance</field>
+    <field>Module: Design Unit</field>
+    <field>CrossingCount: Bit level crossing count</field>
+    <field>FullyContainedViolation: Flagged violation is fully inside the abstracted module</field>
+    <field>BusCompressionData: Details about the bus compressed data.  Possible sub-fields include:</field>
+      <subfields>
+        <subfield>Format: Format of Bus Compression</subfield>
+        <subfield>Width: Width of Bus Compressed</subfield>
+        <subfield>StartPoint: First bit of compressed source bus</subfield>
+        <subfield>EndPoint: First bit of compressed destination bus</subfield>
+        <subfield>Mapping: Bit blasted mapping of compressed bus</subfield>
+      </subfields>
+    <field>DynamicProperty: Property Info.  Possible sub-fields include:</field>
+      <subfields>
+        <subfield>DynamicStatus: Assertion Status</subfield>
+        <subfield>AssertionInfo: Assertion Info</subfield>
+        <subfield>ReasonList: Reason list</subfield>
+      </subfields>
+    <field>FileName: File Name</field>
+    <field>LineNumber: Line number</field>
+    <field>AssertionIdList: Assertion List corresponding to the violation</field>
+  </fields>
+
+	<relatedcommands>
+	<field><relatedlink href="xml/cmds/configure_cdc_back_to_back_uds.xml">configure_cdc_back_to_back_uds</relatedlink> : This constraint is used to specify crossing sources so that CDC_SYNC_UDS_RESYNC will analyze them for back to back synchronizer usage.</field>
+	<field><relatedlink href="xml/cmds/configure_cdc_crossing.xml">configure_cdc_crossing</relatedlink> : Enables various configurations on crossing generation, such as disable complex seq/primary ports as crossing start/end points or per domain limit of start points</field>
+	<field><relatedlink href="xml/cmds/configure_cdc_data_sync.xml">configure_cdc_data_sync</relatedlink> : It configures the data synchronizer detection by the tool</field>
+	<field><relatedlink href="xml/cmds/configure_cdc_internal_crossing.xml">configure_cdc_internal_crossing</relatedlink> : Enables Crossings on the source clock pin and the destination clock pin of the libcell provided</field>
+	<field><relatedlink href="xml/cmds/configure_cdc_nff_sync.xml">configure_cdc_nff_sync</relatedlink> : It configures the multi-flop synchronizer detection by the tool</field>
+	<field><relatedlink href="xml/cmds/configure_cdc_static.xml">configure_cdc_static</relatedlink> : Configures quasi-statics for CDC analysis</field>
+	<field><relatedlink href="xml/cmds/configure_cdc_userpath_data_sync.xml">configure_cdc_userpath_data_sync</relatedlink> : It configures the data synchronizer detection by the tool</field>
+	<field><relatedlink href="xml/cmds/configure_cdc_userpath_nff_sync.xml">configure_cdc_userpath_nff_sync</relatedlink> : It configures the multi-flop synchronizer detection by the tool</field>
+	<field><relatedlink href="xml/cmds/configure_ip_block.xml">configure_ip_block</relatedlink> : User can specify the ip block in their design, which are used to configure the behavior/reporting of CDC, RDC and ResetAsync types of crossings present inside these blocks. By default, RDC crossings, which are present inside user specified blocks are reported as ignored.</field>
+	<field><relatedlink href="xml/cmds/configure_unconstrained_ports.xml">configure_unconstrained_ports</relatedlink> : Configures to model unconstrainted inputs and outputs of top, black-box modules, and lib modules</field>
+	<field><relatedlink href="xml/cmds/define_attribute.xml">define_attribute</relatedlink> : Defines an attribute with given name in the current scope.</field>
+	<field><relatedlink href="xml/cmds/set_cdc_ignore_path.xml">set_cdc_ignore_path</relatedlink> : Specified CDC path(s) will be ignored for CDC analysis purpose</field>
+	<field><relatedlink href="xml/cmds/set_clock_relation.xml">set_clock_relation</relatedlink> : Specify synchronous points</field></relatedcommands>
+	<relatedappvars>
+	<field><relatedlink href="xml/msgs/app_vars/cdc_enable_merge_vector.xml">cdc_enable_merge_vector</relatedlink> : Enables vector merging of CDC crossings</field>
+	<field><relatedlink href="xml/msgs/app_vars/cdc_enable_sam_port_reporting.xml">cdc_enable_sam_port_reporting</relatedlink> : Enables or disables reporting of SAM port in TopSAM run violations</field>
+	<field><relatedlink href="xml/msgs/app_vars/cdc_enable_splitbus_mapping.xml">cdc_enable_splitbus_mapping</relatedlink> : Enable bit blasted query for crossing when reporting is bus merged</field></relatedappvars>
+	<relatedreasons>
+	<field>INVALID_BLOCKING_GATE : Control path cannot block data transfer by gating logic[Error]</field>
+	<field>SRC_SAME_AS_QUAL_SRC : Source of data crossing is same as source of control path qualifier[Error]</field>
+	<field>QUAL_CONVERGES_OTHER_SYNC_SRC : Qualifier converges with another synchronous source before gating logic[Error]</field>
+	<field>QUAL_CONVERGES_SAME_SRC : Qualifier converges with same source before gating logic[Error]</field>
+	<field>SRC_CONVERGES_QUAL_INSIDE_LOOP : Source converges with qualifier inside loop[Error]</field>
+	<field>QUAL_ON_MUX_DATAPIN : Control path reach MUX's data pins[Error]</field>
+	<field>NO_DSTDOM_SIGNAL_ON_MUX_DATAPINS : Only sources drive MUX data inputs; atleast one destination domain signal should drive a MUX data input[Error]</field>
+	<field>MUX_SELPIN_SRC : Same/another source drives MUX select input[Error]</field>
+	<field>QUAL_CONVERGES_ASYNC_SRC : Qualifier converges with another asynchronous source before gating logic[Error]</field>
+	<field>USER_IGNORED_TOOL_QUALIFIERS : Tool detected qualifiers for the crossing path ignored due to user constraint[Error]</field>
+	<field>ENABLE_EXPR_COMPLEX : Enable criteria generation is complex[Error]</field>
+	<field>ENABLE_EXPR_DOMAIN_SOURCE : Domain criteria not satisfied during enable detection:Source domain[Error]</field>
+	<field>POTENTIAL_SYNCRST_QUALIFIER : Potential sync reset synchronizer used as qualifier[Error]</field>
+	<field>CLOCK_PHASE_RELATION_NOT_SATISFIED : Phase requirement in clock relationship not satisfied[Error]</field>
+	<field>FUNCTIONALLY_UNBLOCKED : Data crossing source functionally non-blocked by qualifier[Error]</field>
+	<field>CDC_DATA_INTERNAL_CROSS_UNSYNCHRONIZED : Unsynchronized Datasync crossing by Internal Crossing constraint[Error]</field></relatedreasons>
+  <whatNext>
+    <p>Refer to the related reason codes section and take any of the following steps based on the reason code reported.</p>
+<p>Reason Code: INVALID_BLOCKING_GATE</p>
+<p>Check the presence of following logic which is considered as invalid and correct the same to make the tag to full match. The gating logic like XOR gate is considered as invalid. Replace the XOR with valid gating logic such as AND gate.</p>
+<p>Reason Code: MUX_SELPIN_SRC</p>
+<p>Modify the structure so that the source does not drive the MUX select pin.</p>
+<p>Reason Code: QUAL_ON_MUX_DATAPIN</p>
+<p>Make sure the control qualifier goes to select pin of the MUX to make this tag as full match.</p>
+<p>Reason Code: NO_DESTDOM_SIGNAL_ON_MUX_DATAPINS</p>
+<p>Make sure at least one destination domain signal should drive a MUX data input or driven by MUX output otherwise the crossing is incomplete without proper destination.</p>
+<p>Reason Code: SRC_SAME_AS_QUAL_SRC</p>
+<p>Source control logic should have different source than that of data crossing, same source of data crossing should not be merged with control crossing and it becomes invalid. Make sure that structure has separate source for data and control logic.</p>
+<p>Reason Code: QUAL_CONVERGES_OTHER_SYNC_SRC</p>
+<p>Check if the qualifier is able to block the source correctly or not. The blocking value depends on the gate used in convergence. If it is an AND gate, the blocking value will be 0 and if it is an OR gate, the blocking value is 1. If not correctly blocked, modify the code.</p>
+<p>Reason Code: QUAL_CONVERGES_SAME_SRC</p>
+<p>Check if qualifier is able to block the source correctly or not. The blocking value depends on the gate used in convergence. If it is an AND gate, the blocking value will be 0 and if it is an OR gate, the blocking value is 1. If not correctly blocked, modify the code.</p>
+<p>Reason Code: SRC_CONVERGES_QUAL_INSIDE_LOOP</p>
+<p>To fix this violation, design should be modified such that qualifier loop is resolved.</p>
+
+  </whatNext>
+</msgDoc>

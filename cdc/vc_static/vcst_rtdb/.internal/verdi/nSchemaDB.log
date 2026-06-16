@@ -1,0 +1,30 @@
+Info: MdmToNSchema, created
+Info: onNldmUpdate : 
+Setting PATH: /tools/Synopsys/vc_static/X-2025.06/vcfca/bin:/tools/Synopsys/vc_static/X-2025.06/bin:.:/home/ltthinh/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/tools/Synopsys/vc_static/X-2025.06/verdi/bin:/tools/Synopsys/vc_static/X-2025.06/bin:/tools/Synopsys/vc_static/X-2025.06/verdi/bin 
+Info: checkDBComplete: false
+Info: Started, state = 0
+Info: Created thread 
+Info: reset()
+Info: onVerdiCompileFinish
+Info: onVerdiCompile : creating DB link 
+Info: kdb path = /home/ltthinh/PSRAM_THANG/cdc/vc_static/vcst_rtdb/.internal/design/m_vlsi_qspi_top.exe.daidir/kdb.elab++/
+Info: Linking /home/ltthinh/PSRAM_THANG/cdc/vc_static/vcst_rtdb/.internal/design/m_vlsi_qspi_top.exe.daidir/kdb.elab++/work.lib++/DebussyLib.lib++ to ../../../DebussyLib.lib++ 
+Info: Finish callback 
+Info: reset()
+Info: linkNovasLibsToDB
+Info: onReloadModsForVCLP 
+Info: onChangeLinkFinish 
+Info: onCDCUniquifyLibcellFinish
+Info: onCDCUniquifyLibcellFinish CDC :: stack
+Info: checkDBComplete: true
+Info: nSchema db complete 
+Info: onNLDMSetTopModuleFinish
+Info: onNLDMSetBBoxFinish
+Info: onReloadModsForVCLP 
+Info: onChangeLinkFinish 
+Info: onCDCUniquifyLibcellFinish
+Info: onCDCUniquifyLibcellFinish CDC :: uniquify
+Info: checkDBComplete: true
+Info: nSchema db complete 
+Info: onNLDMSetTopModuleFinish
+Info: onNLDMSetBBoxFinish

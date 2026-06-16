@@ -1,0 +1,9 @@
+BEGIN_VIOLATION
+	RULENAME:LibNameOfTopModule
+	FILE_NAME:/home/ltthinh/PSRAM_THANG/rtl/m_vlsi_qspi_top.sv
+	LINE_NUMBER:18
+	MESSAGELABEL:LibNameOfTopModule_ve
+	CWD:/home/ltthinh/PSRAM_THANG/cdc/vc_static
+	%1(LIBNAME):DEFAULT
+END_VIOLATION
+

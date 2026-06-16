@@ -1,0 +1,65 @@
+SetupJob_ClockConstant Execution:   started at: 22:22:37
+CDC :: SETUP_CLOCK_CONSTANT:    Time Taken: 0.00s
+SetupJob_ClockConstant Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_DomainMissing Execution:   started at: 22:22:37
+SetupJob_DomainMissing Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_ResetUndeclared Execution:   started at: 22:22:37
+CDC :: SETUP_RESET_UNDECL:    Time Taken: 0.00s
+SetupJob_ResetUndeclared Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_ResetConst Execution:   started at: 22:22:37
+CDC :: SETUP_RESET_CONSTANT:    Time Taken: 0.00s
+SetupJob_ResetConst Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_LibAsyncPinCombo Execution:   started at: 22:22:37
+CDC :: Setup_library02:    Time Taken: 0.00s
+SetupJob_LibAsyncPinCombo Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_OutputsMultisample Execution:   started at: 22:22:37
+CDC :: SETUP_OUTPUT_MULTICLK_DRIVER:    Time Taken: 0.00s
+SetupJob_OutputsMultisample Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_CheckSetupResetSenseSanity Execution:   started at: 22:22:37
+CDC :: SETUP_RESET_SENSE_SANITY:    Time Taken: 0.00s
+SetupJob_CheckSetupResetSenseSanity Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_SetupAttrSanityChecks Execution:   started at: 22:22:37
+CDC :: ATTR_CMD_SANITY_CHECK:    Time Taken: 0.00s
+SetupJob_SetupAttrSanityChecks Execution:   completed at: 22:22:37, Time Taken: 0.00s
+Job (1) running for Crossing Generation ( Traversal) :: #Domain: 1 #ClockName: i_aclk #Sequentials 31 Execution:   started at: 22:22:38
+Job (1) running for Crossing Generation ( Traversal) :: #Domain: 1 #ClockName: i_aclk #Sequentials 31 Execution:   completed at: 22:22:38, Time Taken: 0.01s
+Job (0) running for Crossing Generation ( Container population) ::  Execution:   started at: 22:22:39
+Job (0) running for Crossing Generation ( Container population) ::  Execution:   completed at: 22:22:39, Time Taken: 0.02s
+RaceRstClkThreadJob_2_12 Execution:   started at: 22:22:39
+RaceRstClkThreadJob_2_12 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+RaceRstClkThreadJob_3_12 Execution:   started at: 22:22:39
+RaceRstClkThreadJob_3_12 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+ResetCrossingJob 8_957 Execution:   started at: 22:22:39
+ResetCrossingJob 8_957 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+RaceRstClkThreadJob_6_12 Execution:   started at: 22:22:39
+RaceRstClkThreadJob_6_12 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+ResetCrossingJob 3_939 Execution:   started at: 22:22:39
+ResetCrossingJob 3_939 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+RaceRstClkThreadJob_11_12 Execution:   started at: 22:22:39
+RaceRstClkThreadJob_11_12 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+RaceRstClkThreadJob_14_12 Execution:   started at: 22:22:40
+RaceRstClkThreadJob_14_12 Execution:   completed at: 22:22:40, Time Taken: 0.00s
+RaceRstClkThreadJob_16_4 Execution:   started at: 22:22:40
+RaceRstClkThreadJob_16_4 Execution:   completed at: 22:22:40, Time Taken: 0.00s
+IntegrityJob_RstReconv Execution:   started at: 22:22:40
+CDC :: INTEGRITY_RESET_RECONVERGE:    Time Taken: 0.00s
+IntegrityJob_RstReconv Execution:   completed at: 22:22:40, Time Taken: 0.00s
+IntegrityJob_ClockAsNonClock Execution:   started at: 22:22:40
+CDC :: INTEGRITY_CLOCK_AS_NON_CLOCK:    Time Taken: 0.00s
+IntegrityJob_ClockAsNonClock Execution:   completed at: 22:22:40, Time Taken: 0.00s
+IntegrityJob_UnwantedCells Execution:   started at: 22:22:40
+CDC :: INTEGRITY_UNWANTED_CELLS:    Time Taken: 0.00s
+IntegrityJob_UnwantedCells Execution:   completed at: 22:22:40, Time Taken: 0.00s
+IntegrityJob_AsyncResetHighLowUsage Execution:   started at: 22:22:40
+DynamicUserCasePropagation :    Time Taken: 0.00s
+HybridSeqPropagation :    Time Taken: 0.01s
+ReverseConstPropagationOnBiDir:    Time Taken: 0.00s
+ConstantPropagation :    Time Taken: 0.01s
+DynamicUserCasePropagation :    Time Taken: 0.00s
+HybridSeqPropagation :    Time Taken: 0.00s
+ReverseConstPropagationOnBiDir:    Time Taken: 0.00s
+ConstantPropagation :    Time Taken: 0.00s
+CDC :: INTEGRITY_ASYNCRESET_HIGH_AND_LOW_USAGE:    Time Taken: 0.02s
+IntegrityJob_AsyncResetHighLowUsage Execution:   completed at: 22:22:40, Time Taken: 0.02s
+DATA_SYNC_NFF_3_130 Execution:   started at: 22:22:40
+DATA_SYNC_NFF_3_130 Execution:   completed at: 22:22:40, Time Taken: 0.01s

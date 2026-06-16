@@ -18,4 +18,4 @@ $QSPI_HOME/rtl/AXI_CONTROLLER/m_vlsi_axi_sclk_logic.sv
 $QSPI_HOME/rtl/AXI_CONTROLLER/m_vlsi_axi4_sram.sv
 
 $QSPI_HOME/rtl/m_vlsi_qspi_fsm.sv
-$QSPI_HOME/m_vlsi_qspi_top.sv
+$QSPI_HOME/rtl/m_vlsi_qspi_top.sv

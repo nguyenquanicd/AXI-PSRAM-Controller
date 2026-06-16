@@ -1,0 +1,19 @@
+Date Created        :	Jun 10, 2026 21:00:30
+VCStatic Version    :	X-2025.06
+Project Name        :	
+Goal Name           :	default_goal
+Scenario Name       :	default_scenario
+Top                 :	m_vlsi_qspi_top
+Run Time            :	0:0:4(4 secs)
+
+
+Message Summary
+Severity          Non-Waived          Waived
+FATAL                       0              0
+ERROR                      64              0
+WARNING                     0              0
+INFO                      165              0
+
+
+-dashboard_data                                   sync_crossings       129
+-dashboard_data                                 unsync_crossings        51

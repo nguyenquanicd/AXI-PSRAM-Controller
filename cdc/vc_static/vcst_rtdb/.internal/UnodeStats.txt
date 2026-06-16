@@ -1,0 +1,6 @@
+STATS:: before STAT_MEMDB_COPY :  M=3752.855mb, T=0s
+STATS:: after STAT_MEMDB_COPY :  M=3800.480mb, T=0.000s
+STATS:: before Worker Setup DB Cache:  :  M=3872.484mb, T=0s
+STATS:: before Verdi Load Design:  :  M=3884.457mb, T=0s
+STATS:: after Worker Setup DB Cache:  :  M=3876.332mb, T=2.000s
+STATS:: after Verdi Load Design:  :  M=3881.719mb, T=4.000s

@@ -1,0 +1,56 @@
+SetupJob_DataConstant Execution:   started at: 21:38:17
+CDC :: SETUP_DATA_CONSTANT:    Time Taken: 0.00s
+SetupJob_DataConstant Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_DomainMissing Execution:   started at: 21:38:17
+SetupJob_DomainMissing Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_ResetUndeclared Execution:   started at: 21:38:17
+CDC :: SETUP_RESET_UNDECL:    Time Taken: 0.00s
+SetupJob_ResetUndeclared Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_ResetConst Execution:   started at: 21:38:17
+CDC :: SETUP_RESET_CONSTANT:    Time Taken: 0.00s
+SetupJob_ResetConst Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_LibAsyncPinCombo Execution:   started at: 21:38:17
+CDC :: Setup_library02:    Time Taken: 0.00s
+SetupJob_LibAsyncPinCombo Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_OutputsMultisample Execution:   started at: 21:38:17
+CDC :: SETUP_OUTPUT_MULTICLK_DRIVER:    Time Taken: 0.00s
+SetupJob_OutputsMultisample Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_ClockGatingSafeUnsafe Execution:   started at: 21:38:17
+SetupJob_ClockGatingSafeUnsafe Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_CheckSetupResetCrossingSeq Execution:   started at: 21:38:18
+SetupJob_CheckSetupResetCrossingSeq Execution:   completed at: 21:38:18, Time Taken: 0.00s
+SetupJob_SetupAttrSanityChecks Execution:   started at: 21:38:18
+CDC :: ATTR_CMD_SANITY_CHECK:    Time Taken: 0.00s
+SetupJob_SetupAttrSanityChecks Execution:   completed at: 21:38:18, Time Taken: 0.00s
+Job (2) running for Crossing Generation ( Traversal) :: #Domain: 3 #ClockName: i_qspi_clk #Sequentials 124 Execution:   started at: 21:38:18
+Job (2) running for Crossing Generation ( Traversal) :: #Domain: 3 #ClockName: i_qspi_clk #Sequentials 124 Execution:   completed at: 21:38:18, Time Taken: 0.04s
+Job (0) running for Crossing Generation ( Container population) ::  Execution:   started at: 21:38:19
+Job (0) running for Crossing Generation ( Container population) ::  Execution:   completed at: 21:38:19, Time Taken: 0.02s
+RaceRstClkThreadJob_2_12 Execution:   started at: 21:38:19
+RaceRstClkThreadJob_2_12 Execution:   completed at: 21:38:19, Time Taken: 0.00s
+ResetCrossingJob 7_957 Execution:   started at: 21:38:19
+ResetCrossingJob 7_957 Execution:   completed at: 21:38:19, Time Taken: 0.00s
+RaceRstClkThreadJob_5_12 Execution:   started at: 21:38:19
+RaceRstClkThreadJob_5_12 Execution:   completed at: 21:38:19, Time Taken: 0.00s
+ResetCrossingJob 1_939 Execution:   started at: 21:38:19
+ResetCrossingJob 1_939 Execution:   completed at: 21:38:19, Time Taken: 0.00s
+RaceRstClkThreadJob_8_12 Execution:   started at: 21:38:19
+RaceRstClkThreadJob_8_12 Execution:   completed at: 21:38:19, Time Taken: 0.00s
+RaceRstClkThreadJob_10_12 Execution:   started at: 21:38:20
+RaceRstClkThreadJob_10_12 Execution:   completed at: 21:38:20, Time Taken: 0.00s
+RaceRstClkThreadJob_15_12 Execution:   started at: 21:38:20
+RaceRstClkThreadJob_15_12 Execution:   completed at: 21:38:20, Time Taken: 0.00s
+IntegrityJob_ClkRstOutRace Execution:   started at: 21:38:20
+CDC :: INTEGRITY_CLKRST_OUTPUT_RACE:    Time Taken: 0.01s
+IntegrityJob_ClkRstOutRace Execution:   completed at: 21:38:20, Time Taken: 0.01s
+IntegrityJob_ClkgateGlitch Execution:   started at: 21:38:20
+CDC :: INTEGRITY_CLKGATE_GLITCH:    Time Taken: 0.00s
+IntegrityJob_ClkgateGlitch Execution:   completed at: 21:38:20, Time Taken: 0.00s
+IntegrityJob_UnexpectedCellsClkPath Execution:   started at: 21:38:20
+CDC :: INTEGRITY_UNEXPECTED_CELLS_CLKPATH: INTEGRITY_BUFINVEQUAL_CELLS_CLKPATH    Time Taken: 0.01s
+IntegrityJob_UnexpectedCellsClkPath Execution:   completed at: 21:38:20, Time Taken: 0.01s
+IntegrityJob_AsyncSyncResetUsage Execution:   started at: 21:38:20
+CDC :: INTEGRITY_RESET_ASYNC_AND_SYNC_USAGE:    Time Taken: 0.00s
+IntegrityJob_AsyncSyncResetUsage Execution:   completed at: 21:38:20, Time Taken: 0.00s
+DATA_SYNC_NFF_3_130 Execution:   started at: 21:38:21
+DATA_SYNC_NFF_3_130 Execution:   completed at: 21:38:21, Time Taken: 0.01s

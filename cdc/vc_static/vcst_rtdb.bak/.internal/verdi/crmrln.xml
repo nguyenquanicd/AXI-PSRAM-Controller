@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Command name="CrmXml" id="154">
+  <CrmXml>
+    <CrmRln clock1="i_aclk" clock2="i_qspi_clk" relation="A" ignore_path="NO" />
+    <CrmRln clock1="i_qspi_clk" clock2="i_aclk" relation="A" ignore_path="NO" />
+  </CrmXml>
+</Command>

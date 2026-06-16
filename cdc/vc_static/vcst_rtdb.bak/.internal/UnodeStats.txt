@@ -1,0 +1,264 @@
+STATS:: before STAT_MEMDB_COPY :  M=3752.211mb, T=0s
+STATS:: after STAT_MEMDB_COPY :  M=3798.938mb, T=0.000s
+STATS:: before Worker Setup DB Cache:  :  M=3870.941mb, T=0s
+STATS:: before Verdi Load Design:  :  M=3874.930mb, T=0s
+STATS:: after Worker Setup DB Cache:  :  M=3874.930mb, T=2.000s
+STATS:: after Verdi Load Design:  :  M=3879.152mb, T=4.000s
+STATS:: before Generate group information by DataModel Worker :  M=3767.926mb, T=0s
+STATS:: before Query DB for Data View:  :  M=3767.926mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3767.926mb, T=0.000s
+STATS:: after Query DB for Data View:  :  M=3866.340mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3866.461mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3866.461mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3866.461mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3866.945mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3867.066mb, T=0s
+STATS:: after Show Data View Record:  :  M=3875.070mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3787.496mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3787.496mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3787.496mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3788.465mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3788.465mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3788.465mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3788.465mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3789.070mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3789.312mb, T=0s
+STATS:: after Show Data View Record:  :  M=3789.312mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3791.973mb, T=0s
+STATS:: after Show Data View Record:  :  M=3791.973mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3794.555mb, T=0s
+STATS:: after Show Data View Record:  :  M=3794.555mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3795.887mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3795.887mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3795.887mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3796.492mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3796.492mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3796.492mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3796.492mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3797.340mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3797.340mb, T=0s
+STATS:: after Show Data View Record:  :  M=3797.340mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3800.457mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3800.457mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3800.457mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3801.062mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3801.062mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3801.062mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3801.062mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3801.789mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3801.910mb, T=0s
+STATS:: after Show Data View Record:  :  M=3801.910mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3805.379mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3805.379mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3805.379mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3805.863mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3805.863mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3805.863mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3805.863mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3806.832mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3806.953mb, T=0s
+STATS:: after Show Data View Record:  :  M=3806.953mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3812.012mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3812.012mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3812.012mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3813.988mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3813.988mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3813.988mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3813.988mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3815.520mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3815.762mb, T=0s
+STATS:: after Show Data View Record:  :  M=3815.762mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3818.141mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3818.141mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3818.141mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3819.078mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3818.957mb, T=0s
+STATS:: after Show Data View Record:  :  M=3818.957mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3821.707mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3821.707mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3821.707mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3822.555mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3822.555mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3822.555mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3822.555mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3823.281mb, T=1.000s
+STATS:: before Show Data View Record:  :  M=3823.402mb, T=0s
+STATS:: after Show Data View Record:  :  M=3823.402mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3826.387mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3826.387mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3826.387mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3827.879mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3827.879mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3827.879mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3827.879mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3829.773mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3830.137mb, T=0s
+STATS:: after Show Data View Record:  :  M=3830.137mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3831.598mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3831.598mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3831.598mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3833.938mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3833.938mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3833.938mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3833.938mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3835.590mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3836.074mb, T=0s
+STATS:: after Show Data View Record:  :  M=3836.074mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3839.340mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3839.340mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3839.340mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3839.824mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3839.824mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3839.824mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3839.824mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3840.551mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3840.672mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3840.672mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3840.672mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3841.277mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3841.641mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3841.641mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3841.641mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3842.125mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3842.973mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3842.973mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3842.973mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3844.223mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3844.586mb, T=0s
+STATS:: after Show Data View Record:  :  M=3844.586mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3850.766mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3850.766mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3850.766mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3851.250mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3851.250mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3851.250mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3851.250mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3852.219mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3852.703mb, T=0s
+STATS:: after Show Data View Record:  :  M=3852.703mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3853.551mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3853.551mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3853.551mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3854.398mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3854.398mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3854.398mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3854.398mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3856.535mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3856.656mb, T=0s
+STATS:: after Show Data View Record:  :  M=3856.656mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3860.406mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3860.406mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3860.406mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3861.777mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3861.777mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3861.777mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3861.777mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3863.633mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3864.117mb, T=0s
+STATS:: after Show Data View Record:  :  M=3864.117mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3869.344mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3869.344mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3869.344mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3869.828mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3869.828mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3869.828mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3869.828mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3870.797mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3871.281mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3871.281mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3871.281mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3872.008mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3872.977mb, T=0s
+STATS:: after Show Data View Record:  :  M=3872.977mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3876.867mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3876.867mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3876.867mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3877.352mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3877.352mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3877.352mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3877.352mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3878.199mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3878.926mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3878.926mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3878.926mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3878.926mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3879.652mb, T=0s
+STATS:: after Show Data View Record:  :  M=3879.652mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3883.359mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3883.359mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3883.359mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3883.723mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3883.723mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3883.723mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3883.723mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3884.449mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3887.113mb, T=0s
+STATS:: after Show Data View Record:  :  M=3887.113mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3888.207mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3888.207mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3888.207mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3888.934mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3888.934mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3888.934mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3888.934mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3889.660mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3889.902mb, T=0s
+STATS:: after Show Data View Record:  :  M=3889.902mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3895.020mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3895.020mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3895.020mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3895.746mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3895.746mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3895.746mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3895.746mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3898.488mb, T=1.000s
+STATS:: before Show Data View Record:  :  M=3898.609mb, T=0s
+STATS:: after Show Data View Record:  :  M=3898.609mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3900.203mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3900.203mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3900.203mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3901.293mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3901.293mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3901.293mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3901.293mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3902.141mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3902.625mb, T=0s
+STATS:: after Show Data View Record:  :  M=3902.625mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3907.227mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3907.227mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3907.227mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3914.309mb, T=1.000s
+STATS:: before Show Data View Record:  :  M=3914.914mb, T=0s
+STATS:: after Show Data View Record:  :  M=3914.914mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3916.125mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3916.125mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3916.125mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3916.609mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3916.609mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3916.609mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3916.609mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3917.336mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3917.578mb, T=0s
+STATS:: after Show Data View Record:  :  M=3917.578mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3925.082mb, T=0s
+STATS:: after Show Data View Record:  :  M=3925.082mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3924.230mb, T=0s
+STATS:: after Show Data View Record:  :  M=3924.230mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3928.020mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3928.020mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3928.020mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3929.996mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3929.996mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3929.996mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3929.996mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3931.973mb, T=0.000s
+STATS:: before Show Data View Record:  :  M=3932.820mb, T=0s
+STATS:: after Show Data View Record:  :  M=3932.820mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3935.277mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3935.277mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3935.277mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3937.012mb, T=0.000s
+STATS:: before Generate group information by DataModel Worker :  M=3937.012mb, T=0s
+STATS:: after Generate group information by DataModel Worker :  M=3937.012mb, T=0.000s
+STATS:: before Query DB for Data View:  :  M=3937.012mb, T=0s
+STATS:: after Query DB for Data View:  :  M=3938.867mb, T=0.000s

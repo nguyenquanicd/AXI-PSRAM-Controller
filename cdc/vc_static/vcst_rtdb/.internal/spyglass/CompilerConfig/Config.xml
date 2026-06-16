@@ -1,0 +1,14 @@
+<SVI>
+<SVI_SPYGLASS_UC>
+	<option data="enableRule=LibNameOfTopModule"/>
+	<option data="enableRule=UNPI"/>
+	<option data="enableRule=IICD"/>
+	<option data="enableRule=VC_WRN_COMPDIR_IGNORED"/>
+	<option data="enableRule=VC_WRN_LINEDIR_LEVEL"/>
+	<option data="enableRule=VC_SYNTH_IGNORED"/>
+	<option data="enableRule=VC_WRN_ASGN_PATTERN"/>
+	<option data="enableRule=VC_WRN_IFDEF_ENDIF"/>
+	<option data="enableRule=VC_WRN_EARLY_EOF"/>
+	<option data="app_var=in_design_file=/home/ltthinh/PSRAM_THANG/cdc/vc_static/vcst_rtdb/.internal/design/inDesign.rpt"/>
+</SVI_SPYGLASS_UC>
+</SVI>

@@ -1,0 +1,61 @@
+SetupJob_DataConstant Execution:   started at: 22:22:37
+CDC :: SETUP_DATA_CONSTANT:    Time Taken: 0.00s
+SetupJob_DataConstant Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_SetupBlackBox Execution:   started at: 22:22:37
+CDC :: SETUP_BBOX:    Time Taken: 0.00s
+SetupJob_SetupBlackBox Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_ResetStop Execution:   started at: 22:22:37
+CDC :: SETUP_RESET_OVERLAP:    Time Taken: 0.00s
+CDC :: SETUP_RESET_CONV_COMBO|SETUP_RESET_CONV_MUX:    Time Taken: 0.00s
+SetupJob_ResetStop Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_ClockMux Execution:   started at: 22:22:37
+CDC :: SETUP_CLKPATH_MUX_NOCLOCK:    Time Taken: 0.00s
+SetupJob_ClockMux Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_CgcConstrained Execution:   started at: 22:22:37
+CDC :: SETUP_CGLIBCELL:    Time Taken: 0.00s
+SetupJob_CgcConstrained Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_AsyncResetNonAsyncPin Execution:   started at: 22:22:37
+CDC :: SETUP_RESET_DRIVING_NON_ASYNC_PIN:    Time Taken: 0.00s
+SetupJob_AsyncResetNonAsyncPin Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_CheckSetupResetCrossingSeq Execution:   started at: 22:22:37
+SetupJob_CheckSetupResetCrossingSeq Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_SetupConnAttrMismatch Execution:   started at: 22:22:37
+SetupJob_SetupConnAttrMismatch Execution:   completed at: 22:22:37, Time Taken: 0.00s
+SetupJob_SetupAsyncResetInternalSignal Execution:   started at: 22:22:38
+SetupJob_SetupAsyncResetInternalSignal Execution:   completed at: 22:22:38, Time Taken: 0.00s
+Job (0) running for Crossing Generation ( Traversal) :: #Domain: 1 #ClockName: i_aclk #Sequentials 200 Execution:   started at: 22:22:38
+Job (0) running for Crossing Generation ( Traversal) :: #Domain: 1 #ClockName: i_aclk #Sequentials 200 Execution:   completed at: 22:22:38, Time Taken: 0.01s
+Job (3) running for Crossing Generation ( Traversal) :: #Domain: 2 #ClockName: i_pclk #Sequentials 107 Execution:   started at: 22:22:38
+Job (3) running for Crossing Generation ( Traversal) :: #Domain: 2 #ClockName: i_pclk #Sequentials 107 Execution:   completed at: 22:22:38, Time Taken: 0.01s
+ResetCrossingJob 6_957 Execution:   started at: 22:22:39
+ResetCrossingJob 6_957 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+ResetCrossingJob 0_939 Execution:   started at: 22:22:39
+ResetCrossingJob 0_939 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+RaceRstClkThreadJob_8_12 Execution:   started at: 22:22:39
+RaceRstClkThreadJob_8_12 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+RaceRstClkThreadJob_10_12 Execution:   started at: 22:22:39
+RaceRstClkThreadJob_10_12 Execution:   completed at: 22:22:39, Time Taken: 0.00s
+IntegrityJob_ClkRstOutRace Execution:   started at: 22:22:40
+CDC :: INTEGRITY_CLKRST_OUTPUT_RACE:    Time Taken: 0.01s
+IntegrityJob_ClkRstOutRace Execution:   completed at: 22:22:40, Time Taken: 0.01s
+IntegrityJob_FlopConvClockGlitch Execution:   started at: 22:22:40
+CDC :: INTEGRITY_FLOPCONV_CLOCK_GLITCH:    Time Taken: 0.00s
+IntegrityJob_FlopConvClockGlitch Execution:   completed at: 22:22:40, Time Taken: 0.00s
+IntegrityJob_SyncResetConstantAtDeassert Execution:   started at: 22:22:40
+DynamicUserCasePropagation :    Time Taken: 0.00s
+ReverseConstPropagationOnBiDir:    Time Taken: 0.00s
+ConstantPropagation :    Time Taken: 0.00s
+CDC :: INTEGRITY_SYNCRESET_CONST_DEASSERT | INTEGRITY_SYNCRESET_NONCONST_ENABLE:    Time Taken: 0.00s
+IntegrityJob_SyncResetConstantAtDeassert Execution:   completed at: 22:22:40, Time Taken: 0.00s
+DATA_SYNC_NFF_2_130 Execution:   started at: 22:22:40
+DATA_SYNC_NFF_2_130 Execution:   completed at: 22:22:40, Time Taken: 0.01s
+NA Execution:   started at: 22:22:41
+NA Execution:   completed at: 22:22:41, Time Taken: 0.01s
+Sync Job 2_82 Execution:   started at: 22:22:41
+Sync Job 2_82 Execution:   completed at: 22:22:41, Time Taken: 0.03s
+Conv Job 3_40 Execution:   started at: 22:22:41
+Conv Job 3_40 Execution:   completed at: 22:22:41, Time Taken: 0.25s
+Job (0) running for Glitch dest domain:: 2 Execution:   started at: 22:22:41
+Job (0) running for Glitch dest domain:: 2 Execution:   completed at: 22:22:41, Time Taken: 0.01s
+Job (3) running for Glitch dest domain:: 2 Execution:   started at: 22:22:41
+Job (3) running for Glitch dest domain:: 2 Execution:   completed at: 22:22:41, Time Taken: 0.00s

@@ -1,0 +1,62 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -kdb=common_elab -kdb=common_elab -kdb=common_elab -kdb=incopt -sverilog -skip_translate_body +define+SYNTHESIS+-timescale=1ns/10ps++lint=TFIPC-L -q -full64 -full64
+
+all :		_VCSgd_CwygAd_1.db \
+	_VCSgd_6wsa1b_1.db \
+	_VCSgd_t0SLQ_1.db \
+	_VCSgd_SwjmLb_1.db \
+	_VCSgd_l92ttc_1.db \
+	_VCSgd_BpVvGe_1.db \
+	_VCSgd_buLCEe_1.db \
+	_VCSgd_CkN1De_1.db \
+	_VCSgd_NbFD_1.db \
+	_VCSgd_UMUZQ_1.db \
+	_VCSgd_rF7jYc_1.db \
+
+
+
+_VCSgd_CwygAd_1.db :	/home/ltthinh/PSRAM_THANG/rtl/m_vlsi_synch.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ltthinh/PSRAM_THANG/rtl/m_vlsi_synch.sv
+
+
+_VCSgd_6wsa1b_1.db :	/home/ltthinh/PSRAM_THANG/rtl/m_vlsi_multi_synch.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ltthinh/PSRAM_THANG/rtl/m_vlsi_multi_synch.sv
+
+
+_VCSgd_t0SLQ_1.db :	/home/ltthinh/PSRAM_THANG/rtl/m_vlsi_async_fifo.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ltthinh/PSRAM_THANG/rtl/m_vlsi_async_fifo.sv
+
+
+_VCSgd_SwjmLb_1.db :	/home/ltthinh/PSRAM_THANG/rtl/CSR/RTL/m_vlsi_qspi_csr.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ltthinh/PSRAM_THANG/rtl/CSR/RTL/m_vlsi_qspi_csr.sv
+
+
+_VCSgd_l92ttc_1.db :	/home/ltthinh/PSRAM_THANG/rtl/AXI_CONTROLLER/m_vlsi_axfsm.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ltthinh/PSRAM_THANG/rtl/AXI_CONTROLLER/m_vlsi_axfsm.sv
+
+
+_VCSgd_BpVvGe_1.db :	/home/ltthinh/PSRAM_THANG/rtl/AXI_CONTROLLER/m_vlsi_arbiter.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ltthinh/PSRAM_THANG/rtl/AXI_CONTROLLER/m_vlsi_arbiter.sv
+
+
+_VCSgd_buLCEe_1.db :	/home/ltthinh/PSRAM_THANG/rtl/AXI_CONTROLLER/m_vlsi_axi_bus_logic.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ltthinh/PSRAM_THANG/rtl/AXI_CONTROLLER/m_vlsi_axi_bus_logic.sv
+
+
+_VCSgd_CkN1De_1.db :	/home/ltthinh/PSRAM_THANG/rtl/AXI_CONTROLLER/m_vlsi_axi_sclk_logic.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ltthinh/PSRAM_THANG/rtl/AXI_CONTROLLER/m_vlsi_axi_sclk_logic.sv
+
+
+_VCSgd_NbFD_1.db :	/home/ltthinh/PSRAM_THANG/rtl/AXI_CONTROLLER/m_vlsi_axi4_sram.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ltthinh/PSRAM_THANG/rtl/AXI_CONTROLLER/m_vlsi_axi4_sram.sv
+
+
+_VCSgd_UMUZQ_1.db :	/home/ltthinh/PSRAM_THANG/rtl/m_vlsi_qspi_fsm.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ltthinh/PSRAM_THANG/rtl/m_vlsi_qspi_fsm.sv
+
+
+_VCSgd_rF7jYc_1.db :	/home/ltthinh/PSRAM_THANG/rtl/m_vlsi_qspi_top.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ltthinh/PSRAM_THANG/rtl/m_vlsi_qspi_top.sv
+
+

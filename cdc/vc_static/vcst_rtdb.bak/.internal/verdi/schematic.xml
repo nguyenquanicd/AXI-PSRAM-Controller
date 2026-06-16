@@ -1,0 +1,519 @@
+<?xml version="1.0"?>
+<Command delimiter="/" born_src="Spyglass" name="schSession">
+	<Paths title="154:CDC_UNSYNC_DATA" type="cdc">
+		<PathObjects>
+			<P_Pin left="231" right="231" aliasName="reg_mem[7][28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/Q[231:0]" />
+			<P_Pin left="231" right="231" aliasName="reg_mem[7][28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/IN[231:0]" />
+			<P_Pin left="28" right="28" aliasName="o_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/OUT[28:0]" />
+			<P_Pin type="hierPin" left="28" right="28" aliasName="w_awfifo_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]" />
+			<P_Pin type="hierPin" left="28" right="28" aliasName="w_awfifo_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]" />
+			<P_Pin left="28" right="28" aliasName="i_awfifo_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/IN[28:0]" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_N_17/IN1" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_N_17/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_18/IN0" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_18/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_write/IN0" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_write/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_w_write_issue/IN2" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_w_write_issue/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/SEL" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/IN0" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/SEL" />
+			<P_Pin left="1" right="1" aliasName="N_40[1]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/OUT[1:0]" />
+			<P_Pin left="1" right="1" aliasName="N_40[1]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/reg_wr_resp/D[1:0]" />
+			<P_Pin left="1" right="1" aliasName="reg_wr_resp[1]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/reg_wr_resp/Q[1:0]" />
+		</PathObjects>
+		<PathObjects>
+			<P_Pin type="port" name="m_vlsi_qspi_top/i_aclk" />
+			<P_Pin type="hierPin" name="m_vlsi_qspi_top/u_axi_ctrl/i_clk" />
+			<P_Pin type="hierPin" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/i_wr_clk" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/CLK" />
+		</PathObjects>
+		<PathObjects>
+			<P_Pin type="port" name="m_vlsi_qspi_top/i_qspi_clk" />
+			<P_Pin type="hierPin" name="m_vlsi_qspi_top/u_axi_ctrl/i_sclk" />
+			<P_Pin type="hierPin" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_sclk" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/reg_wr_resp/CLK" />
+		</PathObjects>
+		<PathObjects>
+			<P_Pin left="0" right="0" aliasName="reg_sync[0]" name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync/Q[1:0]" />
+			<P_Pin left="0" right="0" aliasName="reg_sync[0]" name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_PART_N_2/IN[1:0]" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_PART_N_2/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_CONCAT_N_1/IN0" />
+			<P_Pin left="1" right="1" aliasName="N_1[1]" name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_CONCAT_N_1/OUT[1:0]" />
+			<P_Pin left="1" right="1" aliasName="N_1[1]" name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync/D[1:0]" />
+			<P_Pin left="1" right="1" aliasName="reg_sync[1]" name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync/Q[1:0]" />
+		</PathObjects>
+		<PathObjects>
+			<P_Pin left="1" right="1" aliasName="reg_sync[1]" name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync/Q[1:0]" />
+			<P_Pin left="1" right="1" aliasName="reg_sync[1]" name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_INDEX_o_data_out/IN[1:0]" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_INDEX_o_data_out/OUT" />
+			<P_Pin type="hierPin" name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/o_data_out" />
+			<P_Pin type="hierPin" left="0" right="0" aliasName="wval_sync[0]" name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/o_data_out[7:0]" />
+			<P_Pin left="0" right="0" aliasName="wval_sync[0]" name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_XOR_rd_comb_val/IN1[7:0]" />
+			<P_Pin left="0" right="0" aliasName="rd_comb_val[0]" name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_XOR_rd_comb_val/OUT[7:0]" />
+			<P_Pin left="0" right="0" aliasName="rd_comb_val[0]" name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_INDEX_o_read_valid/IN[7:0]" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_INDEX_o_read_valid/OUT" />
+			<P_Pin type="hierPin" name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/o_read_valid" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/I_BNOT_w_arfifo_empty/IN0" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/I_BNOT_w_arfifo_empty/OUT" />
+			<P_Pin type="hierPin" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_arfifo_empty" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_16/IN0" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_16/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_read/IN0" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_read/OUT" />
+			<P_Pin type="hierPin" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/o_req_read" />
+			<P_Pin type="hierPin" name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/i_req_read" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_N_3/IN1" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_N_3/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_BNOT_N_4/IN0" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_BNOT_N_4/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_o_arb_write_en/IN0" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_o_arb_write_en/OUT" />
+			<P_Pin type="hierPin" name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/o_arb_write_en" />
+			<P_Pin type="hierPin" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_arb_write_en" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_w_write_issue/IN0" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_w_write_issue/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/SEL" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/IN0" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/SEL" />
+		</PathObjects>
+		<PathObjects>
+			<P_Pin left="202" right="202" aliasName="reg_mem[6][28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/Q[231:0]" />
+			<P_Pin left="202" right="202" aliasName="reg_mem[6][28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/IN[231:0]" />
+			<P_Pin left="28" right="28" aliasName="o_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/OUT[28:0]" />
+			<P_Pin type="hierPin" left="28" right="28" aliasName="w_awfifo_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]" />
+			<P_Pin type="hierPin" left="28" right="28" aliasName="w_awfifo_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]" />
+			<P_Pin left="28" right="28" aliasName="i_awfifo_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/IN[28:0]" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/D1" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/IN0" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/SEL" />
+		</PathObjects>
+		<PathObjects>
+			<P_Pin left="231" right="231" aliasName="reg_mem[7][28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/Q[231:0]" />
+			<P_Pin left="231" right="231" aliasName="reg_mem[7][28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/IN[231:0]" />
+			<P_Pin left="28" right="28" aliasName="o_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/OUT[28:0]" />
+			<P_Pin type="hierPin" left="28" right="28" aliasName="w_awfifo_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]" />
+			<P_Pin type="hierPin" left="28" right="28" aliasName="w_awfifo_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]" />
+			<P_Pin left="28" right="28" aliasName="i_awfifo_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/IN[28:0]" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/D1" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/IN0" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/SEL" />
+		</PathObjects>
+		<PathObjects>
+			<P_Pin left="231" right="231" aliasName="reg_mem[7][28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/Q[231:0]" />
+			<P_Pin left="231" right="231" aliasName="reg_mem[7][28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/IN[231:0]" />
+			<P_Pin left="28" right="28" aliasName="o_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/OUT[28:0]" />
+			<P_Pin type="hierPin" left="28" right="28" aliasName="w_awfifo_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]" />
+			<P_Pin type="hierPin" left="28" right="28" aliasName="w_awfifo_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]" />
+			<P_Pin left="28" right="28" aliasName="i_awfifo_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/IN[28:0]" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_XOR_N_21/IN0" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_XOR_N_21/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_w_write_error/IN0" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_w_write_error/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_w_bresp/SEL" />
+			<P_Pin left="1" right="1" aliasName="w_bresp[1]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_w_bresp/OUT[1:0]" />
+			<P_Pin left="1" right="1" aliasName="w_bresp[1]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/D0[1:0]" />
+		</PathObjects>
+		<PathObjects>
+			<P_Pin left="1" right="1" aliasName="w_bresp[1]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/D0[1:0]" />
+			<P_Pin left="1" right="1" aliasName="N_40[1]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/OUT[1:0]" />
+		</PathObjects>
+		<PathObjects>
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/SEL" />
+			<P_Pin left="1" right="1" aliasName="N_40[1]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/OUT[1:0]" />
+		</PathObjects>
+		<PathObjects>
+			<P_Pin left="28" right="28" aliasName="reg_mem[0][28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/Q[231:0]" />
+			<P_Pin left="28" right="28" aliasName="reg_mem[0][28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/IN[231:0]" />
+			<P_Pin left="28" right="28" aliasName="o_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/OUT[28:0]" />
+			<P_Pin type="hierPin" left="28" right="28" aliasName="w_awfifo_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]" />
+			<P_Pin type="hierPin" left="28" right="28" aliasName="w_awfifo_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]" />
+			<P_Pin left="28" right="28" aliasName="i_awfifo_rdata[28]" name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/IN[28:0]" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/D1" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/IN0" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/OUT" />
+			<P_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/SEL" />
+		</PathObjects>
+	</Paths>
+	<HighlightObjs>
+		<H_Pins>
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/Q[231:0]" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/IN[231:0]" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/OUT[28:0]" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/IN[28:0]" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/OUT" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_N_17/IN1" text="" color="2" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_N_17/OUT" text="" color="2" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_18/IN0" text="" color="2" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_18/OUT" text="" color="2" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_write/IN0" text="" color="2" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_write/OUT" text="" color="2" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_w_write_issue/IN2" text="" color="2" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_w_write_issue/OUT" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/SEL" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/OUT" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/IN0" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/OUT" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/SEL" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/OUT[1:0]" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/reg_wr_resp/D[1:0]" text="" color="2" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/reg_wr_resp/Q[1:0]" text="" color="3" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/i_clk" text="" color="1" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/i_wr_clk" text="" color="1" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/CLK" text="( i_aclk )" color="1" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/i_sclk" text="" color="3" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_sclk" text="" color="3" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/reg_wr_resp/CLK" text="( i_qspi_clk )" color="3" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync/Q[1:0]" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_PART_N_2/IN[1:0]" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_PART_N_2/OUT" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_CONCAT_N_1/IN0" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_CONCAT_N_1/OUT[1:0]" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync/D[1:0]" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync/Q[1:0]" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_INDEX_o_data_out/IN[1:0]" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_INDEX_o_data_out/OUT" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/o_data_out" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/o_data_out[7:0]" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_XOR_rd_comb_val/IN1[7:0]" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_XOR_rd_comb_val/OUT[7:0]" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_INDEX_o_read_valid/IN[7:0]" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_INDEX_o_read_valid/OUT" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/o_read_valid" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/I_BNOT_w_arfifo_empty/IN0" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/I_BNOT_w_arfifo_empty/OUT" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_arfifo_empty" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_16/IN0" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_16/OUT" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_read/IN0" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_read/OUT" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/o_req_read" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/i_req_read" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_N_3/IN1" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_N_3/OUT" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_BNOT_N_4/IN0" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_BNOT_N_4/OUT" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_o_arb_write_en/IN0" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_o_arb_write_en/OUT" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/o_arb_write_en" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_arb_write_en" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_w_write_issue/IN0" text="" color="4" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/Q[231:0]" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/IN[231:0]" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/D1" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_XOR_N_21/IN0" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_XOR_N_21/OUT" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_w_write_error/IN0" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_w_write_error/OUT" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_w_bresp/SEL" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_w_bresp/OUT[1:0]" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/D0[1:0]" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/Q[231:0]" text="" color="7" />
+			<H_Pin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/IN[231:0]" text="" color="7" />
+		</H_Pins>
+		<H_Segments>
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/Q[231:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/IN[231:0]" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/OUT[28:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]@@@hierPin" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]@@@hierPin" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/IN[28:0]" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_N_17/IN1" color="2" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_N_17/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_18/IN0" color="2" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_18/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_write/IN0" color="2" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_write/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_w_write_issue/IN2" color="2" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_w_write_issue/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/SEL" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/IN0" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/SEL" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/OUT[1:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/reg_wr_resp/D[1:0]" color="2" />
+			<H_Seg src="m_vlsi_qspi_top/i_aclk@@@port" dest="m_vlsi_qspi_top/u_axi_ctrl/i_clk@@@hierPin" color="1" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/i_clk@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/i_wr_clk@@@hierPin" color="1" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/i_wr_clk@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/CLK" color="1" />
+			<H_Seg src="m_vlsi_qspi_top/i_qspi_clk@@@port" dest="m_vlsi_qspi_top/u_axi_ctrl/i_sclk@@@hierPin" color="3" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/i_sclk@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_sclk@@@hierPin" color="3" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_sclk@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/reg_wr_resp/CLK" color="3" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync/Q[1:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_PART_N_2/IN[1:0]" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_PART_N_2/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_CONCAT_N_1/IN0" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_CONCAT_N_1/OUT[1:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync/D[1:0]" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync/Q[1:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_INDEX_o_data_out/IN[1:0]" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_INDEX_o_data_out/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/o_data_out@@@hierPin" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/o_data_out@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/o_data_out[7:0]@@@hierPin" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/o_data_out[7:0]@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_XOR_rd_comb_val/IN1[7:0]" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_XOR_rd_comb_val/OUT[7:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_INDEX_o_read_valid/IN[7:0]" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_INDEX_o_read_valid/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/o_read_valid@@@hierPin" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/o_read_valid@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/I_BNOT_w_arfifo_empty/IN0" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/I_BNOT_w_arfifo_empty/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_arfifo_empty@@@hierPin" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_arfifo_empty@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_16/IN0" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_16/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_read/IN0" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_read/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/o_req_read@@@hierPin" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/o_req_read@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/i_req_read@@@hierPin" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/i_req_read@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_N_3/IN1" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_N_3/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_BNOT_N_4/IN0" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_BNOT_N_4/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_o_arb_write_en/IN0" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_o_arb_write_en/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/o_arb_write_en@@@hierPin" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/o_arb_write_en@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_arb_write_en@@@hierPin" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_arb_write_en@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_w_write_issue/IN0" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_w_write_issue/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/SEL" color="4" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/IN0" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/SEL" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/Q[231:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/IN[231:0]" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/OUT[28:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]@@@hierPin" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]@@@hierPin" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/IN[28:0]" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/D1" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/IN0" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/SEL" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/Q[231:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/IN[231:0]" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/OUT[28:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]@@@hierPin" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]@@@hierPin" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/IN[28:0]" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/D1" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/IN0" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/SEL" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/Q[231:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/IN[231:0]" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/OUT[28:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]@@@hierPin" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]@@@hierPin" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/IN[28:0]" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_XOR_N_21/IN0" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_XOR_N_21/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_w_write_error/IN0" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_w_write_error/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_w_bresp/SEL" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_w_bresp/OUT[1:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/D0[1:0]" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/Q[231:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/IN[231:0]" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata/OUT[28:0]" dest="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]@@@hierPin" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]@@@hierPin" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]@@@hierPin" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/IN[28:0]" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/D1" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/IN0" color="7" />
+			<H_Seg src="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9/OUT" dest="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/SEL" color="7" />
+		</H_Segments>
+		<H_Instances>
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_N_17" color="2" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_18" color="2" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_write" color="2" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_w_write_issue" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/reg_wr_resp" color="2" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem" color="1" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/reg_wr_resp" color="3" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_PART_N_2" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_CONCAT_N_1" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_INDEX_o_data_out" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_XOR_rd_comb_val" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_INDEX_o_read_valid" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/I_BNOT_w_arfifo_empty" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_16" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_read" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_N_3" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_BNOT_N_4" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_o_arb_write_en" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_w_write_issue" color="4" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_XOR_N_21" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_w_write_error" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_w_bresp" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9" color="7" />
+			<H_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40" color="7" />
+		</H_Instances>
+		<H_Ports>
+			<H_Port name="m_vlsi_qspi_top/i_aclk" color="1" />
+			<H_Port name="m_vlsi_qspi_top/i_qspi_clk" color="3" />
+		</H_Ports>
+	</HighlightObjs>
+	<Clouds>
+		<Cloud name="Cloud_5" color="4">
+			<C_Insts>
+				<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/I_INDEX_o_data_out" />
+				<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_XOR_rd_comb_val" />
+				<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/I_INDEX_o_read_valid" />
+				<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/I_BNOT_w_arfifo_empty" />
+				<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_16" />
+				<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_read" />
+				<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_N_3" />
+				<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_BNOT_N_4" />
+				<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/I_AND_o_arb_write_en" />
+				<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/I_INDEX_o_rdata" />
+			</C_Insts>
+			<G_HierPins>
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/o_data_out" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/o_data_out" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/o_read_valid" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_arfifo_empty" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/o_req_read" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/i_req_read" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/o_arb_write_en" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_arb_write_en" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata" />
+				<G_HierPin name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata" />
+			</G_HierPins>
+			<C_Boundaries>
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/reg_wr_err" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/_HOLD_9" visible="true" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/N_13" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_arb_write_en" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/w_write_issue" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/w_bresp[1:0]" visible="true" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/o_req_write" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_wfifo_empty" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_empty" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/w_write_error" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/N_18" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/w_w_last" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_bfifo_full" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/N_21" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/N_17" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/w_aw_last" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_sram_write_valid" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_rd_cnt[2:0]" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/reg_rval[7:0]" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/rd_comb_val[7:0]" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/o_rdata[28:0]" visible="true" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/o_req_read" visible="true" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/reg_rd_cnt[2:0]" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/o_data_out[7:0]" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/o_data_out[7:0]" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/o_data_out[7:0]" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/o_data_out[7:0]" visible="true" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/reg_rd_pending" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync[1:0]" visible="true" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/o_data_out[7:0]" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/wval_sync[7:0]" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/o_read_valid" visible="true" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/o_data_out" visible="true" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_rfifo_full" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/w_arfifo_empty" visible="true" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/o_data_out[7:0]" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/i_req_write" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/w_arfifo_read_valid" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/o_data_out[7:0]" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/arb_toggle" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem[231:0]" visible="true" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/N_16" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_arfifo_empty" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/N_3" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/i_req_read" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/o_data_out[7:0]" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/N_4" dir="out" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/o_data_out[7:0]" dir="in" />
+				<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_arbiter/o_arb_write_en" visible="true" dir="out" />
+			</C_Boundaries>
+			<Cloud name="Cloud_18" color="7">
+				<C_Insts>
+					<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_INDEX_w_aw_last" />
+					<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_N_17" />
+					<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_N_18" />
+					<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT_o_req_write" />
+					<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_AND_w_write_issue" />
+					<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_BNOT__HOLD_9" />
+					<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_XOR_N_21" />
+					<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_OR_w_write_error" />
+				</C_Insts>
+				<C_Boundaries>
+					<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/w_bresp[1:0]" visible="true" dir="out" />
+					<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_bfifo_full" dir="in" />
+					<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/N_13" dir="out" />
+					<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_wfifo_empty" dir="in" />
+					<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_rdata[28:0]" visible="true" dir="in" />
+					<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/w_write_issue" dir="out" />
+					<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_sram_write_valid" dir="in" />
+					<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/o_req_write" dir="out" />
+					<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_awfifo_empty" dir="in" />
+					<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/reg_wr_err" dir="in" />
+					<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/i_arb_write_en" visible="true" dir="in" />
+					<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/_HOLD_9" visible="true" dir="out" />
+					<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/w_aw_last" dir="out" />
+					<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/w_w_last" dir="in" />
+				</C_Boundaries>
+				<Cloud name="Cloud_BUF_10" color="7" type="21">
+					<C_Insts>
+						<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_w_bresp" />
+					</C_Insts>
+					<C_Boundaries>
+						<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/w_bresp[1:0]" visible="true" dir="out" />
+					</C_Boundaries>
+				</Cloud>
+				<Cloud name="Cloud_AND_1" color="4" type="14">
+					<C_Insts>
+						<C_Inst name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_13" />
+					</C_Insts>
+					<C_Boundaries>
+						<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/w_write_issue" visible="true" dir="in" />
+						<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/N_13" visible="true" dir="out" />
+						<C_BNet name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/w_aw_last" visible="true" dir="in" />
+					</C_Boundaries>
+				</Cloud>
+			</Cloud>
+		</Cloud>
+	</Clouds>
+	<Locators clear="false">
+		<Locator name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/OUT[1:0]" title="QUALIFIER_GATE" center="false" />
+		<Locator name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/SEL" title="MUX_SELPIN_SRC" center="false" />
+		<Locator name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/SEL" title="QUALIFIER_CONVERGES_SAME_SRC" center="false" />
+		<Locator name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/I_MUX_N_40/SEL" title="QUALIFIER_CONVERGES_SYNC_SRC" center="false" />
+		<Locator name="m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync/Q[1:0]" title="UDS_SYNC" center="false" />
+		<Locator name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/Q[231:0]" title="DATA_PATH_SRC" center="false" />
+		<Locator name="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo/reg_mem/Q[231:0]" title="SYNC_SRC" center="false" />
+		<Locator name="m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/reg_wr_resp/Q[1:0]" title="DATA_PATH_DST" center="false" />
+	</Locators>
+	<ClockInfo clear="true">
+		<Clock name="i_aclk" />
+		<Clock name="i_qspi_clk" />
+	</ClockInfo>
+</Command>

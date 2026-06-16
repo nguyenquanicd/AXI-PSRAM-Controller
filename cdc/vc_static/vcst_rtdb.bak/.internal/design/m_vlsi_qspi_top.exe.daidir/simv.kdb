@@ -1,0 +1,23 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/home/ltthinh/PSRAM_THANG/cdc/vc_static
+VCS_HOME=/tools/Synopsys/vc_static/X-2025.06/vcs-mx
+VERDI_HOME=/tools/Synopsys/vc_static/X-2025.06/verdi
+SystemC=FALSE
+UUM=TRUE
+KDB=TRUE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+ENV="SYNOPSYS_SIM_SETUP=/home/ltthinh/PSRAM_THANG/cdc/vc_static/vcst_rtdb/.internal/design/synopsys_sim.setup" 
+TOP=m_vlsi_qspi_top 
+ELAB=TRUE
+COMMON_ELAB=TRUE
+SIMV_WRAPPER=FALSE
+ELABCOM_PARTAIL_LOAD=TRUE
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a
+
+[CompInfo]
+FLOW_OPTS=-kdb=common_elab 

@@ -1,0 +1,114 @@
+SHELL=/bin/bash
+CLAUDE_CODE_SUBAGENT_MODEL=deepseek-v4-flash
+PYENV_SHELL=bash
+ZELLIJ_SESSION_NAME=real_work
+WARP_CLIENT_VERSION=v0.2026.04.22.08.46.stable_03
+_LMFILES__modshare=/tools/modulefiles/synopsys/vc_static/X-2025.06:1
+SYS_HIDE_VERSION_WARNING=1
+ENV=/usr/share/modules/init/profile.sh
+QSPI_FILELIST=/home/link/work/real_work/AXI4-PSRAM-CONTROLLER/rtl/filelist.f
+PWD=/home/link/work/real_work/AXI4-PSRAM-CONTROLLER/cdc/vc_static
+LOGNAME=link
+ZELLIJ_PANE_ID=6
+MODULESHOME=/usr/share/modules
+MANPATH=/usr/share/man:/usr/share/man:/usr/share/man:/usr/share/man:/usr/share/man:
+QSPI_SYN_HOME=/home/link/work/real_work/AXI4-PSRAM-CONTROLLER/syn
+TZ=Asia/Ho_Chi_Minh
+MOTD_SHOWN=pam
+HOME=/home/link
+LANG=en_US.UTF-8
+ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic
+SSH_CONNECTION=192.168.1.1 63762 172.16.0.10 22
+PATH_modshare=/home/link/.pyenv/bin:1:/bin:1:/tools/Synopsys/vc_static/X-2025.06/vcfca/bin:1:/home/link/.local/bin:1:/usr/bin:1:/usr/games:1:/tools/Synopsys/vc_static/X-2025.06/bin:1:/home/link/.pyenv/shims:1:/usr/local/bin:1:/usr/local/games:1
+WARP_CLI_AGENT_PROTOCOL_VERSION=1
+MODULEPATH_modshare=/etc/environment-modules/modules:1:/usr/share/modules/$MODULE_VERSION/modulefiles:1:/usr/share/modules/modulefiles:1:/usr/share/modules/versions:1
+SNPSLMD_LICENSE_FILE=27000@172.16.0.2
+LOADEDMODULES_modshare=synopsys/vc_static/X-2025.06:1
+TERM=xterm-256color
+USER=link
+ANTHROPIC_DEFAULT_SONNET_MODEL=deepseek-v4-pro[1m]
+CLAUDE_CODE_EFFORT_LEVEL=max
+QSPI_DC_HOME=/home/link/work/real_work/AXI4-PSRAM-CONTROLLER/syn/dc
+SYNOPSYS_MEM_ENABLE_SBRK=1
+LOADEDMODULES=synopsys/vc_static/X-2025.06
+SHLVL=4
+BASH_ENV=/usr/share/modules/init/bash
+ANTHROPIC_MODEL=deepseek-v4-pro[1m]
+ANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-v4-pro[1m]
+LD_LIBRARY_PATH=/usr/lib
+LC_CTYPE=UTF-8
+ANTHROPIC_AUTH_TOKEN=sk-8489d9a939f14daea108450b23bb341f
+SYNOPSYS_HOME=/tools/Synopsys
+SSH_CLIENT=192.168.1.1 63762 22
+PYENV_ROOT=/home/link/.pyenv
+ANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-flash
+VC_STATIC_HOME=/tools/Synopsys/vc_static/X-2025.06
+LC_ALL=en_US.UTF-8
+PATH=/tools/Synopsys/vc_static/X-2025.06/vcfca/bin:/tools/Synopsys/vc_static/X-2025.06/bin:/home/link/.pyenv/shims:/home/link/.pyenv/bin:/home/link/.local/bin:/home/link/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+QSPI_HOME=/home/link/work/real_work/AXI4-PSRAM-CONTROLLER
+MODULEPATH=/tools/modulefiles
+_LMFILES_=/tools/modulefiles/synopsys/vc_static/X-2025.06
+ZELLIJ=0
+QSPI_RTL=/home/link/work/real_work/AXI4-PSRAM-CONTROLLER/rtl
+SSH_TTY=/dev/pts/17
+OLDPWD=/home/link/work/real_work/AXI4-PSRAM-CONTROLLER
+MODULES_CMD=/usr/lib/x86_64-linux-gnu/modulecmd.tcl
+TERM_PROGRAM=WarpTerminal
+BASH_FUNC_ml%%=() {  module ml "$@"
+}
+BASH_FUNC_module%%=() {  _module_raw "$@" 2>&1
+}
+BASH_FUNC__module_raw%%=() {  unset _mlshdbg;
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ case "$-" in 
+ *v*x*)
+ set +vx;
+ _mlshdbg='vx'
+ ;;
+ *v*)
+ set +v;
+ _mlshdbg='v'
+ ;;
+ *x*)
+ set +x;
+ _mlshdbg='x'
+ ;;
+ *)
+ _mlshdbg=''
+ ;;
+ esac;
+ fi;
+ unset _mlre _mlIFS;
+ if [ -n "${IFS+x}" ]; then
+ _mlIFS=$IFS;
+ fi;
+ IFS=' ';
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ do
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ fi;
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ fi;
+ done;
+ if [ -n "${_mlre:-}" ]; then
+ eval `eval ${_mlre} /usr/bin/tclsh8.6 /usr/lib/x86_64-linux-gnu/modulecmd.tcl bash '"$@"'`;
+ else
+ eval `/usr/bin/tclsh8.6 /usr/lib/x86_64-linux-gnu/modulecmd.tcl bash "$@"`;
+ fi;
+ _mlstatus=$?;
+ if [ -n "${_mlIFS+x}" ]; then
+ IFS=$_mlIFS;
+ else
+ unset IFS;
+ fi;
+ unset _mlre _mlv _mlrv _mlIFS;
+ if [ -n "${_mlshdbg:-}" ]; then
+ set -$_mlshdbg;
+ fi;
+ unset _mlshdbg;
+ return $_mlstatus
+}
+_=/usr/bin/env

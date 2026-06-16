@@ -1,0 +1,279 @@
+(2026-06-14 22:22:27),0.00130976,0,start,1196.71,7,RegisterApps : 
+(2026-06-14 22:22:28),0.025567,0,start,1618.79,429,LicenseMgr Init : 
+(2026-06-14 22:22:29),0.0363245,0,end,1625.07,430,LicenseMgr Init : 
+(2026-06-14 22:22:29),0.0363918,0,end,1625.07,431,RegisterApps : 
+(2026-06-14 22:22:32),0.0942554,0,start,2075.09,502,Analyze 
+(2026-06-14 22:22:33),0.0987215,0,end,2075.09,502,Analyze 
+(2026-06-14 22:22:33),0.0987226,0,start,2075.09,502,Load VCS Message: 
+(2026-06-14 22:22:33),0.098726,0,end,2075.09,502,Load VCS Message: 
+(2026-06-14 22:22:33),0.100125,0,start,2075.09,506,Elaborate : 
+(2026-06-14 22:22:36),0.149156,0,end,2075.09,505,Elaborate : 
+(2026-06-14 22:22:36),0.149159,0,start,2075.09,505,Load VCS Message: 
+(2026-06-14 22:22:36),0.149164,0,end,2075.09,505,Load VCS Message: 
+(2026-06-14 22:22:36),0.149165,0,start,2075.09,505,LoadCircuitModel : 
+(2026-06-14 22:22:36),0.149256,0,start,2075.09,506,VsiLib_Restore : 
+(2026-06-14 22:22:36),0.149257,0,end,2075.09,506,VsiLib_Restore : 
+(2026-06-14 22:22:36),0.149258,0,end,2075.09,506,LoadCircuitModel : 
+(2026-06-14 22:22:36),0.149259,0,start,2075.09,506,BuildNetlist : 
+(2026-06-14 22:22:36),0.14926,0,start,2075.09,506,NLDM Build : 
+(2026-06-14 22:22:36),0.149448,0,start,2075.09,527,XMR_Resolution : Total:0 : 
+(2026-06-14 22:22:36),0.149449,0,end,2075.09,527,XMR_Resolution : Success:0 : 
+(2026-06-14 22:22:36),0.149458,0,end,2075.09,527,NLDM Build : 
+(2026-06-14 22:22:36),0.14946,1,start,2075.09,527,Cell properties : 
+(2026-06-14 22:22:36),0.149462,1,end,2075.09,527,Cell properties : 
+(2026-06-14 22:22:36),0.149463,0,end,2075.09,527,BuildNetlist : 
+(2026-06-14 22:22:36),0.149465,0,start,2075.09,527,Process Seq Latch Arrays : 
+(2026-06-14 22:22:36),0.149466,0,end,2075.09,527,Process Seq Latch Arrays : Total Op: 0Processed Op : 0 
+(2026-06-14 22:22:36),0.149471,0,start,2075.09,527,populate SSF data: 
+(2026-06-14 22:22:36),0.149472,0,end,2075.09,527,populate SSF data: 
+(2026-06-14 22:22:36),0.149472,0,start,2075.09,527,DumpGateCountStats : 
+(2026-06-14 22:22:36),0.149483,0,end,2075.09,527,DumpGateCountStats : 
+(2026-06-14 22:22:36),0.149484,0,start,2075.09,527,DataModelStats : 
+(2026-06-14 22:22:36),0.149489,0,end,2075.09,527,DataModelStats : 
+(2026-06-14 22:22:36),0.14949,0,start,2075.09,527,Collect DB cells : 
+(2026-06-14 22:22:36),0.14949,0,end,2075.09,527,Collect DB cells : 
+(2026-06-14 22:22:36),0.149491,0,start,2075.09,527,RunReductionEngine : 
+(2026-06-14 22:22:36),0.149508,1,start,2075.09,536,BlockEnginePropagation : 
+(2026-06-14 22:22:36),0.149556,1,end,2075.09,536,BlockEnginePropagation : 
+(2026-06-14 22:22:36),0.149558,0,end,2075.09,536,RunReductionEngine : 
+(2026-06-14 22:22:36),0.149558,1,start,2075.09,536,ModuleDesignPropagation : 
+(2026-06-14 22:22:36),0.14956,1,end,2075.09,536,ModuleDesignPropagation : 
+(2026-06-14 22:22:36),0.149587,0,start,2077.4,537,Mdm2Nschema : 
+(2026-06-14 22:22:36),0.152339,0,start,2097.42,546,Nschema Composite_SignalNames : 
+(2026-06-14 22:22:36),0.15235,0,end,2097.42,546,Nschema Composite_SignalNames : 
+(2026-06-14 22:22:37),0.165048,0,start,2097.42,546,TCLCacheClear : 
+(2026-06-14 22:22:37),0.16505,0,end,2097.42,546,TCLCacheClear : 
+(2026-06-14 22:22:37),0.165058,1,start,2097.42,546,_nameToNet Map clear : 
+(2026-06-14 22:22:37),0.165059,1,end,2097.42,546,_nameToNet Map clear : 
+(2026-06-14 22:22:37),0.16506,1,start,2097.42,546,ConstantPropagation : 
+(2026-06-14 22:22:37),0.165061,1,start,2097.42,546,UserConstantPropagation : 
+(2026-06-14 22:22:37),0.165062,1,end,2097.42,546,UserConstantPropagation : Number of SCA: 0 
+(2026-06-14 22:22:37),0.165062,1,start,2097.42,546,DynamicUserCasePropagation : 
+(2026-06-14 22:22:37),0.165063,1,end,2097.42,546,DynamicUserCasePropagation : 
+(2026-06-14 22:22:37),0.165064,1,start,2097.42,546,DesignConstantPropagation : 
+(2026-06-14 22:22:37),0.165109,1,end,2097.42,546,DesignConstantPropagation : 
+(2026-06-14 22:22:37),0.16511,1,start,2097.42,546,HybridSeqPropagation : 
+(2026-06-14 22:22:37),0.165117,1,end,2097.42,546,HybridSeqPropagation : 
+(2026-06-14 22:22:37),0.165118,1,start,2097.42,546,ReverseConstPropagationOnBiDir: 
+(2026-06-14 22:22:37),0.165119,1,end,2097.42,546,ReverseConstPropagationOnBiDir: 
+(2026-06-14 22:22:37),0.16512,1,end,2097.42,546,ConstantPropagation : 
+(2026-06-14 22:22:37),0.165121,0,start,2097.42,546,populateInfoToView : 
+(2026-06-14 22:22:37),0.165124,0,end,2097.42,546,populateInfoToView : 
+(2026-06-14 22:22:37),0.165125,1,start,2097.42,546,QuasiStaticPropagation : 
+(2026-06-14 22:22:37),0.165126,1,start,2097.42,546,UserNetBitQuasi : 
+(2026-06-14 22:22:37),0.165128,1,end,2097.42,546,UserNetBitQuasi : UserNetBit Quasi count: 0 
+(2026-06-14 22:22:37),0.165129,1,start,2097.42,546,UserPinBitQuasi : 
+(2026-06-14 22:22:37),0.165129,1,end,2097.42,546,UserPinBitQuasi : UserPinBit Quasi count: 0 
+(2026-06-14 22:22:37),0.16513,1,start,2097.42,546,UserOpPinBitQuasi : 
+(2026-06-14 22:22:37),0.165131,1,end,2097.42,546,UserOpPinBitQuasi : UserOpPinBit Quasi count: 0 
+(2026-06-14 22:22:37),0.165132,1,start,2097.42,546,QueueQuasiNetBits : 
+(2026-06-14 22:22:37),0.165132,1,end,2097.42,546,QueueQuasiNetBits : 
+(2026-06-14 22:22:37),0.165133,1,end,2097.42,546,QuasiStaticPropagation : 
+(2026-06-14 22:22:37),0.165134,0,start,2097.42,546,evaluateGenClocksForBlockedPaths: 
+(2026-06-14 22:22:37),0.165135,0,end,2097.42,546,evaluateGenClocksForBlockedPaths: 
+(2026-06-14 22:22:37),0.165138,1,start,2097.42,546,CDC Checks: 
+(2026-06-14 22:22:37),0.16514,0,start,2097.42,546,Raise Accumulated Limit : 
+(2026-06-14 22:22:37),0.165141,0,end,2097.42,546,Raise Accumulated Limit : 
+(2026-06-14 22:22:37),0.165145,1,start,2097.42,546,CDC :: Initialize cdc attributes : 
+(2026-06-14 22:22:37),0.165146,1,end,2097.42,546,CDC :: Initialize cdc attributes : 
+(2026-06-14 22:22:37),0.165148,1,start,2097.42,546,CDC :: Auto inferring Quasi-static Signals 
+(2026-06-14 22:22:37),0.165149,1,end,2097.42,546,CDC :: Auto inferring Quasi-static Signals 
+(2026-06-14 22:22:37),0.165151,1,start,2097.42,546,CDC :: Clock setup: 
+(2026-06-14 22:22:37),0.165193,1,start,2097.42,546,CDC :: SETUP_CLOCK_OVERLAP: 
+(2026-06-14 22:22:37),0.165196,1,end,2097.42,546,CDC :: SETUP_CLOCK_OVERLAP: 
+(2026-06-14 22:22:37),0.165198,1,end,2097.42,546,CDC :: Clock setup: 
+(2026-06-14 22:22:37),0.165199,1,start,2097.42,546,CDC :: CGC detection: 
+(2026-06-14 22:22:37),0.1652,1,end,2097.42,546,CDC :: CGC detection: 
+(2026-06-14 22:22:37),0.165201,1,start,2097.42,546,CDC :: Reset setup: 
+(2026-06-14 22:22:37),0.165202,1,start,2097.42,546,Rst: Build Reset Sense DB 
+(2026-06-14 22:22:37),0.165202,1,end,2097.42,546,Rst: Build Reset Sense DB 
+(2026-06-14 22:22:37),0.165204,1,start,2097.42,546,Rst: Build Async ResetTree: 
+(2026-06-14 22:22:37),0.165302,1,end,2097.42,546,Rst: Build Async ResetTree: 
+(2026-06-14 22:22:37),0.165303,1,start,2097.42,546,Rst: Build Sync ResetTree: 
+(2026-06-14 22:22:37),0.165304,1,end,2097.42,546,Rst: Build Sync ResetTree: 
+(2026-06-14 22:22:37),0.165334,1,end,2097.42,547,CDC :: Reset setup: 
+(2026-06-14 22:22:37),0.165348,1,start,2097.42,547,CDC :: Populate default domain: 
+(2026-06-14 22:22:37),0.165349,1,end,2097.42,547,CDC :: Populate default domain: 
+(2026-06-14 22:22:37),0.16535,1,start,2097.42,547,CDC :: SETUP_DOMAIN_INFER: 
+(2026-06-14 22:22:37),0.165356,1,end,2097.42,547,CDC :: SETUP_DOMAIN_INFER: 
+(2026-06-14 22:22:37),0.165357,1,start,2097.42,547,CDC :: Blackbox Modelling: 
+(2026-06-14 22:22:37),0.165359,1,end,2097.42,547,CDC :: Blackbox Modelling: 
+(2026-06-14 22:22:37),0.16536,1,start,2097.42,547,CDC :: CDC Ignore Path Constraints Processing
+(2026-06-14 22:22:37),0.165361,1,end,2097.42,547,CDC :: CDC Ignore Path Constraints Processing
+(2026-06-14 22:22:37),0.165362,1,start,2097.42,547,CDC :: CDC Clockglitch Ignore Path Constraints Processing
+(2026-06-14 22:22:37),0.165364,1,end,2097.42,547,CDC :: CDC Clockglitch Ignore Path Constraints Processing
+(2026-06-14 22:22:37),0.165365,1,start,2097.42,547,CDC :: CDC Asyncrst Ignore Path Constraints Processing
+(2026-06-14 22:22:37),0.165366,1,end,2097.42,547,CDC :: CDC Asyncrst Ignore Path Constraints Processing
+(2026-06-14 22:22:37),0.165391,1,start,2097.42,547,CDC :: Setup Check (Setup_port01, Setup_library01): 
+(2026-06-14 22:22:37),0.165393,1,start,2097.42,547,CDC :: SETUP_LIBCELL: 
+(2026-06-14 22:22:37),0.165394,1,end,2097.42,547,CDC :: SETUP_LIBCELL: 
+(2026-06-14 22:22:37),0.165398,1,start,2097.42,547,CDC :: SETUP_PORT: 
+(2026-06-14 22:22:37),0.165448,1,start,2101.43,547,CDC :: SETUP_INPUT_MULTICLK_LOAD: 
+(2026-06-14 22:22:37),0.165449,1,end,2101.43,547,CDC :: SETUP_INPUT_MULTICLK_LOAD: 
+(2026-06-14 22:22:37),0.16545,1,end,2101.43,547,CDC :: SETUP_PORT: 
+(2026-06-14 22:22:37),0.165452,1,end,2101.43,547,CDC :: Setup Check (Setup_port01, Setup_library01): 
+(2026-06-14 22:22:37),0.165453,1,start,2101.43,547,CDC :: Setup Check (Rest): 
+(2026-06-14 22:22:37),0.165455,1,start,2101.43,547,CDC :: Setup Checks analysis: 
+(2026-06-14 22:22:37),0.165488,1,start,2101.43,547,CDC :: Setting stack size 200000000 for 4 multi-threaded checks. 
+(2026-06-14 22:22:37),0.165489,0,start,2101.43,547,StackSizeChange 104857600 ==> 200000000 
+(2026-06-14 22:22:37),0.165514,0,end,2464.38,545,StackSizeChange 104857600 ==> 200000000 
+(2026-06-14 22:22:37),0.165515,1,end,2464.38,545,CDC :: Setting stack size 200000000 for 4 multi-threaded checks.  Thread count reduced to 4. 
+(2026-06-14 22:22:38),0.180662,1,end,2464.38,548,CDC :: Setup Checks analysis: 
+(2026-06-14 22:22:38),0.180707,1,start,2464.38,548,CDC :: SETUP_MULTIPLE_CONSTRAINTS: 
+(2026-06-14 22:22:38),0.180771,1,end,2464.38,548,CDC :: SETUP_MULTIPLE_CONSTRAINTS: 
+(2026-06-14 22:22:38),0.180773,1,end,2464.38,548,CDC :: Setup Check (Rest): 
+(2026-06-14 22:22:38),0.180799,0,start,2464.38,548,CDC :: Check Safety Register: 
+(2026-06-14 22:22:38),0.1808,0,end,2464.38,548,CDC :: Check Safety Register: 
+(2026-06-14 22:22:38),0.180804,1,start,2464.38,548,CDC :: ClockRelationMatrix Db Population
+(2026-06-14 22:22:38),0.180875,1,end,2464.38,548,CDC :: ClockRelationMatrix Db Population
+(2026-06-14 22:22:38),0.180876,1,start,2464.38,548,CDC :: CDC Analyze Quasi Clocks 
+(2026-06-14 22:22:38),0.180877,1,end,2464.38,548,CDC :: CDC Analyze Quasi Clocks 
+(2026-06-14 22:22:38),0.180892,1,start,2464.38,548,CDC :: Creating crossings: 
+(2026-06-14 22:22:38),0.180893,1,start,2464.38,548,CDC :: CDC User Path Ignore Path Constraints Processing
+(2026-06-14 22:22:38),0.180895,1,end,2464.38,548,CDC :: CDC User Path Ignore Path Constraints Processing
+(2026-06-14 22:22:38),0.18093,1,start,2464.38,548,CDC :: Thread Job flow: 
+(2026-06-14 22:22:39),0.20142,1,end,2464.38,551,CDC :: Thread Job flow: 
+(2026-06-14 22:22:39),0.201469,1,end,2464.38,551,CDC :: Creating crossings: 
+(2026-06-14 22:22:39),0.201525,1,start,2464.38,551,CDC :: Integrity, RESET :: Crossing analysis: 
+(2026-06-14 22:22:40),0.225398,1,start,2464.38,553,Add crossings to crossing manager job  Execution:
+(2026-06-14 22:22:40),0.2254,1,start,2464.38,553,RESET :: Creating crossings Post Grid Job: 
+(2026-06-14 22:22:40),0.225403,1,end,2464.38,553,RESET :: Creating crossings Post Grid Job: 
+(2026-06-14 22:22:40),0.225404,1,end,2464.38,553,Add crossings to crossing manager job  Execution:
+(2026-06-14 22:22:40),0.225438,1,end,2464.38,553,CDC :: Integrity, RESET :: Crossing analysis: 
+(2026-06-14 22:22:40),0.22545,1,start,2464.38,553,CDC_RESET ::  Detecting Nff Phase-1: 
+(2026-06-14 22:22:40),0.225528,1,start,2464.38,553,CDC :: Detecting Nff Phase-1: , RESET :: Detecting Nff Phase-1:  analysis: 
+(2026-06-14 22:22:41),0.229254,1,start,2464.38,554,RESET_SYNC_NFF_POST_GRID_JOB Execution:
+(2026-06-14 22:22:41),0.229257,1,end,2464.38,554,RESET_SYNC_NFF_POST_GRID_JOB Execution:
+(2026-06-14 22:22:41),0.229258,1,start,2464.38,554,DATA_SYNC_NFF_POST_GRID_JOB Execution:
+(2026-06-14 22:22:41),0.229283,1,start,2464.38,554,#FFBanks Detected : 
+(2026-06-14 22:22:41),0.229285,1,end,2464.38,554,#FFBanks Detected : 
+(2026-06-14 22:22:41),0.229287,1,end,2464.38,554,DATA_SYNC_NFF_POST_GRID_JOB Execution:
+(2026-06-14 22:22:41),0.229321,1,end,2464.38,554,CDC :: Detecting Nff Phase-1: , RESET :: Detecting Nff Phase-1:  analysis: 
+(2026-06-14 22:22:41),0.229331,1,end,2464.38,553,CDC_RESET ::  Detecting Nff Phase-1: 
+(2026-06-14 22:22:41),0.229332,1,start,2464.38,553,CDC :: Detecting UDS: 
+(2026-06-14 22:22:41),0.229333,1,end,2464.38,553,CDC :: Detecting UDS: 
+(2026-06-14 22:22:41),0.229334,1,start,2464.38,553,RESET :: Detecting UDS: 
+(2026-06-14 22:22:41),0.229335,1,end,2464.38,553,RESET :: Detecting UDS: 
+(2026-06-14 22:22:41),0.229336,1,start,2464.38,553,CDC :: Parsing Data Sync Constraint: 
+(2026-06-14 22:22:41),0.229337,1,end,2464.38,553,CDC :: Parsing Data Sync Constraint: 
+(2026-06-14 22:22:41),0.229338,1,start,2464.38,553,CDC :: Analyzing Data Sync Constraint: 
+(2026-06-14 22:22:41),0.229338,1,end,2464.38,553,CDC :: Analyzing Data Sync Constraint: 
+(2026-06-14 22:22:41),0.229339,1,start,2464.38,553,RESET :: Parsing Data Sync Constraint: 
+(2026-06-14 22:22:41),0.22934,1,end,2464.38,553,RESET :: Parsing Data Sync Constraint: 
+(2026-06-14 22:22:41),0.22934,1,start,2464.38,553,RESET :: Analyzing Data Sync Constraint: 
+(2026-06-14 22:22:41),0.229341,1,end,2464.38,553,RESET :: Analyzing Data Sync Constraint: 
+(2026-06-14 22:22:41),0.229342,1,start,2464.38,553,CDC :: SeqFrontier Job Creation: 
+(2026-06-14 22:22:41),0.229343,1,end,2464.38,553,CDC :: SeqFrontier Job Creation: 
+(2026-06-14 22:22:41),0.229344,1,start,2464.38,553,RESET :: SeqFrontier Job Creation: 
+(2026-06-14 22:22:41),0.229345,1,end,2464.38,553,RESET :: SeqFrontier Job Creation: 
+(2026-06-14 22:22:41),0.229346,1,start,2464.38,553,CDC RST SeqFrontier Run: 
+(2026-06-14 22:22:41),0.23121,1,end,2464.38,553,CDC RST SeqFrontier Run: 
+(2026-06-14 22:22:41),0.231212,1,start,2464.38,553,CDC :: Parsing Multiflop Constraint: 
+(2026-06-14 22:22:41),0.231213,1,end,2464.38,553,CDC :: Parsing Multiflop Constraint: 
+(2026-06-14 22:22:41),0.231215,1,start,2464.38,553,CDC :: Uniquifying Lib-Cells: #SFCCells: 107 #RCCCells: 0 #RPCCells: 0 
+(2026-06-14 22:22:41),0.231218,1,start,2464.38,553,ConstantPropagation : 
+(2026-06-14 22:22:41),0.231219,1,start,2464.38,553,UserConstantPropagation : 
+(2026-06-14 22:22:41),0.23122,1,end,2464.38,553,UserConstantPropagation : Number of SCA: 0 
+(2026-06-14 22:22:41),0.231221,1,start,2464.38,553,UniquifiedInstPropagation : 
+(2026-06-14 22:22:41),0.231222,1,end,2464.38,553,UniquifiedInstPropagation : 
+(2026-06-14 22:22:41),0.231224,1,end,2464.38,553,ConstantPropagation : 
+(2026-06-14 22:22:41),0.231225,0,start,2464.38,553,populateInfoToView : 
+(2026-06-14 22:22:41),0.231229,0,end,2464.38,553,populateInfoToView : 
+(2026-06-14 22:22:41),0.231231,1,end,2464.38,553,CDC :: Uniquifying Lib-Cells: #SFCCells: 107 #RCCCells: 0 #RPCCells: 0 
+(2026-06-14 22:22:41),0.231246,1,start,2464.38,553,Populating flattened/traversed ignore_among_signals 
+(2026-06-14 22:22:41),0.231247,1,end,2464.38,553,Populating flattened/traversed ignore_among_signals 
+(2026-06-14 22:22:41),0.231273,1,start,2464.38,553,CDC :: Datasync, CDC :: Convergence, RESET :: Datasync analysis: 
+(2026-06-14 22:22:41),0.239391,1,start,2464.38,564,NoConv, RstNff Reporting Job Execution:
+(2026-06-14 22:22:41),0.239773,1,end,2500.41,571,NoConv, RstNff Reporting Job Execution:
+(2026-06-14 22:22:41),0.239797,1,end,2500.41,571,CDC :: Datasync, CDC :: Convergence, RESET :: Datasync analysis: 
+(2026-06-14 22:22:41),0.239799,1,start,2500.41,571,CDC :: Populating sync report: 
+(2026-06-14 22:22:41),0.239801,1,end,2500.41,571,CDC :: Populating sync report: 
+(2026-06-14 22:22:41),0.239822,1,start,2500.41,571,CDC :: Qualifier Validation: 
+(2026-06-14 22:22:41),0.239824,1,start,2500.41,571,Soc Validation analysis: 
+(2026-06-14 22:22:41),0.239853,1,end,2500.41,571,Soc Validation analysis: 
+(2026-06-14 22:22:41),0.239877,1,end,2500.41,571,CDC :: Qualifier Validation: 
+(2026-06-14 22:22:41),0.239878,1,start,2500.41,571,CDC :: Constraint Validation: 
+(2026-06-14 22:22:41),0.239879,1,start,2500.41,571,Soc Validation analysis: 
+(2026-06-14 22:22:41),0.23988,1,end,2500.41,571,Soc Validation analysis: 
+(2026-06-14 22:22:41),0.239881,1,end,2500.41,571,CDC :: Constraint Validation: 
+(2026-06-14 22:22:41),0.239907,1,start,2500.41,571,CDC::Glitch PreRunStats #PathTypesSize: 2
+(2026-06-14 22:22:41),0.23991,1,end,2500.41,571,CDC::Glitch PreRunStats #GFCInstScopeSize: 0 #GFCHierScopeSize: 0 #UserCdcISSize: 0 #PropCdcISSize: 0 #JobSize: 6
+(2026-06-14 22:22:41),0.239911,1,start,2500.41,571,RESET :: Deassertion analysis: 
+(2026-06-14 22:22:41),0.239912,1,end,2500.41,571,RESET :: Deassertion analysis: 
+(2026-06-14 22:22:41),0.239913,1,start,2500.41,571,CDC :: Glitch analysis: 
+(2026-06-14 22:22:41),0.243656,1,start,2500.41,574,GLITCH_POST_GRID_JOB Execution:
+(2026-06-14 22:22:41),0.243658,1,end,2500.41,574,GLITCH_POST_GRID_JOB Execution:
+(2026-06-14 22:22:41),0.24366,1,end,2500.41,574,CDC :: Glitch analysis: 
+(2026-06-14 22:22:41),0.243689,1,start,2500.41,574,RESET :: Populating sync report: 
+(2026-06-14 22:22:41),0.24369,1,end,2500.41,574,RESET :: Populating sync report: 
+(2026-06-14 22:22:41),0.243691,1,start,2500.41,574,RESET :: SeqFrontier cleanup: 
+(2026-06-14 22:22:41),0.243692,1,end,2500.41,574,RESET :: SeqFrontier cleanup: 
+(2026-06-14 22:22:41),0.243692,1,start,2500.41,574,CDC :: SeqFrontier cleanup: 
+(2026-06-14 22:22:41),0.243693,1,end,2500.41,574,CDC :: SeqFrontier cleanup: 
+(2026-06-14 22:22:41),0.243696,1,end,2500.41,574,CDC Checks: 
+(2026-06-14 22:22:42),0.246726,0,start,2500.41,575,SQL Mem : CurrMem: 30 mb, PeakMem: 30 mb 
+(2026-06-14 22:22:42),0.246727,0,end,2500.41,575,SQL Mem : CurrMem: 31 mb, PeakMem: 31 mb 
+(2026-06-14 22:22:42),0.246987,0,start,2500.41,575,SQL Index (add_index) :CurrMem: 31 mb, PeakMem: 31 mb 
+(2026-06-14 22:22:42),0.246991,0,end,2500.41,575,SQL Index (add_index) :CurrMem: 31 mb, PeakMem: 31 mb 
+(2026-06-14 22:22:42),0.250217,0,start,2500.41,577,report_cdc: 
+(2026-06-14 22:22:42),0.25086,0,start,2500.41,590,PragmaWaiverGen: 
+(2026-06-14 22:22:42),0.25093,0,start,2500.41,591,PragmaWaiverUsingViol : 
+(2026-06-14 22:22:42),0.250931,0,end,2500.41,591,PragmaWaiverUsingViol : 
+(2026-06-14 22:22:42),0.25095,0,end,2500.41,591,PragmaWaiverGen: 
+(2026-06-14 22:22:42),0.25095,0,start,2500.41,591,PragmaWaiverApply: 
+(2026-06-14 22:22:42),0.252548,0,start,2500.41,591,generatePragmaWaiverCommands: 
+(2026-06-14 22:22:42),0.25255,0,end,2500.41,591,generatePragmaWaiverCommands: 
+(2026-06-14 22:22:42),0.25255,0,end,2500.41,591,PragmaWaiverApply: 
+(2026-06-14 22:22:42),0.253788,0,start,2500.41,594,buildSummary
+(2026-06-14 22:22:42),0.253792,0,end,2500.41,594,buildSummary
+(2026-06-14 22:22:42),0.253792,0,start,2500.41,594,buildViolations
+(2026-06-14 22:22:42),0.253884,0,start,2500.41,596,setXsltContext: isBatch:0,isThread:0,ST:0,MainThread:1,J:0
+(2026-06-14 22:22:42),0.253886,0,end,2500.41,596,setXsltContext: isBatch:1,isThread:1,ST:0,MainThread:1,CreatedThread:3,PoolThread:4
+(2026-06-14 22:22:42),0.25664,0,end,2500.41,595,buildViolations
+(2026-06-14 22:22:42),0.256653,0,end,2500.41,591,report_cdc: 
+(2026-06-14 22:22:42),0.256663,0,start,2500.41,591,report_cdc: 
+(2026-06-14 22:22:42),0.257374,0,start,2500.41,591,PragmaWaiverGen: 
+(2026-06-14 22:22:42),0.257375,0,start,2500.41,591,PragmaWaiverUsingViol : 
+(2026-06-14 22:22:42),0.257377,0,end,2500.41,591,PragmaWaiverUsingViol : 
+(2026-06-14 22:22:42),0.257379,0,end,2500.41,591,PragmaWaiverGen: 
+(2026-06-14 22:22:42),0.25738,0,start,2500.41,591,PragmaWaiverApply: 
+(2026-06-14 22:22:42),0.25738,0,end,2500.41,591,PragmaWaiverApply: 
+(2026-06-14 22:22:42),0.257895,0,start,2500.41,594,buildSummary
+(2026-06-14 22:22:42),0.257901,0,end,2500.41,594,buildSummary
+(2026-06-14 22:22:42),0.257902,0,start,2500.41,594,buildViolations
+(2026-06-14 22:22:42),0.257995,0,start,2500.41,596,setXsltContext: isBatch:0,isThread:0,ST:0,MainThread:1,J:0
+(2026-06-14 22:22:42),0.258001,0,end,2500.41,596,setXsltContext: isBatch:1,isThread:1,ST:0,MainThread:1,CreatedThread:3,PoolThread:4
+(2026-06-14 22:22:42),0.260752,0,end,2500.41,594,buildViolations
+(2026-06-14 22:22:42),0.260768,0,end,2500.41,591,report_cdc: 
+(2026-06-14 22:22:42),0.260782,0,start,2500.41,591,report_cdc: 
+(2026-06-14 22:22:42),0.26147,0,start,2500.41,591,PragmaWaiverGen: 
+(2026-06-14 22:22:42),0.261471,0,start,2500.41,591,PragmaWaiverUsingViol : 
+(2026-06-14 22:22:42),0.261472,0,end,2500.41,591,PragmaWaiverUsingViol : 
+(2026-06-14 22:22:42),0.261474,0,end,2500.41,591,PragmaWaiverGen: 
+(2026-06-14 22:22:42),0.261475,0,start,2500.41,591,PragmaWaiverApply: 
+(2026-06-14 22:22:42),0.261477,0,end,2500.41,591,PragmaWaiverApply: 
+(2026-06-14 22:22:43),0.262025,0,start,2500.41,594,buildSummary
+(2026-06-14 22:22:43),0.262035,0,end,2500.41,594,buildSummary
+(2026-06-14 22:22:43),0.262036,0,start,2500.41,594,buildViolations
+(2026-06-14 22:22:43),0.262134,0,start,2500.41,596,setXsltContext: isBatch:0,isThread:0,ST:0,MainThread:1,J:0
+(2026-06-14 22:22:43),0.262139,0,end,2500.41,596,setXsltContext: isBatch:1,isThread:1,ST:0,MainThread:1,CreatedThread:3,PoolThread:4
+(2026-06-14 22:22:43),0.265168,0,end,2500.41,596,buildViolations
+(2026-06-14 22:22:43),0.265191,0,end,2500.41,592,report_cdc: 
+(2026-06-14 22:22:44),0.286545,0,start,2500.41,595,PragmaWaiverGen: 
+(2026-06-14 22:22:44),0.286547,0,start,2500.41,595,PragmaWaiverUsingViol : 
+(2026-06-14 22:22:44),0.286548,0,end,2500.41,595,PragmaWaiverUsingViol : 
+(2026-06-14 22:22:44),0.286551,0,end,2500.41,595,PragmaWaiverGen: 
+(2026-06-14 22:22:44),0.286551,0,start,2500.41,595,PragmaWaiverApply: 
+(2026-06-14 22:22:44),0.286553,0,end,2500.41,595,PragmaWaiverApply: 
+(2026-06-14 22:22:44),0.286558,0,start,2500.41,595,SQL Index (add_index) :CurrMem: 31 mb, PeakMem: 31 mb 
+(2026-06-14 22:22:44),0.286586,0,end,2500.41,595,SQL Index (add_index) :CurrMem: 31 mb, PeakMem: 31 mb 
+(2026-06-14 22:22:44),0.28837,0,start,2500.41,597,PragmaWaiverGen: 
+(2026-06-14 22:22:44),0.288371,0,start,2500.41,597,PragmaWaiverUsingViol : 
+(2026-06-14 22:22:44),0.288372,0,end,2500.41,597,PragmaWaiverUsingViol : 
+(2026-06-14 22:22:44),0.288374,0,end,2500.41,597,PragmaWaiverGen: 
+(2026-06-14 22:22:44),0.288375,0,start,2500.41,597,PragmaWaiverApply: 
+(2026-06-14 22:22:44),0.288376,0,end,2500.41,597,PragmaWaiverApply: 
+(2026-06-14 22:22:44),0.289808,0,start,2500.41,597,ApplyPendingWaiver
+(2026-06-14 22:22:44),0.289814,0,end,2500.41,597,ApplyPendingWaiver
+(2026-06-14 22:22:44),0.289849,0,start,2500.41,595,SQL_DB_Save_Main
+(2026-06-14 22:22:44),0.290767,0,end,2500.41,595,SQL_DB_Save_Main

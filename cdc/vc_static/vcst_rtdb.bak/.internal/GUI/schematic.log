@@ -1,0 +1,6 @@
+cmd -pins m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/reg_sync/CLK -verdi 1 -verdiWin 4c1c69d0
+cmd -nets m_vlsi_qspi_top/u_axi_ctrl/u_arfifo/u_wval_sync/sync_multi[0].u_wval_sync/i_clk -verdi 1 -verdiWin 4c1c69d0
+cmd -bitSelect 1 -nets m_vlsi_qspi_top/u_axi_ctrl/u_axi_sclk_logic/N_39[3] -verdi 1 -verdiWin 4c1c69d0
+cmd -nets m_vlsi_qspi_top/u_axi_ctrl/w_arb_write_en -verdi 1 -verdiWin 4c1c69d0
+cmd -nets m_vlsi_qspi_top/u_axi_ctrl/w_arfifo_empty -verdi 1 -verdiWin 4c1c69d0
+cmd -cells m_vlsi_qspi_top/u_axi_ctrl -verdi 1 -verdiWin 4fc2c5b0

@@ -1,0 +1,68 @@
+SetupJob_ClockConstant Execution:   started at: 21:38:17
+CDC :: SETUP_CLOCK_CONSTANT:    Time Taken: 0.00s
+SetupJob_ClockConstant Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_SetupBlackBox Execution:   started at: 21:38:17
+CDC :: SETUP_BBOX:    Time Taken: 0.00s
+SetupJob_SetupBlackBox Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_ResetAssertion Execution:   started at: 21:38:17
+DynamicUserCasePropagation :    Time Taken: 0.00s
+HybridSeqPropagation :    Time Taken: 0.01s
+ReverseConstPropagationOnBiDir:    Time Taken: 0.00s
+ConstantPropagation :    Time Taken: 0.01s
+Reset:: Populating Reset Assert Simulation Data    Time Taken: 0.01s
+CDC :: SETUP_RESET_ASSERT_MISSING:    Time Taken: 0.01s
+SetupJob_ResetAssertion Execution:   completed at: 21:38:17, Time Taken: 0.02s
+SetupJob_AsyncResetNonAsyncPin Execution:   started at: 21:38:17
+CDC :: SETUP_RESET_DRIVING_NON_ASYNC_PIN:    Time Taken: 0.00s
+SetupJob_AsyncResetNonAsyncPin Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_CheckSetupResetSenseSanity Execution:   started at: 21:38:18
+CDC :: SETUP_RESET_SENSE_SANITY:    Time Taken: 0.00s
+SetupJob_CheckSetupResetSenseSanity Execution:   completed at: 21:38:18, Time Taken: 0.00s
+Job (0) running for Crossing Generation ( Container population) ::  Execution:   started at: 21:38:18
+Job (0) running for Crossing Generation ( Container population) ::  Execution:   completed at: 21:38:19, Time Taken: 1.00s
+RaceRstClkThreadJob_1_12 Execution:   started at: 21:38:19
+RaceRstClkThreadJob_1_12 Execution:   completed at: 21:38:19, Time Taken: 0.00s
+RaceRstClkThreadJob_4_12 Execution:   started at: 21:38:19
+RaceRstClkThreadJob_4_12 Execution:   completed at: 21:38:19, Time Taken: 0.00s
+RaceRstClkThreadJob_6_12 Execution:   started at: 21:38:19
+RaceRstClkThreadJob_6_12 Execution:   completed at: 21:38:19, Time Taken: 0.00s
+ResetCrossingJob 2_939 Execution:   started at: 21:38:19
+ResetCrossingJob 2_939 Execution:   completed at: 21:38:19, Time Taken: 0.00s
+ResetCrossingJob 4_90 Execution:   started at: 21:38:20
+ResetCrossingJob 4_90 Execution:   completed at: 21:38:20, Time Taken: 0.00s
+RaceRstClkThreadJob_12_12 Execution:   started at: 21:38:20
+RaceRstClkThreadJob_12_12 Execution:   completed at: 21:38:20, Time Taken: 0.00s
+RaceRstClkThreadJob_14_12 Execution:   started at: 21:38:20
+RaceRstClkThreadJob_14_12 Execution:   completed at: 21:38:20, Time Taken: 0.00s
+IntegrityJob_RstReconv Execution:   started at: 21:38:20
+CDC :: INTEGRITY_RESET_RECONVERGE:    Time Taken: 0.00s
+IntegrityJob_RstReconv Execution:   completed at: 21:38:20, Time Taken: 0.00s
+IntegrityJob_ClockAsNonClock Execution:   started at: 21:38:20
+CDC :: INTEGRITY_CLOCK_AS_NON_CLOCK:    Time Taken: 0.00s
+IntegrityJob_ClockAsNonClock Execution:   completed at: 21:38:20, Time Taken: 0.00s
+IntegrityJob_UnwantedCells Execution:   started at: 21:38:20
+CDC :: INTEGRITY_UNWANTED_CELLS:    Time Taken: 0.00s
+IntegrityJob_UnwantedCells Execution:   completed at: 21:38:20, Time Taken: 0.00s
+IntegrityJob_SyncResetHighLowUsage Execution:   started at: 21:38:20
+CDC :: INTEGRITY_SYNCRESET_HIGH_AND_LOW_USAGE:    Time Taken: 0.00s
+IntegrityJob_SyncResetHighLowUsage Execution:   completed at: 21:38:20, Time Taken: 0.00s
+IntegrityJob_SyncResetConstantAtDeassert Execution:   started at: 21:38:20
+DynamicUserCasePropagation :    Time Taken: 0.00s
+ReverseConstPropagationOnBiDir:    Time Taken: 0.00s
+ConstantPropagation :    Time Taken: 0.00s
+CDC :: INTEGRITY_SYNCRESET_CONST_DEASSERT | INTEGRITY_SYNCRESET_NONCONST_ENABLE:    Time Taken: 0.00s
+IntegrityJob_SyncResetConstantAtDeassert Execution:   completed at: 21:38:20, Time Taken: 0.00s
+DATA_SYNC_NFF_2_130 Execution:   started at: 21:38:21
+DATA_SYNC_NFF_2_130 Execution:   completed at: 21:38:21, Time Taken: 0.01s
+NA Execution:   started at: 21:38:21
+NA Execution:   completed at: 21:38:21, Time Taken: 0.01s
+Conv Job 1_42 Execution:   started at: 21:38:21
+Conv Job 1_42 Execution:   completed at: 21:38:21, Time Taken: 0.29s
+Conv Job 2_2 Execution:   started at: 21:38:21
+Conv Job 2_2 Execution:   completed at: 21:38:21, Time Taken: 0.00s
+Job (0) running for Glitch dest domain:: 2 Execution:   started at: 21:38:21
+Job (0) running for Glitch dest domain:: 2 Execution:   completed at: 21:38:21, Time Taken: 0.01s
+Job (3) running for Glitch dest domain:: 2 Execution:   started at: 21:38:22
+Job (3) running for Glitch dest domain:: 2 Execution:   completed at: 21:38:22, Time Taken: 0.00s
+Job (5) running for Glitch dest domain:: 1 Execution:   started at: 21:38:22
+Job (5) running for Glitch dest domain:: 1 Execution:   completed at: 21:38:22, Time Taken: 0.00s

@@ -1,0 +1,66 @@
+SetupJob_ClockGlitch Execution:   started at: 21:38:17
+CDC :: SETUP_CLOCK_GLITCH:    Time Taken: 0.00s
+SetupJob_ClockGlitch Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_ClockUndeclared Execution:   started at: 21:38:17
+CDC :: SETUP_CLOCK_UNDECL:    Time Taken: 0.00s
+SetupJob_ClockUndeclared Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_ResetStop Execution:   started at: 21:38:17
+CDC :: SETUP_RESET_OVERLAP:    Time Taken: 0.00s
+CDC :: SETUP_RESET_CONV_COMBO|SETUP_RESET_CONV_MUX:    Time Taken: 0.00s
+SetupJob_ResetStop Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_ClockMux Execution:   started at: 21:38:17
+CDC :: SETUP_CLKPATH_MUX_NOCLOCK:    Time Taken: 0.00s
+SetupJob_ClockMux Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_CgcConstrained Execution:   started at: 21:38:17
+CDC :: SETUP_CGLIBCELL:    Time Taken: 0.00s
+SetupJob_CgcConstrained Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_CheckSetupPotentialSoftReset Execution:   started at: 21:38:17
+SetupJob_CheckSetupPotentialSoftReset Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_SetupConnAttrMismatch Execution:   started at: 21:38:18
+SetupJob_SetupConnAttrMismatch Execution:   completed at: 21:38:18, Time Taken: 0.00s
+SetupJob_SetupClockModuleGlitch Execution:   started at: 21:38:18
+SetupJob_SetupClockModuleGlitch Execution:   completed at: 21:38:18, Time Taken: 0.00s
+Job (1) running for Crossing Generation ( Traversal) :: #Domain: 1 #ClockName: i_aclk #Sequentials 31 Execution:   started at: 21:38:18
+Job (1) running for Crossing Generation ( Traversal) :: #Domain: 1 #ClockName: i_aclk #Sequentials 31 Execution:   completed at: 21:38:18, Time Taken: 0.01s
+ResetCrossingJob 6_957 Execution:   started at: 21:38:19
+ResetCrossingJob 6_957 Execution:   completed at: 21:38:19, Time Taken: 0.00s
+ResetCrossingJob 8_957 Execution:   started at: 21:38:19
+ResetCrossingJob 8_957 Execution:   completed at: 21:38:19, Time Taken: 0.00s
+RaceRstClkThreadJob_7_12 Execution:   started at: 21:38:19
+RaceRstClkThreadJob_7_12 Execution:   completed at: 21:38:19, Time Taken: 0.00s
+RaceRstClkThreadJob_9_12 Execution:   started at: 21:38:20
+RaceRstClkThreadJob_9_12 Execution:   completed at: 21:38:20, Time Taken: 0.00s
+RaceRstClkThreadJob_11_12 Execution:   started at: 21:38:20
+RaceRstClkThreadJob_11_12 Execution:   completed at: 21:38:20, Time Taken: 0.00s
+IntegrityJob_ClkReconv Execution:   started at: 21:38:20
+CDC :: INTEGRITY_CLOCK_RECONVERGE:    Time Taken: 0.00s
+IntegrityJob_ClkReconv Execution:   completed at: 21:38:20, Time Taken: 0.00s
+IntegrityJob_FlopConvClockGlitch Execution:   started at: 21:38:20
+CDC :: INTEGRITY_FLOPCONV_CLOCK_GLITCH:    Time Taken: 0.00s
+IntegrityJob_FlopConvClockGlitch Execution:   completed at: 21:38:20, Time Taken: 0.00s
+IntegrityJob_AsyncRstComboMux Execution:   started at: 21:38:20
+CDC :: INTEGRITY_ASYNCRST_COMBO_MUX collectStartPoints:  149  Time Taken: 0.00s
+CDC :: INTEGRITY_ASYNCRST_COMBO_MUX findComboMuxRstPath:    Time Taken: 0.00s
+CDC :: INTEGRITY_ASYNCRST_COMBO_MUX performAsyncRstComboMuxCheck:    Time Taken: 0.00s
+IntegrityJob_AsyncRstComboMux Execution:   completed at: 21:38:20, Time Taken: 0.01s
+IntegrityJob_AsyncResetHighLowUsage Execution:   started at: 21:38:20
+DynamicUserCasePropagation :    Time Taken: 0.00s
+HybridSeqPropagation :    Time Taken: 0.01s
+ReverseConstPropagationOnBiDir:    Time Taken: 0.00s
+ConstantPropagation :    Time Taken: 0.01s
+DynamicUserCasePropagation :    Time Taken: 0.00s
+HybridSeqPropagation :    Time Taken: 0.00s
+ReverseConstPropagationOnBiDir:    Time Taken: 0.00s
+ConstantPropagation :    Time Taken: 0.00s
+CDC :: INTEGRITY_ASYNCRESET_HIGH_AND_LOW_USAGE:    Time Taken: 0.02s
+IntegrityJob_AsyncResetHighLowUsage Execution:   completed at: 21:38:20, Time Taken: 0.02s
+DATA_SYNC_NFF_4_81 Execution:   started at: 21:38:21
+DATA_SYNC_NFF_4_81 Execution:   completed at: 21:38:21, Time Taken: 0.01s
+NA Execution:   started at: 21:38:21
+NA Execution:   completed at: 21:38:21, Time Taken: 0.00s
+Sync Job 1_397 Execution:   started at: 21:38:21
+Sync Job 1_397 Execution:   completed at: 21:38:21, Time Taken: 0.21s
+Sync Job 0_34 Execution:   started at: 21:38:21
+Sync Job 0_34 Execution:   completed at: 21:38:21, Time Taken: 0.00s
+Job (2) running for Glitch dest domain:: 1 Execution:   started at: 21:38:21
+Job (2) running for Glitch dest domain:: 1 Execution:   completed at: 21:38:21, Time Taken: 0.01s

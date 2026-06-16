@@ -1,0 +1,42 @@
+SetupJob_ClkGrpPhyExclusiveInvalid Execution:   started at: 21:38:17
+SetupJob_ClkGrpPhyExclusiveInvalid Execution:   completed at: 21:38:17, Time Taken: 0.00s
+SetupJob_DumpClkPathCaseAnalysis Execution:   started at: 21:38:18
+SetupJob_DumpClkPathCaseAnalysis Execution:   completed at: 21:38:18, Time Taken: 0.00s
+SetupJob_SetupAsyncResetInternalSignal Execution:   started at: 21:38:18
+SetupJob_SetupAsyncResetInternalSignal Execution:   completed at: 21:38:18, Time Taken: 0.00s
+Job (0) running for Crossing Generation ( Traversal) :: #Domain: 1 #ClockName: i_aclk #Sequentials 200 Execution:   started at: 21:38:18
+Job (0) running for Crossing Generation ( Traversal) :: #Domain: 1 #ClockName: i_aclk #Sequentials 200 Execution:   completed at: 21:38:18, Time Taken: 0.01s
+Job (3) running for Crossing Generation ( Traversal) :: #Domain: 2 #ClockName: i_pclk #Sequentials 107 Execution:   started at: 21:38:18
+Job (3) running for Crossing Generation ( Traversal) :: #Domain: 2 #ClockName: i_pclk #Sequentials 107 Execution:   completed at: 21:38:18, Time Taken: 0.01s
+ResetCrossingJob 5_957 Execution:   started at: 21:38:19
+ResetCrossingJob 5_957 Execution:   completed at: 21:38:19, Time Taken: 0.00s
+RaceRstClkThreadJob_3_12 Execution:   started at: 21:38:19
+RaceRstClkThreadJob_3_12 Execution:   completed at: 21:38:19, Time Taken: 0.00s
+ResetCrossingJob 0_939 Execution:   started at: 21:38:19
+ResetCrossingJob 0_939 Execution:   completed at: 21:38:19, Time Taken: 0.00s
+ResetCrossingJob 3_939 Execution:   started at: 21:38:20
+ResetCrossingJob 3_939 Execution:   completed at: 21:38:20, Time Taken: 0.00s
+RaceRstClkThreadJob_13_12 Execution:   started at: 21:38:20
+RaceRstClkThreadJob_13_12 Execution:   completed at: 21:38:20, Time Taken: 0.00s
+RaceRstClkThreadJob_16_4 Execution:   started at: 21:38:20
+RaceRstClkThreadJob_16_4 Execution:   completed at: 21:38:20, Time Taken: 0.00s
+IntegrityJob_MuxReconvGlitch Execution:   started at: 21:38:20
+CDC :: INTEGRITY_MUXRECONV_CLOCK_GLITCH:    Time Taken: 0.00s
+IntegrityJob_MuxReconvGlitch Execution:   completed at: 21:38:20, Time Taken: 0.00s
+IntegrityJob_UnexpectedCellsRstPath Execution:   started at: 21:38:20
+CDC :: INTEGRITY_UNEXPECTED_CELLS_RSTPATH:    Time Taken: 0.00s
+IntegrityJob_UnexpectedCellsRstPath Execution:   completed at: 21:38:20, Time Taken: 0.00s
+IntegrityJob_ClkEdgeUnexpected Execution:   started at: 21:38:20
+IntegrityJob_ClkEdgeUnexpected Execution:   completed at: 21:38:20, Time Taken: 0.00s
+DATA_SYNC_NFF_1_130 Execution:   started at: 21:38:21
+DATA_SYNC_NFF_1_130 Execution:   completed at: 21:38:21, Time Taken: 0.01s
+NA Execution:   started at: 21:38:21
+NA Execution:   completed at: 21:38:21, Time Taken: 0.00s
+Sync Job 2_82 Execution:   started at: 21:38:21
+Sync Job 2_82 Execution:   completed at: 21:38:21, Time Taken: 0.03s
+Conv Job 3_40 Execution:   started at: 21:38:21
+Conv Job 3_40 Execution:   completed at: 21:38:21, Time Taken: 0.25s
+Job (1) running for Glitch dest domain:: 3 Execution:   started at: 21:38:21
+Job (1) running for Glitch dest domain:: 3 Execution:   completed at: 21:38:21, Time Taken: 0.01s
+Job (4) running for Glitch dest domain:: 3 Execution:   started at: 21:38:22
+Job (4) running for Glitch dest domain:: 3 Execution:   completed at: 21:38:22, Time Taken: 0.00s

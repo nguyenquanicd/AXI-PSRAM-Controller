@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Command name="schComposeSignals" delimiter="/">
+  <MDA_Define name="reg_mem@@m_vlsi_qspi_top/u_axi_ctrl/u_awfifo" elem_type="bit" left="231" right="0" dim="2" d0="[7:0]" d1="[28:0]" />
+  <MDA_Define name="reg_mem@@m_vlsi_qspi_top/u_axi_ctrl/u_wfifo" elem_type="bit" left="263" right="0" dim="2" d0="[7:0]" d1="[32:0]" />
+  <MDA_Define name="reg_mem@@m_vlsi_qspi_top/u_axi_ctrl/u_rfifo" elem_type="bit" left="311" right="0" dim="2" d0="[7:0]" d1="[38:0]" />
+  <MDA_Define name="reg_mem@@m_vlsi_qspi_top/u_axi_ctrl/u_bfifo" elem_type="bit" left="47" right="0" dim="2" d0="[7:0]" d1="[5:0]" />
+  <Compose_Signals scope="m_vlsi_qspi_top/u_axi_ctrl/u_awfifo">
+    <Compose_Signal name="reg_mem" declare="reg_mem@@m_vlsi_qspi_top/u_axi_ctrl/u_awfifo" />
+  </Compose_Signals>
+  <Compose_Signals scope="m_vlsi_qspi_top/u_axi_ctrl/u_wfifo">
+    <Compose_Signal name="reg_mem" declare="reg_mem@@m_vlsi_qspi_top/u_axi_ctrl/u_wfifo" />
+  </Compose_Signals>
+  <Compose_Signals scope="m_vlsi_qspi_top/u_axi_ctrl/u_rfifo">
+    <Compose_Signal name="reg_mem" declare="reg_mem@@m_vlsi_qspi_top/u_axi_ctrl/u_rfifo" />
+  </Compose_Signals>
+  <Compose_Signals scope="m_vlsi_qspi_top/u_axi_ctrl/u_bfifo">
+    <Compose_Signal name="reg_mem" declare="reg_mem@@m_vlsi_qspi_top/u_axi_ctrl/u_bfifo" />
+  </Compose_Signals>
+</Command>

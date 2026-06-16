@@ -1,0 +1,227 @@
+
+
+### analyze	Num_calls 1	Total_time 0.746137	Total_CpuTime 0.26	Total malloc-M 1
+1	File:run_cdc.tcl::15	Time:0.746137	CpuTime:0.26	 Malloc-MB:1
+
+### check_cdc	Num_calls 1	Total_time 5.54847	Total_CpuTime 2.72	Total malloc-M 29
+1	File:run_cdc.tcl::109	Time:5.54847	CpuTime:2.72	 Malloc-MB:29
+
+### configure_cdc_nff_sync	Num_calls 1	Total_time 0.001138	Total_CpuTime 0	Total malloc-M 0
+1	File:run_cdc.tcl::31	Time:0.001138	CpuTime:0.00	 Malloc-MB:0
+
+### configure_cdc_setup_check	Num_calls 1	Total_time 0.000332	Total_CpuTime 0	Total malloc-M 0
+
+### configure_reset_propagation	Num_calls 2	Total_time 0.000358	Total_CpuTime 0	Total malloc-M 0
+
+### configure_tag	Num_calls 19	Total_time 0.067849	Total_CpuTime 0.07	Total malloc-M 6
+1	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/merge_commands.tcl::0	Time:0.03292	CpuTime:0.03	 Malloc-MB:5
+2	File:run_cdc.tcl::11	Time:0.004297	CpuTime:0.01	 Malloc-MB:0
+3	File:run_cdc.tcl::11	Time:0.00252	CpuTime:0.01	 Malloc-MB:0
+4	File:run_cdc.tcl::11	Time:0.002159	CpuTime:0.00	 Malloc-MB:0
+5	File:run_cdc.tcl::11	Time:0.002041	CpuTime:0.00	 Malloc-MB:0
+6	File:/tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/merge_commands.tcl::0	Time:0.001808	CpuTime:0.00	 Malloc-MB:0
+7	File:run_cdc.tcl::11	Time:0.001805	CpuTime:0.00	 Malloc-MB:0
+8	File:run_cdc.tcl::11	Time:0.001764	CpuTime:0.00	 Malloc-MB:0
+9	File:run_cdc.tcl::11	Time:0.001754	CpuTime:0.00	 Malloc-MB:0
+10	File:run_cdc.tcl::11	Time:0.001746	CpuTime:0.00	 Malloc-MB:0
+11	File:run_cdc.tcl::11	Time:0.001743	CpuTime:0.01	 Malloc-MB:0
+12	File:run_cdc.tcl::11	Time:0.001698	CpuTime:0.00	 Malloc-MB:0
+13	File:run_cdc.tcl::11	Time:0.001695	CpuTime:0.00	 Malloc-MB:0
+14	File:run_cdc.tcl::11	Time:0.00168	CpuTime:0.01	 Malloc-MB:0
+15	File:run_cdc.tcl::11	Time:0.001671	CpuTime:0.00	 Malloc-MB:0
+16	File:run_cdc.tcl::11	Time:0.001662	CpuTime:0.00	 Malloc-MB:0
+17	File:run_cdc.tcl::11	Time:0.001633	CpuTime:0.00	 Malloc-MB:0
+18	File:run_cdc.tcl::11	Time:0.001582	CpuTime:0.00	 Malloc-MB:0
+
+### configure_waiver	Num_calls 4	Total_time 0.021271	Total_CpuTime 0.02	Total malloc-M 0
+1	File:run_cdc.tcl::11	Time:0.005465	CpuTime:0.01	 Malloc-MB:0
+2	File:run_cdc.tcl::11	Time:0.005333	CpuTime:0.00	 Malloc-MB:0
+3	File:run_cdc.tcl::11	Time:0.005259	CpuTime:0.00	 Malloc-MB:0
+4	File:run_cdc.tcl::11	Time:0.005214	CpuTime:0.01	 Malloc-MB:0
+
+### create_clock	Num_calls 3	Total_time 0.001584	Total_CpuTime 0	Total malloc-M 0
+1	File:/home/ltthinh/PSRAM_THANG/syn/dc/sdc.tcl::15	Time:0.001027	CpuTime:0.00	 Malloc-MB:0
+
+### create_proc_command	Num_calls 249	Total_time 0.030016	Total_CpuTime 0.03	Total malloc-M 2
+
+### create_reset	Num_calls 3	Total_time 0.000632	Total_CpuTime 0	Total malloc-M 0
+
+### define_violation	Num_calls 2	Total_time 1.21262	Total_CpuTime 1.15	Total malloc-M 11
+1	File:run_cdc.tcl::11	Time:0.644437	CpuTime:0.64	 Malloc-MB:0
+2	File:run_cdc.tcl::11	Time:0.568183	CpuTime:0.51	 Malloc-MB:11
+
+### elaborate	Num_calls 1	Total_time 2.90809	Total_CpuTime 2.17	Total malloc-M 39
+1	File:run_cdc.tcl::19	Time:2.90809	CpuTime:2.17	 Malloc-MB:39
+
+### fv_update_command_consistency_flow	Num_calls 1	Total_time 0.000851	Total_CpuTime 0	Total malloc-M 0
+
+### get_clocks	Num_calls 9	Total_time 0.000733	Total_CpuTime 0	Total malloc-M 0
+
+### get_message_db_ptr	Num_calls 1	Total_time 2.8e-05	Total_CpuTime 0	Total malloc-M 0
+
+### get_nets	Num_calls 4	Total_time 0.002	Total_CpuTime 0	Total malloc-M 0
+
+### get_object_name	Num_calls 5	Total_time 0.000295	Total_CpuTime 0	Total malloc-M 0
+
+### get_pins	Num_calls 52	Total_time 0.017679	Total_CpuTime 0.01	Total malloc-M 0
+1	File:run_cdc.tcl::106	Time:0.001236	CpuTime:0.01	 Malloc-MB:0
+2	File:run_cdc.tcl::106	Time:0.001099	CpuTime:0.00	 Malloc-MB:0
+3	File:run_cdc.tcl::106	Time:0.00109	CpuTime:0.00	 Malloc-MB:0
+4	File:run_cdc.tcl::106	Time:0.001032	CpuTime:0.00	 Malloc-MB:0
+
+### get_ports	Num_calls 16	Total_time 0.00192	Total_CpuTime 0.01	Total malloc-M 0
+
+### get_report_db_ptr	Num_calls 1	Total_time 2.6e-05	Total_CpuTime 0	Total malloc-M 0
+
+### invalidate_report_cache	Num_calls 8	Total_time 0.018643	Total_CpuTime 0.01	Total malloc-M 6
+1	File:run_cdc.tcl::11	Time:0.017778	CpuTime:0.01	 Malloc-MB:6
+
+### rename_tag	Num_calls 59	Total_time 0.753257	Total_CpuTime 0.75	Total malloc-M -1
+1	File:run_cdc.tcl::11	Time:0.017493	CpuTime:0.02	 Malloc-MB:0
+2	File:run_cdc.tcl::11	Time:0.016505	CpuTime:0.01	 Malloc-MB:0
+3	File:run_cdc.tcl::11	Time:0.015485	CpuTime:0.01	 Malloc-MB:0
+4	File:run_cdc.tcl::11	Time:0.014753	CpuTime:0.01	 Malloc-MB:0
+5	File:run_cdc.tcl::11	Time:0.014644	CpuTime:0.01	 Malloc-MB:0
+6	File:run_cdc.tcl::11	Time:0.014623	CpuTime:0.02	 Malloc-MB:-3
+7	File:run_cdc.tcl::11	Time:0.014574	CpuTime:0.02	 Malloc-MB:0
+8	File:run_cdc.tcl::11	Time:0.014496	CpuTime:0.01	 Malloc-MB:0
+9	File:run_cdc.tcl::11	Time:0.014429	CpuTime:0.02	 Malloc-MB:0
+10	File:run_cdc.tcl::11	Time:0.014336	CpuTime:0.02	 Malloc-MB:0
+11	File:run_cdc.tcl::11	Time:0.014185	CpuTime:0.01	 Malloc-MB:0
+12	File:run_cdc.tcl::11	Time:0.014137	CpuTime:0.01	 Malloc-MB:0
+13	File:run_cdc.tcl::11	Time:0.01412	CpuTime:0.01	 Malloc-MB:0
+14	File:run_cdc.tcl::11	Time:0.014003	CpuTime:0.02	 Malloc-MB:0
+15	File:run_cdc.tcl::11	Time:0.013958	CpuTime:0.02	 Malloc-MB:0
+16	File:run_cdc.tcl::11	Time:0.013734	CpuTime:0.01	 Malloc-MB:0
+17	File:run_cdc.tcl::11	Time:0.013637	CpuTime:0.01	 Malloc-MB:0
+18	File:run_cdc.tcl::11	Time:0.013522	CpuTime:0.01	 Malloc-MB:0
+19	File:run_cdc.tcl::11	Time:0.013318	CpuTime:0.02	 Malloc-MB:0
+20	File:run_cdc.tcl::11	Time:0.013305	CpuTime:0.01	 Malloc-MB:0
+21	File:run_cdc.tcl::11	Time:0.013178	CpuTime:0.01	 Malloc-MB:0
+22	File:run_cdc.tcl::11	Time:0.013128	CpuTime:0.01	 Malloc-MB:0
+23	File:run_cdc.tcl::11	Time:0.013047	CpuTime:0.01	 Malloc-MB:0
+24	File:run_cdc.tcl::11	Time:0.012991	CpuTime:0.02	 Malloc-MB:0
+25	File:run_cdc.tcl::11	Time:0.012939	CpuTime:0.01	 Malloc-MB:0
+26	File:run_cdc.tcl::11	Time:0.012918	CpuTime:0.01	 Malloc-MB:0
+27	File:run_cdc.tcl::11	Time:0.012713	CpuTime:0.01	 Malloc-MB:0
+28	File:run_cdc.tcl::11	Time:0.012684	CpuTime:0.02	 Malloc-MB:0
+29	File:run_cdc.tcl::11	Time:0.012615	CpuTime:0.02	 Malloc-MB:0
+30	File:run_cdc.tcl::11	Time:0.012589	CpuTime:0.01	 Malloc-MB:0
+31	File:run_cdc.tcl::11	Time:0.012238	CpuTime:0.02	 Malloc-MB:0
+32	File:run_cdc.tcl::11	Time:0.012231	CpuTime:0.01	 Malloc-MB:0
+33	File:run_cdc.tcl::11	Time:0.012228	CpuTime:0.01	 Malloc-MB:0
+34	File:run_cdc.tcl::11	Time:0.012102	CpuTime:0.01	 Malloc-MB:0
+35	File:run_cdc.tcl::11	Time:0.012098	CpuTime:0.01	 Malloc-MB:0
+36	File:run_cdc.tcl::11	Time:0.012036	CpuTime:0.02	 Malloc-MB:0
+37	File:run_cdc.tcl::11	Time:0.012034	CpuTime:0.02	 Malloc-MB:0
+38	File:run_cdc.tcl::11	Time:0.012008	CpuTime:0.02	 Malloc-MB:0
+39	File:run_cdc.tcl::11	Time:0.011997	CpuTime:0.01	 Malloc-MB:0
+40	File:run_cdc.tcl::11	Time:0.011937	CpuTime:0.01	 Malloc-MB:0
+41	File:run_cdc.tcl::11	Time:0.011934	CpuTime:0.02	 Malloc-MB:0
+42	File:run_cdc.tcl::11	Time:0.011753	CpuTime:0.01	 Malloc-MB:0
+43	File:run_cdc.tcl::11	Time:0.011691	CpuTime:0.01	 Malloc-MB:0
+44	File:run_cdc.tcl::11	Time:0.011644	CpuTime:0.01	 Malloc-MB:0
+45	File:run_cdc.tcl::11	Time:0.01155	CpuTime:0.01	 Malloc-MB:0
+46	File:run_cdc.tcl::11	Time:0.011537	CpuTime:0.01	 Malloc-MB:0
+47	File:run_cdc.tcl::11	Time:0.01147	CpuTime:0.01	 Malloc-MB:0
+48	File:run_cdc.tcl::11	Time:0.011402	CpuTime:0.01	 Malloc-MB:0
+49	File:run_cdc.tcl::11	Time:0.011397	CpuTime:0.01	 Malloc-MB:0
+50	File:run_cdc.tcl::11	Time:0.01131	CpuTime:0.01	 Malloc-MB:0
+51	File:run_cdc.tcl::11	Time:0.011284	CpuTime:0.01	 Malloc-MB:0
+52	File:run_cdc.tcl::11	Time:0.011198	CpuTime:0.01	 Malloc-MB:0
+53	File:run_cdc.tcl::11	Time:0.011101	CpuTime:0.01	 Malloc-MB:0
+54	File:run_cdc.tcl::11	Time:0.011025	CpuTime:0.01	 Malloc-MB:0
+55	File:run_cdc.tcl::11	Time:0.010966	CpuTime:0.01	 Malloc-MB:0
+56	File:run_cdc.tcl::11	Time:0.01095	CpuTime:0.01	 Malloc-MB:0
+57	File:run_cdc.tcl::11	Time:0.010818	CpuTime:0.01	 Malloc-MB:0
+58	File:run_cdc.tcl::11	Time:0.010751	CpuTime:0.01	 Malloc-MB:0
+59	File:run_cdc.tcl::11	Time:0.010508	CpuTime:0.01	 Malloc-MB:0
+
+### report_cdc	Num_calls 3	Total_time 0.920662	Total_CpuTime 0.36	Total malloc-M 16
+1	File:run_cdc.tcl::116	Time:0.342663	CpuTime:0.11	 Malloc-MB:0
+2	File:run_cdc.tcl::115	Time:0.330599	CpuTime:0.15	 Malloc-MB:13
+3	File:run_cdc.tcl::117	Time:0.2474	CpuTime:0.10	 Malloc-MB:1
+
+### restore_session	Num_calls 1	Total_time 0.000252	Total_CpuTime 0	Total malloc-M 0
+
+### set_clock_groups	Num_calls 1	Total_time 0.000247	Total_CpuTime 0	Total malloc-M 0
+
+### set_ideal_network	Num_calls 1	Total_time 6.2e-05	Total_CpuTime 0	Total malloc-M 0
+
+### set_input_delay	Num_calls 3	Total_time 0.007454	Total_CpuTime 0.02	Total malloc-M 2
+1	File:/home/ltthinh/PSRAM_THANG/syn/dc/sdc.tcl::19	Time:0.007052	CpuTime:0.02	 Malloc-MB:2
+
+### set_max_delay	Num_calls 5	Total_time 0.000814	Total_CpuTime 0	Total malloc-M 0
+
+### set_output_delay	Num_calls 3	Total_time 0.00054	Total_CpuTime 0	Total malloc-M 0
+
+### start_gui	Num_calls 1	Total_time 0.0002	Total_CpuTime 0	Total malloc-M 0
+
+### waive_violation	Num_calls 5	Total_time 0.050872	Total_CpuTime 0.04	Total malloc-M 0
+1	File:waiver.tcl::8	Time:0.017038	CpuTime:0.01	 Malloc-MB:0
+2	File:waiver.tcl::35	Time:0.008857	CpuTime:0.01	 Malloc-MB:0
+3	File:waiver.tcl::15	Time:0.008816	CpuTime:0.01	 Malloc-MB:0
+4	File:waiver.tcl::28	Time:0.008547	CpuTime:0.01	 Malloc-MB:0
+5	File:waiver.tcl::42	Time:0.007614	CpuTime:0.00	 Malloc-MB:0
+
+ ****************************Shell commands Recording************************
+MasterSourceFile run_cdc.tcl
+
+
+ ****************************ThreadTask Recording************************
+Thread: CommonMgr Time: 0(s) Mem: 0(KB) MaxSize: 0
+Thread: ReportDb Time: 0.970333(s) Mem: 12256(KB) MaxSize: 163
+
+
+ ****************************ProcessTask Recording************************
+
+ Task : VCS Analyzer Task
+ args: sh,-c,$VCS_HOME/bin/vlogan  -kdb=common_elab /home/ltthinh/PSRAM_THANG/cdc/vc_static/vcst_rtdb/.internal/design/undef_vcs.v -Xvd_opts=-silent,+disable_message+C00373,-ssy,-ssv,-ssz -file /home/ltthinh/PSRAM_THANG/cdc/vc_static/vcst_rtdb/.internal/design/analyzeCmd1 -kdb=incopt  -Xufe=parallel:incrdump  -full64  -libfile_opt 
+ file: run_cdc.tcl line: 15
+ Start Time: 2026-06-14 21:38:13, CpuTime: 3.46
+ End Time: 2026-06-14 21:38:13, CpuTime: 3.67
+
+ Task : VCS Elaborater Task
+ args: sh,-c,$VCS_HOME/bin/vcs -file /home/ltthinh/PSRAM_THANG/cdc/vc_static/vcst_rtdb/.internal/design/elaborateCmd -Xvcstatic_extns=0x4  -Xvcstatic_extns=0x100  +warn=noSM_CCE  -suppress=SM_BB_LIST  -suppress=SM_UM_LIST  -units  -error=IRRIPS  -kdb=common_elab  -Xufe=parallel:incrdump  -kdb=incopt  +warn=noKDB-ELAB-E  -Xverdi_elab_opts=-saveLevel  -verdi_opts "-logdir /home/ltthinh/PSRAM_THANG/cdc/vc_static/vcst_rtdb/verdi/elabcomLog " -Xvd_opts=,-ssy,-ssv,-ssz,-silent,+disable_message+C00373, -full64 
+ file: run_cdc.tcl line: 19
+ Start Time: 2026-06-14 21:38:13, CpuTime: 3.74
+ End Time: 2026-06-14 21:38:16, CpuTime: 5.87
+
+
+ **************************** Command Stats (without vnrstat) ************************
+### VnrEntry 2026-06-14 21:38:10
+	configure_cdc_setup_check	Num_calls 1	Total_time 0.000332	Total_CpuTime 0	Total malloc-M 0
+	configure_reset_propagation	Num_calls 1	Total_time 0.000191	Total_CpuTime 0	Total malloc-M 0
+	configure_tag	Num_calls 19	Total_time 0.067849	Total_CpuTime 0.07	Total malloc-M 6
+	configure_waiver	Num_calls 4	Total_time 0.021271	Total_CpuTime 0.02	Total malloc-M 0
+	create_proc_command	Num_calls 249	Total_time 0.030016	Total_CpuTime 0.03	Total malloc-M 2
+	define_violation	Num_calls 2	Total_time 1.21262	Total_CpuTime 1.15	Total malloc-M 11
+	fv_update_command_consistency_flow	Num_calls 1	Total_time 0.000851	Total_CpuTime 0	Total malloc-M 0
+	get_message_db_ptr	Num_calls 1	Total_time 2.8e-05	Total_CpuTime 0	Total malloc-M 0
+	get_report_db_ptr	Num_calls 1	Total_time 2.6e-05	Total_CpuTime 0	Total malloc-M 0
+	invalidate_report_cache	Num_calls 8	Total_time 0.018643	Total_CpuTime 0.01	Total malloc-M 6
+	rename_tag	Num_calls 59	Total_time 0.753257	Total_CpuTime 0.75	Total malloc-M -1
+	restore_session	Num_calls 1	Total_time 0.000252	Total_CpuTime 0	Total malloc-M 0
+### VnrEntry 2026-06-14 21:38:13
+	analyze	Num_calls 1	Total_time 0.746137	Total_CpuTime 0.26	Total malloc-M 1
+### VnrEntry 2026-06-14 21:38:16
+	configure_cdc_nff_sync	Num_calls 1	Total_time 0.001138	Total_CpuTime 0	Total malloc-M 0
+	configure_reset_propagation	Num_calls 1	Total_time 0.000167	Total_CpuTime 0	Total malloc-M 0
+	create_reset	Num_calls 3	Total_time 0.000632	Total_CpuTime 0	Total malloc-M 0
+	get_clocks	Num_calls 7	Total_time 0.000501	Total_CpuTime 0	Total malloc-M 0
+	get_nets	Num_calls 4	Total_time 0.002	Total_CpuTime 0	Total malloc-M 0
+	get_object_name	Num_calls 5	Total_time 0.000295	Total_CpuTime 0	Total malloc-M 0
+	get_pins	Num_calls 52	Total_time 0.017679	Total_CpuTime 0.01	Total malloc-M 0
+	get_ports	Num_calls 10	Total_time 0.00082	Total_CpuTime 0	Total malloc-M 0
+	set_clock_groups	Num_calls 1	Total_time 0.000247	Total_CpuTime 0	Total malloc-M 0
+	set_ideal_network	Num_calls 1	Total_time 6.2e-05	Total_CpuTime 0	Total malloc-M 0
+	set_input_delay	Num_calls 2	Total_time 0.000402	Total_CpuTime 0	Total malloc-M 0
+	set_max_delay	Num_calls 5	Total_time 0.000814	Total_CpuTime 0	Total malloc-M 0
+	set_output_delay	Num_calls 3	Total_time 0.00054	Total_CpuTime 0	Total malloc-M 0
+### VnrEntry 2026-06-14 21:38:22
+	check_cdc	Num_calls 1	Total_time 5.54847	Total_CpuTime 2.72	Total malloc-M 29
+	report_cdc	Num_calls 1	Total_time 0.330599	Total_CpuTime 0.15	Total malloc-M 13
+	waive_violation	Num_calls 5	Total_time 0.050872	Total_CpuTime 0.04	Total malloc-M 0
+### VnrEntry 2026-06-14 21:38:23
+	report_cdc	Num_calls 2	Total_time 0.590063	Total_CpuTime 0.21	Total malloc-M 2
+	start_gui	Num_calls 1	Total_time 0.0002	Total_CpuTime 0	Total malloc-M 0

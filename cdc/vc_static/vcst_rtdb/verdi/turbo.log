@@ -1,0 +1,4 @@
+Command Line: /tools/Synopsys/vc_static/X-2025.06/verdi/platform/LINUXAMD64/bin/Novas -nologo -preTitle VCst -logdir /home/ltthinh/PSRAM_THANG/cdc/vc_static/vcst_rtdb/verdi -serverPort 14255 -tkName VCST -play /tools/Synopsys/vc_static/X-2025.06/auxx/monet/tcl/verdi_vcst.tcl  -lca
+uname(Linux vlsi 6.1.0-48-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.172-1 (2026-05-15) x86_64)
+KdbImportParallelMixAllLib time 0.045071 0.002312 0.000665 delta 11583488 11583488 total 2126979072 2126979072
+au time 16.700199 4.435365 0.811700 delta 1235501056 1235501056 total 2142588928 2142588928

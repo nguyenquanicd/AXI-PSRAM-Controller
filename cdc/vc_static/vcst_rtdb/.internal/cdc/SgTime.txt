@@ -1,0 +1,82 @@
+Cell properties :    Time Taken: 0.00s
+BlockEnginePropagation :    Time Taken: 0.00s
+ModuleDesignPropagation :    Time Taken: 0.00s
+_nameToNet Map clear :    Time Taken: 0.00s
+UserConstantPropagation :    Time Taken: 0.00s
+DynamicUserCasePropagation :    Time Taken: 0.00s
+DesignConstantPropagation :    Time Taken: 0.00s
+HybridSeqPropagation :    Time Taken: 0.00s
+ReverseConstPropagationOnBiDir:    Time Taken: 0.00s
+ConstantPropagation :    Time Taken: 0.00s
+UserNetBitQuasi :    Time Taken: 0.00s
+UserPinBitQuasi :    Time Taken: 0.00s
+UserOpPinBitQuasi :    Time Taken: 0.00s
+QueueQuasiNetBits :    Time Taken: 0.00s
+QuasiStaticPropagation :    Time Taken: 0.00s
+CDC :: Initialize cdc attributes :    Time Taken: 0.00s
+CDC :: Auto inferring Quasi-static Signals    Time Taken: 0.00s
+CDC :: SETUP_CLOCK_OVERLAP:    Time Taken: 0.00s
+CDC :: Clock setup:    Time Taken: 0.00s
+CDC :: CGC detection:    Time Taken: 0.00s
+Rst: Build Reset Sense DB    Time Taken: 0.00s
+Rst: Build Async ResetTree:    Time Taken: 0.00s
+Rst: Build Sync ResetTree:    Time Taken: 0.00s
+CDC :: Reset setup:    Time Taken: 0.01s
+CDC :: Populate default domain:    Time Taken: 0.00s
+CDC :: SETUP_DOMAIN_INFER:    Time Taken: 0.00s
+CDC :: Blackbox Modelling:    Time Taken: 0.00s
+CDC :: CDC Ignore Path Constraints Processing   Time Taken: 0.00s
+CDC :: CDC Clockglitch Ignore Path Constraints Processing   Time Taken: 0.00s
+CDC :: CDC Asyncrst Ignore Path Constraints Processing   Time Taken: 0.00s
+CDC :: SETUP_LIBCELL:    Time Taken: 0.00s
+CDC :: SETUP_INPUT_MULTICLK_LOAD:    Time Taken: 0.00s
+CDC :: SETUP_PORT:    Time Taken: 0.00s
+CDC :: Setup Check (Setup_port01, Setup_library01):    Time Taken: 0.00s
+CDC :: Setting stack size 200000000 for 4 multi-threaded checks.    Thread count reduced to 4.  Time Taken: 0.00s
+CDC :: Setup Checks analysis:    Time Taken: 0.34s
+CDC :: SETUP_MULTIPLE_CONSTRAINTS:    Time Taken: 0.00s
+CDC :: Setup Check (Rest):    Time Taken: 0.34s
+CDC :: ClockRelationMatrix Db Population   Time Taken: 0.01s
+CDC :: CDC Analyze Quasi Clocks    Time Taken: 0.00s
+CDC :: CDC User Path Ignore Path Constraints Processing   Time Taken: 0.00s
+CDC :: Thread Job flow:    Time Taken: 0.11s
+CDC :: Creating crossings:  #Crossings: 5568 
+  Time Taken: 0.11s
+RESET :: Creating crossings Post Grid Job:  Potential Reset Crossings Count: 0  Time Taken: 0.00s
+Add crossings to crossing manager job  Execution:   Time Taken: 0.00s
+CDC :: Integrity, RESET :: Crossing analysis:    Time Taken: 0.09s
+RESET_SYNC_NFF_POST_GRID_JOB Execution:   Time Taken: 0.00s
+#FFBanks Detected :  0  Time Taken: 0.00s
+DATA_SYNC_NFF_POST_GRID_JOB Execution:   Time Taken: 0.00s
+CDC :: Detecting Nff Phase-1: , RESET :: Detecting Nff Phase-1:  analysis:    Time Taken: 0.04s
+CDC_RESET ::  Detecting Nff Phase-1:  #CDC_Nff(Grouped by Destination): 84, #RST_Nff(Grouped by Destination): 0#rstcrossings0  Time Taken: 0.05s
+CDC :: Detecting UDS:    Time Taken: 0.00s
+RESET :: Detecting UDS:    Time Taken: 0.00s
+CDC :: Parsing Data Sync Constraint:    Time Taken: 0.00s
+CDC :: Analyzing Data Sync Constraint:    Time Taken: 0.00s
+RESET :: Parsing Data Sync Constraint:    Time Taken: 0.00s
+RESET :: Analyzing Data Sync Constraint:    Time Taken: 0.00s
+CDC :: SeqFrontier Job Creation:    Time Taken: 0.00s
+RESET :: SeqFrontier Job Creation:    Time Taken: 0.00s
+CDC RST SeqFrontier Run:    Time Taken: 0.01s
+CDC :: Parsing Multiflop Constraint:    Time Taken: 0.00s
+UserConstantPropagation :    Time Taken: 0.01s
+UniquifiedInstPropagation :    Time Taken: 0.00s
+ConstantPropagation :    Time Taken: 0.01s
+CDC :: Uniquifying Lib-Cells: #SFCCells: 107 #RCCCells: 0 #RPCCells: 0    Time Taken: 0.01s
+Populating flattened/traversed ignore_among_signals    Time Taken: 0.00s
+NoConv, RstNff Reporting Job Execution:   Time Taken: 0.06s
+CDC :: Datasync, CDC :: Convergence, RESET :: Datasync analysis:    Time Taken: 1.21s
+CDC :: Populating sync report:    Time Taken: 0.00s
+Soc Validation analysis:    Time Taken: 0.00s
+CDC :: Qualifier Validation:    Time Taken: 0.00s
+Soc Validation analysis:    Time Taken: 0.00s
+CDC :: Constraint Validation:    Time Taken: 0.00s
+CDC::Glitch PreRunStats   Time Taken: 0.00s
+RESET :: Deassertion analysis:    Time Taken: 0.00s
+GLITCH_POST_GRID_JOB Execution:   Time Taken: 0.00s
+CDC :: Glitch analysis:    Time Taken: 0.26s
+RESET :: Populating sync report:    Time Taken: 0.00s
+RESET :: SeqFrontier cleanup:    Time Taken: 0.00s
+CDC :: SeqFrontier cleanup:    Time Taken: 0.00s
+CDC Checks:    Time Taken: 2.14s

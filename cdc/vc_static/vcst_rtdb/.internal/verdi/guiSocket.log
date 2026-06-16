@@ -1,0 +1,224 @@
+22:22:27 : Disable event(s) list: aaMonetEvReportDbUpdated aaMonetEvReportCompressFinished aaMonetEvErrorMsg aaMonetBanffGetPropResults aaMonetCmdHelp aaMonetEvFormalCoreInvalidated aaMonetEvReportWaiverStarted aaMonetEvReportWaiverFinished aaMonetBanffGetPropSummaryResults aaMonetBanffGetPropSummary aaMonetEvReportCompressStarted aaMonetEvReportDbUpdating
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:29 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_tcl_debug_line_number=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:30 : Monet(S):aaMonetGetCmdHelp
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_spyglass_compatibility=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetSetSpyGlassLintMode -data 1 -trigger
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 1 -trigger
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {init_app_var_creation=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {disable_internal_op_in_tcl_query=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {platform_dbobj_cachelimit=100000000}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_reduction_engine=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_schematic_clouds=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_dbcell_clouds=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_cross_hierarchy_clouds=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_mux_reduction_clouds=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {case_analysis_sequential_propagation=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {async_reset_nonseq_const_analysis=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {assume_siso_bbox_pins_connected=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_libcell_divedown=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {case_analysis_propagate_through_icg=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {port_coercion=autoblackbox}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {sam_const_optimization_level=7}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {ignore_multi_driver_checks=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {timing_arc_function=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_seq_latch_array_bit_blast=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {const_prop_concat_loop_handling=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_nop_to_conn_operator=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {show_fatal_severity=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {baseline_sam_version= T-2022.06-SP2-5 U-2023.03-SP1-1 V-2023.12 }
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {async_command_max_parallel_count=8}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {auto_correct_waiver_name=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {av_consult_llm_max_sync_wait=0}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {cdc_vector_merged_bits_simplify_level=3}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {default_apply_waiver_file=}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {default_gui_waiver_comment=}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {default_waiver_dir=}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {default_waiver_file=}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {default_waiver_violation_state=Waived}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {disable_abstract_nschema_linking=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {disable_duplicate_entries=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {disable_exit_on_rerun=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {disable_verdi_symbol_library_verbose_message=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {disable_waiver_command_prints=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {dpv_regression_mode=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {dump_signature_in_violation=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_all_fields_to_create_filter=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_cdc=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_cdc_source_point_sch=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_compressed_group=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_contextual_help_view=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_copy_novas_libs=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_dc_naming_style=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_fast_restore_session=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_incr_waiver_db_updates=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_incremental_db_updates=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_lint=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_nextgen_cdc=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_nldm_nschema=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_nldm_nschema_on_demand=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_nldm_nschema_thread=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_nschema_container=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_one_click_group_waive=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_rdc_waveform_reset_order_graph=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_sam_rtl_annotation=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_signature_to_create_waiver=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_smart_groups=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_vc_spyglass_style_full_path=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_verdi_background=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_verdi_debug=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_verdi_kdb_skip=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_verdi_kdb_smart_elab=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_verdi_kdb_xml=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_verdi_symbolic_schematic=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_vhdl_original_names=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {field_delimiter=.}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {fml_cc_coverage_analyzer=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {fml_composite_trace=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {fml_cov_fast_mode=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {fml_cov_gen_trace=default}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {fml_cov_llk_trace_enable=unlimited}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {fml_mode_on=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {fml_vacuity_on=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {fml_vdac_disable=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {fml_witness_on=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {gen_multiple_msg_based_waivers=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {gui_load_filter_group_mode=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {hide_waive_this_item_link=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {hierarchy_delimiter=/}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {include_filter_field_comments=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {info_disp_elems=0}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {keep_source_loc_expr=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {lint_functional_mode=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {lint_generate_fix_suggestions=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {lint_impl_mode=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {lint_load_goal_results=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {lint_spyglass_mode=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {lint_testbench_mode=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {msg_color_error=red}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {msg_color_info=none}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {msg_color_warn=none}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {scroll_table_speed=1}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {select_create_waiver_fields=all}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {show_all_options_in_export_csv=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {show_disabled_prop=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {show_msg_in_create_waiver=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {show_only_waived=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {show_only_waived_and_waived_temp=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {show_waivers_under_violations=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {struct_delimiter=.}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {track_msg_color_changes=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {vcspyglass_color_theme=bright}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {verdi_postelab_to_check=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {verdi_table_font=11}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {verdi_vc_console_hotkey=null}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {vnr_write_kdb_resolve=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {waiver_disallow_append=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {waiver_require_comment=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {init_app_var_creation=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {constant_connectvity_cache=true}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_high_level_form=false}
+22:22:30 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_split_struct_arrays=false}
+22:22:32 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {enable_cdc=true}
+22:22:32 : Monet(R):UNodeAction -name aaMonetEvDesignLoading  -trigger
+22:22:32 : Monet(R):UNodeAction -name aaVerdiEnableKdb -data {true} -trigger
+22:22:32 : Monet(R):UNodeAction -name aaVerdiNldmNschema -data {true} -trigger
+22:22:32 : Monet(R):UNodeAction -name aaVerdiCompileLog -data {} -trigger
+22:22:33 : Monet(R):UNodeAction -name aaMonetEvDesignLoaded -data 1 -trigger
+22:22:33 : Monet(R):UNodeAction -name aaMonetEvElabDesign  -trigger
+22:22:33 : Monet(R):UNodeAction -name aaVerdiNldmNschema -data {true} -trigger
+22:22:33 : Monet(R):UNodeAction -name aaVerdiSetSimBinPath -data {m_vlsi_qspi_top.exe} -trigger
+22:22:33 : Monet(R):UNodeAction -name aaVerdiEvDesignTop -data {m_vlsi_qspi_top} -trigger
+22:22:36 : Monet(R):UNodeAction -name aaMonetSetHierarchySeparator -data / -trigger
+22:22:36 : Monet(R):UNodeAction -name aaVerdiEvNldm2Nschema -reset -started {} -trigger
+22:22:36 : Monet(R):UNodeAction -name aaVerdiEvSetSAMBox -data {} -trigger
+22:22:36 : Monet(R):UNodeAction -name aaVerdiEvCompile -finished {} -trigger
+22:22:36 : Monet(R):UNodeAction -name aaMonetEvElabDesignFinished -data 1 -trigger
+22:22:36 : Monet(R):UNodeAction -name aaVerdiConstantAnnotation  -trigger
+22:22:36 : Monet(R):UNodeAction -name aaVerdiConstantAnnotation  -trigger
+22:22:36 : Monet(R):UNodeAction -name aaVerdiConstantAnnotation  -trigger
+22:22:36 : Monet(R):UNodeAction -name aaVerdiEvNldm2Nschema -finished {} -trigger
+22:22:37 : Monet(R):UNodeAction -name aaMonetEvCheckCdcStarted  -trigger
+22:22:42 : Monet(R):UNodeAction -name aaMonetEvCheckCdcFinished -data 1 -trigger
+22:22:43 : Monet(R):UNodeAction -name aaMonetEmbedViewMode  -trigger
+22:22:43 : Monet(S):aaAppGuiActive
+22:22:43 : Monet(S):aaMonetRegisterConstraints
+22:22:43 : Monet(R):UNodeAction -name aaMonetView -tag all -title ___SNPS_NONE -dock 0  -trigger
+22:22:43 : Monet(R):UNodeAction -name aaMonetEvSourceCmdActive -data 0 -trigger
+22:22:43 : Monet(R):UNodeAction -name aaVerdiEvMasterSourceDone  -trigger
+22:22:43 : Monet(S):aaAppVerdiActive -active {1}
+22:22:43 : Monet(S):aaMonetMasterUnblock -result {1}
+22:22:43 : Monet(S):aaMonetMasterUnblock -result {1}
+22:22:43 : Monet(R):UNodeAction -name aaMonetEvRegisterConstraintsFinished -data {<?xml version="1.0"?><constraints><constraint><cname>abstract_port</cname><ctype>SDC</ctype><chelp>Specify to model pins/ports of blackbox, top module, library cells</chelp><prefillopt>-ports</prefillopt><exclusiveFields><exclusive>-start,-end</exclusive></exclusiveFields><inclusiveFields><inclusive>-path_logic,-related_ports</inclusive><inclusive>-to,-sync</inclusive><inclusive>-from,-sync</inclusive><inclusive>-seq,-sync</inclusive><inclusive>-path_phase,-related_ports</inclusive></inclusiveFields><fieldlist><field><name>-module</name><type>string</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help>&amp;lt;module_name&amp;gt;</value_help><help>Specifies the module name to be modelled</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-clock</name><type>list</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help>&amp;lt;clock&amp;gt;</value_help><help>Specifies the clock-name or clock-object to be associated with the modelled pin/port</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-reset</name><type>list</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help>&amp;lt;reset&amp;gt;</value_help><help>Specifies the reset-name or reset-object to be associated with the modelled pin/port</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-combo</name><type>string</type><dash>1</dash><required>0</required><possible_values>no, unknown, yes, </possible_values><value_help>&amp;lt;yes/no/unknown&amp;gt;</value_help><help>Specifies the combo property associated with the modelled object</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-clock_phase</name><type>string</type><dash>1</dash><required>0</required><possible_values>any, inv, noninv, </possible_values><value_help>&amp;lt;inv/noninv/any&amp;gt;</value_help><help>Specifies phase relationship of clock to related port</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-path_phase</name><type>string</type><dash>1</dash><required>0</required><possible_values>any, inv, noninv, </possible_values><value_help>&amp;lt;inv|noninv|any&amp;gt;</value_help><help>Specifies phase relationship of related ports with respect to the output ports. Default Value is noninv.</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-multiple_virtual_clock</name><type>boolean</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help></value_help><help>Specify this option to model block port being driven by multiple data path domain whose clock is not reaching the block (i.e. virtual clock at block).</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-combo_ifn</name><type>string</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help>&amp;lt;combo_ifn port&amp;gt;</value_help><help>Add the clock asscociated with combo logic sequential</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-sync</name><type>string</type><dash>1</dash><required>0</required><possible_values>active, inactive, invalid, </possible_values><value_help>&amp;lt;active | inactive&amp;gt;</value_help><help>Specifies if the provided synchronizer is active/inactive ( can synchronize other crossings or not) </help><default_value></default_value><fieldend>1</fieldend></field><field><name>-from</name><type>list</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help>&amp;lt;from_clock_list&amp;gt;</value_help><help>Specifies names of sdc clocks/ related clock pins (should exist) to which clocks reach or on which clocks are defined of the synchronizer source.</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-to</name><type>list</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help>&amp;lt;to_clock_list&amp;gt;</value_help><help>Specifies names of sdc clocks/ related clock pins (should exist) to which clocks reach or on which clocks are defined of the synchronizer destination.</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-seq_depth</name><type>int</type><dash>1</dash><required>0</required><possible_values>-2147483648:2147483647</possible_values><value_help>&amp;lt;depth&amp;gt;</value_help><help>Specifies the sequential depth by which the synchronizer reaches the virtual node. Default depth is 0.</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-sync_names</name><type>list</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help>&amp;lt;Sync Name List&amp;gt;</value_help><help>Specifies the synchronizer name reaching the virtual node. If same synchronizers are reaching two virtual nodes, both nodes will have same sync_names of the sync_attribute </help><default_value></default_value><fieldend>1</fieldend></field><field><name>-src_sync</name><type>list</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help>&amp;lt;src_sync&amp;gt;</value_help><help>Specifies the source side qualifier information for the virtual source.</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-path_logic</name><type>string</type><dash>1</dash><required>0</required><possible_values>buf, combo, inv, seq, </possible_values><value_help>&amp;lt;buf|inv|combo|seq&amp;gt;</value_help><help>Type of connection</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-single_non_quasi</name><type>boolean</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help></value_help><help>whether signal is non quasi port</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-related_ports</name><type>list</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help>&amp;lt;ports&amp;gt;</value_help><help>Names of the connected input ports</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-ports</name><type>list</type><dash>1</dash><required>1</required><possible_values></possible_values><value_help>&amp;lt;ports&amp;gt;</value_help><help>Names of the modelled ports</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-start</name><type>boolean</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help></value_help><help>Indicates that domain and other CDC attribute assumptions are taken for the port&amp;apos;s fan-in cone</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-end</name><type>boolean</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help></value_help><help>Indicates that domain and other CDC attribute assumptions are taken for the port&amp;apos;s fan-out cone</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-direction</name><type>string</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help>&amp;lt;input|output&amp;gt;</value_help><help>Direction of inout port/pin only to which this attribute is applicable</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-ignore</name><type>boolean</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help></value_help><help>Ignore existing constraint on object provided</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-seq</name><type>string</type><dash>1</dash><required>0</required><possible_values>no, unknown, yes, </possible_values><value_help>&amp;lt;yes/no&amp;gt;</value_help><help>Specifies the modelled synchronizer has sequential in the path</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-comment</name><type>string</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help>&amp;lt;string&amp;gt;</value_help><help>Specifies the user comment</help><default_value></default_value><fieldend>1</fieldend></field></fieldlist></constraint><constraint><cname>apply_attribute</cname><ctype>SDC|COMMAND_HISTORY</ctype><chelp>Attaches the given attribute to list of pin/port as driver/load constraint.</chelp><ctags>SETUP_HIER_PORT_DATA_DOMAIN_MISMATCH</ctags><prefillopt>-objects</prefillopt><fieldlist><field><name>-objects</name><type>list</type><dash>1</dash><required>1</required><possible_values></possible_values><value_help>&amp;lt;pins_or_ports&amp;gt;</value_help><help>Design port or pins attributes to be attached to</help><default_value></default_value><fieldend>1</fieldend></field><field><name>&amp;lt;attribute_name&amp;gt;</name><type>string</type><dash>0</dash><required>1</required><possible_values></possible_values><value_help>&amp;lt;attribute_name&amp;gt;</value_help><help>Attribue to be attached</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-add</name><type>boolean</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help></value_help><help>Specify if this command is not to be treated as overwrite</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-direction</name><type>string</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help>&amp;lt;input|output&amp;gt;</value_help><help>Direction of inout port/pin only to which this attribute is applicable</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-start</name><type>boolean</type><dash>1</dash><required>0</required><possible_values></possible_values><value_help></value_help><help>Indicates that domain and other CDC attribute assumptions are taken for the port&amp;apos;s fan-in cone</help><default_value></default_value><fieldend>1</fieldend></field><field><name>-end</name><type>boolean</type><dash>1</dash><required>0</required><possible_values></possible_valu22:22:43 : Monet(R):UNodeAction -name aaMonetRegisterConfigurationCmdsFinished -data {<?xml version="1.0"?><ConfigurationCmds><configuration><confname>apply_attribute</confname><confhelp>Attaches the given attribute to list of pin/port as driver/load constraint.</confhelp><conftags>SETUP_HIER_PORT_DATA_DOMAIN_MISMATCH</conftags></configuration><configuration><confname>asyncrst_assert_noclk</confname><confhelp>Specified RDC path(s) will be filtered for RDC analysis purpose</confhelp><conftags>SETUP_DESIGN_OBJECT_NONEXIST,RDC_CORRUPT_FILTERED,RDC_CLOCK_CORRUPT_FILTERED</conftags></configuration><configuration><confname>asyncrst_assert_sequence</confname><confhelp>Specified RDC path(s) will be filtered for RDC analysis purpose</confhelp><conftags>SETUP_DESIGN_OBJECT_NONEXIST,RDC_CORRUPT_FILTERED,RDC_CLOCK_CORRUPT_FILTERED</conftags></configuration><configuration><confname>asyncrst_deassert_nochange</confname><confhelp>Specified  path(s) will be ignored for Async Reset analysis purpose</confhelp><conftags>CDC_IGNOREPATH_FALSEPATH_ASYNCRESET,CDC_IGNOREPATH_FLOATING_SIGNAL_ASYNCRESET,CDC_IGNOREPATH_USER_CONSTRAINT_ASYNCRESET,CDC_SYNC_ASYNCRESET,CDC_UNSYNC_ASYNCRESET,CDC_SYNC_ASYNCRESET,CDC_UNSYNC_ASYNCRESET,CDC_UNSYNC_ASYNCRESET,CDC_ASYNCRESET_CTRLSYNC_INVALID_USE</conftags></configuration><configuration><confname>asyncrst_deassert_noclk</confname><confhelp>Specified  path(s) will be ignored for Async Reset analysis purpose</confhelp><conftags>CDC_IGNOREPATH_FALSEPATH_ASYNCRESET,CDC_IGNOREPATH_FLOATING_SIGNAL_ASYNCRESET,CDC_IGNOREPATH_USER_CONSTRAINT_ASYNCRESET,CDC_SYNC_ASYNCRESET,CDC_UNSYNC_ASYNCRESET,CDC_SYNC_ASYNCRESET,CDC_UNSYNC_ASYNCRESET,SETUP_DESIGN_OBJECT_NONEXIST,CDC_UNSYNC_ASYNCRESET,CDC_ASYNCRESET_CTRLSYNC_INVALID_USE</conftags></configuration><configuration><confname>compress_rdc</confname><confhelp>Compresses RDC violations covered by a representative violation</confhelp><conftags>RDC_STOPPED_LIMIT_REACHED,RDC_CORRUPT_OBSERVED,RDC_CLOCK_CORRUPT_OBSERVED,RDC_CORRUPT_POTENTIAL,RDC_CLOCK_CORRUPT_POTENTIAL,RDC_CORRUPT_BLOCKED,RDC_CLOCK_CORRUPT_BLOCKED,RDC_CORRUPT_IGNORED,RDC_CLOCK_CORRUPT_IGNORED,RDC_MEM_THRESHOLD_REACHED</conftags></configuration><configuration><confname>configure_cdc_abstract_model</confname><confhelp>Configures design abstraction in cdc flow</confhelp><conftags>SETUP_HIER_RESET_MISMATCH,SETUP_HIER_CLOCK_MISMATCH,SETUP_HIER_STATIC_MISMATCH,SETUP_HIER_CONSTANT_MISMATCH,SETUP_HIER_CONFIG_VAL_MISMATCH,SETUP_HIER_PORT_CONSTRAINT_MISMATCH,SETUP_HIER_PORT_RESET_ATTRIBUTE_MISMATCH,SETUP_HIER_PORT_DATA_DOMAIN_MISMATCH,SETUP_HIER_PORT_QUALIFIER_MISMATCH</conftags></configuration><configuration><confname>configure_cdc_asyncrst_crossing</confname><confhelp>Configures crossing detection on asynchronous reset paths</confhelp><conftags>CDC_IGNOREPATH_FLOATING_SIGNAL_ASYNCRESET,CDC_IGNOREPATH_USER_CONSTRAINT_ASYNCRESET,CDC_SYNC_ASYNCRESET,CDC_UNSYNC_ASYNCRESET,CDC_SYNC_ASYNCRESET,CDC_UNSYNC_ASYNCRESET,CDC_UNSYNC_ASYNCRESET,CDC_ASYNCRESET_CTRLSYNC_INVALID_USE</conftags></configuration><configuration><confname>configure_cdc_asyncrst_data_sync</confname><confhelp>It configures the data synchronizer detection by the tool</confhelp><conftags>CDC_SYNC_ASYNCRESET,CDC_UNSYNC_ASYNCRESET,CDC_UNSYNC_ASYNCRESET</conftags></configuration><configuration><confname>configure_cdc_asyncrst_nff_sync</confname><confhelp>It configures the multi-flop synchronizer detection by the tool</confhelp><conftags>CDC_IGNOREPATH_FLOATING_SIGNAL_ASYNCRESET,CDC_IGNOREPATH_USER_CONSTRAINT_ASYNCRESET,CDC_SYNC_ASYNCRESET,CDC_UNSYNC_ASYNCRESET,CDC_SYNC_ASYNCRESET,CDC_UNSYNC_ASYNCRESET,SETUP_PORT_IGNORED,SETUP_PORT_UNCONSTRAINED,SETUP_PORT_PARTIALLY_CONSTRAINED,SETUP_PORT_CONSTRAINED,SETUP_BBOXPIN_UNCONSTRAINED,SETUP_BBOXPIN_CONSTRAINED,CDC_ASYNCRESET_UDS_UNUSED,CDC_UNSYNC_ASYNCRESET,CDC_ASYNCRESET_CTRLSYNC_INVALID_USE</conftags></configuration><configuration><confname>configure_cdc_attribute</confname><confhelp>Use this command to specify mutually exclusive and unrelated signals such that convergence and glitch related violations are suppressed for such signals.</confhelp><conftags>CDC_COHERENCY_MULTI_SYNC,CDC_COHERENCY_VECTOR_DIFF_SYNC,CDC_COHERENCY_BUS_NOCONV,CDC_COHERENCY_BUS_NOCONV_FVFAILED,CDC_COHERENCY_BUS_NOCONV_FVPASSED,CDC_COHERENCY_BUS_NOCONV_FVVACUOUS,CDC_COHERENCY_BUS_NOCONV_FVINCONCLUSIVE,CDC_COHERENCY_BUS_NOCONV_FVNOTANALYZED,CDC_COHERENCY_BUS_NOCONV_FVOTHERS,CDC_COHERENCY_RECONV_COMB,CDC_COHERENCY_ASYNCSRCS_RECONV_COMB,CDC_COHERENCY_RECONV_COMB_FVFAILED,CDC_COHERENCY_RECONV_COMB_FVINCONCLUSIVE,CDC_COHERENCY_RECONV_COMB_FVPASSED,CDC_COHERENCY_RECONV_COMB_FVVACUOUS,CDC_COHERENCY_RECONV_COMB_FVNOTANALYZED,CDC_COHERENCY_RECONV_COMB_FVOTHERS,CDC_COHERENCY_RECONV_SEQ,CDC_COHERENCY_ASYNCSRCS_RECONV_SEQ,INTEGRITY_CLOCK_RECONVERGE,CDC_GLITCH_CTRL,CDC_GLITCH_CTRL_FVFAILED,CDC_GLITCH_CTRL_FVINCONCLUSIVE,CDC_GLITCH_CTRL_FVPASSED,CDC_GLITCH_CTRL_FVVACUOUS,CDC_GLITCH_CTRL_FVNOTANALYZED,CDC_GLITCH_CTRL_FVOTHERS,CDC_GLITCH_DATA,CDC_GLITCH_UNSYNC_FVFAILED,CDC_GLITCH_UNSYNC_FVINCONCLUSIVE,CDC_GLITCH_UNSYNC_FVPASSED,CDC_GLITCH_UNSYNC_FVVACUOUS,CDC_GLITCH_UNSYNC_FVNOTANALYZED,CDC_GLITCH_UNSYNC_FVOTHERS,CDC_GLITCH_UNSYNC,SETUP_RESET_CONV_COMBO,SETUP_RESET_CONV_MUX,INTEGRITY_RESET_RECONVERGE_GLITCH</conftags></configuration><configuration><confname>configure_cdc_auto_abstraction</confname><confhelp>Configures design auto abstraction in cdc flow</confhelp><conftags>SETUP_HIER_RESET_MISMATCH,SETUP_HIER_CLOCK_MISMATCH,SETUP_HIER_STATIC_MISMATCH,SETUP_HIER_CONSTANT_MISMATCH,SETUP_HIER_CONFIG_VAL_MISMATCH,SETUP_HIER_PORT_CONSTRAINT_MISMATCH,SETUP_HIER_PORT_RESET_ATTRIBUTE_MISMATCH,SETUP_HIER_PORT_DATA_DOMAIN_MISMATCH,SETUP_HIER_PORT_QUALIFIER_MISMATCH</conftags></configuration><configuration><confname>configure_cdc_back_to_back_uds</confname><confhelp>This constraint is used to specify crossing sources so that CDC_SYNC_UDS_RESYNC will analyze them for back to back synchronizer usage.</confhelp><conftags>CDC_IGNOREPATH_QUASI_STATIC,CDC_IGNOREPATH_USER_CONSTRAINT,CDC_IGNOREPATH_CLOCK_MODES,CDC_SYNC_CTRL,CDC_SYNC_CTRL_SAM_SYNCPORT,CDC_UNSYNC_CTRL,CDC_SYNC_DATA,CDC_SYNC_DATA_SAM_SYNCPORT,CDC_SYNC_ASYNCRESET,CDC_UNSYNC_DATA,CDC_UNSYNC_ASYNCRESET,CDC_SYNC_UDS_RESYNC,CDC_UNSYNC_NOSCHEME,CDC_UNSYNC_ASYNCRESET</conftags></configuration><configuration><confname>configure_cdc_convergence</confname><confhelp>Configures several convergence detection criteria</confhelp><conftags>CDC_COHERENCY_MULTI_SYNC,CDC_COHERENCY_VECTOR_DIFF_SYNC,CDC_COHERENCY_BUS_NOCONV,CDC_COHERENCY_BUS_NOCONV_FVFAILED,CDC_COHERENCY_BUS_NOCONV_FVPASSED,CDC_COHERENCY_BUS_NOCONV_FVVACUOUS,CDC_COHERENCY_BUS_NOCONV_FVINCONCLUSIVE,CDC_COHERENCY_BUS_NOCONV_FVNOTANALYZED,CDC_COHERENCY_BUS_NOCONV_FVOTHERS,CDC_COHERENCY_RECONV_COMB,CDC_COHERENCY_ASYNCSRCS_RECONV_COMB,CDC_COHERENCY_RECONV_COMB_FVFAILED,CDC_COHERENCY_RECONV_COMB_FVINCONCLUSIVE,CDC_COHERENCY_RECONV_COMB_FVPASSED,CDC_COHERENCY_RECONV_COMB_FVVACUOUS,CDC_COHERENCY_RECONV_COMB_FVNOTANALYZED,CDC_COHERENCY_RECONV_COMB_FVOTHERS,CDC_COHERENCY_RECONV_SEQ,CDC_COHERENCY_ASYNCSRCS_RECONV_SEQ,INTEGRITY_CLOCK_RECONVERGE,SETUP_RESET_CONV_COMBO,SETUP_RESET_CONV_MUX,INTEGRITY_RESET_RECONVERGE_GLITCH</conftags></configuration><configuration><confname>configure_cdc_crossing</confname><confhelp>Enables various configurations on crossing generation, such as disable complex seq/primary ports as crossing start/end points or per domain limit of start points</confhelp><conftags>CDC_IGNOREPATH_QUASI_STATIC,CDC_IGNOREPATH_USER_CONSTRAINT,CDC_IGNOREPATH_CLOCK_MODES,CDC_SYNC_CTRL,CDC_SYNC_CTRL_SAM_SYNCPORT,CDC_UNSYNC_CTRL,CDC_SYNC_DATA,CDC_SYNC_DATA_SAM_SYNCPORT,CDC_UNSYNC_DATA,CDC_UNSYNC_NOSCHEME</conftags></configuration><configuration><confname>configure_cdc_data_sync</confname><confhelp>It configures the data synchronizer detection by the tool</confhelp><conftags>CDC_IGNOREPATH_QUASI_STATIC,CDC_IGNOREPATH_USER_CONSTRAINT,CDC_IGNOREPATH_CLOCK_MODES,CDC_SYNC_CTRL,CDC_SYNC_CTRL_SAM_SYNCPORT,CDC_UNSYNC_CTRL,CDC_SYNC_DATA,CDC_SYNC_DATA_SAM_SYNCPORT,CDC_UNSYNC_DATA,SETUP_HIER_PORT_QUALIFIER_MISMATCH,SETUP_PORT_IGNORED,SETUP_PORT_UNCONSTRAINED,SETUP_PORT_PARTIALLY_CONSTRAINED,SETUP_PORT_CONSTRAINED,SETUP_BBOXPIN_UNCONSTRAINED,SETUP_BBOXPIN_CONSTRAINED,SETUP_MULTIPLE_CONSTRAINTS,CDC_UNSYNC_NOSCHEME</conftags></configuration><configuration><confname>configure_cdc_formal</confname><confhelp>Configures formal CDC checks</confhelp><conftags>CDC_COHERENCY_BUS_NOCONV_FVFAILED,CDC_COHERENCY_BUS_NOCONV_FVPASSED,CDC_COHERENCY_BUS_NOCONV_FVVACUOUS,CDC_COHERENCY_BUS_NOCONV_FVINCONCLUSIVE,CDC_COHERENCY_BUS_NOCONV_FVNOTANALYZED,CDC_COHERENCY_BUS_NOCONV_FVOTHERS,CDC_COHERENCY_SINGLESRC_RECONV_COMB_FVFAILED,CDC_COHERENCY_SINGLESRC_RECONV_COMB_FVINCONCLUSIVE,CDC_COHERENCY_SINGLESRC_RECONV_COMB_FVPASSED,CDC_COHERENCY_SINGLESRC_RECONV_COMB_FVVACUOUS,CDC_COHERENCY_SINGLESRC_RECONV_COMB_FVNOTANALYZED,CDC_COHERENCY_SINGLESRC_RECONV_COMB_FVOTHERS,CDC_COHERENCY_RECONV_COMB_FVFAILED,CDC_COHERENCY_RECONV_COMB_FVINCONCLUSIVE,CDC_COHERENCY_RECONV_COMB_FVPASSED,CDC_COHERENCY_RECONV_COMB_FVVACUOUS,CDC_COHERENCY_RECONV_COMB_FVNOTANALYZED,CDC_COHERENCY_RECONV_COMB_FVOTHERS,CDC_GLITCH_CTRL_FVFAILED,CDC_GLITCH_CTRL_FVINCONCLUSIVE,CDC_GLITCH_CTRL_FVPASSED,CDC_GLITCH_CTRL_FVVACUOUS,CDC_GLITCH_CTRL_FVNOTANALYZED,CDC_GLITCH_CTRL_FVOTHERS,CDC_GLITCH_UNSYNC_FVFAILED,CDC_GLITCH_UNSYNC_FVINCONCLUSIVE,CDC_GLITCH_UNSYNC_FVPASSED,CDC_GLITCH_UNSYNC_FVVACUOUS,CDC_GLITCH_UNSYNC_FVNOTANALYZED,CDC_GLITCH_UNSYNC_FVOTHERS,SETUP_FVDESIGNCYCLEHIGH,SETUP_FVCLOCKSOPTIMIZED,SETUP_FVINITIALSTATE,CDC_DATALOSS_FVPASSED,CDC_DATALOSS_FVVACUOUS,CDC_DATALOSS_FVFAILED,CDC_DATALOSS_FVINCONCLUSIVE,CDC_DATALOSS_FVOTHERS,CDC_DATALOSS_FVNOTANALYZED,CDC_DATAHOLD_FVFAILED,CDC_DATAHOLD_FVINCONCLUSIVE,CDC_DATAHOLD_FVOTHERS,CDC_DATAHOLD_FVNOTANALYZED</conftags></configuration><configuration><confname>configure_cdc_glitch</confname><confhelp>Configures glitch checking criteria in case of multiple sources</confhelp><conftags>CDC_GLITCH_CTRL,CDC_GLITCH_CTRL_FVFAILED,CDC_GLITCH_CTRL_FVINCONCLUSIVE,CDC_GLITCH_CTRL_FVPASSED,CDC_GLITCH_CTRL_FVVACUOUS,CDC_GLITCH_CTRL_FVNOTANALYZED,CDC_GLITCH_CTRL_FVOTHERS,CDC_GLITCH_DATA,CDC_GLITCH_UNSYNC_FVFAILED,CDC_GLITCH_UNSYNC_FVINCONCLUSIVE,CDC_G22:22:44 : Monet(R):UNodeAction -name aaMonetEvGvarState -data {default_waiver_file=vcst_rtdb/reports/waiver.tcl}
+22:22:44 : Monet(R):UNodeAction -name aaMonetEvReportDbCountStarted  -trigger
+22:22:44 : Monet(R):UNodeAction -name aaMonetEvReportDbCountFinished  -trigger
+22:22:44 : Monet(S):aaMonetMasterUnblock -result {1}
+22:22:44 : Monet(S):aaAppGuiActive
+22:22:44 : Monet(R):UNodeAction -name aaMonetEvReportDbSaveDone -data 0 -trigger
+22:22:44 : Monet(R):UNodeAction -name aaMonetEvReportDbSaveStarted  -trigger
+22:22:44 : Monet(R):UNodeAction -name aaMonetEvReportDbSaveDone -data 1 -trigger
+22:22:44 : Monet(S):aaMonetMasterUnblock -result {1}
+22:22:46 : Monet(S):aaMonetGetSessionList
+22:22:46 : Monet(S):aaMonetEvReportDbGuiUpdateStatus -state {1}
+22:22:46 : Monet(S):aaMonetEvReportDbGuiUpdateStatus -state {0}
+22:22:46 : Monet(S):aaMonetEvReportDbGuiUpdateStatus -state {1}
+22:22:46 : Monet(S):aaMonetGetSaveRestoreId -data {1}
+22:22:46 : Monet(R):UNodeAction -name aaMonetGetSaveRestoreIdResult -id {1172416258391880592} -trigger
+22:22:46 : Monet(S):aaMonetMasterUnblock -result {1}
+22:22:48 : Monet(S):aaMonetEvReportDbGuiUpdateStatus -state {0}
+22:22:48 : Monet(S):aaMonetDbg -apps {CDC} -plain {48271}
+22:22:48 : Monet(S):aaMonetGetMasterMode
+22:22:48 : Monet(R):UNodeAction -name aaMonetGetMasterModeResult  -mode {} -trigger
+22:22:49 : Monet(S):aaMonetSetVerdiDesignImportDone -data {1}
+22:22:49 : Monet(R):UNodeAction -name aaVerdiEvSeqIncrSetup -xml {/home/ltthinh/PSRAM_THANG/cdc/vc_static/vcst_rtdb/.internal/formal/incrVerdiSeqMapping.xml} -trigger
+22:22:49 : Monet(S):aaMonetMasterUnblock -result {1}
+22:22:49 : Monet(R):UNodeAction -name aaVerdiBlackboxReport -reset -data {  -delim {/}} -trigger
+22:22:49 : Monet(R):UNodeAction -name aaVerdiGlassboxReport -reset -data { -delim {/}} -trigger
+22:22:49 : Monet(S):aaMonetMasterUnblock -result {1}
+22:22:52 : Monet(S):aaHierViewSrcDone -data {1}
+22:23:00 : Monet(S):aaAppVerdiActive -active {0}

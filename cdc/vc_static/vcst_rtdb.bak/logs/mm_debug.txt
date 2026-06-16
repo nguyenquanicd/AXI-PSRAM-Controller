@@ -1,0 +1,39 @@
+2026-06-14 21:38:10 1781447890.679982 | INFO  | Process Limits
+	 Virual Memory -> no limit
+	 Time Limit -> no limit
+	 Stack Size -> no limit
+	 Data Segment -> no limit
+	 File Size -> no limit
+	 Lock Limit -> no limit
+	 CPU Time Limit -> no limit
+	 RSS  -> no limit
+	 Threads  -> no limit
+Available Cores : 16
+SystemInfo : totalram=32089.8 freeram=6655.96 sharedram=98.9727 bufferram=1609.36 totalswap=16044.9 freeswap=15370.7 procs= 1484
+Executable Args: /tools/Synopsys/vc_static/X-2025.06/linux64/vcst/bin/svi,-mode64,-file,run_cdc.tcl,-server,-client,vlsiltthinh,-session,vcst_rtdb,-x,,-y,,-pathmap,/tmp/specify_pathmap.txt1240667vlsi
+
+2026-06-14 21:38:10 1781447890.704375 | INFO  | Share License key => 4612932619938709859 for master run  Old Key => 4612932619938709859
+2026-06-14 21:38:10 1781447890.788655 | INFO  | checkForHostInfo :: /vcwrapmasterhost hostInfoExists: 0
+2026-06-14 21:38:10 1781447890.788673 | INFO  |  hostInfoFile not found
+2026-06-14 21:38:10 1781447890.788684 | INFO  | checkForMmFlow 
+2026-06-14 21:38:10 1781447890.912865 | INFO  | registerSyncPoint: check_cdc cmdPtr: 0x184c6000
+2026-06-14 21:38:10 1781447890.912881 | INFO  | registerSyncPoint: check_glitch cmdPtr: 0x184c8000
+2026-06-14 21:38:10 1781447890.912889 | INFO  | registerSyncPoint: check_hazard cmdPtr: 0x184c8490
+2026-06-14 21:38:10 1781447890.912895 | INFO  | registerSyncPoint: check_rdc cmdPtr: 0x184c7000
+2026-06-14 21:38:10 1781447890.912903 | INFO  | registerSyncPoint: finish_distributed_run cmdPtr: 0x33c8b000
+2026-06-14 21:38:10 1781447890.912911 | INFO  | registerSyncPoint: sync_active_scenarios cmdPtr: 0x34b862a8
+2026-06-14 21:38:10 1781447890.912919 | INFO  | registerSyncPoint: write_abstract_model cmdPtr: 0x3498c000
+2026-06-14 21:38:10 1781447890.912927 | INFO  | registerSyncPoint: write_constr_abstract_model cmdPtr: 0x184d4000
+2026-06-14 21:38:10 1781447890.912933 | INFO  | Trigger point for reading scenarioSpecific/common files: check_rdc
+2026-06-14 21:38:10 1781447890.912940 | INFO  | Trigger point for reading scenarioSpecific/common files: check_glitch
+2026-06-14 21:38:10 1781447890.912947 | INFO  | Trigger point for reading scenarioSpecific/common files: check_hazard
+2026-06-14 21:38:10 1781447890.912953 | INFO  | Trigger point for reading scenarioSpecific/common files: check_cdc
+2026-06-14 21:38:13 1781447893.794930 | INFO  | restoreDesignForChildModes child: 0  designShare: 0 isDesignReadProcess: 0 designExists:0
+2026-06-14 21:38:13 1781447893.794951 | INFO  | .. don't restore design
+2026-06-14 21:38:16 1781447896.702444 | INFO  | saveDesignForChildModes: MM not enabled
+2026-06-14 21:38:16 1781447896.750458 | INFO  | reporting command blocked: tasks:8 first block:check_cdc 
+2026-06-14 21:38:17 1781447897.399689 | INFO  | commandExecStart check_cdc sync: 1 _isModeRunning: 0 _isModeConstraintsRead: 0 _enableDynamicScen: 0 _exitMultiScen: 0 cmd:0x184c6000 _syncPointIdx: 1
+2026-06-14 21:38:22 1781447902.129001 | INFO  | reporting command blocked: tasks:7 first block:check_cdc 
+2026-06-14 21:38:22 1781447902.131806 | INFO  | commandExecEnd cmd: check_cdc synccmd: 1 _syncPointIdx:1 isChildMode: 0 _dbMerge: 1 cmd: 0x184c6000
+2026-06-14 21:38:22 1781447902.131958 | INFO  | reporting command blocked: tasks:1 first block: 
+2026-06-14 21:38:22 1781447902.381294 | INFO  | reporting command blocked: tasks:24 first block:report_cdc 
