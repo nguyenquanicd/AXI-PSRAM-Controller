@@ -1,0 +1,1012 @@
+    {
+    "Project": "APB-CSR-Generator",
+    "Module": "JSON debug file",
+    "Function": "Used to check the configuration after generation",
+    "Author": "Trthinh (Ethan)",
+    "Generator": "ltthinh",
+    "Page": "VLSI Technology", 
+    "Table - Configuration": [
+    {
+        "Module Name": "m_vlsi_qspi_csr",
+        "Address Width": "16",
+        "Data Width": "32",
+        "Protocol": "APB",
+        "Asynchornous": "1"
+    }
+    ],
+    "Table - Register Definition": [
+        {
+        "Register Name": "ctrl",
+        "Offset": "0x0",
+        "Reset Value": "0x0",
+        "Descriprtion": "None",
+        "Bits": [
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[31:3]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd_2bytes",
+                "Bit Type": "rw",
+                "Bit Field": "[2]",
+                "Reset Value": "0x0",
+                "Description": "Configure the command type, 1 or 2 bytes:
+0: 1 byte commad
+1: 2 bytes command "
+            },
+            {
+                "Bit Name": "auto_data_wd",
+                "Bit Type": "rw",
+                "Bit Field": "[1]",
+                "Reset Value": "0x0",
+                "Description": "Configure the automatic data width for QSPI:
+1: Select the automitc data width based on AXI ((AxLen + 1) * DATA_WIDTH parameter)
+0: Use the configuration from "wd" register for data wd"
+            },
+            {
+                "Bit Name": "en",
+                "Bit Type": "rw",
+                "Bit Field": "[0]",
+                "Reset Value": "0x0",
+                "Description": "Enable QSPI IP"
+            }
+          ]
+        },
+        {
+        "Register Name": "wd",
+        "Offset": "0x4",
+        "Reset Value": "0x0",
+        "Descriprtion": "None",
+        "Bits": [
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[31:3]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd_2bytes",
+                "Bit Type": "rw",
+                "Bit Field": "[2]",
+                "Reset Value": "0x0",
+                "Description": "Configure the command type, 1 or 2 bytes:
+0: 1 byte commad
+1: 2 bytes command "
+            },
+            {
+                "Bit Name": "auto_data_wd",
+                "Bit Type": "rw",
+                "Bit Field": "[1]",
+                "Reset Value": "0x0",
+                "Description": "Configure the automatic data width for QSPI:
+1: Select the automitc data width based on AXI ((AxLen + 1) * DATA_WIDTH parameter)
+0: Use the configuration from "wd" register for data wd"
+            },
+            {
+                "Bit Name": "en",
+                "Bit Type": "rw",
+                "Bit Field": "[0]",
+                "Reset Value": "0x0",
+                "Description": "Enable QSPI IP"
+            },
+            {
+                "Bit Name": "req",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change width of addr or data"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "addr",
+                "Bit Type": "rw",
+                "Bit Field": "[29:24]",
+                "Reset Value": "0x0",
+                "Description": "Configure the address width, range 1->64.
+Address width = wd_addr + 1"
+            },
+            {
+                "Bit Name": "data",
+                "Bit Type": "rw",
+                "Bit Field": "[23:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the data width, range 1->2MB. The large data can be used for page and sequential modes
+Data width = wd_data + 1"
+            }
+          ]
+        },
+        {
+        "Register Name": "read",
+        "Offset": "0x8",
+        "Reset Value": "0x0",
+        "Descriprtion": "None",
+        "Bits": [
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[31:3]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd_2bytes",
+                "Bit Type": "rw",
+                "Bit Field": "[2]",
+                "Reset Value": "0x0",
+                "Description": "Configure the command type, 1 or 2 bytes:
+0: 1 byte commad
+1: 2 bytes command "
+            },
+            {
+                "Bit Name": "auto_data_wd",
+                "Bit Type": "rw",
+                "Bit Field": "[1]",
+                "Reset Value": "0x0",
+                "Description": "Configure the automatic data width for QSPI:
+1: Select the automitc data width based on AXI ((AxLen + 1) * DATA_WIDTH parameter)
+0: Use the configuration from "wd" register for data wd"
+            },
+            {
+                "Bit Name": "en",
+                "Bit Type": "rw",
+                "Bit Field": "[0]",
+                "Reset Value": "0x0",
+                "Description": "Enable QSPI IP"
+            },
+            {
+                "Bit Name": "req",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change width of addr or data"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "addr",
+                "Bit Type": "rw",
+                "Bit Field": "[29:24]",
+                "Reset Value": "0x0",
+                "Description": "Configure the address width, range 1->64.
+Address width = wd_addr + 1"
+            },
+            {
+                "Bit Name": "data",
+                "Bit Type": "rw",
+                "Bit Field": "[23:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the data width, range 1->2MB. The large data can be used for page and sequential modes
+Data width = wd_data + 1"
+            },
+            {
+                "Bit Name": "reqq",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change command value of read instruction.
+Example: Software can configure field "cmd" and it for "Read ID" instruction, and please remember to re-configure to previous command to continue with normal read instruction
+"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[29:16]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd",
+                "Bit Type": "rw",
+                "Bit Field": "[15:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the read instruction of PSRAM, it should be configured before enable IP "
+            }
+          ]
+        },
+        {
+        "Register Name": "write",
+        "Offset": "0xC",
+        "Reset Value": "0x0",
+        "Descriprtion": "None",
+        "Bits": [
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[31:3]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd_2bytes",
+                "Bit Type": "rw",
+                "Bit Field": "[2]",
+                "Reset Value": "0x0",
+                "Description": "Configure the command type, 1 or 2 bytes:
+0: 1 byte commad
+1: 2 bytes command "
+            },
+            {
+                "Bit Name": "auto_data_wd",
+                "Bit Type": "rw",
+                "Bit Field": "[1]",
+                "Reset Value": "0x0",
+                "Description": "Configure the automatic data width for QSPI:
+1: Select the automitc data width based on AXI ((AxLen + 1) * DATA_WIDTH parameter)
+0: Use the configuration from "wd" register for data wd"
+            },
+            {
+                "Bit Name": "en",
+                "Bit Type": "rw",
+                "Bit Field": "[0]",
+                "Reset Value": "0x0",
+                "Description": "Enable QSPI IP"
+            },
+            {
+                "Bit Name": "req",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change width of addr or data"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "addr",
+                "Bit Type": "rw",
+                "Bit Field": "[29:24]",
+                "Reset Value": "0x0",
+                "Description": "Configure the address width, range 1->64.
+Address width = wd_addr + 1"
+            },
+            {
+                "Bit Name": "data",
+                "Bit Type": "rw",
+                "Bit Field": "[23:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the data width, range 1->2MB. The large data can be used for page and sequential modes
+Data width = wd_data + 1"
+            },
+            {
+                "Bit Name": "reqq",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change command value of read instruction.
+Example: Software can configure field "cmd" and it for "Read ID" instruction, and please remember to re-configure to previous command to continue with normal read instruction
+"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[29:16]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd",
+                "Bit Type": "rw",
+                "Bit Field": "[15:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the read instruction of PSRAM, it should be configured before enable IP "
+            },
+            {
+                "Bit Name": "reqq",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change command value of write instruction.
+Example: Software can configure field "cmd" and it for special write instruction, and please remember to re-configure to previous command to continue with normal write instruction
+"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[29:16]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd",
+                "Bit Type": "rw",
+                "Bit Field": "[15:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the write instruction of PSRAM, it should be configured before enable IP "
+            }
+          ]
+        },
+        {
+        "Register Name": "wr_dummy",
+        "Offset": "0x10",
+        "Reset Value": "0x0",
+        "Descriprtion": "None",
+        "Bits": [
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[31:3]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd_2bytes",
+                "Bit Type": "rw",
+                "Bit Field": "[2]",
+                "Reset Value": "0x0",
+                "Description": "Configure the command type, 1 or 2 bytes:
+0: 1 byte commad
+1: 2 bytes command "
+            },
+            {
+                "Bit Name": "auto_data_wd",
+                "Bit Type": "rw",
+                "Bit Field": "[1]",
+                "Reset Value": "0x0",
+                "Description": "Configure the automatic data width for QSPI:
+1: Select the automitc data width based on AXI ((AxLen + 1) * DATA_WIDTH parameter)
+0: Use the configuration from "wd" register for data wd"
+            },
+            {
+                "Bit Name": "en",
+                "Bit Type": "rw",
+                "Bit Field": "[0]",
+                "Reset Value": "0x0",
+                "Description": "Enable QSPI IP"
+            },
+            {
+                "Bit Name": "req",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change width of addr or data"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "addr",
+                "Bit Type": "rw",
+                "Bit Field": "[29:24]",
+                "Reset Value": "0x0",
+                "Description": "Configure the address width, range 1->64.
+Address width = wd_addr + 1"
+            },
+            {
+                "Bit Name": "data",
+                "Bit Type": "rw",
+                "Bit Field": "[23:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the data width, range 1->2MB. The large data can be used for page and sequential modes
+Data width = wd_data + 1"
+            },
+            {
+                "Bit Name": "reqq",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change command value of read instruction.
+Example: Software can configure field "cmd" and it for "Read ID" instruction, and please remember to re-configure to previous command to continue with normal read instruction
+"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[29:16]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd",
+                "Bit Type": "rw",
+                "Bit Field": "[15:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the read instruction of PSRAM, it should be configured before enable IP "
+            },
+            {
+                "Bit Name": "reqq",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change command value of write instruction.
+Example: Software can configure field "cmd" and it for special write instruction, and please remember to re-configure to previous command to continue with normal write instruction
+"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[29:16]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd",
+                "Bit Type": "rw",
+                "Bit Field": "[15:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the write instruction of PSRAM, it should be configured before enable IP "
+            },
+            {
+                "Bit Name": "num",
+                "Bit Type": "rw",
+                "Bit Field": "[31:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the number for dummy byte:
+Example: when dummy has 4 bytes, in SPI mode, it will take 3 cycles but in QSPI  mode, it will only take 1 cycle "
+            }
+          ]
+        },
+        {
+        "Register Name": "rd_dummy",
+        "Offset": "0x14",
+        "Reset Value": "0x0",
+        "Descriprtion": "None",
+        "Bits": [
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[31:3]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd_2bytes",
+                "Bit Type": "rw",
+                "Bit Field": "[2]",
+                "Reset Value": "0x0",
+                "Description": "Configure the command type, 1 or 2 bytes:
+0: 1 byte commad
+1: 2 bytes command "
+            },
+            {
+                "Bit Name": "auto_data_wd",
+                "Bit Type": "rw",
+                "Bit Field": "[1]",
+                "Reset Value": "0x0",
+                "Description": "Configure the automatic data width for QSPI:
+1: Select the automitc data width based on AXI ((AxLen + 1) * DATA_WIDTH parameter)
+0: Use the configuration from "wd" register for data wd"
+            },
+            {
+                "Bit Name": "en",
+                "Bit Type": "rw",
+                "Bit Field": "[0]",
+                "Reset Value": "0x0",
+                "Description": "Enable QSPI IP"
+            },
+            {
+                "Bit Name": "req",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change width of addr or data"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "addr",
+                "Bit Type": "rw",
+                "Bit Field": "[29:24]",
+                "Reset Value": "0x0",
+                "Description": "Configure the address width, range 1->64.
+Address width = wd_addr + 1"
+            },
+            {
+                "Bit Name": "data",
+                "Bit Type": "rw",
+                "Bit Field": "[23:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the data width, range 1->2MB. The large data can be used for page and sequential modes
+Data width = wd_data + 1"
+            },
+            {
+                "Bit Name": "reqq",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change command value of read instruction.
+Example: Software can configure field "cmd" and it for "Read ID" instruction, and please remember to re-configure to previous command to continue with normal read instruction
+"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[29:16]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd",
+                "Bit Type": "rw",
+                "Bit Field": "[15:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the read instruction of PSRAM, it should be configured before enable IP "
+            },
+            {
+                "Bit Name": "reqq",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change command value of write instruction.
+Example: Software can configure field "cmd" and it for special write instruction, and please remember to re-configure to previous command to continue with normal write instruction
+"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[29:16]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd",
+                "Bit Type": "rw",
+                "Bit Field": "[15:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the write instruction of PSRAM, it should be configured before enable IP "
+            },
+            {
+                "Bit Name": "num",
+                "Bit Type": "rw",
+                "Bit Field": "[31:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the number for dummy byte:
+Example: when dummy has 4 bytes, in SPI mode, it will take 3 cycles but in QSPI  mode, it will only take 1 cycle "
+            },
+            {
+                "Bit Name": "num",
+                "Bit Type": "rw",
+                "Bit Field": "[31:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the number for dummy byte:
+Example: when dummy has 4 bytes, in SPI mode, it will take 3 cycles but in QSPI  mode, it will only take 1 cycle "
+            }
+          ]
+        },
+        {
+        "Register Name": "mode_status",
+        "Offset": "0x18",
+        "Reset Value": "0x0",
+        "Descriprtion": "None",
+        "Bits": [
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[31:3]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd_2bytes",
+                "Bit Type": "rw",
+                "Bit Field": "[2]",
+                "Reset Value": "0x0",
+                "Description": "Configure the command type, 1 or 2 bytes:
+0: 1 byte commad
+1: 2 bytes command "
+            },
+            {
+                "Bit Name": "auto_data_wd",
+                "Bit Type": "rw",
+                "Bit Field": "[1]",
+                "Reset Value": "0x0",
+                "Description": "Configure the automatic data width for QSPI:
+1: Select the automitc data width based on AXI ((AxLen + 1) * DATA_WIDTH parameter)
+0: Use the configuration from "wd" register for data wd"
+            },
+            {
+                "Bit Name": "en",
+                "Bit Type": "rw",
+                "Bit Field": "[0]",
+                "Reset Value": "0x0",
+                "Description": "Enable QSPI IP"
+            },
+            {
+                "Bit Name": "req",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change width of addr or data"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "addr",
+                "Bit Type": "rw",
+                "Bit Field": "[29:24]",
+                "Reset Value": "0x0",
+                "Description": "Configure the address width, range 1->64.
+Address width = wd_addr + 1"
+            },
+            {
+                "Bit Name": "data",
+                "Bit Type": "rw",
+                "Bit Field": "[23:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the data width, range 1->2MB. The large data can be used for page and sequential modes
+Data width = wd_data + 1"
+            },
+            {
+                "Bit Name": "reqq",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change command value of read instruction.
+Example: Software can configure field "cmd" and it for "Read ID" instruction, and please remember to re-configure to previous command to continue with normal read instruction
+"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[29:16]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd",
+                "Bit Type": "rw",
+                "Bit Field": "[15:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the read instruction of PSRAM, it should be configured before enable IP "
+            },
+            {
+                "Bit Name": "reqq",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change command value of write instruction.
+Example: Software can configure field "cmd" and it for special write instruction, and please remember to re-configure to previous command to continue with normal write instruction
+"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[29:16]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd",
+                "Bit Type": "rw",
+                "Bit Field": "[15:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the write instruction of PSRAM, it should be configured before enable IP "
+            },
+            {
+                "Bit Name": "num",
+                "Bit Type": "rw",
+                "Bit Field": "[31:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the number for dummy byte:
+Example: when dummy has 4 bytes, in SPI mode, it will take 3 cycles but in QSPI  mode, it will only take 1 cycle "
+            },
+            {
+                "Bit Name": "num",
+                "Bit Type": "rw",
+                "Bit Field": "[31:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the number for dummy byte:
+Example: when dummy has 4 bytes, in SPI mode, it will take 3 cycles but in QSPI  mode, it will only take 1 cycle "
+            },
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[31:2]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "current",
+                "Bit Type": "ro",
+                "Bit Field": "[1:0]",
+                "Reset Value": "0x0",
+                "Description": "Status bit for the current mode:
+2'b00: SPI
+2'b01: Dual mode (future update)
+2'b10: QSPI
+2'b11: OSPI (future update)
+"
+            }
+          ]
+        },
+        {
+        "Register Name": "independent",
+        "Offset": "0x1C",
+        "Reset Value": "0x0",
+        "Descriprtion": "None",
+        "Bits": [
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[31:3]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd_2bytes",
+                "Bit Type": "rw",
+                "Bit Field": "[2]",
+                "Reset Value": "0x0",
+                "Description": "Configure the command type, 1 or 2 bytes:
+0: 1 byte commad
+1: 2 bytes command "
+            },
+            {
+                "Bit Name": "auto_data_wd",
+                "Bit Type": "rw",
+                "Bit Field": "[1]",
+                "Reset Value": "0x0",
+                "Description": "Configure the automatic data width for QSPI:
+1: Select the automitc data width based on AXI ((AxLen + 1) * DATA_WIDTH parameter)
+0: Use the configuration from "wd" register for data wd"
+            },
+            {
+                "Bit Name": "en",
+                "Bit Type": "rw",
+                "Bit Field": "[0]",
+                "Reset Value": "0x0",
+                "Description": "Enable QSPI IP"
+            },
+            {
+                "Bit Name": "req",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change width of addr or data"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "addr",
+                "Bit Type": "rw",
+                "Bit Field": "[29:24]",
+                "Reset Value": "0x0",
+                "Description": "Configure the address width, range 1->64.
+Address width = wd_addr + 1"
+            },
+            {
+                "Bit Name": "data",
+                "Bit Type": "rw",
+                "Bit Field": "[23:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the data width, range 1->2MB. The large data can be used for page and sequential modes
+Data width = wd_data + 1"
+            },
+            {
+                "Bit Name": "reqq",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change command value of read instruction.
+Example: Software can configure field "cmd" and it for "Read ID" instruction, and please remember to re-configure to previous command to continue with normal read instruction
+"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[29:16]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd",
+                "Bit Type": "rw",
+                "Bit Field": "[15:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the read instruction of PSRAM, it should be configured before enable IP "
+            },
+            {
+                "Bit Name": "reqq",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request change command value of write instruction.
+Example: Software can configure field "cmd" and it for special write instruction, and please remember to re-configure to previous command to continue with normal write instruction
+"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[29:16]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd",
+                "Bit Type": "rw",
+                "Bit Field": "[15:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the write instruction of PSRAM, it should be configured before enable IP "
+            },
+            {
+                "Bit Name": "num",
+                "Bit Type": "rw",
+                "Bit Field": "[31:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the number for dummy byte:
+Example: when dummy has 4 bytes, in SPI mode, it will take 3 cycles but in QSPI  mode, it will only take 1 cycle "
+            },
+            {
+                "Bit Name": "num",
+                "Bit Type": "rw",
+                "Bit Field": "[31:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure the number for dummy byte:
+Example: when dummy has 4 bytes, in SPI mode, it will take 3 cycles but in QSPI  mode, it will only take 1 cycle "
+            },
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[31:2]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "current",
+                "Bit Type": "ro",
+                "Bit Field": "[1:0]",
+                "Reset Value": "0x0",
+                "Description": "Status bit for the current mode:
+2'b00: SPI
+2'b01: Dual mode (future update)
+2'b10: QSPI
+2'b11: OSPI (future update)
+"
+            },
+            {
+                "Bit Name": "req",
+                "Bit Type": "rwi",
+                "Bit Field": "[31]",
+                "Reset Value": "0x0",
+                "Description": "Software uses this bit to request independent command (the command for PSRAM setting CS rises from 0 - 1 when all command is sent"
+            },
+            {
+                "Bit Name": "ack",
+                "Bit Type": "ro",
+                "Bit Field": "[30]",
+                "Reset Value": "0x0",
+                "Description": "IP confirms the ack for the request of SW"
+            },
+            {
+                "Bit Name": "mode",
+                "Bit Type": "rw",
+                "Bit Field": "[29:28]",
+                "Reset Value": "0x0",
+                "Description": "SW informs the next mode when the indepent command is use to switch mode
+2'b00: SPI
+2'b01: Dual mode (future update)
+2'b10: QSPI
+2'b11: OSPI (future update)"
+            },
+            {
+                "Bit Name": "reserved",
+                "Bit Type": "ro",
+                "Bit Field": "[27:16]",
+                "Reset Value": "0x0",
+                "Description": "None"
+            },
+            {
+                "Bit Name": "cmd",
+                "Bit Type": "rw",
+                "Bit Field": "[15:0]",
+                "Reset Value": "0x0",
+                "Description": "Configure independent command"
+            }
+          ]
+        }
+    ]
+}
