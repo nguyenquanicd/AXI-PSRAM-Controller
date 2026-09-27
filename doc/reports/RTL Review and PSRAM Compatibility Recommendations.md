@@ -1,0 +1,191 @@
+# RTL Review and PSRAM Compatibility Recommendations
+
+**Scope:** the entire RTL under `rtl/` (read directly, not derived from simulation) — `m_vlsi_qspi_top.sv`, `m_vlsi_qspi_fsm.sv`, `m_vlsi_async_fifo.sv`, `CSR/RTL/m_vlsi_qspi_csr.sv`, and all of `AXI_CONTROLLER/*.sv` — cross-checked against the [doc/Readme.md](../doc/Readme.md) specification and the market research report [Popular QSPI PSRAM Chips in the Market.md](Popular%20QSPI%20PSRAM%20Chips%20in%20the%20Market.md).
+
+**How to read the severity column:** "Confirmed" = derived purely from Verilog/SystemVerilog semantics, no simulation needed to reach the conclusion. "Needs sim confirmation" = the logic shows a clear discrepancy but should be confirmed by running a testbench (`sim/vcs/env/m_vlsi_psram_sp.sv` already provides a PSRAM behavioral model) before fixing.
+
+---
+
+## Executive summary
+
+| # | Issue | Severity | Status |
+|---|---|---|---|
+| 1 | SPI (1-bit) mode read data is completely broken (shift register never shifts) | **Critical** | Confirmed |
+| 2 | No real burst/XIP streaming — every beat of a burst replays the full CMD-ADDR-DUMMY-DATA sequence | **Critical** | Confirmed (grep) |
+| 3 | `wd.addr`/`wd.data` use a "width−1" convention that the documentation never mentions | **High** | Confirmed |
+| 4 | Dummy-cycle field is only 4 bits wide; the `>>2` QSPI scaling factor matches no surveyed chip | **High** | Confirmed |
+| 5 | Dummy-cycle counter has an undocumented off-by-one | **High** | Needs sim confirmation |
+| 6 | `mode_status.current` doesn't reflect actual hardware state — it just echoes the `independent.mode` field | **Medium** | Confirmed |
+| 7 | No enforcement of maximum CS-low duration (tCEM/tCSM) if burst streaming is ever added | **Medium** | Missing design element (not yet needed in the current state) |
+| 8-11 | Protocol compatibility scope gaps (Octal/DDR, ISSI's nibble-based WVQ family, HyperBus...) | **Medium** | Scope boundary that needs stating explicitly |
+| 12+ | Misleading naming, orphaned files, stale auto-template comments | **Minor** | Cleanup |
+
+---
+
+## 1. [CRITICAL] SPI (1-bit) mode reads are broken — the shift register never shifts
+
+**File:** [rtl/m_vlsi_qspi_fsm.sv:583-594](../rtl/m_vlsi_qspi_fsm.sv#L583-L594)
+
+```systemverilog
+always_ff @(posedge i_sclk, negedge i_rstn_sclk) begin
+  if (!i_rstn_sclk) begin
+    reg_rdata <= '0;
+  end
+  else if (reg_in_read & reg_state == S_DATA) begin
+    if (reg_csr_mode_status_current == 2'd2)
+      reg_rdata <= {reg_rdata,i_qspi_si};                          // QSPI — CORRECT
+    else if (reg_csr_mode_status_current == 2'd0)
+      reg_rdata <= {reg_rdata[PARA_DATA_WD-1:1],i_qspi_si[0]};     // SPI — WRONG
+  end
+end
+```
+
+The QSPI branch concatenates the full old `reg_rdata` (32 bits) with `i_qspi_si` (4 bits) into 36 bits, then assigns it to the 32-bit register — Verilog silently truncates the top 4 bits on assignment, which is equivalent to "shift left by 4, insert the new nibble at the LSB." This is an implicit-truncation trick, but it is **functionally correct** — in fact the commented-out line directly above it (line 590) shows the author was aware of, and wrote out, the equivalent explicit formula.
+
+The SPI branch is entirely different: `{reg_rdata[PARA_DATA_WD-1:1], i_qspi_si[0]}` keeps `reg_rdata[31:1]` completely unchanged (no shifting at all!) and only ever overwrites bit 0 each cycle. After a full 32-bit read sequence in SPI mode, `o_ax_rdata` will have a correct bit 0 (the last bit sampled) while **the other 31 bits are stale/leftover garbage**, never actually containing the shifted-in data stream. The correct formula should be:
+
+```systemverilog
+reg_rdata <= {reg_rdata[PARA_DATA_WD-2:0], i_qspi_si[0]};
+```
+
+**Why this is a serious bug for real PSRAM:** most chips surveyed (AP Memory APS6404L, ISSI WVS, Lyontek LY68L6400, etc.) **reset by default into 1-bit SPI mode**, and the very first bring-up command (Read ID `0x9F`, or anything issued before an Enter-QPI `0x35` command) must run in SPI. With this bug, the entire SPI bring-up flow — including the exact step used to confirm the correct chip is attached — will read back corrupted data.
+
+**Recommendation:** fix the single line above; also consider unifying both branches to use the same explicit form, to avoid this kind of asymmetric bug recurring.
+
+---
+
+## 2. [CRITICAL] No real burst/XIP streaming — contradicts doc §7.6
+
+**File:** [rtl/m_vlsi_qspi_fsm.sv:69-70](../rtl/m_vlsi_qspi_fsm.sv#L69-L70), [rtl/m_vlsi_qspi_top.sv:374-375](../rtl/m_vlsi_qspi_top.sv#L374-L375), [rtl/AXI_CONTROLLER/m_vlsi_axfsm.sv](../rtl/AXI_CONTROLLER/m_vlsi_axfsm.sv)
+
+The FSM has two input ports, `i_ax_awlen`/`i_ax_arlen` (AXI burst length), but grepping the entire `m_vlsi_qspi_fsm.sv` file shows **these two identifiers are never read anywhere else in the whole file** — they appear exactly once, at the port declaration itself. At the top level, these two signals are also wired straight from the raw `i_awlen`/`i_arlen` (not even from any per-beat burst-progress tracking), further confirming these are dead wires for a feature that was never actually implemented.
+
+Digging into `m_vlsi_axfsm.sv` (shared by both the AW and AR channels): for an N-beat burst, this module splits it into **N independent `o_push_fifo` pulses**, each carrying only `{last, id, addr}` — the original burst length is discarded right after this stage. So by the time a request reaches the FSM (through AWFIFO/ARFIFO/the arbiter), **nothing anywhere in the pipeline still knows whether a given beat is part of an ongoing burst.**
+
+The observed consequence in the FSM: every request (whether it originated as a standalone beat or as one beat in the middle of a 16-beat burst) runs the full sequence:
+
+```
+S_SET_UP → S_WAIT_TRANS → S_CMD → S_ADDR → (S_DUMMY) → S_DATA → S_SET_UP
+```
+
+with CS_N toggled (`reg_csn` toggle at [fsm.sv:504-511](../rtl/m_vlsi_qspi_fsm.sv#L504-L511)) between **every single beat**, re-sending the full command and address for the next beat each time.
+
+This **directly contradicts** [doc/Readme.md §7.6](../doc/Readme.md): *"Multi-beat AXI burst → interpreted as XIP streaming access"* — the current RTL has no streaming mechanism whatsoever.
+
+**Impact:**
+- **Performance:** for a typical QSPI transaction (1-byte cmd = 2 cycles, 24-bit addr = 6 cycles, 6 dummy cycles, 32-bit data = 8 cycles), an N-beat burst costs ≈ N×22 cycles instead of the ≈14 + N×8 cycles a properly-streamed burst would cost — more than 2.5× overhead for long bursts, and worse the longer the burst gets.
+- **Feature compatibility:** none of the wrap-burst-boundary-toggle mechanisms found in the market research (AP Memory/Lyontek's `0xC0` opcode, ISSI WVQ/WVS's CR-based burst settings) are ever exercised, since the controller never issues a genuine multi-word streaming access — this hardware feature on real PSRAM chips is effectively unused from this controller's point of view.
+
+**Recommendation:**
+1. Either update the documentation to no longer claim an XIP/streaming feature that doesn't exist yet, **or**
+2. Redesign the FSM to support real bursts: hold CS low across the entire burst, issue CMD+ADDR+DUMMY only once, then stream consecutive data beats without re-sending CMD/ADDR/DUMMY for every beat. This requires carrying burst-length information (or at least a "more beats coming in this burst" flag) all the way from `m_vlsi_axfsm` through the async FIFOs to the QSPI FSM — today the FIFOs only carry `{last, id, addr}`, so this is a data-structure change, not a small patch.
+3. If (2) is implemented, a maximum CS-low duration limit (see item 7) must also be added, since CS would then genuinely be held low long enough to hit a real PSRAM's refresh limit.
+
+---
+
+## 3. [HIGH] `wd.addr`/`wd.data` use a "width−1" convention the documentation never mentions
+
+**Cross-reference:** [doc/Readme.md §VI, register `0x04 — wd`](../doc/Readme.md) describes *"`addr`: Address width (6-bit value, unit: bits)"* and *"`data`: Data width (24-bit value, unit: bits)"* — with no mention of a "minus 1" encoding.
+
+But the RTL uses these values as a width−1 convention in **two independent places**, proving this is deliberate design rather than a single typo:
+
+- [fsm.sv:537](../rtl/m_vlsi_qspi_fsm.sv#L537): `reg_data_out <= reg_ax_addr << (PARA_DATA_WD - (reg_csr_wd_addr + 1));`
+- [fsm.sv:180,182](../rtl/m_vlsi_qspi_fsm.sv#L180): when `auto_data_wd=1`, hardware auto-sets `reg_csr_wd_data <= PARA_DATA_WD - 1` (not `PARA_DATA_WD`) — if PARA_DATA_WD=32 (32-bit data), the loaded value is 31, confirming the width−1 convention.
+- The address/data cycle counters ([fsm.sv:454-480](../rtl/m_vlsi_qspi_fsm.sv#L454-L480)) load `reg_csr_wd_addr`/`reg_csr_wd_data` directly (no adjustment) into a down-counter with the "load V, run V+1 cycles" behavior — which is only correct if V is already width−1.
+
+**Real-world risk:** a firmware engineer who reads the documentation literally (without reading the RTL) and writes `wd.addr = 24` (intending "a 24-bit address") will cause the hardware to generate **25 address-phase cycles** — off by one bit, misaligning every subsequent phase (dummy, data) and corrupting the transaction against any real PSRAM on the very first integration attempt.
+
+**Recommendation:** add an explicit note to the CSR documentation (and the top-level README table) stating that *"addr/data must be written as (bit-width − 1)"*, or — better long-term — change the RTL to accept the true width value (adding 1 wherever needed) and remove this hidden convention to reduce integration risk.
+
+---
+
+## 4. [HIGH] Dummy-cycle field is only 4 bits; the `>>2` QSPI scaling factor has no basis in real chips
+
+**File:** [rtl/m_vlsi_qspi_fsm.sv:46-47](../rtl/m_vlsi_qspi_fsm.sv#L46-L47), [:206-207](../rtl/m_vlsi_qspi_fsm.sv#L206-L207); [rtl/m_vlsi_qspi_top.sv:311-312,362-363](../rtl/m_vlsi_qspi_top.sv#L311-L312)
+
+The CSR stores `wr_dummy.num`/`rd_dummy.num` as full 32-bit values, but the top level only wires bits `[3:0]` into the FSM — capping the usable value at 15. In QSPI mode, the FSM right-shifts this by 2 more (`reg_csr_wr_dummy >> 2`) before loading it into the counter — meaning **the maximum usable QSPI dummy-cycle count is only 3** (15>>2, before even accounting for the off-by-one in item 5).
+
+Cross-referenced against the market research:
+
+| Chip | Command | Dummy cycles needed | Source |
+|---|---|---|---|
+| AP Memory APS6404L | Fast Read Quad (0xEB) | 6 (both SPI and QPI) | [research: apmemory_espressif_psram.md] |
+| AP Memory APS6404L | Fast Read (0x0B) | 8 (SPI) / 4 (QPI) | [research: protocol_timing_comparison.md] |
+| ISSI WVS / Lyontek LY68L6400 | Fast Read Quad | 6-8 depending on frequency | [research: issi_winbond_psram.md] |
+
+No chip in the survey exhibits a "QSPI dummy = SPI dummy ÷ 4" rule — the real divergence found (AP Memory 0x0B: 8→4, i.e. ×2) is completely different from the RTL's fixed ÷4 factor, and for 0xEB there is no divergence between modes at all. The current ÷4 factor is an arbitrary, unverified assumption that matches no surveyed datasheet, and is also capped far too low (max 3 vs. the commonly-needed 6-8).
+
+**Recommendation:**
+- Widen the number of dummy-cycle bits actually consumed by the FSM (at least 6-8 bits, ideally using the full 32 bits already present in the CSR).
+- Remove the automatic mode-dependent division; let software program the exact desired cycle count for each mode directly (two separate registers already exist for write/read; a mode-dependent variant could be added later if truly needed, but a fixed hardware ratio should not be imposed).
+
+---
+
+## 5. [HIGH — needs sim confirmation] Dummy-cycle counter has an undocumented off-by-one
+
+**File:** [rtl/m_vlsi_qspi_fsm.sv:202-211](../rtl/m_vlsi_qspi_fsm.sv#L202-L211), [:369-380](../rtl/m_vlsi_qspi_fsm.sv#L369-L380)
+
+The same "load V, run V+1 cycles" down-counter pattern noted in item 3 applies here as well. For `reg_cnt_cmd`, this is correctly pre-compensated (load constants 1/3/7/15 = bits/4−1 or bits−1, exactly matching the fixed 8/16-bit command widths). For `reg_cnt_addr`/`reg_cnt_data`, it's also self-consistent thanks to the width−1 convention (item 3).
+
+But for `reg_cnt_dummy`, **there is no other place in the file that uses dummy_num together with a +1/−1 adjustment for cross-reference** — meaning there is no internal evidence that `wr_dummy.num`/`rd_dummy.num` were also designed around a "cycles−1" convention. The documentation (§VI) describes them simply as "Number of dummy cycles," with no mention of subtracting 1. Taken at face value, writing the exact datasheet dummy-cycle value (e.g. 6, for opcode 0xEB) would produce **7 actual dummy SCLK cycles** — one more than the PSRAM's own internal dummy counter — shifting the sampling point by one clock and corrupting every sampled read bit for that transaction.
+
+A secondary finding: `num=0` skips the dummy phase entirely (0 cycles), while `num=1` already jumps straight to 2 cycles in SPI mode — **exactly "1 dummy cycle" cannot be programmed** in SPI mode.
+
+**Recommendation:** use the existing PSRAM testbench model (`sim/vcs/env/m_vlsi_psram_sp.sv`) to run a read transaction with a known dummy-cycle count (e.g. modeling AP Memory's 0xEB = 6 cycles) and compare the CS/dummy/data waveform to confirm whether there really is a one-cycle offset, then fix either the counter or the documented semantics accordingly.
+
+---
+
+## 6. [MEDIUM] `mode_status.current` does not reflect the bus's actual state
+
+**File:** [rtl/m_vlsi_qspi_fsm.sv:132](../rtl/m_vlsi_qspi_fsm.sv#L132)
+
+```systemverilog
+assign o_csr_mode_status_current = i_csr_independent_mode;
+```
+
+The FSM has an internal register that correctly pipelines the mode actually in effect (`reg_csr_mode_status_current`, updated at [fsm.sv:142-148](../rtl/m_vlsi_qspi_fsm.sv#L142-L148), only switching after leaving `S_IND_CMD` and passing through `S_SET_UP`) — but **the output port feeding the CSR (`mode_status.current`, register 0x18) does not use this register at all**, instead taking `i_csr_independent_mode` directly — which is simply the `independent.mode` field that software wrote into the CSR. This field is **never cleared or updated by hardware** (see [CSR/RTL/m_vlsi_qspi_csr.sv:496-505](../rtl/CSR/RTL/m_vlsi_qspi_csr.sv#L496-L505)), so `mode_status.current` is really just an echo of whatever software last wrote, not an actual hardware-state readback.
+
+**Real-world impact is low today** because doc §8.4 already instructs firmware to poll `independent.ack` rather than rely on `mode_status` to confirm a mode switch — but the register's name ("status") is seriously misleading for anyone debugging later who treats it as ground truth.
+
+**Recommendation:** rewire this output to `reg_csr_mode_status_current` (the correctly-pipelined internal register), or at minimum document clearly that this register only echoes the request field, not actual bus state.
+
+---
+
+## 7. [MEDIUM] No enforcement of maximum CS-low duration (refresh window)
+
+Because of item 2 (no burst streaming), CS toggles after every single-beat transaction today, which **accidentally** keeps the design safe against the tCEM/tCSM limits (the maximum continuous CS-low time before a PSRAM needs a refresh cycle) that the market research found ranging 1-8µs depending on vendor/temperature (AP Memory 8µs/4µs, ISSI 4µs/1µs, Lyontek 2µs). There is no counter or logic anywhere in the RTL tracking "how long has it been since the last CS-low toggle."
+
+**This is not yet a bug in the current state**, but it is a mandatory prerequisite if the recommendation in item 2 (real burst streaming) is ever implemented — otherwise a long burst (e.g. reading several KB of framebuffer data continuously) would hold CS low past a real PSRAM's refresh limit and corrupt data as the PSRAM performs a hidden refresh the controller has no awareness of.
+
+---
+
+## 8-11. [MEDIUM] Protocol scope boundaries that need to be stated explicitly
+
+- **No Octal (8-bit)/DDR:** the controller only has 1-bit SPI and 4-bit QSPI SDR. Per the research, the Octal DDR family common in the ESP32-S3 ecosystem (AP Memory APS6408L-OBM/Xccela) and ISSI's WVO family are both out of reach — different pin count (8 vs. 4) and DDR sampling that no CSR configuration can emulate.
+- **No HyperBus compatibility:** Winbond/Infineon-Cypress HyperRAM use an entirely different protocol (DDR, RWDS strobe, a 48-bit command with no opcode byte) — this controller (built around a SPI-NOR-style CMD-ADDR-DUMMY-DATA model) can never talk to HyperBus regardless of CSR configuration.
+- **ISSI's WVQ (QuadRAM) family uses nibble commands with no Enter/Exit-QPI:** if the actual integration target is a chip in this family, the controller's opcode-based 1/2-byte command model plus SPI↔QSPI `independent` switch mechanism **does not apply at all** — WVQ runs 4-bit Quad-DDR from power-up with a completely different nibble command set (`Ah`=continuous read, `8h`=wrapped read, ...).
+- **No SDR chip found in the survey actually requiring `cmd_2bytes` (a 2-byte opcode)** — the only 16-bit-ish mechanism found is Octal DDR's byte-doubled DTR encoding (a fundamentally different thing, not a genuine "2-byte opcode"). This should be re-confirmed against the specific target chip's datasheet before relying on this feature.
+
+**General recommendation:** add a clear "supported scope" table to the README/doc — stating explicitly this is a controller for **SPI-NOR-opcode-style SPI/QSPI SDR PSRAM** (AP Memory APS6404L/APS1604M-SQ, ISSI WVS, Lyontek LY68L6400 are the best-matching targets per the survey), not a universal PSRAM controller.
+
+---
+
+## 12+. Minor issues / cleanup
+
+| # | Location | Description |
+|---|---|---|
+| 12 | [AXI_CONTROLLER/m_vlsi_axi_sclk_logic.sv:82-84](../rtl/AXI_CONTROLLER/m_vlsi_axi_sclk_logic.sv#L82-L84) | `i_sram_write_valid` gates **both** `w_write_issue` and `w_read_issue` — not a bug (the signal actually means "FSM ready to accept a new request," shared by both read and write), but the "_write_" name invites a future maintainer to mistakenly "fix" it as a bug. Consider renaming to something neutral (e.g. `i_sram_ready`). |
+| 13 | `rtl/m_vlsi_synch.sv` vs. `rtl/CSR/RTL/models/m_vlsi_synch.sv` | Two copies of the same 2-stage synchronizer — [rtl/CSR/README.md](../rtl/CSR/README.md) even reminds integrators to "replace the synchronizer module at RTL/models," exactly the kind of manual step that can let the two copies silently drift apart. Should be consolidated into one shared module. |
+| 14 | `rtl/AXI_CONTROLLER/m_vlsi_fifo.sv`, `m_vlsi_sram_misc.sv` | Not listed in either `rtl/filelist.f` or `rtl/AXI_CONTROLLER/filelist.f` — orphaned files not part of the actual build. |
+| 15 | [rtl/m_vlsi_qspi_top.sv:318](../rtl/m_vlsi_qspi_top.sv#L318) | Stale AUTO_TEMPLATE comment (`{1'b0, w_independent_mode}` — concatenated into 3 bits) doesn't match the real connection at line 365 (a direct 2-bit connection). Harmless (comments don't affect logic) but confusing if the file is ever regenerated via Emacs verilog-mode. |
+
+---
+
+## Recommended priority order
+
+1. **Fix item 1 immediately** (SPI read shift) — a one-line change, low risk, high value; it currently blocks the entire SPI bring-up flow.
+2. **Add the "width−1" note to the CSR documentation** (item 3) — zero cost, removes the most serious integration risk found.
+3. **Run a simulation to confirm the dummy-cycle off-by-one** (item 5) using the existing PSRAM model, then decide whether to fix the RTL or just the documentation.
+4. **Widen the dummy-cycle field and remove the fixed ÷4 factor** (item 4) — necessary to be compatible with most SDR chips surveyed (6-8 cycles).
+5. **Decide on a direction for burst/XIP** (item 2): fix the documentation to match current reality (fast), or invest in redesigning the FSM for real streaming plus the CS-low limit (item 7) — this is the largest architectural change on this list and should be weighed against the project's actual performance requirements.
+6. The remaining items (6, 8-11, 12-15) can be addressed over time, at lower priority.
