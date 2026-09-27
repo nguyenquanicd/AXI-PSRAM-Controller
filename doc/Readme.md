@@ -259,8 +259,10 @@ All registers are 32 bits wide and accessed through the APB interface. The regis
 |---|---|---|---|---|
 | [31] | `req` | RWI | 0 | Write `1` to request a width change. Hardware clears after ACK. |
 | [30] | `ack` | RO | 0 | Hardware asserts when the width change has been applied in SCLK domain. |
-| [29:24] | `addr` | RW | 0 | Address width (6-bit value, unit: bits) |
-| [23:0] | `data` | RW | 0 | Data width (24-bit value, unit: bits) |
+| [29:24] | `addr` | RW | 0 | Address width, encoded as (number of bits − 1) — e.g. write `23` for a 24-bit address |
+| [23:0] | `data` | RW | 0 | Data width, encoded as (number of bits − 1) — e.g. write `31` for 32-bit data |
+
+> **Note:** `addr` and `data` use a "width − 1" encoding, not the raw bit width. The FSM's serializer shift amount and cycle counters are both built around this convention (see `auto_data_wd`, which hardware sets to `PARA_DATA_WD - 1`). Writing the literal bit width instead of width − 1 will send one extra address/data cycle and misalign the rest of the transaction.
 
 ### 0x08 — `read` (Read Command)
 
@@ -284,24 +286,24 @@ All registers are 32 bits wide and accessed through the APB interface. The regis
 
 | Bits | Field | Access | Reset | Description |
 |---|---|---|---|---|
-| [31:0] | `num` | RW | 0 | Number of dummy cycles for write transactions. Full 32-bit field is stored; the FSM currently consumes only bits [3:0]. |
+| [31:0] | `num` | RW | 0 | Number of dummy SCLK cycles for write transactions. Full 32-bit field is stored; the FSM currently consumes only bits [7:0] (0–255 cycles). |
 
-> **Note:** In QSPI mode the FSM uses `num[3:0] >> 2`; in SPI mode it uses `num[3:0]` directly. The 32-bit register width is reserved for future support of extended dummy cycle configurations.
+> **Note:** `num` is the literal number of dummy SCLK cycles the FSM will insert — the same value applies whether the transaction is in SPI or QSPI mode; the FSM does **not** scale this value by bus width (dummy cycles are latency, not data bits, so real PSRAM parts generally specify the same or a datasheet-specific count per mode, never a fixed ÷4 relationship). If a target chip needs a different dummy count in QSPI vs. SPI mode (e.g. AP Memory APS6404L's Fast Read `0x0B`: 8 cycles in SPI, 4 in QPI), reprogram `num` before switching modes.
 
 ### 0x14 — `rd_dummy` (Read Dummy Count)
 
 | Bits | Field | Access | Reset | Description |
 |---|---|---|---|---|
-| [31:0] | `num` | RW | 0 | Number of dummy cycles for read transactions. Full 32-bit field is stored; the FSM currently consumes only bits [3:0]. |
+| [31:0] | `num` | RW | 0 | Number of dummy SCLK cycles for read transactions. Full 32-bit field is stored; the FSM currently consumes only bits [7:0] (0–255 cycles). |
 
-> **Note:** Same scaling as `wr_dummy` — QSPI: `num[3:0] >> 2`; SPI: `num[3:0]`.
+> **Note:** Same semantics as `wr_dummy` — the FSM inserts exactly `num` dummy SCLK cycles (no mode-dependent scaling); reprogram before switching modes if the target chip's SPI/QPI dummy counts differ.
 
 ### 0x18 — `mode_status` (Mode Status)
 
 | Bits | Field | Access | Reset | Description |
 |---|---|---|---|---|
 | [31:2] | — | — | 0 | Reserved |
-| [1:0] | `current` | RO | 0 | Current interface mode: `00`=SPI, `01`=reserved, `10`=QSPI, `11`=reserved. Reflects `i_csr_independent_mode` combinationally from the FSM. |
+| [1:0] | `current` | RO | 0 | Current interface mode: `00`=SPI, `01`=reserved, `10`=QSPI, `11`=reserved. Reflects the FSM's internally-applied bus mode, updated once a pending independent mode-switch command has been processed (not simply an echo of the last value written to `independent.mode`). |
 
 ### 0x1C — `independent` (Independent Command)
 
@@ -331,7 +333,7 @@ The QSPI FSM (`m_vlsi_qspi_fsm`) implements the core transaction sequencing in t
 | `S_IND_CMD` | Sends an independent (command-only) transaction to the PSRAM |
 | `S_CMD` | Drives the command phase on QSPI pads |
 | `S_ADDR` | Drives the address phase on QSPI pads |
-| `S_DUMMY` | Drives the dummy phase (tri-state); cycle count scaled per mode |
+| `S_DUMMY` | Drives the dummy phase (tri-state); cycle count taken directly from `wr_dummy.num`/`rd_dummy.num`, unscaled |
 | `S_WRITE` | Drives write data onto QSPI pads |
 | `S_READ` | Samples read data from QSPI pads |
 

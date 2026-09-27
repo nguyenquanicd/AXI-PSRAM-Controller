@@ -43,8 +43,8 @@ module m_vlsi_qspi_fsm #(
   output logic                     o_csr_hw_we_write_req,
   input  logic [15:0]              i_csr_write_cmd,
 
-  input  logic [3:0]               i_csr_wr_dummy_num,
-  input  logic [3:0]               i_csr_rd_dummy_num,
+  input  logic [7:0]               i_csr_wr_dummy_num,
+  input  logic [7:0]               i_csr_rd_dummy_num,
 
   output logic [1:0]               o_csr_mode_status_current,
 
@@ -98,8 +98,8 @@ module m_vlsi_qspi_fsm #(
   logic [4:0] reg_cnt_cmd;
   logic [7:0] reg_cnt_addr;
   logic [23:0] reg_cnt_data;
-  logic [4:0] reg_cnt_wr_dummy;
-  logic [4:0] reg_cnt_rd_dummy;
+  logic [7:0] reg_cnt_wr_dummy;
+  logic [7:0] reg_cnt_rd_dummy;
   logic [PARA_DATA_WD-1:0] reg_data_out;
   logic [PARA_DATA_WD-1:0] reg_data_in;
   logic reg_csn;
@@ -111,12 +111,12 @@ module m_vlsi_qspi_fsm #(
   logic        reg_csr_ctrl_cmd_2bytes;
   logic [5:0]  reg_csr_wd_addr;
   logic [23:0] reg_csr_wd_data;
-  logic [3:0]  reg_csr_wr_dummy;
-  logic [3:0]  reg_csr_rd_dummy;
+  logic [7:0]  reg_csr_wr_dummy;
+  logic [7:0]  reg_csr_rd_dummy;
   logic [15:0] reg_csr_write_cmd;
   logic [15:0] reg_csr_read_cmd;
   logic [15:0] reg_csr_independent_cmd;
-  logic [4:0]  reg_cnt_dummy;
+  logic [7:0]  reg_cnt_dummy;
   logic        reg_ax_we;
   logic        reg_trans_valid;
   logic [PARA_ADDR_WD-1:0] reg_ax_addr; 
@@ -129,7 +129,7 @@ module m_vlsi_qspi_fsm #(
   logic reg_csr_independent_ack;
   logic reg_csr_ctrl_auto_data_wd;
 
-  assign o_csr_mode_status_current = i_csr_independent_mode;
+  assign o_csr_mode_status_current = reg_csr_mode_status_current;
   // Capture FFs----------------------------------------------------------------------------------//
   always_ff @(posedge i_sclk, negedge i_rstn_sclk) begin
     if (!i_rstn_sclk) begin
@@ -203,8 +203,12 @@ module m_vlsi_qspi_fsm #(
     if (!i_rstn_sclk) begin
       reg_cnt_dummy <= '0;
     end else if ((nxt_state == S_DUMMY) & (reg_state != S_DUMMY)) begin
-      if (reg_csr_mode_status_current == 2'd2) reg_cnt_dummy <= (reg_in_write) ? (reg_csr_wr_dummy >> 2) : (reg_csr_rd_dummy >> 2);
-      else if (reg_csr_mode_status_current == 2'd0) reg_cnt_dummy <= (reg_in_write) ? reg_csr_wr_dummy : reg_csr_rd_dummy;
+      // reg_cnt_dummy is a "cycles-1" down-counter (see reg_cnt_cmd/addr/data):
+      // loading N-1 here makes the FSM spend exactly N SCLK cycles in S_DUMMY,
+      // matching the CSR's wr_dummy.num/rd_dummy.num literally as an SCLK cycle
+      // count in both SPI and QSPI mode (no mode-dependent scaling: real PSRAM
+      // parts do not divide QSPI dummy-cycle counts by 4 relative to SPI).
+      reg_cnt_dummy <= (reg_in_write) ? (reg_csr_wr_dummy - 8'd1) : (reg_csr_rd_dummy - 8'd1);
     end else if (reg_state == S_DUMMY) begin
       reg_cnt_dummy <= reg_cnt_dummy - 1;
     end
@@ -589,7 +593,7 @@ module m_vlsi_qspi_fsm #(
         reg_rdata <= {reg_rdata,i_qspi_si};
         // reg_rdata <= {reg_rdata[PARA_DATA_WD-1:4],i_qspi_si};
       else if (reg_csr_mode_status_current == 2'd0)
-        reg_rdata <= {reg_rdata[PARA_DATA_WD-1:1],i_qspi_si[0]};
+        reg_rdata <= {reg_rdata[PARA_DATA_WD-2:0],i_qspi_si[0]};
     end
   end
 
