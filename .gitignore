@@ -1,0 +1,25 @@
+# EDA tool run artifacts / logs / databases (regenerated locally, not source)
+**/vcst_rtdb/
+**/vcst_rtdb.bak/
+**/.vcstPref
+**/.vc_env_*.txt
+**/vcst_command.log
+**/vcst_session.log
+**/vcst_session.log.bak
+**/novas.conf
+**/novas.rc
+**/novas_dump.log
+**/signal.rc
+**/*.rpt
+**/verdiLog/
+**/csrc/
+**/simv
+**/simv.daidir/
+**/*.fsdb
+**/*.vpd
+**/*.vcd
+**/ucli.key
+**/comp.log
+**/sim.log
+**/*.key
+obj_dir/
