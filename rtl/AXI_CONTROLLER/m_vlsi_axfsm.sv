@@ -31,7 +31,7 @@ module m_vlsi_axfsm #(
 
   localparam logic S_IDLE = 1'b0;
   localparam logic S_ADDR = 1'b1;
-  localparam int   PARA_BEAT_BYTES = PARA_DATA_WD / 8;
+  localparam logic [PARA_ADDR_WD-1:0] PARA_BEAT_BYTES = PARA_ADDR_WD'(PARA_DATA_WD / 8);
 
   logic                   reg_state;
   logic [PARA_LEN_WD-1:0] reg_cnt_addr;
@@ -93,7 +93,7 @@ module m_vlsi_axfsm #(
 
   assign w_addr_fixed = reg_axaddr;
   assign w_addr_incr  = reg_axaddr + PARA_BEAT_BYTES;
-  assign w_wrap_bytes = (PARA_BEAT_BYTES * (reg_axlen + 1'b1));
+  assign w_wrap_bytes = (PARA_BEAT_BYTES * (PARA_ADDR_WD'(reg_axlen) + 1'b1));
   assign w_wrap_mask  = w_wrap_bytes - 1'b1;
   assign w_wrap_next  = reg_axaddr + PARA_BEAT_BYTES;
   assign w_wrap_base  = reg_axaddr & ~w_wrap_mask;

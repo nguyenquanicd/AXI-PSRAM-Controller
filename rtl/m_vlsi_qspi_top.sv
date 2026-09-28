@@ -120,8 +120,12 @@ module m_vlsi_qspi_top #(
   logic         w_write_req_clr_data;
   logic         w_write_req_clr_we;
   logic [15:0]  w_write_cmd;
+  /* verilator lint_off UNUSEDSIGNAL */
+  // CSR stores the full 32-bit dummy-cycle count for future extensibility;
+  // only bits [7:0] are wired to the FSM today (see doc/Readme.md, wr_dummy/rd_dummy).
   logic [31:0]  w_wr_dummy_num;
   logic [31:0]  w_rd_dummy_num;
+  /* verilator lint_on UNUSEDSIGNAL */
   logic [1:0]   w_mode_status_current;
   logic         w_independent_req;
   logic         w_independent_ack;

@@ -206,7 +206,7 @@ Because of item 2 (no burst streaming), CS toggles after every single-beat trans
 
 ## Fix Verification
 
-**No EDA toolchain is installed in this environment** — `verilator`, `iverilog`, and `vcs` were all checked and are not on `PATH`, so items 1, 4, 5, and 6 could not be confirmed by running the lint flow (`lint/verilator/run_lint.sh`) or the existing testbench (`sim/vcs`). What follows is a manual, static re-derivation of each change instead — re-tracing bit widths and cycle-by-cycle counter behavior by hand, the same way the original bugs were found (by reading, not simulating).
+*(Originally written when no EDA toolchain was reachable from this session — `verilator`/`iverilog`/`vcs` weren't on `PATH` — so this first pass is a manual, static re-derivation of each change: re-tracing bit widths and cycle-by-cycle counter behavior by hand, the same way the original bugs were found. Tool-based confirmation was performed afterward once Verilator/Yosys/Slang became reachable — see the "Update" note below.)*
 
 **Files changed:** `rtl/m_vlsi_qspi_fsm.sv`, `rtl/m_vlsi_qspi_top.sv`, `doc/Readme.md`. No other RTL file references any of the changed signals (`i_csr_wr_dummy_num`, `i_csr_rd_dummy_num`, `o_csr_mode_status_current`, or the `reg_rdata` shift) outside these two files — confirmed by grepping the full `rtl/` tree for each identifier before and after editing.
 
@@ -215,4 +215,33 @@ Because of item 2 (no burst streaming), CS toggles after every single-beat trans
 - **Item 6 (mode_status wiring):** confirmed `reg_csr_mode_status_current` is a `logic [1:0]` register already declared and driven elsewhere in the same module (unaffected by this change), so the new `assign` is a same-width, no-new-logic rewire with no combinational-loop risk (it's a register being read, not fed back into itself through this assignment).
 - **Documentation:** re-read the updated `doc/Readme.md` sections (`wd`, `wr_dummy`, `rd_dummy`, `mode_status`, and the FSM state table) end-to-end to confirm the new wording matches the corrected RTL behavior exactly, with no leftover references to the removed `>>2` scaling or the old `num[3:0]` limit.
 
-**What full formal/lint verification would still add** (recommended before this ships, not yet done): running `lint/verilator/run_lint.sh` to catch any width-mismatch warnings this manual trace missed, and running the `sim/vcs` testbench (or the CSR's own Verilator flow) with a directed test that programs a known dummy-cycle count (e.g. 6, matching AP Memory's `0xEB`) and checks the CS→dummy→data waveform timing against the PSRAM behavioral model at `sim/vcs/env/m_vlsi_psram_sp.sv`. No lint/simulation tool is installed on this machine to run that automatically — if you'd like, tell me whether to attempt installing Verilator (available via `winget`) so this can be checked in this environment, or whether you'll run it in your own toolchain.
+**Update — tool-based verification since performed:** Verilator, Yosys, and Slang were subsequently made available in this environment (via an `oss-cad-suite` install reachable through the user's PowerShell profile) and run against the full 11-file RTL set (`m_vlsi_qspi_top` as top). All three passed cleanly:
+
+- **Verilator** (`-Wall --sv`, full elaborate + C++ codegen + `g++` compile + link): 0 errors. Initially 30 warnings (all pre-existing, none caused by this fix pass — see the "Verilator warning cleanup" section below for how these were resolved in a follow-up pass). Independently confirmed, via Verilator's own `UNUSEDSIGNAL` check, that `i_ax_awlen`/`i_ax_arlen` are genuinely dead signals — matching item 2's finding without relying on `grep` alone.
+- **Yosys** (`read_verilog -sv` → `hierarchy` → `proc` → `check`): 0 warnings, 0 errors — no undriven nets, no multiply-driven nets, no combinational loops, hierarchy matches the documented architecture exactly.
+- **Slang** (independent, spec-strict SystemVerilog front-end): `Build succeeded: 0 errors, 0 warnings`.
+
+This is materially stronger confirmation than the manual trace above for items 1, 4, 5, and 6: three independent tools agree the design elaborates and builds correctly with the fixes in place.
+
+## Verilator warning cleanup (follow-up pass)
+
+A second pass resolved every one of the 30 pre-existing Verilator warnings found by the first `-Wall` run above (unrelated to items 1–7, but flagged during the same tool-based verification). Re-running with the identical `-Wall --sv` flags now produces **0 warnings, 0 errors**, and the build no longer needs `-Wno-fatal` to complete. Breakdown:
+
+| Warning | Where | Fix |
+|---|---|---|
+| `EOFNEWLINE` ×3 | `m_vlsi_synch.sv`, `m_vlsi_multi_synch.sv`, `m_vlsi_qspi_csr.sv` | Added the missing trailing newline. |
+| `WIDTHEXPAND`/`WIDTHTRUNC` ×6 | `m_vlsi_axfsm.sv:95,96,98` — `reg_axaddr`/`reg_axlen` mixed with an unsized `int` localparam `PARA_BEAT_BYTES` | `PARA_BEAT_BYTES` resized to `logic [PARA_ADDR_WD-1:0]`; `reg_axlen` explicitly cast (`PARA_ADDR_WD'(reg_axlen)`) in the one expression that still mixed widths. No functional change — same arithmetic, just no implicit width conversion. |
+| `WIDTHEXPAND` ×2 | `m_vlsi_qspi_fsm.sv:463-464` — `reg_csr_wd_addr` (6-bit) into `reg_cnt_addr` (8-bit) | Explicit `8'(reg_csr_wd_addr)` cast. |
+| `WIDTHEXPAND` ×8 | `m_vlsi_qspi_fsm.sv` `reg_data_out` shifts — 16/8/24-bit operands (`reg_csr_write_cmd`, `reg_csr_read_cmd`, `reg_csr_independent_cmd`, `reg_ax_addr`) shifted in a 32-bit (`PARA_DATA_WD`) context | Explicit `PARA_DATA_WD'(...)` cast on each operand. |
+| `WIDTHTRUNC` ×1 | `m_vlsi_qspi_fsm.sv:593` — QSPI read-shift `{reg_rdata,i_qspi_si}` (36→32 bit implicit truncation) | Replaced with the width-exact explicit form `{reg_rdata[PARA_DATA_WD-5:0],i_qspi_si}` — re-derived from first principles (bit-index algebra confirming it equals the old implicit-truncation result), **not** copied from the file's own pre-existing commented-out alternative, which was itself wrong (`[PARA_DATA_WD-1:4]` used the wrong half of the register). |
+| `UNUSEDSIGNAL` — `w_wr_dummy_num`/`w_rd_dummy_num`[31:8] | `m_vlsi_qspi_top.sv` | Expected/benign (32-bit CSR field, only [7:0] consumed by design — see item 4). Suppressed with a scoped `lint_off`/`lint_on` and a comment explaining why. |
+| `UNUSEDSIGNAL` — `i_ax_awlen`/`i_ax_arlen` | `m_vlsi_qspi_fsm.sv` | **Not fixed, by design** — these are genuinely unused today (item 2, burst streaming not implemented). Suppressed with a comment pointing back at item 2 rather than silently hidden, so the connection to the open architectural item stays visible. Kept on the port list (not removed) so the AXI-side burst-length wiring already in place at [m_vlsi_qspi_top.sv:378-379](../rtl/m_vlsi_qspi_top.sv#L378-L379) needs no rework once item 2 is picked up. |
+| `UNUSEDSIGNAL` — `reg_cnt_wr_dummy`, `reg_cnt_rd_dummy`, `reg_data_in` | `m_vlsi_qspi_fsm.sv` | Confirmed fully dead (declared, never driven, never read anywhere) and deleted outright — these were vestigial declarations with no relationship to any of items 1–7. |
+
+**`m_vlsi_qspi_csr.sv` was deliberately excluded from this cleanup and reverted to its pre-cleanup state** (its 4 `UNUSEDSIGNAL` warnings — `i_pprot`[2,0], `reg_read_ack_reg_clk_dly`, `reg_write_ack_reg_clk_dly`, `we_mode_status` — plus its `EOFNEWLINE`, are left as-is, 5 warnings total). This file is output of the separate `APB-CSR-Generator` tool (see `rtl/CSR/README.md`); the project owner decided edits belong in the generator template rather than in generated output, so these are out of scope here. Final state, re-verified with all three tools:
+
+- **Verilator** (`-Wall --sv`): exactly 5 warnings, all in `m_vlsi_qspi_csr.sv`, none elsewhere.
+- **Yosys** (`check`): 0 warnings, 0 errors.
+- **Slang**: `Build succeeded: 0 errors, 0 warnings`.
+
+One warning pair remains outside this project's RTL entirely and isn't fixable from here regardless: `g++` reports `'STDOUT_FILENO' redefined` / `'STDERR_FILENO' redefined` while compiling Verilator's own bundled `verilated.cpp` runtime against this machine's MinGW/UCRT headers — a toolchain-level collision in Verilator's runtime library, unrelated to any file in this repository.

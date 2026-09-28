@@ -66,9 +66,14 @@ module m_vlsi_qspi_fsm #(
   output logic                    o_ax_read_valid,
   output logic                    o_ax_write_valid,
 
+  /* verilator lint_off UNUSEDSIGNAL */
+  // Reserved for burst-aware/XIP streaming (not yet implemented -- every beat
+  // currently replays a full CMD-ADDR-DUMMY-DATA sequence regardless of burst
+  // length; see "RTL Review and PSRAM Compatibility Recommendations", item 2).
   input logic  [PARA_LEN_WD-1:0]  i_ax_awlen,
   input logic  [PARA_LEN_WD-1:0]  i_ax_arlen,
-  
+  /* verilator lint_on UNUSEDSIGNAL */
+
 
   //------------------------------------------------------------------
   // QSPI pad-side interface
@@ -98,10 +103,7 @@ module m_vlsi_qspi_fsm #(
   logic [4:0] reg_cnt_cmd;
   logic [7:0] reg_cnt_addr;
   logic [23:0] reg_cnt_data;
-  logic [7:0] reg_cnt_wr_dummy;
-  logic [7:0] reg_cnt_rd_dummy;
   logic [PARA_DATA_WD-1:0] reg_data_out;
-  logic [PARA_DATA_WD-1:0] reg_data_in;
   logic reg_csn;
   logic reg_in_read;
   logic reg_in_write;
@@ -460,8 +462,8 @@ module m_vlsi_qspi_fsm #(
       reg_cnt_addr <= '0;
     end else begin
       if ((nxt_state == S_ADDR) & (reg_state != S_ADDR)) begin
-        if (reg_csr_mode_status_current == 2'd2) reg_cnt_addr <= reg_csr_wd_addr >> 2;
-        else if (reg_csr_mode_status_current == 2'd0) reg_cnt_addr <= reg_csr_wd_addr;
+        if (reg_csr_mode_status_current == 2'd2) reg_cnt_addr <= 8'(reg_csr_wd_addr) >> 2;
+        else if (reg_csr_mode_status_current == 2'd0) reg_cnt_addr <= 8'(reg_csr_wd_addr);
       end
       else if (reg_state == S_ADDR) begin
         reg_cnt_addr <= reg_cnt_addr - 1;
@@ -522,23 +524,23 @@ module m_vlsi_qspi_fsm #(
       case (reg_state)
         S_WRITE: begin
           if (reg_csr_ctrl_cmd_2bytes)
-            reg_data_out <= (reg_csr_write_cmd << (PARA_DATA_WD - 16));
+            reg_data_out <= (PARA_DATA_WD'(reg_csr_write_cmd) << (PARA_DATA_WD - 16));
           else
-            reg_data_out <= (reg_csr_write_cmd[7:0] << (PARA_DATA_WD - 8));
-        end 
+            reg_data_out <= (PARA_DATA_WD'(reg_csr_write_cmd[7:0]) << (PARA_DATA_WD - 8));
+        end
         S_READ: begin
           if (reg_csr_ctrl_cmd_2bytes)
-            reg_data_out <=  (reg_csr_read_cmd << (PARA_DATA_WD - 16));
+            reg_data_out <=  (PARA_DATA_WD'(reg_csr_read_cmd) << (PARA_DATA_WD - 16));
           else
-            reg_data_out <=  reg_csr_read_cmd[7:0] << (PARA_DATA_WD - 8);
-        end 
+            reg_data_out <=  PARA_DATA_WD'(reg_csr_read_cmd[7:0]) << (PARA_DATA_WD - 8);
+        end
         S_WAIT_TRANS: begin
           if (nxt_state == S_IND_CMD)
-            reg_data_out <= (reg_csr_ctrl_cmd_2bytes) ? (reg_csr_independent_cmd << (PARA_DATA_WD - 16)) : (reg_csr_independent_cmd[7:0] << (PARA_DATA_WD - 8));
+            reg_data_out <= (reg_csr_ctrl_cmd_2bytes) ? (PARA_DATA_WD'(reg_csr_independent_cmd) << (PARA_DATA_WD - 16)) : (PARA_DATA_WD'(reg_csr_independent_cmd[7:0]) << (PARA_DATA_WD - 8));
         end
         S_CMD: begin
           if (nxt_state == S_ADDR)
-            reg_data_out <= reg_ax_addr << (PARA_DATA_WD - (reg_csr_wd_addr + 1));
+            reg_data_out <= PARA_DATA_WD'(reg_ax_addr) << (PARA_DATA_WD - (reg_csr_wd_addr + 1));
           else begin
             if (reg_csr_mode_status_current == 2'd2)
               reg_data_out <= reg_data_out << 4;
@@ -590,8 +592,7 @@ module m_vlsi_qspi_fsm #(
     end
     else if (reg_in_read & reg_state == S_DATA) begin
       if (reg_csr_mode_status_current == 2'd2)
-        reg_rdata <= {reg_rdata,i_qspi_si};
-        // reg_rdata <= {reg_rdata[PARA_DATA_WD-1:4],i_qspi_si};
+        reg_rdata <= {reg_rdata[PARA_DATA_WD-5:0],i_qspi_si};
       else if (reg_csr_mode_status_current == 2'd0)
         reg_rdata <= {reg_rdata[PARA_DATA_WD-2:0],i_qspi_si[0]};
     end
